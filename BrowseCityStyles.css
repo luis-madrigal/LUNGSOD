@@ -1,0 +1,30 @@
+.cityTiles{
+
+	background-color:#273848;
+
+}
+
+#topTiles{
+
+	height: 1000px;
+
+}
+
+#bottomTiles{
+
+	height: 683px;
+
+}
+
+#selectCities{
+
+	height: 460px;
+
+}
+
+#livabilityDesc{
+	
+	height: 320px;
+	background-color:#6DA777;	
+
+}
