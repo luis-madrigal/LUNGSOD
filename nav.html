@@ -9,77 +9,97 @@
 
 	<script src="utils/lib/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
 
-	<style type="text/css">
-		@font-face {
-			font-family: WorkSans-Black;
-			src: url(WorkSans-Black.otf) format('opentype')
-		}
-		@font-face {
-			font-family: WorkSans-Bold;
-			src: url(WorkSans-Bold.otf) format('opentype')
-		}
-		@font-face {
-			font-family: WorkSans-ExtraBold;
-			src: url(WorkSans-ExtraBold.otf) format('opentype')
-		}
-		@font-face {
-			font-family: WorkSans-ExtraLight;
-			src: url(WorkSans-ExtraLight.otf) format('opentype')
-		}
-		@font-face {
-			font-family: WorkSans-Hairline;
-			src: url(WorkSans-Hairline.otf) format('opentype')
-		}
-		@font-face {
-			font-family: WorkSans-Light;
-			src: url(WorkSans-Light.otf) format('opentype')
-		}
-		@font-face {
-			font-family: WorkSans-Medium;
-			src: url(WorkSans-Medium.otf) format('opentype')
-		}
-		@font-face {
-			font-family: WorkSans-Regular;
-			src: url(WorkSans-Regular.otf) format('opentype')
-		}
-		@font-face {
-			font-family: WorkSans-SemiBold;
-			src: url(WorkSans-SemiBold.otf) format('opentype')
-		}
-		@font-face {
-			font-family: WorkSans-Thin;
-			src: url(WorkSans-Thin.otf) format('opentype')
-		}
-	</style>
+	<script src="res/fonts/fonts.css"></script>
 
 	<style type="text/css">
-		.search-group{          
+
+		@font-face {
+			font-family: WorkSans-Light;
+			src: url(res/fonts/WorkSans-Light.otf) format('opentype')
+		}
+
+		.search-group{   
 			color: #7A7A7A;
-			height: 37px;
+			width: 28%;
+			float: right;
+			border-radius: 0px;
+			margin:0.5% auto;
 		}
 
 		.search-group .input-group-addon{
-			background: white !important;
+			background: #51BBC8 !important;
+			border:0px;
 		}
 		.search-group .form-control{
 			border-right:0; 
-			box-shadow:0 0 0; 
-			border-color:#ccc;
+			box-shadow:0 0 0;
+			border-right: 12px solid;
+			border-image:linear-gradient(to left, rgba(81, 187, 200,0.7), rgba(0, 0, 0, 0)) 1 100%;     
 		}
 		.search-group button{
 			background: #51BBC8 !important;
-			border-color:#ccc;
-			border:0;
+			color:white;
+			font-size:16px;
+			height: 100%;
+			border: 0px;
+			padding:0px;
 		}
 		.navbar-default{
 			background-color: rgba(109,167,119,0.7);
+			border-color: rgb(109,167,119);
+			border: 0px;
+			border-radius: 0px;
 			color: white;		
 		}
+		.navbar-default .navbar-brand{
+			width: 100%;
+		}
+		.navbar-default .navbar-brand>img{
+			height: 100%;
+		}
 
-		.navbar-default .navbar-brand {
+		.navbar-default .navbar-nav {
+			display: flex;
+		}
+
+		.navbar-default .navbar-nav>li>a {
+			width:260px;
+			text-align: center;
+			font-family: WorkSans-Light;
+			font-size: 98%;
+			text-align: center;
 			color: white;
-			font-family: "Work Sans Light"
-		}	
+		}
+
+		.navbar-default .navbar-nav>li>a:hover {
+			background-color: rgba(204, 255, 204,0.7)
+		}
+
+		.navbar-default .navbar-nav>.active>a{
+			color: white;
+			background-color: rgba(50, 120, 114,0.9);
+		}
+
+		.navbar-default .navbar-nav>.active>a:focus, 
+		.navbar-default .navbar-nav>.active>a:hover {
+			background-color: rgba(204, 255, 204,0.7)
+		}
+
+		..gradient{
+			border-width: 3px 3px 3px 0;
+			border-style: solid;
+			-webkit-border-image: 
+			-webkit-gradient(linear, 0 0, 100% 0, from(rgba(204, 255, 204,0.7)), to(rgba(204, 242, 241,0.7))) 1 100%;
+			-webkit-border-image: 
+			-webkit-linear-gradient(left, black, rgba(0, 0, 0, 0)) 1 100%;
+			-moz-border-image:
+			-moz-linear-gradient(left, black, rgba(0, 0, 0, 0)) 1 100%; 
+			-o-border-image:
+			-o-linear-gradient(left, black, rgba(0, 0, 0, 0)) 1 100%;
+			border-image:
+			linear-gradient(to left, rgba(204, 255, 204,0.7), rgba(0, 0, 0, 0)) 1 100%;     
+		}
+
 	</style>
 
 </head>
@@ -88,7 +108,15 @@
 		<div class="container-fluid">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
-				<a class="navbar-brand" href="#">LUNGSOD</a>
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+				<a class="navbar-brand" href="#"><img src="res/logos/Logo_Header.png"></a>
+				
 			</div>
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -98,15 +126,13 @@
 					<li><a href="#">MIGRATION HELP</a></li>   
 				</ul>
 
-				<div class="container-fluid">
-					<div class="input-group search-group">
-						<input type="text" class="form-control" placeholder="Search">
-						<span class="input-group-addon">
-							<button type="submit">
-								<span class="glyphicon glyphicon-search"></span>
-							</button>
-						</span>
-					</div>
+				<div class="input-group search-group">
+					<input type="text" class="form-control" placeholder="Search for a city...">
+					<span class="input-group-addon">
+						<button type="submit">
+							<span class="glyphicon glyphicon-search"></span>
+						</button>
+					</span>
 				</div>
 			</div><!-- /.navbar-collapse -->
 		</div><!-- /.container-fluid -->
