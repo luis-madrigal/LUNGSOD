@@ -3,35 +3,218 @@
 <head>
 	<title>Lungsod</title>
 
-   	<link rel = "stylesheet" href = "utils/lib/bootstrap-3.3.6-dist/css/bootstrap.min.css">
-
 	<script src="utils/lib/jquery.min.js"></script>
 	<script src="utils/lib/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+
+	<link rel = "stylesheet" href = "utils/lib/bootstrap-3.3.6-dist/css/bootstrap.min.css">
+	<link rel = "stylesheet" href = "css/BrowseCityStyles.css">
+
+	<link rel = "stylesheet" href = "res/fonts/fonts.css"></link>
+
+	<style type="text/css">
+		.search-group{   
+			color: #7A7A7A;
+			width: 28%;
+			float: right;
+			border-radius: 0px;
+			margin:0.5% auto;
+		}
+		.search-group .input-group-addon{
+			background: #51BBC8 !important;
+			border:0px;
+		}
+		.search-group .form-control{
+			border-right:0; 
+			box-shadow:0 0 0;
+			border-right: 12px solid;
+			border-image:linear-gradient(to left, rgba(81, 187, 200,0.7), rgba(0, 0, 0, 0)) 1 100%;     
+		}
+		.search-group button{
+			background: #51BBC8 !important;
+			color:white;
+			font-size:16px;
+			height: 100%;
+			border: 0px;
+			padding:0px;
+		}
+		.navbar-default{
+			background-color: rgba(109,167,119,0.7);
+			border-color: rgb(109,167,119);
+			border: 0px;
+			border-radius: 0px;
+			color: white;		
+		}
+		.navbar-default .navbar-brand{
+			width: 100%;
+		}
+		.navbar-default .navbar-brand>img{
+			height: 100%;
+		}
+		.navbar-default .navbar-nav {
+			display: flex;
+		}
+		.navbar-default .navbar-nav>li>a {
+			width:260px;
+			text-align: center;
+			font-family: WorkSans-Light;
+			font-size: 98%;
+			text-align: center;
+			color: white;
+		}
+		.navbar-default .navbar-nav>li>a:hover {
+			background-color: rgba(204, 255, 204,0.7)
+		}
+		.navbar-default .navbar-nav>.active>a{
+			color: white;
+			background-color: rgba(50, 120, 114,0.9);
+		}
+		.navbar-default .navbar-nav>.active>a:focus, 
+		.navbar-default .navbar-nav>.active>a:hover {
+			background-color: rgba(204, 255, 204,0.7)
+		}
+		..gradient{
+			border-width: 3px 3px 3px 0;
+			border-style: solid;
+			-webkit-border-image: 
+			-webkit-gradient(linear, 0 0, 100% 0, from(rgba(204, 255, 204,0.7)), to(rgba(204, 242, 241,0.7))) 1 100%;
+			-webkit-border-image: 
+			-webkit-linear-gradient(left, black, rgba(0, 0, 0, 0)) 1 100%;
+			-moz-border-image:
+			-moz-linear-gradient(left, black, rgba(0, 0, 0, 0)) 1 100%; 
+			-o-border-image:
+			-o-linear-gradient(left, black, rgba(0, 0, 0, 0)) 1 100%;
+			border-image:
+			linear-gradient(to left, rgba(204, 255, 204,0.7), rgba(0, 0, 0, 0)) 1 100%;     
+		}
+	</style>
+
 </head>
 <body>
 
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-4">
-				<img class="img-responsive" src="res/City Tiles (15-15)/CityTile_BACOLOD.jpg">
-				<!-- <h3>Column 1</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-				<p>Ut enim ad min im veniam, quis nostrud exercitation ullamco laboris...</p>-->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+				<a class="navbar-brand" href="#"><img src="res/logos/Logo_Header.png"></a>
+				
 			</div>
-			<div class="col-sm-4">
-				<img class="img-responsive" src="res/City Tiles (15-15)/CityTile_BACOLOD.jpg">
-				<!-- <h3>Column 2</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-				<p>Ut eni m ad minim veniam, quis nostrud exercitation ullamco laboris...</p>-->
-			</div>
-			<div class="col-sm-4">
-				<img class="img-responsive" src="res/City Tiles (15-15)/CityTile_BACOLOD.jpg">
-				<!-- <h3>Column 3</h3>        
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-				<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>-->
-			</div>
-		</div>
-	</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">BROWSE CITIES<span class="sr-only">(current)</span></a></li>
+					<li><a href="#">THE LIVABILITY INDEX</a></li>
+					<li><a href="#">MIGRATION HELP</a></li>   
+				</ul>
 
-</body>
-</html>
+				<div class="input-group search-group">
+					<input type="text" class="form-control" placeholder="Search for a city...">
+					<span class="input-group-addon">
+						<button type="submit">
+							<span class="glyphicon glyphicon-search"></span>
+						</button>
+					</span>
+				</div>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+
+	<!-- MAIN CONTAINER -->
+	<div class="container-fluid">
+		<!--SELECT CITIES-->
+		<div id="selectCities" style="background-image: url('res/CityPic-withOutline.jpg'); background-size: cover; " class="row">
+			<div id="selectCitiesText" class="row">
+				<p id="selectCitiesHead">
+					Selected Cities
+				</p>
+				<p id="selctCitiesBody">
+					Browse through the list of selected cities in Lungsod's database, or select your chosen filters to find that perfect place.
+				</p>
+				
+				<div class="col-lg-9">
+					<p id="filterHead">
+						CATEGORY FILTERS:
+					</p>
+					<table id="filterChecBoxes">
+						<tr>
+							<td>
+								<input class="filterItem" type="checkbox" name="HOUSING">  HOUSING</input>
+							</td>
+							<td>
+								<input class="filterItem" type="checkbox" name="HEALTH">   HEALTH</input>
+							</td>
+							<td>
+								<input class="filterItem" type="checkbox" name="TRANSPORTATION">   TRANSPORTATION</input>
+							</td>
+							<td>
+								<input class="filterItem" type="checkbox" name="LOCAL_GOVERNMENT">   LOCAL GOVERNMENT</input>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input class="filterItem" type="checkbox" name="EMPLOYMENT">   EMPLOYMENT</input>
+							</td>
+							<td>
+								<input class="filterItem" type="checkbox" name="EDUCATION">   EDUCATION</input>
+							</td>
+							<td>
+								<input class="filterItem" type="checkbox" name="INFRASTRUCTURE">   INFRASTRUCTURE</input>
+							</td>
+							<td>
+								<input class="filterItem" type="checkbox" name="LEISURE">   LEISURE</input>
+							</td>
+						</tr>
+					</table>
+				</div>
+				
+				<div class="col-lg-3">
+					<!--<div class="dropdown">
+						<button class="btn btn-default dropdown-toggle" type="button" id="sortList" data-toggle="dropdown">sort by
+						<span class="caret"></span></button>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+						  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Proximity</a></li>
+						  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Island Group</a></li>
+						  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Livability Score</a></li>
+						  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Alphabetical</a></li>
+						  
+						</div>-->
+						<select id="sortList">
+							<option>sort by:</option>
+							<option>Proximity</option>
+							<option>Island Group</option>
+							<option>Livability Score</option>
+							<option>Alphabetical</option>
+						</select>	
+					</div>
+				</div>
+				<p id = "clearFilter">
+					CLEAR FILTERS
+				</p>
+
+			</div>
+			<!--CITY TILES-->
+			<div id="topTiles" class="row cityTiles">
+				<div class = "container-fluid" id = "topTilesList">
+				</div>
+			</div>
+			<!--LIVABILITY DESCRIPTION-->
+			<div id="livabilityDesc" class="row">
+
+			</div>
+			<!--MORE CITY TILES-->
+			<div id="bottomTiles" class="row cityTiles">
+				<div class = "container-fluid" id = "bottomTilesList">
+				</div>
+			</div>
+
+		</div>
+	</body>
+	<script src="js/db.js"></script>
+	<script src="js/BrowseCity.js"></script>
+	</html>	

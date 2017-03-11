@@ -1,0 +1,110 @@
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+td{
+	padding-left: 25px;
+}
+
+.cityTiles{
+
+	background-color:#273848;
+	padding: 20px;
+
+}
+
+.cityTile{
+	background-size: cover;
+	width: 465px;
+	height: 302px;
+	margin: 0 auto;
+}
+
+.cityName{
+	text-align: left;
+	font-size: 26px;
+	color: white;
+	display: block;
+}
+
+.cityProvince{
+	text-align: left;
+	font-size: 17px;
+	color: white;
+}
+
+.cityTag{
+	float: right;
+	transform-origin: right bottom;
+	margin-top: 180px;
+	margin-left: 250px;
+}
+
+.cityTagIcon{
+	position: absolute;
+	display: inline-block;
+}
+
+.filterItem{
+	margin-right:5px;
+}
+
+#sortList{
+	margin-top: 77px;
+    width: 190px !important;
+	padding-top:-30px !important;
+	color: black;
+}
+
+#topTiles{
+
+	height: 1000px;
+
+}
+
+#bottomTiles{
+
+	height: 683px;
+
+}
+
+#selectCities{
+	height: 460px;
+	color: white;
+}
+
+#selectCitiesHead{
+	font-size: 19pt;
+	margin-top: 40px;
+
+}
+
+#selctCitiesBody{
+	font-size: 14pt;
+
+}
+
+#selectCitiesText{
+	margin-top: 50px;
+	margin-left: 250px;
+	margin-right: 250px;
+}
+
+#livabilityDesc{
+	
+	height: 320px;
+	background-color:#6DA777;	
+
+}
+
+#filterHead{
+
+	padding-top:24px;
+
+}
+
+#clearFilter{
+	text-decoration:underline;
+	margin-left: 250px;
+}

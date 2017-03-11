@@ -1,40 +1,40 @@
 @font-face {
 	font-family: WorkSans-Black;
-	src: url(WorkSans-Black.otf) format('opentype')
+	src: url(WorkSans/WorkSans-Black.otf) format('opentype')
 }
 @font-face {
 	font-family: WorkSans-Bold;
-	src: url(WorkSans-Bold.otf) format('opentype')
+	src: url(WorkSans/WorkSans-Bold.otf) format('opentype')
 }
 @font-face {
 	font-family: WorkSans-ExtraBold;
-	src: url(WorkSans-ExtraBold.otf) format('opentype')
+	src: url(WorkSans/WorkSans-ExtraBold.otf) format('opentype')
 }
 @font-face {
 	font-family: WorkSans-ExtraLight;
-	src: url(WorkSans-ExtraLight.otf) format('opentype')
+	src: url(WorkSans/WorkSans-ExtraLight.otf) format('opentype')
 }
 @font-face {
 	font-family: WorkSans-Hairline;
-	src: url(WorkSans-Hairline.otf) format('opentype')
+	src: url(WorkSans/WorkSans-Hairline.otf) format('opentype')
 }
 @font-face {
 	font-family: WorkSans-Light;
-	src: url(WorkSans-Light.otf) format('opentype')
+	src: url(WorkSans/WorkSans-Light.otf) format('opentype')
 }
 @font-face {
 	font-family: WorkSans-Medium;
-	src: url(WorkSans-Medium.otf) format('opentype')
+	src: url(WorkSans/WorkSans-Medium.otf) format('opentype')
 }
 @font-face {
 	font-family: WorkSans-Regular;
-	src: url(WorkSans-Regular.otf) format('opentype')
+	src: url(WorkSans/WorkSans-Regular.otf) format('opentype')
 }
 @font-face {
 	font-family: WorkSans-SemiBold;
-	src: url(WorkSans-SemiBold.otf) format('opentype')
+	src: url(WorkSans/WorkSans-SemiBold.otf) format('opentype')
 }
 @font-face {
 	font-family: WorkSans-Thin;
-	src: url(WorkSans-Thin.otf) format('opentype')
+	src: url(WorkSans/WorkSans-Thin.otf) format('opentype')
 }
