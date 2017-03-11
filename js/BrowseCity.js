@@ -27,8 +27,8 @@ function initTiles(tiles, list) {
 
 		for(var j = 0; j < tiles[i].tags.length; j++) {
 			var $tag = $("<img>", {"style": "cityTagIcon", "src": tiles[i].tags[j].res});
-			$tag.attr("width", "60px");
-			$tag.attr("height", "60px");
+			$tag.attr("width", "33%");
+			// $tag.attr("height", "33%");
 			$tagDiv.append($tag);
 		}
 
