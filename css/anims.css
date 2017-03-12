@@ -1,0 +1,9 @@
+@keyframes onEnterTile {
+	from {filter: brightness(100%);}
+	to {filter: brightness(120%);}
+}
+
+@keyframes onExitTile {
+	from {filter: brightness(120%);}
+	to {filter: brightness(100%);}
+}

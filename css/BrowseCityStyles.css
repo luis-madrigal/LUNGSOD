@@ -19,6 +19,7 @@ td{
 	width: 32%;
 	height: 302px;
 	margin: 0 auto;
+	/*-webkit-filter: brightness(100%);*/
 }
 
 .cityName{

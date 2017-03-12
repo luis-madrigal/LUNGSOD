@@ -3,6 +3,26 @@ $(document).ready(function(){
 	initTiles(CITY_TILES_TOP, $("#topTilesList"));
 	initTiles(CITY_TILES_BOTTOM, $("#bottomTilesList"));
 
+	$(".cityTile").mouseenter(function() {
+		TweenMax.to($(this), 0.3, {
+			onUpdate: function(tl){
+				var tlp = 100 + (tl.progress()*100) / 2;
+				console.log(tlp)
+				TweenMax.set(tl.target, {css: {"-webkit-filter": "brightness(" +tlp+ "%"}});
+			},
+			onUpdateParams: ["{self}"]
+		});
+	});
+
+	$(".cityTile").mouseleave(function() {
+		TweenMax.to($(this), 0.3, {
+			onUpdate: function(tl){
+				var tlp = 150 - (tl.progress()*100) / 2;
+				TweenMax.set(tl.target, {css: {"-webkit-filter": "brightness(" +tlp+ "%"}});
+			},
+			onUpdateParams: ["{self}"]
+		});
+	});
 });
 
 function initTiles(tiles, list) {
