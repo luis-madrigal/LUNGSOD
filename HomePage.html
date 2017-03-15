@@ -2,27 +2,22 @@
 <html>
 <head>
 	<title>Lungsod</title>
+
+	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 	<script src="utils/lib/jquery.min.js"></script>
-
 	<script src="utils/lib/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
-
 	<link rel="stylesheet" href="utils/lib/bootstrap-3.3.6-dist/css/bootstrap.min.css">
-
 	<link rel="stylesheet" href="css/BrowseCityStyles.css">
-
 	<link rel="stylesheet" href="res/fonts/fonts.css"></link>
-
 	<style type="text/css">
 
 		.navbar-default {
 			/*return position absolute with new picture*/
-			/*position: absolute;
+			position: absolute;
 			top: 0;
 			left: 0;
-			right: 0;*/
-			min-height:100%;
+			right: 0;
 			width: 100%;
 			margin: 0;
 			background-color: rgba(109,167,119,0.7);
@@ -90,12 +85,12 @@
 			/*padding-top: 66.64%;*/   
 		}
 
-		#picture_hero {
+		/*#picture_hero {
 			width: 100%;
 			position: relative;
 			top: 0;
 			left: 0;
-		}
+		}*/
 
 		#skyline{
 			width:100%;
@@ -128,6 +123,10 @@
 				margin-right: auto;
 			}
 
+		#search-bar-group{
+			position: relative;
+			top:-175px;
+		}
 		.search-group{   
 			color: #7A7A7A;
 			width: 42%;
@@ -163,19 +162,16 @@
 			padding:0px;
 		}
 
-		#search-bar-group{
-			position: relative;
-			top:-175px;
-		}
+		
 	</style>
 
 </head>
 <body style="background-color: black">
-	<nav class="navbar navbar-default">
+	<nav class="navbar navbar-default navbar-static-top" id="home-nav">
 		<div class="navbar-inner">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false">
 					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
@@ -185,21 +181,24 @@
 			</div>
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<!-- /.navbar-collapse -->
-			<div class="collapse navbar-collapse" style="height:65px">
-				<ul class="nav navbar-nav">
-					<li><a href="#">BROWSE CITIES<span class="sr-only">(current)</span></a></li>
+			<div class="collapse navbar-collapse" id="bs-navbar-collapse" style="height:65px">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">BROWSE CITIES</a></li>
 					<li><a href="#">THE LIVABILITY INDEX</a></li>
 					<li><a href="#">MIGRATION HELP</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
-	<!-- Search View Container -->
+	
+	<img class="img-responsive center-block" src="res/images/Picture_Hero.jpg" />
+    <img  class="img-responsive center-block" id="skyline" src="res/images/WhiteSkyline_Hero.png" />
+    <!-- Search View Container -->
 	<div id="search-div">
-		<img id="picture_hero" src="res/images/Picture_Hero.jpg" />
-		<img id="skyline" src="res/images/WhiteSkyline_Hero.png" />
+        <img id="logo" src="res/logos/Logo_Header.png" />
+		
 		<div id="logo-group">
-			<img id ="logo"src="res/logos/Logo_Header.png"/>
+			
 			<h3>YOUR RESOURCE FOR A NEW HOME</h3>
 		</div>
 		<!-- Search bars -->
