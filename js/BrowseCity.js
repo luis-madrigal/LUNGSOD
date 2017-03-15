@@ -7,8 +7,8 @@ $(document).ready(function(){
 		TweenMax.to($(this), 0.3, {
 			onUpdate: function(tl){
 				var tlp = 100 + (tl.progress()*100) / 2;
-				console.log(tlp)
-				TweenMax.set(tl.target, {css: {"-webkit-filter": "brightness(" +tlp+ "%"}});
+				console.log(tl.target[0].children[0])
+				TweenMax.set(tl.target[0].children[0], {css: {"-webkit-filter": "brightness(" +tlp+ "%"}});
 			},
 			onUpdateParams: ["{self}"]
 		});
@@ -18,7 +18,7 @@ $(document).ready(function(){
 		TweenMax.to($(this), 0.3, {
 			onUpdate: function(tl){
 				var tlp = 150 - (tl.progress()*100) / 2;
-				TweenMax.set(tl.target, {css: {"-webkit-filter": "brightness(" +tlp+ "%"}});
+				TweenMax.set(tl.target[0].children[0], {css: {"-webkit-filter": "brightness(" +tlp+ "%"}});
 			},
 			onUpdateParams: ["{self}"]
 		});
@@ -27,7 +27,9 @@ $(document).ready(function(){
 
 function initTiles(tiles, list) {
 	for(var i = 0; i < tiles.length; i++) {
-		var $tile = $("<div>", {"class": "col-lg-4 cityTile", "style": "background-image: url('" +tiles[i].res+ "');"});
+		// var $tile = $("<div>", {"class": "col-lg-4 cityTile", "style": "background-image: url('" +tiles[i].res+ "');"});
+		var $tile = $("<div>", {"class": "col-lg-4 cityTile"});
+		var $image = $("<img>", {"src": tiles[i].res, "alt": "", "class": "cityTileImg"});
 
 		if(i % 3 != 0) {
 			$tile.css("margin-left", "18px");
@@ -52,6 +54,7 @@ function initTiles(tiles, list) {
 			$tagDiv.append($tag);
 		}
 
+		$tile.append($image);
 		$tile.append($city);
 		$tile.append($province);
 		$tile.append($tagDiv);

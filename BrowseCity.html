@@ -10,105 +10,6 @@
 	<link rel = "stylesheet" href = "css/BrowseCityStyles.css">
 
 	<link rel = "stylesheet" href = "res/fonts/fonts.css"></link>
-
-	<style type="text/css">
-		.search-group{   
-			color: #7A7A7A;
-			width: 28%;
-			float: right;
-			border-radius: 0px;
-			margin:0.5% auto;
-		}
-		.search-group .input-group-addon{
-			background: #51BBC8 !important;
-			border:0px;
-		}
-		.search-group .form-control{
-			border-right:0; 
-			box-shadow:0 0 0;
-			border-right: 12px solid;
-			border-image:linear-gradient(to left, rgba(81, 187, 200,0.7), rgba(0, 0, 0, 0)) 1 100%;     
-		}
-		.search-group button{
-			background: #51BBC8 !important;
-			color:white;
-			font-size:16px;
-			height: 100%;
-			border: 0px;
-			padding:0px;
-		}
-		.navbar-default{
-			background-color: rgba(109,167,119,0.7);
-			border-color: rgb(109,167,119);
-			border: 0px;
-			border-radius: 0px;
-			color: white;		
-		}
-		.navbar-default .navbar-brand{
-			width: 100%;
-		}
-		.navbar-default .navbar-brand>img{
-			height: 100%;
-		}
-		.navbar-default .navbar-nav {
-			display: flex;
-		}
-		.navbar-default .navbar-nav>li>a {
-			width:260px;
-			text-align: center;
-			font-family: WorkSans-Light;
-			font-size: 98%;
-			text-align: center;
-			color: white;
-		}
-		.navbar-default .navbar-nav>li>a:hover {
-			background-color: rgba(204, 255, 204,0.7)
-		}
-		.navbar-default .navbar-nav>.active>a{
-			color: white;
-			background-color: rgba(50, 120, 114,0.9);
-		}
-		.navbar-default .navbar-nav>.active>a:focus, 
-		.navbar-default .navbar-nav>.active>a:hover {
-			background-color: rgba(204, 255, 204,0.7)
-		}
-		..gradient{
-			border-width: 3px 3px 3px 0;
-			border-style: solid;
-			-webkit-border-image: 
-			-webkit-gradient(linear, 0 0, 100% 0, from(rgba(204, 255, 204,0.7)), to(rgba(204, 242, 241,0.7))) 1 100%;
-			-webkit-border-image: 
-			-webkit-linear-gradient(left, black, rgba(0, 0, 0, 0)) 1 100%;
-			-moz-border-image:
-			-moz-linear-gradient(left, black, rgba(0, 0, 0, 0)) 1 100%; 
-			-o-border-image:
-			-o-linear-gradient(left, black, rgba(0, 0, 0, 0)) 1 100%;
-			border-image:
-			linear-gradient(to left, rgba(204, 255, 204,0.7), rgba(0, 0, 0, 0)) 1 100%;     
-		}
-		#livabilityDesc{
-			
-		}
-		.livabilityscores{
-			margin-left: 32%;
-			margin-right: 10%;
-			
-		}
-		.migrationhelp{
-			margin-right: 32%;
-			margin-left: 10%;
-
-		}
-		.livabilityscores>h2,
-		.livabilityscores>p{
-			color: white;
-		}
-		.migrationhelp>h2,
-		.migrationhelp>p{
-			color: white;
-		}
-	</style>
-
 </head>
 <body>
 
@@ -149,12 +50,12 @@
 	<!-- MAIN CONTAINER -->
 	<div class="container-fluid">
 		<!--SELECT CITIES-->
-		<div id="selectCities" style="background-image: url('res/CityPic-withOutline.jpg'); background-size: cover; " class="row">
+		<div id="selectCities" class="row">
 			<div id="selectCitiesText" class="row">
 				<p id="selectCitiesHead">
 					Selected Cities
 				</p>
-				<p id="selctCitiesBody">
+				<p id="selectCitiesBody">
 					Browse through the list of selected cities in Lungsod's database, or select your chosen filters to find that perfect place.
 				</p>
 				
@@ -205,58 +106,58 @@
 						  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Alphabetical</a></li>
 						  
 						</div>-->
-						<select id="sortList">
-							<option>sort by:</option>
-							<option>Proximity</option>
-							<option>Island Group</option>
-							<option>Livability Score</option>
-							<option>Alphabetical</option>
-						</select>	
-					</div>
-				</div>
-				<p id = "clearFilter">
-					CLEAR FILTERS
-				</p>
-
-			</div>
-			<!--CITY TILES-->
-			<div id="topTiles" class="row cityTiles">
-				<div class = "container-fluid" id = "topTilesList">
+					<select id="sortList">
+						<option>sort by:</option>
+						<option>Proximity</option>
+						<option>Island Group</option>
+						<option>Livability Score</option>
+						<option>Alphabetical</option>
+					</select>	
 				</div>
 			</div>
-			<!--LIVABILITY DESCRIPTION-->
-			<div id="livabilityDesc" class="row">
-				<div class="col-lg-6">
-					<div class="livabilityscores">
-						<h2>LIVABILITY SCORES</h2>
-						<p>Click here if you want to learn more about 
-							LUNGSOD's Livability Index and the math 
-							behind our grading system for each city.
-							Learn about the eight livability categories, the
-							factors we grade for each, and we calculate
-							the actual scores!</p>
-						</div>
-					</div>
-					<div class="col-lg-6">
-						<div class="migrationhelp">					
-							<h2>MIGRATION HELP</h2>
-							<p>LUNGSOD not only offers you a choice of
-								cities with good opportunities, we also
-								provide you with some contacts for work,
-								housing, and help with moving to get you
-								started on your new life. Simply click here to learn more</p>
-							</div>
-						</div>
-					</div>
-					<!--MORE CITY TILES-->
-					<div id="bottomTiles" class="row cityTiles">
-						<div class = "container-fluid" id = "bottomTilesList">
-						</div>
-					</div>
+			<p id = "clearFilter">
+				CLEAR FILTERS
+			</p>
 
+		</div>
+		<!--CITY TILES-->
+		<div id="topTiles" class="row cityTiles">
+			<div class = "container-fluid" id = "topTilesList">
+			</div>
+		</div>
+		<!--LIVABILITY DESCRIPTION-->
+		<div id="livabilityDesc" class="row">
+			<div class="col-lg-6">
+				<div class="livabilityscores">
+					<h2>LIVABILITY SCORES</h2>
+					<p>Click here if you want to learn more about 
+						LUNGSOD's Livability Index and the math 
+						behind our grading system for each city.
+						Learn about the eight livability categories, the
+						factors we grade for each, and we calculate
+						the actual scores!</p>
 				</div>
-			</body>
-			<script src="utils/lib/TweenMax.min.js"></script>
-			<script src="js/db.js"></script>
-			<script src="js/BrowseCity.js"></script>
-			</html>	
+			</div>
+			<div class="col-lg-6">
+				<div class="migrationhelp">					
+					<h2>MIGRATION HELP</h2>
+					<p>LUNGSOD not only offers you a choice of
+						cities with good opportunities, we also
+						provide you with some contacts for work,
+						housing, and help with moving to get you
+						started on your new life. Simply click here to learn more</p>
+				</div>
+			</div>
+		</div>
+		<!--MORE CITY TILES-->
+		<div id="bottomTiles" class="row cityTiles">
+			<div class = "container-fluid" id = "bottomTilesList">
+			</div>
+		</div>
+
+	</div>
+</body>
+<script src="utils/lib/TweenMax.min.js"></script>
+<script src="js/db.js"></script>
+<script src="js/BrowseCity.js"></script>
+</html>	

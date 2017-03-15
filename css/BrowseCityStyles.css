@@ -1,6 +1,9 @@
 body {
-	margin: 0px;
+	margin: 0px auto;
 	padding: 0px;
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
 }
 
 td{
@@ -8,43 +11,59 @@ td{
 }
 
 .cityTiles{
-
 	background-color:#273848;
 	padding: 20px;
 
 }
 
 .cityTile{
+	position: relative;
 	background-size: cover;
 	width: 32%;
-	height: 302px;
+	/*height: 302px;*/
 	margin: 0 auto;
 	/*-webkit-filter: brightness(100%);*/
 }
 
+.cityTileImg {
+	height: 100%;
+	width: 100%;
+}
+
 .cityName{
+	position: absolute;
+	top: 5px;
+	left: 24px;
 	text-align: left;
-	font-size: 26px;
+	font-size: 1.625em;
 	color: white;
+	font-family: Korolev-Light;
 	display: block;
 }
 
 .cityProvince{
+	position: absolute;
+	top: 35px;
+	left: 24px;
 	text-align: left;
-	font-size: 17px;
+	font-size: 1.0625em;
+	font-family: Korolev-Bold;
 	color: white;
 }
 
 .cityTag{
-	float: right;
-	transform-origin: right bottom;
-	margin-top: 180px;
-	margin-left: 250px;
+	position: absolute;
+	-webkit-transform: translate(180%, -60%); 
+	/*top:220px;
+	left:300px;*/
+	width: 33%;
+	height: 33%;
+	/*display: inline-block;*/
+	/*float: right;*/
 }
 
 .cityTagIcon{
 	position: absolute;
-	display: inline-block;
 }
 
 .filterItem{
@@ -53,36 +72,39 @@ td{
 
 #sortList{
 	margin-top: 77px;
-    width: 190px !important;
+	width: 190px !important;
 	padding-top:-30px !important;
 	color: black;
 }
 
 #topTiles{
 
-	height: 1000px;
+	height: 100%;
 
 }
 
 #bottomTiles{
 
-	height: 683px;
+	height: 100%;
 
 }
 
 #selectCities{
-	height: 460px;
+	height: 100%;
+	padding-bottom: 10%;
 	color: white;
+	background-image: url('../res/CityPic-withOutline.jpg'); 
+	background-size: 100%; 
 }
 
 #selectCitiesHead{
-	font-size: 19pt;
+	font-size: 2vw;
 	margin-top: 40px;
 
 }
 
-#selctCitiesBody{
-	font-size: 14pt;
+#selectCitiesBody{
+	font-size: 0.8vw;
 
 }
 
@@ -108,4 +130,100 @@ td{
 #clearFilter{
 	text-decoration:underline;
 	margin-left: 250px;
+}
+
+.search-group{   
+	color: #7A7A7A;
+	width: 28%;
+	float: right;
+	border-radius: 0px;
+	margin:0.5% auto;
+}
+.search-group .input-group-addon{
+	background: #51BBC8 !important;
+	border:0px;
+}
+.search-group .form-control{
+	border-right:0; 
+	box-shadow:0 0 0;
+	border-right: 12px solid;
+	border-image:linear-gradient(to left, rgba(81, 187, 200,0.7), rgba(0, 0, 0, 0)) 1 100%;     
+}
+.search-group button{
+	background: #51BBC8 !important;
+	color:white;
+	font-size:1em;
+	height: 100%;
+	border: 0px;
+	padding:0px;
+}
+.navbar-default{
+	background-color: rgba(109,167,119,0.7);
+	border-color: rgb(109,167,119);
+	border: 0px;
+	border-radius: 0px;
+	color: white;		
+}
+.navbar-default .navbar-brand{
+	width: 100%;
+}
+.navbar-default .navbar-brand>img{
+	height: 100%;
+}
+.navbar-default .navbar-nav {
+	display: flex;
+}
+.navbar-default .navbar-nav>li>a {
+	width:260px;
+	text-align: center;
+	font-family: WorkSans-Light;
+	font-size: 98%;
+	text-align: center;
+	color: white;
+}
+.navbar-default .navbar-nav>li>a:hover {
+	background-color: rgba(204, 255, 204,0.7)
+}
+.navbar-default .navbar-nav>.active>a{
+	color: white;
+	background-color: rgba(50, 120, 114,0.9);
+}
+.navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a:hover {
+	background-color: rgba(204, 255, 204,0.7)
+}
+..gradient{
+	border-width: 3px 3px 3px 0;
+	border-style: solid;
+	-webkit-border-image: 
+	-webkit-gradient(linear, 0 0, 100% 0, from(rgba(204, 255, 204,0.7)), to(rgba(204, 242, 241,0.7))) 1 100%;
+	-webkit-border-image: 
+	-webkit-linear-gradient(left, black, rgba(0, 0, 0, 0)) 1 100%;
+	-moz-border-image:
+	-moz-linear-gradient(left, black, rgba(0, 0, 0, 0)) 1 100%; 
+	-o-border-image:
+	-o-linear-gradient(left, black, rgba(0, 0, 0, 0)) 1 100%;
+	border-image:
+	linear-gradient(to left, rgba(204, 255, 204,0.7), rgba(0, 0, 0, 0)) 1 100%;     
+}
+#livabilityDesc{
+	
+}
+.livabilityscores{
+	margin-left: 32%;
+	margin-right: 10%;
+	
+}
+.migrationhelp{
+	margin-right: 32%;
+	margin-left: 10%;
+
+}
+.livabilityscores>h2,
+.livabilityscores>p{
+	color: white;
+}
+.migrationhelp>h2,
+.migrationhelp>p{
+	color: white;
 }
