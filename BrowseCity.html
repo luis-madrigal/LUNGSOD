@@ -7,13 +7,14 @@
 	<script src="utils/lib/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
 
 	<link rel = "stylesheet" href = "utils/lib/bootstrap-3.3.6-dist/css/bootstrap.min.css">
+	<link rel = "stylesheet" href = "css/navbar.css">
 	<link rel = "stylesheet" href = "css/BrowseCityStyles.css">
 
 	<link rel = "stylesheet" href = "res/fonts/fonts.css"></link>
 </head>
 <body>
 
-	<nav class="navbar navbar-default navbar-fixed-top">
+	<nav class="navbar navbar-default">
 		<div class="container-fluid">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
@@ -51,84 +52,86 @@
 	<div class="container-fluid">
 		<!--SELECT CITIES-->
 		<div id="selectCities" class="row">
-			<div id="selectCitiesText" class="row">
-				<p id="selectCitiesHead">
-					Selected Cities
-				</p>
-				<p id="selectCitiesBody">
-					Browse through the list of selected cities in Lungsod's database, or select your chosen filters to find that perfect place.
-				</p>
-				
-				<div class="col-lg-9">
-					<p id="filterHead">
-						CATEGORY FILTERS:
+			<div class = "container-fluid">
+				<div id="selectCitiesText" class="row">
+					<p id="selectCitiesHead">
+						Selected Cities
 					</p>
-					<table id="filterChecBoxes">
-						<tr>
-							<td>
-								<input class="filterItem" type="checkbox" name="HOUSING">  HOUSING</input>
-							</td>
-							<td>
-								<input class="filterItem" type="checkbox" name="HEALTH">   HEALTH</input>
-							</td>
-							<td>
-								<input class="filterItem" type="checkbox" name="TRANSPORTATION">   TRANSPORTATION</input>
-							</td>
-							<td>
-								<input class="filterItem" type="checkbox" name="LOCAL_GOVERNMENT">   LOCAL GOVERNMENT</input>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<input class="filterItem" type="checkbox" name="EMPLOYMENT">   EMPLOYMENT</input>
-							</td>
-							<td>
-								<input class="filterItem" type="checkbox" name="EDUCATION">   EDUCATION</input>
-							</td>
-							<td>
-								<input class="filterItem" type="checkbox" name="INFRASTRUCTURE">   INFRASTRUCTURE</input>
-							</td>
-							<td>
-								<input class="filterItem" type="checkbox" name="LEISURE">   LEISURE</input>
-							</td>
-						</tr>
-					</table>
-				</div>
-				
-				<div class="col-lg-3">
-					<!--<div class="dropdown">
-						<button class="btn btn-default dropdown-toggle" type="button" id="sortList" data-toggle="dropdown">sort by
-						<span class="caret"></span></button>
-						<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-						  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Proximity</a></li>
-						  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Island Group</a></li>
-						  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Livability Score</a></li>
-						  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Alphabetical</a></li>
-						  
-						</div>-->
-					<select id="sortList">
-						<option>sort by:</option>
-						<option>Proximity</option>
-						<option>Island Group</option>
-						<option>Livability Score</option>
-						<option>Alphabetical</option>
-					</select>	
+					<p id="selectCitiesBody">
+						Browse through the list of selected cities in Lungsod's database, or select your<br>chosen filters to find that perfect place.
+					</p>
+					
+					<div class="col-lg-9" id = "selectCitiesFilters">
+						<p id="filterHead">
+							CATEGORY FILTERS:
+						</p>
+						<table id="filterCheckBoxes">
+							<tr>
+								<td>
+									<input class="filterItem" type="checkbox" name="HOUSING">  HOUSING</input>
+								</td>
+								<td>
+									<input class="filterItem" type="checkbox" name="HEALTH">   HEALTH</input>
+								</td>
+								<td>
+									<input class="filterItem" type="checkbox" name="TRANSPORTATION">   TRANSPORTATION</input>
+								</td>
+								<td>
+									<input class="filterItem" type="checkbox" name="LOCAL_GOVERNMENT">   LOCAL GOVERNMENT</input>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="filterItem" type="checkbox" name="EMPLOYMENT">   EMPLOYMENT</input>
+								</td>
+								<td>
+									<input class="filterItem" type="checkbox" name="EDUCATION">   EDUCATION</input>
+								</td>
+								<td>
+									<input class="filterItem" type="checkbox" name="INFRASTRUCTURE">   INFRASTRUCTURE</input>
+								</td>
+								<td>
+									<input class="filterItem" type="checkbox" name="LEISURE">   LEISURE</input>
+								</td>
+							</tr>
+						</table>
+						<p id = "clearFilter">
+							CLEAR FILTERS
+						</p>
+					</div>
+					
+					<div class="col-lg-3">
+						<!--<div class="dropdown">
+							<button class="btn btn-default dropdown-toggle" type="button" id="sortList" data-toggle="dropdown">sort by
+							<span class="caret"></span></button>
+							<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+							  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Proximity</a></li>
+							  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Island Group</a></li>
+							  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Livability Score</a></li>
+							  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Alphabetical</a></li>
+							  
+							</div>-->
+						<select id="sortList">
+							<option>Sort by:</option>
+							<option>Proximity</option>
+							<option>Island Group</option>
+							<option>Livability Score</option>
+							<option>Alphabetical</option>
+						</select>	
+					</div>
 				</div>
 			</div>
-			<p id = "clearFilter">
-				CLEAR FILTERS
-			</p>
-
 		</div>
 		<!--CITY TILES-->
-		<div id="topTiles" class="row cityTiles">
+		<div id="topTiles" class="row no-gutter cityTiles">
 			<div class = "container-fluid" id = "topTilesList">
 			</div>
 		</div>
 		<!--LIVABILITY DESCRIPTION-->
-		<div id="livabilityDesc" class="row">
+		<div id="livabilityDesc" class="row no-gutter">
 			<div class="col-lg-6">
-				<div class="livabilityscores">
+				<img class = "livabilityImg" src="res/images/LivabilityTile.jpg">
+				<!-- <div class="livabilityscores">
 					<h2>LIVABILITY SCORES</h2>
 					<p>Click here if you want to learn more about 
 						LUNGSOD's Livability Index and the math 
@@ -136,21 +139,22 @@
 						Learn about the eight livability categories, the
 						factors we grade for each, and we calculate
 						the actual scores!</p>
-				</div>
+				</div> -->
 			</div>
 			<div class="col-lg-6">
-				<div class="migrationhelp">					
+				<img class = "livabilityImg" src="res/images/MigrationTile.jpg">
+				<!-- <div class="migrationhelp">					
 					<h2>MIGRATION HELP</h2>
 					<p>LUNGSOD not only offers you a choice of
 						cities with good opportunities, we also
 						provide you with some contacts for work,
 						housing, and help with moving to get you
 						started on your new life. Simply click here to learn more</p>
-				</div>
+				</div> -->
 			</div>
 		</div>
 		<!--MORE CITY TILES-->
-		<div id="bottomTiles" class="row cityTiles">
+		<div id="bottomTiles" class="row no-gutter cityTiles">
 			<div class = "container-fluid" id = "bottomTilesList">
 			</div>
 		</div>

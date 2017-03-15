@@ -101,45 +101,45 @@ var CITY_TILES_TOP = [
 
 var CITY_TILES_BOTTOM = [
 	{
-		city: "Santa Rosa",
-		province: "Laguna",
+		city: "Batangas",
+		province: "Batangas",
 		score: 7.5,
-		res: "res/City Tiles (15-15)/CityTile_SANTAROSA.jpg",
+		res: "res/City Tiles (15-15)/CityTile_Batangas.jpg",
 		tags: [ICONS.HOUSING, ICONS.EMPLOYMENT]
 	},
 	{
-		city: "Bacolod",
-		province: "Negros Occidental",
+		city: "Puerto Princesa",
+		province: "Palawan",
 		score: 7.5,
-		res: "res/City Tiles (15-15)/CityTile_BACOLOD.jpg",
+		res: "res/City Tiles (15-15)/CityTile_PuertoPrincesa.jpg",
 		tags: [ICONS.INFRASTRUCTURE, ICONS.LOCALGOV]
 	},
 	{
-		city: "Cagayan De Oro",
-		province: "Misamis Oriental",
+		city: "Olongapo",
+		province: "Zambales",
 		score: 7.5,
-		res: "res/City Tiles (15-15)/CityTile_CDO.jpg",
+		res: "res/City Tiles (15-15)/CityTile_Olongapo.jpg",
 		tags: [ICONS.INFRASTRUCTURE, ICONS.TRANSPORTATION, ICONS.EMPLOYMENT]
 	},
 	{
-		city: "Iligan",
-		province: "Lanao Del Norte",
+		city: "Tacloban",
+		province: "Leyte",
 		score: 7.5,
-		res: "res/City Tiles (15-15)/CityTile_ILIGAN.jpg",
+		res: "res/City Tiles (15-15)/CityTile_Tacloban.jpg",
 		tags: [ICONS.INFRASTRUCTURE, ICONS.TRANSPORTATION, ICONS.EMPLOYMENT]
 	},
 	{
-		city: "Iloilo",
-		province: "Cebu",
+		city: "Zamboanga",
+		province: "Zamboanga",
 		score: 7.5,
-		res: "res/City Tiles (15-15)/CityTile_ILOILO.jpg",
+		res: "res/City Tiles (15-15)/CityTile_Zamboanga.jpg",
 		tags: [ICONS.TRANSPORTATION, ICONS.HOUSING]
 	},
 	{
-		city: "Butuan",
-		province: "Caraga",
+		city: "General Santos",
+		province: "South Cotabato",
 		score: 7.5,
-		res: "res/City Tiles (15-15)/CityTile_BUTUAN.jpg",
+		res: "res/City Tiles (15-15)/CityTile_GeneralSantos.jpg",
 		tags: [ICONS.INFRASTRUCTURE, ICONS.HOUSING, ICONS.HEALTH]
 	}
 ];
