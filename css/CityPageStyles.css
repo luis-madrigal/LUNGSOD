@@ -1,0 +1,115 @@
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+.carousel-indicators li { 
+	visibility: hidden; 
+}
+
+#cityCarousel{
+	position: relative;
+	margin-top: -0.1%;
+}
+
+#carouselCaption{
+	position: absolute;
+	text-align: center;
+	-webkit-transform: translate(0%, -800%); 
+	color: white;
+	width: 100%;
+	/*height: 100%;*/
+}
+
+.captionHeader{
+	font-family: Korolev-Heavy;
+	font-size: 3vw;
+	margin-top: -1%;	
+}
+
+.breadCrumbs{
+	font-family: WorkSans-Light;
+	font-size: 1vw;
+}
+
+.breadCrumbs > .breadCrumbsPage{
+	font-family: WorkSans-Medium;
+	font-size: 1vw;
+}
+
+.carouselImages{
+	width: 100%;
+}
+
+#aboutHeader{
+	color: #2C98DA;
+	font-family: Korolev-Light;
+	font-size: 4vw;
+	width: 100%;
+	text-align: center;	
+	margin-top: 2%;
+}
+
+.aboutText{
+	color: #2C98DA;
+	font-family: WorkSans-Regular;
+	font-size: 1vw;
+	width:50%;
+}
+
+#categoryWheel{
+	background-color: #183449;
+	/*width: 100%;*/
+	height: 100%;
+}
+
+.wheel{
+	position: relative;
+}
+
+.wheelImage{
+	margin: 0 auto;
+	margin-top: 20%;
+	margin-bottom: 20%;
+	width: 50%;
+}
+
+.wheelTag{
+	position: absolute;
+	width: 15%;
+}
+
+.wheelTagText{
+	position: absolute;
+	color:white;
+}
+
+.wheelTagScore{
+	z-index: 100;
+	position: absolute;
+	color:black;
+	font-size: 3vw;
+	width: 8.2%;
+	height: 10.2%;
+}
+
+.wheelText{
+	padding: 15%;
+	margin-top: 8%;
+	color: white;
+	width: 100%;
+	vertical-align: middle;
+}
+
+#catWheelHeader{
+	font-size: 2.3vw;
+	font-family: WorkSans-Light;
+}
+
+#catWheelText{
+	font-size: 1.3vw;
+	font-family: WorkSans-Light;
+}

@@ -1,3 +1,8 @@
+var SORT_ENUMS = {
+	ALPHABETICAL: "alphabetical",
+	PROXIMITY: "proximity"
+}
+
 $(document).ready(function(){
 
 	initTiles(CITY_TILES_TOP, $("#topTilesList"));
@@ -22,23 +27,35 @@ $(document).ready(function(){
 			onUpdateParams: ["{self}"]
 		});
 	});
+
+	$(".cityTile").click(function() {
+		var dataId = $(this).attr("data-id");
+		var dest = window.location.href.split("/");
+
+		dest[dest.length-1] = "CityPage.html?city=" + dataId;
+		dest = dest.join("/");
+
+		document.location.href = dest;
+	});
 });
 
 function initTiles(tiles, list) {
 	for(var i = 0; i < tiles.length; i++) {
 		// var $tile = $("<div>", {"class": "col-lg-4 cityTile", "style": "background-image: url('" +tiles[i].res+ "');"});
 		if(i % 3 == 0) {
-			var $row = $("<div>", {"class": "row no-gutter"});
+			var $row = $("<div>", {"class": "row no-gutter cityTileRow"});
 		}
 
-		var $tile = $("<div>", {"class": "col-lg-4 cityTile"});
+		var dataId = tiles[i].city.name.replace(/ /g, "_").toUpperCase();
+
+		var $tile = $("<div>", {"class": "col-lg-4 cityTile", "data-id": dataId});
 		var $image = $("<img>", {"src": tiles[i].res, "alt": "", "class": "cityTileImg"});
 		var $city = $("<span>", {"class": "cityName"});
-		var city = (tiles[i].city.indexOf(" ") >= 0)? "":" CITY";
-		$city.append(tiles[i].city.toUpperCase() + city);
+		var city = (tiles[i].city.name.indexOf(" ") >= 0)? "":" CITY";
+		$city.append(tiles[i].city.name.toUpperCase() + city);
 
 		var $province = $("<span>", {"class": "cityProvince"});
-		$province.append("\n"+tiles[i].province.toUpperCase());
+		$province.append("\n"+tiles[i].city.province.toUpperCase());
 
 		var $tagDiv = $("<div>", {"class": "cityTags"});
 

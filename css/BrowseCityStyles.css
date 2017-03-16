@@ -1,37 +1,25 @@
-body {
-	margin: 0px auto;
-	padding: 0px;
-	height: 100%;
-	width: 100%;
-}
-
 td{
 	padding: 1%;
 }
 
-.no-gutter > [class*='col-'] {
-    padding-right:0;
-    padding-left:0;
-}
-
 .cityTiles{
 	background-color:#273848;
-	/*margin: 0px auto;*/
-	
-	padding: 1.5%;
+	padding: 2%;
 }
 
 .cityTile{
 	position: relative;
 	width: 32%;
-	/*height: 302px;*/
-	/*margin: 0 auto;*/
-	/*-webkit-filter: brightness(100%);*/
+	cursor: pointer;
 }
 
 .cityTileImg {
 	height: 100%;
 	width: 100%;
+}
+
+.cityTileRow{
+	margin-left:0.1%;
 }
 
 .cityName{
@@ -90,7 +78,7 @@ td{
 	background-size: cover; 
 	background-repeat: no-repeat;
 	height: 100%;
-	margin-top: -3.5%;
+	margin-top: -3.7%;
 	padding: 10%;
 	color: white;
 }
@@ -130,10 +118,6 @@ td{
 
 }
 
-/*#filterHead{
-	padding-top:24px;
-}*/
-
 #clearFilter{
 	text-decoration:underline;
 	margin-top: 1%;
@@ -141,6 +125,7 @@ td{
 }
 
 #livabilityDesc{
+	padding: 0px;	
 }
 
 .livabilityImg{
