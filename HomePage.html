@@ -12,8 +12,15 @@
 	<link rel="stylesheet" href="res/fonts/fonts.css"></link>
 	<style type="text/css">
 
+        /*Override bootstrap*/
+		.container-fluid{
+			padding:0;
+		}
+		.row{
+			margin:0;
+		}
+
 		.navbar-default {
-			/*return position absolute with new picture*/
 			position: absolute;
 			top: 0;
 			left: 0;
@@ -43,12 +50,12 @@
 				}
 
 					.navbar-default .navbar-nav > li > a {
-						padding-top: 22.5px;
-						padding-bottom: 22.5px;
+						padding-top: 4%;
+						padding-bottom: 4%;
 						text-align:center;
 						height: 100%;
 						font-family: WorkSans-Light;
-						font-size: 20pt;
+						font-size: 1.39vw;
 						color: white;
 					}
 
@@ -76,15 +83,6 @@
 			border-image: linear-gradient(to left, rgba(204, 255, 204,0.7), rgba(0, 0, 0, 0)) 1 100%;
 		}
 
-		#search-div {
-			/*background-image: url('res/images/WhiteSkyline_Hero.png'), url('res/images/Picture_Hero.jpg');
-			background-size: contain;
-			background-repeat: no-repeat;
-			background-position: 0% 32.5%, 0% 0%;*/
-			width: 100%;
-			/*padding-top: 66.64%;*/   
-		}
-
 		#picture_hero {
 			width: 100%;
 			position: relative;
@@ -99,15 +97,9 @@
 			width: 100%;
 		}
 
-			#logo-group > #logo {
-				width: 33%;
-				display: block;
-				margin-left: auto;
-				margin-right: auto;
-			}
-
-			#logo-group > h3 {
-				font-size:18pt; 
+			#logo-group .subtext{
+				padding:2%;
+				font-size:1.5vw; 
 				width:100%;
 				color:white;
 				text-align: center;
@@ -118,13 +110,15 @@
 			}
 
 		#search-bar-group{
-			position: relative;
-			top:-175px;
+			position: absolute;
+			top:0;
+			margin-top:43.5%;
 		}
 		.search-group{   
 			color: #7A7A7A;
-			width: 42%;
 			margin:0.5% auto;
+			padding-left:5%;
+			padding-right:5%;
 		}
 			.search-group .input-group-addon {
 				background: #51BBC8 !important;
@@ -141,6 +135,8 @@
 			}
 
 		.search-group .form-control{
+			font-size:1.3vw;
+			height:100%;
 			border-radius: 0px;
 			border-right:0; 
 			box-shadow:0 0 0;
@@ -150,17 +146,121 @@
 		.search-group button{
 			background: #51BBC8 !important;
 			color:white;
-			font-size:20px;
+			font-size:1.3vw;
 			height: 100%;
 			border: 0px;
 			padding:0px;
 		}
 
+		#about-1{
+			background: url("res/images/BlueSkyline_Section1.png")no-repeat;
+			background-color:white;
+			background-position: 0% 75%; 
+			background-size: contain;
+			padding-top:6.5%;
+			padding-bottom: 7.075%;
+		}
+
+		#about-2 {
+			background: url("res/images/Picture_section1.jpg")no-repeat;
+			background-size: 100% 100%;
+			background-position: center;
+			padding-top:5.714%;
+			padding-bottom: 5.714%;
+			height: 100%;
+			position: relative;
+		}
+
+		.about-text-1{
+			color: #2CA0E2;
+			font-family:WorkSans-Light;
+			font-size:2.55vw;
+			text-align:center;
+		}
+			.about-text-1 > b{
+				color: #2CA0E2;
+				font-family:WorkSans-medium;
+				font-size:2.36vw;
+				text-align:center;
+			}
+
+		.about-text-2{
+			color: white;
+			font-family:WorkSans-Regular;
+            /*font-size:1.7vw;*/
+			font-size:1.7vw;
+			text-align:left;
+		}
+
+		.category-div{
+			padding-top:6.4375%;
+			padding-bottom:6.182%;
+			position:relative;
+			background-color: white;
+		}
+
+		.rectangle{
+			position:absolute;
+			top:0;
+			left:18%;
+			z-index: 1;
+			width: 17.5%;
+			height: 4%;
+			background-color: #2CA0E2;
+		}
 		
+		#category-text-1{
+			color: #2CA0E2;
+			font-size:3.45vw;
+			text-align:center;
+            font-family:WorkSans-Light;
+		}
+
+        #category-text-2{
+			color: #2CA0E2;
+			font-size:1.81vw;
+			text-align:left;
+            font-family:WorkSans-Regular;
+		}
+
+        .category-icon-group{
+            display:inline-flex;
+            padding-left: 7%;
+            padding-right: 7%;
+            padding-top: 2%;
+            padding-bottom: 2%;
+        }
+
+        .category-icon-div {
+            text-align: center;   
+        }
+        
+        .category-icon-div > p{
+            color: #2CA0E2;
+            font-family:WorkSans-Regular;
+            font-size:1vw;
+        }
+
+		.category-icon{
+            width: 94%;
+		}
+
+        #lets-begin {
+			background: url("res/images/WhiteSkyline_LetsBegin.png"), url("res/images/Picture_letsbegin.jpg")no-repeat;
+			background-size: 100% 100%;
+			background-position: center;
+			padding-top:5.714%;
+			padding-bottom: 5.714%;
+			height: 100%;
+			position: relative;
+		}
+        
+
 	</style>
 
 </head>
 <body style="background-color: black">
+	<!-- First part -->
 	<nav class="navbar navbar-default navbar-static-top" id="home-nav">
 		<div class="navbar-inner">
 			<!-- Brand and toggle get grouped for better mobile display -->
@@ -184,36 +284,141 @@
 			</div>
 		</div>
 	</nav>
-	
 	<img class="img-responsive center-block" id="picture_hero" src="res/images/Picture_Hero.jpg" />
-    <!-- Search View Container -->
-	<div id="search-div">
-        
-		
+	<div id="container-fluid">
 		<div id="logo-group">
-			<img id="logo" src="res/logos/Logo_Header.png" />
-			<h3>YOUR RESOURCE FOR A NEW HOME</h3>
+			<div class="row">
+				<div class="col-xs-4 col-sm-4 col-md-4"></div>
+				<div class="col-xs-4 col-sm-4 col-md-4">
+					<img id="logo" class="img-responsive center-block" src="res/logos/Logo_Header.png" />
+					<div class="center-block subtext">YOUR RESOURCE FOR A NEW HOME</div>
+				</div>
+				<div class="col-xs-4 col-sm-4 col-md-4"></div>
+			</div>
 		</div>
 		<!-- Search bars -->
 		<div id="search-bar-group">
-			<div id="citysearch" class="input-group search-group">
-				<input type="text" class="form-control" placeholder="Search for a city...">
-				<span class="input-group-addon">
-					<button type="submit">
-						<span class="glyphicon glyphicon-search"></span>
-					</button>
-				</span>
+			<div class="row">
+				<div class="col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3">
+					<div class="input-group search-group">
+						<input type="text" class="form-control" placeholder="Search for a city...">
+						<span class="input-group-addon">
+							<button type="submit">
+								<span class="glyphicon glyphicon-search"></span>
+							</button>
+						</span>
+					</div>
+				</div>
 			</div>
-			<div id="locationsearch" class="input-group search-group">
-				<input type="text" class="form-control" placeholder="Input your location...">
-				<span class="input-group-addon">
-					<button type="submit">
-						<span class="glyphicon glyphicon-search"></span>
-					</button>
-				</span>
+			<div class="row">
+				<div class="col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3">
+					<div class="input-group search-group">
+						<input type="text" class="form-control" placeholder="Input your location...">
+						<span class="input-group-addon">
+							<button type="submit">
+								<span class="glyphicon glyphicon-search"></span>
+							</button>
+						</span>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
+	<!-- End of first part -->
+	<!-- Second part -->
+	<div class="container-fluid">
+		<div class="container-fluid" id="about-1">
+			<div class="row">
+				<!--<div class="col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 about-text-1">-->
+				<div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 about-text-1">
+					<b>LUNGSOD</b> is a database that brings you<br />
+					the most livable cities in the Philippines,<br />
+					<b>withhout the congestion</b> of Metro Manila,<br />
+					Metro Cebu, or Metro Davao.                   
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid" id="about-2">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-2 about-text-2">
+					LUNGSOD was born out of the discovery that not<br />
+					many Filipinos are aware of cities around them<br />
+					that have developed over the years. These cities<br />
+					have developed so much so that in fact, they are<br />
+					on the same level as Metro Manila in terms of<br />
+					opportunities, but are more affordable and<br />
+					spacious due to the lower populations.
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<!-- End of second part -->
+	<!-- Third part -->
+	<div class="container-fluid category-div">
+		<div class="rectangle"></div>
+		<div class="row">
+			<div id="category-text-1" class="col-md-12">
+				The index is a system that rates a city's<br />
+				livability according to eight categories:
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+                <div class="category-icon-group">
+                    <div class="category-icon-div">
+                        <img class="category-icon" src="res/icons/Employment.png" />
+                        <p>Employment</p>
+                    </div>
+                    <div class="category-icon-div">
+                        <img class="category-icon" src="res/icons/Housing.png" />
+                        <p>Housing</p>
+                    </div>
+                    <div class="category-icon-div">
+                        <img class="category-icon" src="res/icons/Transportation.png" />
+                        <p>Transportation</p>
+                    </div>
+                    <div class="category-icon-div">
+                        <img class="category-icon" src="res/icons/Health.png" />
+                        <p>Health</p>
+                    </div>
+                    <div class="category-icon-div">
+                        <img class="category-icon" src="res/icons/Infrastructure.png" />
+                        <p>Infrastructure</p>
+                    </div>
+                    <div class="category-icon-div">
+                        <img class="category-icon" src="res/icons/Education.png" />
+                        <p>Education</p>
+                    </div>
+                    <div class="category-icon-div">
+                        <img class="category-icon" src="res/icons/Local Gov.png" />
+                        <p>Local Government</p>
+                    </div>
+                    <div class="category-icon-div">
+                        <img class="category-icon" src="res/icons/Leisure.png" />
+                        <p>Leisure</p>
+                    </div>         
+                </div>
+			</div>
+		</div>
+        <div class="row">
+            <div id="category-text-2" class="col-md-8 col-md-offset-2">
+                These categories are also individually graded by<br />
+                assessing the quality of these factors in each<br />
+                city, and assigning them a grade of low, medium,<br />
+                or high. We've even taken the liberty to show you<br />
+                a few examples of the best each category has to<br />
+                offer in a city! This means we show you the best<br />
+                schools, hospitals, companies, and more.
+            </div>
+        </div>
+	</div>
+	<!-- End of third part -->
+    <!-- Fourth part -->
+    <div id="lets-begin" class="container-fluid">
+        
+    </div>
+    <!-- End of fourth part -->
 </body>
 <script src="utils/lib/TweenMax.min.js"></script>
 <script src="js/db.js"></script>
