@@ -8,258 +8,10 @@
 	<script src="utils/lib/jquery.min.js"></script>
 	<script src="utils/lib/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="utils/lib/bootstrap-3.3.6-dist/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/BrowseCityStyles.css">
-	<link rel="stylesheet" href="res/fonts/fonts.css"></link>
-	<style type="text/css">
-
-        /*Override bootstrap*/
-		.container-fluid{
-			padding:0;
-		}
-		.row{
-			margin:0;
-		}
-
-		.navbar-default {
-			position: absolute;
-			top: 0;
-			left: 0;
-			right: 0;
-			width: 100%;
-			margin: 0;
-			background-color: rgba(109,167,119,0.7);
-			border-color: rgb(109,167,119);
-			border: 0px;
-			border-radius: 0px;
-			color: white;
-		}
-
-			.navbar-default .navbar-nav {
-				width: 100%;
-				display: flex;
-				margin: 0 auto;
-				padding: 0;
-				list-style: none;
-				align-items: center;
-				justify-content: center;
-			}
-				.navbar-default .navbar-nav > li {
-
-					display: inline-block;
-					width: 33%;
-				}
-
-					.navbar-default .navbar-nav > li > a {
-						padding-top: 4%;
-						padding-bottom: 4%;
-						text-align:center;
-						height: 100%;
-						font-family: WorkSans-Light;
-						font-size: 1.39vw;
-						color: white;
-					}
-
-					.navbar-default .navbar-nav > li > a:hover {
-						background-color: rgba(204, 255, 204,0.7);
-					}
-
-				.navbar-default .navbar-nav > .active > a {
-					color: white;
-					background-color: rgba(50, 120, 114,0.9);
-				}
-
-					.navbar-default .navbar-nav > .active > a:focus,
-					.navbar-default .navbar-nav > .active > a:hover {
-						background-color: rgba(204, 255, 204,0.7);
-					}
-
-		..gradient {
-			border-width: 3px 3px 3px 0;
-			border-style: solid;
-			-webkit-border-image: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(204, 255, 204,0.7)), to(rgba(204, 242, 241,0.7))) 1 100%;
-			-webkit-border-image: -webkit-linear-gradient(left, black, rgba(0, 0, 0, 0)) 1 100%;
-			-moz-border-image: -moz-linear-gradient(left, black, rgba(0, 0, 0, 0)) 1 100%;
-			-o-border-image: -o-linear-gradient(left, black, rgba(0, 0, 0, 0)) 1 100%;
-			border-image: linear-gradient(to left, rgba(204, 255, 204,0.7), rgba(0, 0, 0, 0)) 1 100%;
-		}
-
-		#picture_hero {
-			width: 100%;
-			position: relative;
-			top: 0;
-			left: 0;
-		}
-
-		#logo-group{
-			position:absolute;
-			margin: auto;
-			top:18%;
-			width: 100%;
-		}
-
-			#logo-group .subtext{
-				padding:2%;
-				font-size:1.5vw; 
-				width:100%;
-				color:white;
-				text-align: center;
-				display: block;
-				font-family: WorkSans-Light;
-				margin-left: auto;
-				margin-right: auto;
-			}
-
-		#search-bar-group{
-			position: absolute;
-			top:0;
-			margin-top:43.5%;
-		}
-		.search-group{   
-			color: #7A7A7A;
-			margin:0.5% auto;
-			padding-left:5%;
-			padding-right:5%;
-		}
-			.search-group .input-group-addon {
-				background: #51BBC8 !important;
-				border: 0px;
-				border-radius: 0px;
-				font-family: WorkSans-Light;
-				
-			}
-			.input-group-addon{
-				padding-top: 4px;
-				padding-right: 8px;
-				padding-bottom: 4px;
-				padding-left: 8px;
-			}
-
-		.search-group .form-control{
-			font-size:1.3vw;
-			height:100%;
-			border-radius: 0px;
-			border-right:0; 
-			box-shadow:0 0 0;
-			border-right: 48px solid;
-			border-image:linear-gradient(to left, rgba(81, 187, 200,0.7), rgba(0, 0, 0, 0)) 1 100%;     
-		}
-		.search-group button{
-			background: #51BBC8 !important;
-			color:white;
-			font-size:1.3vw;
-			height: 100%;
-			border: 0px;
-			padding:0px;
-		}
-
-		#about-1{
-			background: url("res/images/BlueSkyline_Section1.png")no-repeat;
-			background-color:white;
-			background-position: 0% 75%; 
-			background-size: contain;
-			padding-top:6.5%;
-			padding-bottom: 7.075%;
-		}
-
-		#about-2 {
-			background: url("res/images/Picture_section1.jpg")no-repeat;
-			background-size: 100% 100%;
-			background-position: center;
-			padding-top:5.714%;
-			padding-bottom: 5.714%;
-			height: 100%;
-			position: relative;
-		}
-
-		.about-text-1{
-			color: #2CA0E2;
-			font-family:WorkSans-Light;
-			font-size:2.55vw;
-			text-align:center;
-		}
-			.about-text-1 > b{
-				color: #2CA0E2;
-				font-family:WorkSans-medium;
-				font-size:2.36vw;
-				text-align:center;
-			}
-
-		.about-text-2{
-			color: white;
-			font-family:WorkSans-Regular;
-            /*font-size:1.7vw;*/
-			font-size:1.7vw;
-			text-align:left;
-		}
-
-		.category-div{
-			padding-top:6.4375%;
-			padding-bottom:6.182%;
-			position:relative;
-			background-color: white;
-		}
-
-		.rectangle{
-			position:absolute;
-			top:0;
-			left:18%;
-			z-index: 1;
-			width: 17.5%;
-			height: 4%;
-			background-color: #2CA0E2;
-		}
-		
-		#category-text-1{
-			color: #2CA0E2;
-			font-size:3.45vw;
-			text-align:center;
-            font-family:WorkSans-Light;
-		}
-
-        #category-text-2{
-			color: #2CA0E2;
-			font-size:1.81vw;
-			text-align:left;
-            font-family:WorkSans-Regular;
-		}
-
-        .category-icon-group{
-            display:inline-flex;
-            padding-left: 7%;
-            padding-right: 7%;
-            padding-top: 2%;
-            padding-bottom: 2%;
-        }
-
-        .category-icon-div {
-            text-align: center;   
-        }
-        
-        .category-icon-div > p{
-            color: #2CA0E2;
-            font-family:WorkSans-Regular;
-            font-size:1vw;
-        }
-
-		.category-icon{
-            width: 94%;
-		}
-
-        #lets-begin {
-			background: url("res/images/WhiteSkyline_LetsBegin.png"), url("res/images/Picture_letsbegin.jpg")no-repeat;
-			background-size: 100% 100%;
-			background-position: center;
-			padding-top:5.714%;
-			padding-bottom: 5.714%;
-			height: 100%;
-			position: relative;
-		}
-        
-
-	</style>
-
+	<link rel="stylesheet" href="css/HomePageStyles.css">
+	<link rel="stylesheet" href="res/fonts/fonts.css">
 </head>
-<body style="background-color: black">
+<body>
 	<!-- First part -->
 	<nav class="navbar navbar-default navbar-static-top" id="home-nav">
 		<div class="navbar-inner">
@@ -329,12 +81,11 @@
 	<div class="container-fluid">
 		<div class="container-fluid" id="about-1">
 			<div class="row">
-				<!--<div class="col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 about-text-1">-->
 				<div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 about-text-1">
 					<b>LUNGSOD</b> is a database that brings you<br />
 					the most livable cities in the Philippines,<br />
 					<b>withhout the congestion</b> of Metro Manila,<br />
-					Metro Cebu, or Metro Davao.                   
+					Metro Cebu, or Metro Davao.
 				</div>
 			</div>
 		</div>
@@ -351,7 +102,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 	</div>
 	<!-- End of second part -->
 	<!-- Third part -->
@@ -365,60 +116,299 @@
 		</div>
 		<div class="row">
 			<div class="col-md-12">
-                <div class="category-icon-group">
-                    <div class="category-icon-div">
-                        <img class="category-icon" src="res/icons/Employment.png" />
-                        <p>Employment</p>
-                    </div>
-                    <div class="category-icon-div">
-                        <img class="category-icon" src="res/icons/Housing.png" />
-                        <p>Housing</p>
-                    </div>
-                    <div class="category-icon-div">
-                        <img class="category-icon" src="res/icons/Transportation.png" />
-                        <p>Transportation</p>
-                    </div>
-                    <div class="category-icon-div">
-                        <img class="category-icon" src="res/icons/Health.png" />
-                        <p>Health</p>
-                    </div>
-                    <div class="category-icon-div">
-                        <img class="category-icon" src="res/icons/Infrastructure.png" />
-                        <p>Infrastructure</p>
-                    </div>
-                    <div class="category-icon-div">
-                        <img class="category-icon" src="res/icons/Education.png" />
-                        <p>Education</p>
-                    </div>
-                    <div class="category-icon-div">
-                        <img class="category-icon" src="res/icons/Local Gov.png" />
-                        <p>Local Government</p>
-                    </div>
-                    <div class="category-icon-div">
-                        <img class="category-icon" src="res/icons/Leisure.png" />
-                        <p>Leisure</p>
-                    </div>         
-                </div>
+				<div class="category-icon-group">
+					<div class="category-icon-div">
+						<img class="category-icon" src="res/icons/Employment.png" />
+						<p>Employment</p>
+					</div>
+					<div class="category-icon-div">
+						<img class="category-icon" src="res/icons/Housing.png" />
+						<p>Housing</p>
+					</div>
+					<div class="category-icon-div">
+						<img class="category-icon" src="res/icons/Transportation.png" />
+						<p>Transportation</p>
+					</div>
+					<div class="category-icon-div">
+						<img class="category-icon" src="res/icons/Health.png" />
+						<p>Health</p>
+					</div>
+					<div class="category-icon-div">
+						<img class="category-icon" src="res/icons/Infrastructure.png" />
+						<p>Infrastructure</p>
+					</div>
+					<div class="category-icon-div">
+						<img class="category-icon" src="res/icons/Education.png" />
+						<p>Education</p>
+					</div>
+					<div class="category-icon-div">
+						<img class="category-icon" src="res/icons/Local Gov.png" />
+						<p>Local Government</p>
+					</div>
+					<div class="category-icon-div">
+						<img class="category-icon" src="res/icons/Leisure.png" />
+						<p>Leisure</p>
+					</div>
+				</div>
 			</div>
 		</div>
-        <div class="row">
-            <div id="category-text-2" class="col-md-8 col-md-offset-2">
-                These categories are also individually graded by<br />
-                assessing the quality of these factors in each<br />
-                city, and assigning them a grade of low, medium,<br />
-                or high. We've even taken the liberty to show you<br />
-                a few examples of the best each category has to<br />
-                offer in a city! This means we show you the best<br />
-                schools, hospitals, companies, and more.
-            </div>
-        </div>
+		<div class="row">
+			<div id="category-text-2" class="col-md-8 col-md-offset-2">
+				These categories are also individually graded by<br />
+				assessing the quality of these factors in each<br />
+				city, and assigning them a grade of low, medium,<br />
+				or high. We've even taken the liberty to show you<br />
+				a few examples of the best each category has to<br />
+				offer in a city! This means we show you the best<br />
+				schools, hospitals, companies, and more.
+			</div>
+		</div>
 	</div>
 	<!-- End of third part -->
-    <!-- Fourth part -->
-    <div id="lets-begin" class="container-fluid">
-        
+	<!-- Fourth part -->
+	<div id="lets-begin" class="container-fluid">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3 begin-text-1">
+				Let's Begin the search!
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3 begin-text-2">
+				Let's begin your search for a new home by<br />
+				entering your current location, and we'll direct<br />
+				you to the best cities near you!
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<div class="input-group search-group begin-search">
+					<input type="text" class="form-control" placeholder="Input your location...">
+					<span class="input-group-addon">
+						<button type="submit">
+							<span class="glyphicon glyphicon-search"></span>
+						</button>
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3 begin-text-2">
+				Or if you would prefer, click on the button<br />
+				below to browse through our database of the<br />
+				Philippines' most livable cities
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<button type="button" class="btn btn-begin">Browse Cities</button>
+			</div>
+		</div>
+		<img class="img-responsive begin-skyline" src="res/images/WhiteSkyline_LetsBegin.png" />
+	</div>
+	<!-- End of fourth part -->
+	<!-- Fifth part -->
+	<div id="A-cities" class="container-fluid">
+		<div class="row">
+			<div class="col-md-9 col-md-offset-2">
+				<div class="row A-cities-title-1">
+					A+ Cities
+				</div>
+				<div class="row A-cities-text-1">
+					Are you feeling a litte overwhelmed with all these amazing<br />
+					cities to choose from? Well, here we've provided you with<br />
+					a few suggestions to help you out.
+				</div>
+			</div>
+		</div>
+		<!-- Employment -->
+		<div class="row">
+			<div class="col-md-10 col-md-offset-2">
+				<div class="row">
+					<!-- Decription -->
+					<div class="col-md-7" style="padding-left: 0px;">
+						<div class="row A-cities-title-2">
+							Best in employment oppotunities
+						</div>
+						<div class="row A-cities-text-2">
+							A list of cities that have a great quality and availability<br />
+							of fantastic job opportunities.
+						</div>
+					</div>
+					<!-- Icon -->
+					<div class="col-md-3 A-cities-icon">
+						<img class="img-responsive" src="res/icons/Employment.png" />
+					</div>
+				</div>
+			</div>
+			<!-- City Tiles -->
+			<br />
+		</div>
+		<div class="row city-tiles-group">
+			<div class="col-md-4 city-tiles">
+				<div class="city-tiles-text-group">
+					<h3>Iloilo City</h3>
+					<h4>Iloilo</h4>
+				</div>
+				<img class="img-responsive" src="res/City Tiles (15-15)/CityTile_ILOILO.jpg" />
+				<div class="scoreCircle">8.7</div>
+			</div>
+			<div class="col-md-4 city-tiles">
+				<div class="city-tiles-text-group">
+					<h3>Bacolod City</h3>
+					<h4>Negros Occidental</h4>
+				</div>
+				<div class="col-md-3">
+
+				</div>
+				<img class="img-responsive" src="res/City Tiles (15-15)/CityTile_BACOLOD.jpg" />
+				<div class="scoreCircle">8.2</div>
+			</div>
+			<div class="col-md-4 city-tiles">
+				<div class="city-tiles-text-group">
+					<h3>Santa Rosa</h3>
+					<h4>Laguna</h4>
+				</div>
+				<img class="img-responsive" src="res/City Tiles (15-15)/CityTile_SANTAROSA.jpg" />
+				<div class="scoreCircle">8.3</div>
+			</div>
+
+			<a class="left carousel-control" href="#" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+			</a>
+			<a class="right carousel-control" href="#" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+			</a>
+		</div>
+		<!-- Housing -->
+		<div class="row">
+			<div class="col-md-10 col-md-offset-2">
+				<div class="row">
+					<!-- Decription -->
+					<div class="col-md-7" style="padding-left: 0px;">
+						<div class="row A-cities-title-2">
+							Best in housing
+						</div>
+						<div class="row A-cities-text-2">
+							A list of cities with plenty of available property that are<br />
+							both of good quality and affordable.
+						</div>
+					</div>
+					<!-- Icon -->
+					<div class="col-md-3 A-cities-icon">
+						<img class="img-responsive" src="res/icons/Housing.png" />
+					</div>
+				</div>
+			</div>
+			<!-- City Tiles -->
+			<br />
+		</div>
+		<div class="row city-tiles-group">
+			<div class="col-md-4 city-tiles">
+				<div class="city-tiles-text-group">
+					<h3>Dumagete City</h3>
+					<h4>Negros Oriental</h4>
+				</div>
+				<img class="img-responsive" src="res/City Tiles (15-15)/CityTile_DUMAGUETE.jpg" />
+				<div class="scoreCircle">9.5</div>
+			</div>
+			<div class="col-md-4 city-tiles">
+				<div class="city-tiles-text-group">
+					<h3>Bacolod City</h3>
+					<h4>Negros Occidental</h4>
+				</div>
+				<img class="img-responsive" src="res/City Tiles (15-15)/CityTile_BACOLOD.jpg" />
+				<div class="scoreCircle">9.2</div>
+			</div>
+			<div class="col-md-4 city-tiles">
+				<div class="city-tiles-text-group">
+					<h3>Tarlac City</h3>
+					<h4>Tarlac</h4>
+				</div>
+				<img class="img-responsive" src="res/City Tiles (15-15)/CityTile_TARLAC.jpg" />
+				<div class="scoreCircle">9.1</div>
+			</div>
+
+			<a class="left carousel-control" href="#" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+			</a>
+			<a class="right carousel-control" href="#" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+			</a>
+		</div>
+		<!-- Education -->
+		<div class="row">
+			<div class="col-md-10 col-md-offset-2">
+				<div class="row">
+					<!-- Decription -->
+					<div class="col-md-7" style="padding-left: 0px;">
+						<div class="row A-cities-title-2">
+							Best in Education
+						</div>
+						<div class="row A-cities-text-2">
+							A list of cities with plenty of quality schools so you<br />
+							can provide your kids with nothing but the best.
+						</div>
+					</div>
+					<!-- Icon -->
+					<div class="col-md-3 A-cities-icon">
+						<img class="img-responsive" src="res/icons/Education.png" />
+					</div>
+				</div>
+			</div>
+			<!-- City Tiles -->
+			<br />
+		</div>
+		<div class="row city-tiles-group">
+			<div class="col-md-4 city-tiles">
+				<div class="city-tiles-text-group">
+					<h3>Dumagete City</h3>
+					<h4>Negros Oriental</h4>
+				</div>
+				<img class="img-responsive" src="res/City Tiles (15-15)/CityTile_DUMAGUETE.jpg" />
+				<div class="scoreCircle">8.8</div>
+			</div>
+			<div class="col-md-4 city-tiles">
+				<div class="city-tiles-text-group">
+					<h3>Bacolod City</h3>
+					<h4>Negros Occidental</h4>
+				</div>
+				<img class="img-responsive" src="res/City Tiles (15-15)/CityTile_BACOLOD.jpg" />
+				<div class="scoreCircle">8.4</div>
+			</div>
+			<div class="col-md-4 city-tiles">
+				<div class="city-tiles-text-group">
+					<h3>Cagayan De Oro</h3>
+					<h4>Misamis Oriental</h4>
+				</div>
+				<img class="img-responsive" src="res/City Tiles (15-15)/CityTile_TARLAC.jpg" />
+				<div class="scoreCircle">8.8</div>
+			</div>
+
+			<a class="left carousel-control" href="#" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+			</a>
+			<a class="right carousel-control" href="#" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+			</a>
+		</div>
+	</div>
+	<!-- End of fifth part -->
+    <!-- Sixth part -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6" style="padding:0;">
+                <img class="img-responsive center-block" id="picture_hero" src="res/images/LivabilityTile.jpg" />
+            </div>
+            <div class="col-md-6" style="padding:0;">
+                <img class="img-responsive center-block" id="picture_hero" src="res/images/MigrationTile.jpg" />
+            </div>
+        </div>      
     </div>
-    <!-- End of fourth part -->
+    <!-- End of sixth part -->
+    <!-- Footer -->
+    <div class="footer">
+        <img class="img-responsive footer-logo" src="res/logos/Logo_Footer.png" />
+    </div>
 </body>
 <script src="utils/lib/TweenMax.min.js"></script>
 <script src="js/db.js"></script>

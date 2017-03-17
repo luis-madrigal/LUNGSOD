@@ -39,39 +39,39 @@
 	src: url(WorkSans/WorkSans-Thin.otf) format('opentype')
 }
 @font-face {
-    font-family: 'Korolev Bold Italic';
-    src: url('Korolev/Korolev Bold Italic.otf') format('opentype');
+	font-family: KorolevBoldItalic;
+	src: url('Korolev/Korolev Bold Italic.otf') format('opentype');
 
 }
 @font-face {
-    font-family: 'Korolev Bold';
-    src: url('Korolev/Korolev Bold.otf') format('opentype');
+	font-family: KorolevBold;
+	src: url('Korolev/Korolev Bold.otf') format('opentype');
 }
 @font-face {
-    font-family: 'Korolev Heavy Italic';
-    src: url('Korolev/Korolev Heavy Italic.otf') format('opentype');
+	font-family: KorolevHeavyItalic;
+	src: url('Korolev/Korolev Heavy Italic.otf') format('opentype');
 }
 @font-face {
-    font-family: 'Korolev Heavy';
-    src: url('Korolev/Korolev Heavy.otf') format('opentype');
+	font-family: KorolevHeavy;
+	src: url('Korolev/Korolev Heavy.otf') format('opentype');
 }
 @font-face {
-    font-family: 'Korolev Light Italic';
-    src: url('Korolev/Korolev Light Italic.otf') format('opentype');
+	font-family: KorolevLightItalic;
+	src: url('Korolev/Korolev Light Italic.otf') format('opentype');
 }
 @font-face {
-    font-family: 'Korolev Light';
-    src: url('Korolev/Korolev Light.otf') format('opentype');
+	font-family: KorolevLight;
+	src: url('Korolev/Korolev Light.otf') format('opentype');
 }
 @font-face {
-    font-family: 'Korolev Medium Italic';
-    src: url('Korolev/Korolev Medium Italic.otf') format('opentype');
+	font-family: KorolevMediumItalic;
+	src: url('Korolev/Korolev Medium Italic.otf') format('opentype');
 }
 @font-face {
-    font-family: 'Korolev Medium';
-    src: url('Korolev/Korolev Medium.otf') format('opentype');
+	font-family: KorolevMedium;
+	src: url('Korolev/Korolev Medium.otf') format('opentype');
 }
 @font-face {
-    font-family: 'Korolev Thin';
-    src: url('Korolev/Korolev Thin.otf') format('opentype');
+	font-family: KorolevThin;
+	src: url('Korolev/Korolev Thin.otf') format('opentype');
 }
