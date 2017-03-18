@@ -1,0 +1,15 @@
+body {
+	margin: 0px auto;
+	padding: 0px;
+	height: 100%;
+	width: 100%;
+}
+
+.center{
+	margin: auto;
+}
+
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}

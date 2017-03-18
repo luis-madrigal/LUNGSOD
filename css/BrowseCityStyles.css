@@ -1,111 +1,153 @@
-body {
-	margin: 0px;
-	padding: 0px;
-}
-
 td{
-	padding-left: 25px;
+	padding: 1%;
 }
 
 .cityTiles{
-
 	background-color:#273848;
-	padding: 20px;
-
+	padding: 2%;
 }
 
 .cityTile{
-	background-size: cover;
+	position: relative;
 	width: 32%;
-	height: 302px;
-	margin: 0 auto;
-	/*-webkit-filter: brightness(100%);*/
+	cursor: pointer;
+}
+
+.cityTileImg {
+	height: 100%;
+	width: 100%;
+}
+
+.cityTileRow{
+	margin-left:0.1%;
 }
 
 .cityName{
+	position: absolute;
+	top: 1%;
+	left: 3%;
 	text-align: left;
-	font-size: 26px;
+	font-size: 1.8vw;
 	color: white;
+	font-family: Korolev-Light;
 	display: block;
 }
 
 .cityProvince{
+	position: absolute;
+	top: 12%;
+	left: 3%;
 	text-align: left;
-	font-size: 17px;
+	font-size: 1vw;
+	font-family: Korolev-Bold;
 	color: white;
 }
 
-.cityTag{
-	float: right;
-	transform-origin: right bottom;
-	margin-top: 180px;
-	margin-left: 250px;
+.cityTags{
+	position: absolute;
+	-webkit-transform: translate(215%, -60%); 
+	width: 40%;
+	height: 40%;
 }
 
 .cityTagIcon{
 	position: absolute;
-	display: inline-block;
-}
-
-.filterItem{
-	margin-right:5px;
 }
 
 #sortList{
-	margin-top: 77px;
-    width: 190px !important;
-	padding-top:-30px !important;
+	margin-top: 34%;
+	margin-left: -80%;
+	width: 80%;
+	border: 1px solid black;
+	outline-color: black;
+	/*width: 190px !important;*/
+	/*padding-top:-30px !important;*/
 	color: black;
 }
 
 #topTiles{
-
-	height: 1000px;
-
+	height: 100%;
 }
 
 #bottomTiles{
-
-	height: 683px;
-
+	height: 100%;
 }
 
 #selectCities{
-	height: 460px;
+	background-image: url('../res/CityPic-withOutline.jpg'); 
+	background-size: cover; 
+	background-repeat: no-repeat;
+	height: 100%;
+	margin-top: -3.7%;
+	padding: 10%;
 	color: white;
 }
 
 #selectCitiesHead{
-	font-size: 19pt;
-	margin-top: 40px;
+	font-family: WorkSans-Regular;
+	font-size: 2vw;
+	/*margin-top: 40px;*/
 
 }
 
-#selctCitiesBody{
-	font-size: 14pt;
-
+#selectCitiesBody{
+	font-family: WorkSans-Regular;
+	font-size: 1.4vw;
+	line-height: 110%;
 }
 
 #selectCitiesText{
-	margin-top: 50px;
-	margin-left: 250px;
-	margin-right: 250px;
+	height: 100%;
+	/*width: 100%;*/
+	margin-left: 14%;
+	margin-top: -4%;
+}
+
+#selectCitiesFilters{
+	font-family: WorkSans-Light;
+	font-size: 1vw;
+	width: 75%;
 }
 
 #livabilityDesc{
 	
-	height: 320px;
+	height: 100%;
+	padding-top: 5%;
+	padding-bottom: 5%;
 	background-color:#6DA777;	
-
-}
-
-#filterHead{
-
-	padding-top:24px;
 
 }
 
 #clearFilter{
 	text-decoration:underline;
-	margin-left: 250px;
+	margin-top: 1%;
+	/*margin-left: 250px;*/
+}
+
+#livabilityDesc{
+	padding: 0px;	
+}
+
+.livabilityImg{
+	height: 100%;
+	width: 100%;
+}
+
+.livabilityscores{
+	margin-left: 32%;
+	margin-right: 10%;
+	
+}
+.migrationhelp{
+	margin-right: 32%;
+	margin-left: 10%;
+
+}
+.livabilityscores>h2,
+.livabilityscores>p{
+	color: white;
+}
+.migrationhelp>h2,
+.migrationhelp>p{
+	color: white;
 }
