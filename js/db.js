@@ -4,9 +4,9 @@ var TAGS = {
 		name: "Education",
 		res: "res/ICONS/Education.png",
 		altRes: {
-			UNSELECTED: "res/Resources_IconWheel/Icons_Unselected/Icon_Unselected-28.png",
-			SELECTED: "res/Resources_IconWheel/Icons_Selected/Icons_Selected-28.png",
-			HOVER: "res/Resources_IconWheel/Icons_Hover/Icons_Hover-28.png"
+			UNSELECTED: "res/Resources_IconWheel/Icons_Unselected/Icon_Unselected-30.png",
+			SELECTED: "res/Resources_IconWheel/Icons_Selected/Icons_Selected-35.png",
+			HOVER: "res/Resources_IconWheel/Icons_Hover/Icons_Hover-35.png"
 		},
 		color: "#45CBCB"
 	},
@@ -15,9 +15,9 @@ var TAGS = {
 		name: "Employment",
 		res: "res/ICONS/Employment.png",
 		altRes: {
-			UNSELECTED: "res/Resources_IconWheel/Icons_Unselected/Icon_Unselected-26.png",
-			SELECTED: "res/Resources_IconWheel/Icons_Selected/Icons_Selected-26.png",
-			HOVER: "res/Resources_IconWheel/Icons_Hover/Icons_Hover-26.png"
+			UNSELECTED: "res/Resources_IconWheel/Icons_Unselected/Icon_Unselected_Artboard 61.png",
+			SELECTED: "res/Resources_IconWheel/Icons_Selected/Icons_Selected_Artboard 61 copy.png",
+			HOVER: "res/Resources_IconWheel/Icons_Hover/Icons_Hover_Artboard 61 copy.png"
 		},
 		color: "#73C86F"
 	},
@@ -27,8 +27,8 @@ var TAGS = {
 		res: "res/ICONS/Health.png",
 		altRes: {
 			UNSELECTED: "res/Resources_IconWheel/Icons_Unselected/Icon_Unselected-29.png",
-			SELECTED: "res/Resources_IconWheel/Icons_Selected/Icons_Selected-29.png",
-			HOVER: "res/Resources_IconWheel/Icons_Hover/Icons_Hover-29.png"
+			SELECTED: "res/Resources_IconWheel/Icons_Selected/Icons_Selected-36.png",
+			HOVER: "res/Resources_IconWheel/Icons_Hover/Icons_Hover-36.png"
 		},
 		color: "#FF8146"
 	},
@@ -38,8 +38,8 @@ var TAGS = {
 		res: "res/ICONS/Housing.png",
 		altRes: {
 			UNSELECTED: "res/Resources_IconWheel/Icons_Unselected/Icon_Unselected-31.png",
-			SELECTED: "res/Resources_IconWheel/Icons_Selected/Icons_Selected-31.png",
-			HOVER: "res/Resources_IconWheel/Icons_Hover/Icons_Hover-31.png"
+			SELECTED: "res/Resources_IconWheel/Icons_Selected/Icons_Selected-34.png",
+			HOVER: "res/Resources_IconWheel/Icons_Hover/Icons_Hover-34.png"
 		},
 		color: "#F6C358"
 	},
@@ -48,9 +48,9 @@ var TAGS = {
 		name: "Infrastructure",
 		res: "res/ICONS/Infrastructure.png",
 		altRes: {
-			UNSELECTED: "res/Resources_IconWheel/Icons_Unselected/Icon_Unselected-25.png",
-			SELECTED: "res/Resources_IconWheel/Icons_Selected/Icons_Selected-25.png",
-			HOVER: "res/Resources_IconWheel/Icons_Hover/Icons_Hover-25.png"
+			UNSELECTED: "res/Resources_IconWheel/Icons_Unselected/Icon_Unselected-27.png",
+			SELECTED: "res/Resources_IconWheel/Icons_Selected/Icons_Selected-39.png",
+			HOVER: "res/Resources_IconWheel/Icons_Hover/Icons_Hover-39.png"
 		},
 		color: "#E95352"
 	},
@@ -59,9 +59,9 @@ var TAGS = {
 		name: "Leisure",
 		res: "res/ICONS/Leisure.png",
 		altRes: {
-			UNSELECTED: "res/Resources_IconWheel/Icons_Unselected/Icon_Unselected-32.png",
-			SELECTED: "res/Resources_IconWheel/Icons_Selected/Icons_Selected-32.png",
-			HOVER: "res/Resources_IconWheel/Icons_Hover/Icons_Hover-32.png"
+			UNSELECTED: "res/Resources_IconWheel/Icons_Unselected/Icon_Unselected-28.png",
+			SELECTED: "res/Resources_IconWheel/Icons_Selected/Icons_Selected-40.png",
+			HOVER: "res/Resources_IconWheel/Icons_Hover/Icons_Hover-40.png"
 		},
 		color: "#FF6985"
 	},
@@ -70,9 +70,9 @@ var TAGS = {
 		name: "Local Gov",
 		res: "res/ICONS/Local Gov.png",
 		altRes: {
-			UNSELECTED: "res/Resources_IconWheel/Icons_Unselected/Icon_Unselected-30.png",
-			SELECTED: "res/Resources_IconWheel/Icons_Selected/Icons_Selected-30.png",
-			HOVER: "res/Resources_IconWheel/Icons_Hover/Icons_Hover-30.png"
+			UNSELECTED: "res/Resources_IconWheel/Icons_Unselected/Icon_Unselected-25.png",
+			SELECTED: "res/Resources_IconWheel/Icons_Selected/Icons_Selected-37.png",
+			HOVER: "res/Resources_IconWheel/Icons_Hover/Icons_Hover-37.png"
 		},
 		color: "#324B65"
 	},
@@ -81,30 +81,30 @@ var TAGS = {
 		name: "Transportation",
 		res: "res/ICONS/Transportation.png",
 		altRes: {
-			UNSELECTED: "res/Resources_IconWheel/Icons_Unselected/Icon_Unselected-27.png",
-			SELECTED: "res/Resources_IconWheel/Icons_Selected/Icons_Selected-27.png",
-			HOVER: "res/Resources_IconWheel/Icons_Hover/Icons_Hover-27.png"
+			UNSELECTED: "res/Resources_IconWheel/Icons_Unselected/Icon_Unselected-26.png",
+			SELECTED: "res/Resources_IconWheel/Icons_Selected/Icons_Selected-38.png",
+			HOVER: "res/Resources_IconWheel/Icons_Hover/Icons_Hover-38.png"
 		},
 		color: "#634481"
 	},
 }
 
 var CITIES = {
-	SANTA_ROSA: new City("Santa Rosa", "Laguna", 7.5, "res/Resources by city/Santa Rosa", [8, 7, 9, 7.5, 7, 8, 9, 8.5]),
-	BACOLOD: new City("Bacolod", "Negros Occidental", 7.5, "res/Resources by city/Bacolod", [8, 7, 9, 7.5, 7, 8, 9, 8.5]),
-	CAGAYAN_DE_ORO: new City("Cagayan De Oro", "Misamis Oriental", 7.5, "res/Resources by city/Cagayan de Oro", [8, 7, 9, 7.5, 7, 8, 9, 8.5]),
-	ILIGAN: new City("Iligan", "Lanao Del Norte", 7.5, "res/Resources by city/Iligan", [8, 7, 9, 7.5, 7, 8, 9, 8.5]),
-	ILOILO: new City("Iloilo", "Cebu", 7.5, "res/Resources by city/Iloilo", [8, 7, 9, 7.5, 7, 8, 9, 8.5]),
-	BUTUAN: new City("Butuan", "Caraga", 7.5, "res/Resources by city/Butuan", [8, 7, 9, 7.5, 7, 8, 9, 8.5]),
-	TARLAC: new City("Tarlac", "Tarlac", 7.5, "res/Resources by city/Tarlac", [8, 7, 9, 7.5, 7, 8, 9, 8.5]),
-	LEGAZPI: new City("Legazpi", "Albay", 7.5, "res/Resources by city/Legazpi", [8, 7, 9, 7, 7, 8, 9, 8]),
-	DUMAGUETE: new City("Dumaguete", "Negros Oriental", 7.5, "res/Resources by city/Dumaguete", [8, 7, 9, 7.5, 7, 8, 9, 8.5]),
-	BATANGAS: new City("Batangas", "Batangas", 7.5, "res/Resources by city/Batangas", [8, 7, 9, 7.5, 7, 8, 9, 8.5]),
-	PUERTO_PRINCESA: new City("Puerto Princesa", "Palawan", 7.5, "res/Resources by city/Puerto Princesa", [8, 7, 9, 7.5, 7, 8, 9, 8.5]),
-	OLONGAPO: new City("Olongapo", "Zambales", 7.5, "res/Resources by city/Olongapo", [8, 7, 9, 7.5, 7, 8, 9, 8.5]),
-	TACLOBAN: new City("Tacloban", "Leyte", 7.5, "res/Resources by city/Tacloban", [8, 7, 9, 7.5, 7, 8, 9, 8.5]),
-	ZAMBOANGA: new City("Zamboanga", "Zamboanga", 7.5, "res/Resources by city/Zamboanga", [8, 7, 9, 7.5, 7, 8, 9, 8.5]),
-	GENSAN: new City("General Santos", "South Cotabato", 7.5, "res/Resources by city/General Santos", [8, 7, 9, 7.5, 7, 8, 9, 8.5])
+	SANTA_ROSA: new City("Santa Rosa", "Laguna", 9.3, "res/Resources by city/Santa Rosa", [9.5, 9.5, 9, 9, 9, 10, 8.5, 10]),
+	BACOLOD: new City("Bacolod", "Negros Occidental", 8.9, "res/Resources by city/Bacolod", [9, 9, 7, 9.5, 9, 9, 9, 10]),
+	CAGAYAN_DE_ORO: new City("Cagayan De Oro", "Misamis Oriental", 9.1, "res/Resources by city/Cagayan de Oro", [9.5, 9.5, 9, 9.5, 9, 9, 8.5, 9]),
+	ILIGAN: new City("Iligan", "Lanao Del Norte", 8.7, "res/Resources by city/Iligan", [8.5, 9, 7.5, 8.5, 9, 9, 9, 9]),
+	ILOILO: new City("Iloilo", "Cebu", 9.4, "res/Resources by city/Iloilo", [9.5, 9.5, 9, 9, 10, 9, 9.5, 10]),
+	BUTUAN: new City("Butuan", "Caraga", 8.4, "res/Resources by city/Butuan", [8.5, 8, 8, 8.5, 9, 8.5, 8, 9]),
+	TARLAC: new City("Tarlac", "Tarlac", 8.4, "res/Resources by city/Tarlac", [8, 8.5, 8, 9, 8.5, 8.5, 8, 8.5]),
+	LEGAZPI: new City("Legazpi", "Albay", 8.8, "res/Resources by city/Legazpi", [8, 8.5, 8.5, 9, 9, 10, 8.5, 9]),
+	DUMAGUETE: new City("Dumaguete", "Negros Oriental", 9, "res/Resources by city/Dumaguete", [9, 9.5, 9, 9.5, 8, 8.5, 9, 8.5]),
+	BATANGAS: new City("Batangas", "Batangas", 8.3, "res/Resources by city/Batangas", [8, 7.5, 7.5, 8.5, 9, 8, 8.5, 9]),
+	PUERTO_PRINCESA: new City("Puerto Princesa", "Palawan", 8, "res/Resources by city/Puerto Princesa", [6, 7, 7, 7.5, 9, 9, 9, 9]),
+	OLONGAPO: new City("Olongapo", "Zambales", 9.3, "res/Resources by city/Olongapo", [9, 9, 10, 8.5, 9.5, 9, 9.5, 10]),
+	TACLOBAN: new City("Tacloban", "Leyte", 8.6, "res/Resources by city/Tacloban", [9, 9, 9, 9, 7, 8.5, 9, 8]),
+	ZAMBOANGA: new City("Zamboanga", "Zamboanga", 8.9, "res/Resources by city/Zamboanga", [9, 8, 8.5, 8.5, 8.5, 9, 9, 9]),
+	GENSAN: new City("General Santos", "South Cotabato", 8.6, "res/Resources by city/General Santos", [8.5, 7, 9, 9.5, 9, 9, 8.5, 8.5])
 }
 
 var CITY_TILES_TOP = [
