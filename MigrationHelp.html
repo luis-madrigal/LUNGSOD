@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lungsod</title>
+
+	<script src="utils/lib/jquery.min.js"></script>
+	<script src="utils/lib/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+
+	<link rel = "stylesheet" href = "utils/lib/bootstrap-3.3.6-dist/css/bootstrap.min.css">
+	<link rel = "stylesheet" href = "css/navbar.css">
+	<link rel = "stylesheet" href = "css/global.css">
+	<link rel = "stylesheet" href = "css/MigrationHelp.css">
+
+	<link rel = "stylesheet" href = "res/fonts/fonts.css"></link>
+</head>
+<body>
+
+	<nav class="navbar navbar-default navbar-static-top">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+				<a class="navbar-brand" href="HomePage.html"><img class = "img-responsive" src="res/logos/Logo_Header.png"></a>
+				
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="BrowseCity.html">BROWSE CITIES<span class="sr-only">(current)</span></a></li>
+					<li><a href="#">THE LIVABILITY INDEX</a></li>
+					<li><a href="#">MIGRATION HELP</a></li>   
+				</ul>
+
+				<div class="input-group search-group">
+					<input type="text" class="form-control" placeholder="Search for a city...">
+					<span class="input-group-addon">
+						<button type="submit">
+							<span class="glyphicon glyphicon-search"></span>
+						</button>
+					</span>
+				</div>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+
+	<div class = "container-fluid">
+
+		<!-- MOVING THINKING -->
+		<div id = "firstContent" class = "row">
+			<div class = "col-lg-12">
+				<p id = "whereThink">Where are you thinking of moving to?</p>
+				<div class="input-group search-group" id = "citySearch">
+					<input type="text" class="form-control" placeholder="Search for a city...">
+					<span class="input-group-addon">
+						<button type="submit">
+							<span class="glyphicon glyphicon-search"></span>
+						</button>
+					</span>
+				</div>
+			</div>
+		</div>
+
+		<!-- MIGRATION HELP -->
+		<div id = "secondContent" class = "row">
+			<div class = "col-lg-12">
+				<p id = "mHelp">Migration Help</p>
+				<p id = "mHelpDesc">While LUNGSOD was designed to convince you to consider<br>
+									alternatives to Metro Manila, we don't expect you to blindly<br>
+									move to these places without some help. If you're looking for<br>
+									some guidance to get started with a job or a home in a city of<br>
+									your choice, we're here for you.</p>
+			</div>
+		</div>
+
+		<!-- CITY CONTENT -->
+		<div id = "cityContent">
+			<!-- CITY_CAROUSEL -->
+			<div class = "row">
+				<div class = "col-lg-12">
+					<div id="cityCarousel" class="carousel slide row" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#cityCarousel" data-slide-to="0" class="active"></li>
+							<li data-target="#cityCarousel" data-slide-to="1"></li>
+							<li data-target="#cityCarousel" data-slide-to="2"></li>
+							<li data-target="#cityCarousel" data-slide-to="3"></li>
+						</ol>
+
+						<div id = "cityImages" class="carousel-inner" role="listbox">
+						</div>
+
+						<a class="left carousel-control" href="#cityCarousel" role="button" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="right carousel-control" href="#cityCarousel" role="button" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+
+					<div class = "row" id = "carouselCaption">
+					</div>
+				</div>
+			</div>
+
+			<!-- ABOUT TEXT -->
+			<div id = "aboutContent" class = "row">
+				<div class = "col-lg-12">
+					<p id = "aboutHeader">THE CITY OF FUN AND ADVENTURE</p>
+
+					<div class = "row">
+						<div class = "col-lg-6">
+							<p class="aboutText right">
+								Legazpi was recognized as the most business-friendly city in Southern Luzon in 2007 by the Philippine Chamber of Commerce and Industry.<br><br>
+								In 2014, the city was ranked second among the top three livable cities in the Philippines in the Livable Cities 
+
+							</p>
+						</div>
+						<div class = "col-lg-6">
+							<p class = "aboutText left">
+								Design Challenge organized by the National Competitiveness Council (NCC) and the Asia-Pacific Economic Cooperation.
+								<br><br>
+								In 2016, Legazpi was named overall third most competitive component city in the Philippines.
+							</p>
+						</div>
+						<div class = "col-lg-12">
+							<div class = "row">
+								<button type="button" class="btn btn-seeCity"></button>
+								<img id = "aboutImage" src="res/images/MigrationHelp_Skyline.png">
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+
+			<!-- EMPLOYMENT GUIDE -->
+			<div id = "employmentGuide" class = "row">
+				<div class = "col-lg-12">
+					<img class = "guideIcon img-responsive" src="res/Icons/Employment.png">
+					<p class = "guideHeader">EMPLOYMENT GUIDE</p>
+					<img class = "guideToggle img-responsive" src="res/migration_help/00 - For all pages/ExpandButton.png" data-toggle = "collapse" data-target = "#egContent">
+				</div>
+			</div>
+
+			<!-- EMPLOYMENT GUIDE CONTENT -->
+			<div id = "egContent" class = "row collapse collapse-guide" data-origin = "#employmentGuide">
+				<p class = "guideDesc">Here’s a list of some of businesses, companies, and other<br>
+										entities that offer jobs in the city:</p>
+				<div class="col-lg-12">
+					<div class = "row content-tiles">
+						<div class = "col-lg-4 content-tile">
+							<img class = "img-responsive image-tile" src="res/migration_help/00 - For all pages/Tile Templates/ContactTileTemplate_Employment.jpg">
+							<div class = "tile-text">
+								<p class = "tile-text-name">LANDCO BUSINESS PARK</p>
+								<p class = "tile-text-address">Legazpi Port District, Legazpi City, Albay</p>
+								<p class = "tile-text-contactnum">(02) 123 4567 / (+63)9950090012</p>
+								<p class = "tile-text-sitelink">www.landco-ph.com.ph</p>
+							</div>
+						</div>
+
+						<div class = "col-lg-4 content-tile">
+							<img class = "img-responsive image-tile" src="res/migration_help/00 - For all pages/Tile Templates/ContactTileTemplate_Employment.jpg">
+							<div class = "tile-text">
+								<p class = "tile-text-name">LANDCO BUSINESS PARK</p>
+								<p class = "tile-text-address">Legazpi Port District, Legazpi City, Albay</p>
+								<p class = "tile-text-contactnum">(02) 123 4567 / (+63)9950090012</p>
+								<p class = "tile-text-sitelink">www.landco-ph.com.ph</p>
+							</div>
+						</div>
+
+						<div class = "col-lg-4 content-tile">
+							<img class = "img-responsive image-tile" src="res/migration_help/00 - For all pages/Tile Templates/ContactTileTemplate_Employment.jpg">
+							<div class = "tile-text">
+								<p class = "tile-text-name">LANDCO BUSINESS PARK</p>
+								<p class = "tile-text-address">Legazpi Port District, Legazpi City, Albay</p>
+								<p class = "tile-text-contactnum">(02) 123 4567 / (+63)9950090012</p>
+								<p class = "tile-text-sitelink">www.landco-ph.com.ph</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- HOUSING GUIDE -->
+			<div id = "housingGuide" class = "row">
+				<div class = "col-lg-12">
+					<img class = "guideIcon img-responsive" src="res/Icons/Housing.png">
+					<p class = "guideHeader">HOUSING GUIDE</p>
+					<img class = "guideToggle img-responsive" src="res/migration_help/00 - For all pages/ExpandButton.png" data-toggle = "collapse" data-target = "#hgContent">
+				</div>
+			</div>
+
+			<!-- HOUSING GUIDE CONTENT -->
+			<div id = "hgContent" class = "row collapse collapse-guide" data-origin = "#housingGuide">
+				<p class = "guideDesc">Looking for a place to settle in? Here’s few available places for<br>
+										purchase or for rent in the city:</p>
+				<div class="col-lg-12">
+					<div class = "row content-tiles">
+						<div class = "col-lg-4 content-tile">
+							<img class = "img-responsive image-tile" src="res/migration_help/00 - For all pages/Tile Templates/ContactTileTemplate_Housing.jpg">
+							<div class = "tile-text">
+								<p class = "tile-text-name">LANDCO BUSINESS PARK</p>
+								<p class = "tile-text-address">Legazpi Port District, Legazpi City, Albay</p>
+								<p class = "tile-text-contactnum">(02) 123 4567 / (+63)9950090012</p>
+								<p class = "tile-text-sitelink">www.landco-ph.com.ph</p>
+							</div>
+						</div>
+
+						<div class = "col-lg-4 content-tile">
+							<img class = "img-responsive image-tile" src="res/migration_help/00 - For all pages/Tile Templates/ContactTileTemplate_Housing.jpg">
+							<div class = "tile-text">
+								<p class = "tile-text-name">LANDCO BUSINESS PARK</p>
+								<p class = "tile-text-address">Legazpi Port District, Legazpi City, Albay</p>
+								<p class = "tile-text-contactnum">(02) 123 4567 / (+63)9950090012</p>
+								<p class = "tile-text-sitelink">www.landco-ph.com.ph</p>
+							</div>
+						</div>
+
+						<div class = "col-lg-4 content-tile">
+							<img class = "img-responsive image-tile" src="res/migration_help/00 - For all pages/Tile Templates/ContactTileTemplate_Housing.jpg">
+							<div class = "tile-text">
+								<p class = "tile-text-name">LANDCO BUSINESS PARK</p>
+								<p class = "tile-text-address">Legazpi Port District, Legazpi City, Albay</p>
+								<p class = "tile-text-contactnum">(02) 123 4567 / (+63)9950090012</p>
+								<p class = "tile-text-sitelink">www.landco-ph.com.ph</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- GOVERNMENT GUIDE -->
+			<div id = "governmentGuide" class = "row">
+				<div class = "col-lg-12">
+					<img class = "guideIcon img-responsive" src="res/Icons/Local Gov.png">
+					<p class = "guideHeader">GOVERNMENT SERVICES</p>
+					<img class = "guideToggle img-responsive" src="res/migration_help/00 - For all pages/ExpandButton.png" data-toggle = "collapse" data-target = "#gsContent">
+				</div>
+			</div>
+
+			<!-- GOVERNMENT GUIDE CONTENT -->
+			<div id = "gsContent" class = "row collapse collapse-guide" data-origin = "#governmentGuide">
+				<p class = "guideDesc">Need anything else? Here’s a list of useful services the city’s<br>
+										local government has to offer for those looking to move in:</p>
+				<div class="col-lg-12">
+					<div class = "row content-tiles">
+						<div class = "col-lg-4 content-tile">
+							<img class = "img-responsive image-tile" src="res/migration_help/00 - For all pages/Tile Templates/ContactTileTemplate_LocalGovt.jpg">
+							<div class = "tile-text">
+								<p class = "tile-text-name">LANDCO BUSINESS PARK</p>
+								<p class = "tile-text-address">Legazpi Port District, Legazpi City, Albay</p>
+								<p class = "tile-text-contactnum">(02) 123 4567 / (+63)9950090012</p>
+								<p class = "tile-text-sitelink">www.landco-ph.com.ph</p>
+							</div>
+						</div>
+
+						<div class = "col-lg-4 content-tile">
+							<img class = "img-responsive image-tile" src="res/migration_help/00 - For all pages/Tile Templates/ContactTileTemplate_LocalGovt.jpg">
+							<div class = "tile-text">
+								<p class = "tile-text-name">LANDCO BUSINESS PARK</p>
+								<p class = "tile-text-address">Legazpi Port District, Legazpi City, Albay</p>
+								<p class = "tile-text-contactnum">(02) 123 4567 / (+63)9950090012</p>
+								<p class = "tile-text-sitelink">www.landco-ph.com.ph</p>
+							</div>
+						</div>
+
+						<div class = "col-lg-4 content-tile">
+							<img class = "img-responsive image-tile" src="res/migration_help/00 - For all pages/Tile Templates/ContactTileTemplate_LocalGovt.jpg">
+							<div class = "tile-text">
+								<p class = "tile-text-name">LANDCO BUSINESS PARK</p>
+								<p class = "tile-text-address">Legazpi Port District, Legazpi City, Albay</p>
+								<p class = "tile-text-contactnum">(02) 123 4567 / (+63)9950090012</p>
+								<p class = "tile-text-sitelink">www.landco-ph.com.ph</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--LIVABILITY DESCRIPTION-->
+		<div id="livabilityDesc" class="row no-gutter">
+			<div class="col-lg-6">
+				<img class = "livabilityImg img-responsive" src="res/images/LivabilityTile.jpg">
+			</div>
+			<div class="col-lg-6">
+				<img class = "livabilityImg img-responsive" src="res/images/MigrationTile.jpg">
+			</div>
+		</div>
+
+		<!-- Footer -->
+	    <div class="footer row">
+	        <img class="img-responsive footer-logo" src="res/logos/Logo_Footer.png" />
+	    </div>
+
+	</div>
+
+</body>
+<script src="utils/lib/TweenMax.min.js"></script>
+<script src="js/components/City.js"></script>
+<script src="js/components/Content.js"></script>
+<script src="js/db.js"></script>
+<script src="js/MigrationHelp.js"></script>
+</html>

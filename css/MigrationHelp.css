@@ -1,0 +1,237 @@
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+#firstContent{
+	background-image: url("../res/CityPic-withOutline.jpg"), url("../res/images/WhiteSkyline_LetsBegin.png");
+	background-position: bottom, center;
+	background-repeat: no-repeat, no-repeat;
+	background-size: cover, contain;
+}
+
+#whereThink{
+	font-family: WorkSans-Light;
+	font-size: 3vw;
+	text-align: center;
+	color: white;
+	padding: 5%;
+}
+
+#citySearch{
+	margin-top: -4%;
+	margin-right: 30%;
+	width: 40%;
+	padding-bottom: 10%;
+}
+
+#secondContent{
+	padding: 3%
+}
+
+#mHelp{
+	font-family: WorkSans-Light;
+	font-size: 2.8vw;
+	color: #2E97DE;
+	margin-left: 18%;
+}
+
+#mHelpDesc{
+	font-family: WorkSans-Regular;
+	font-size: 1vw;
+	color: #2E97DE;
+	margin-left: 18%;
+}
+
+.carousel-indicators li { 
+	visibility: hidden; 
+}
+
+.carousel-inner>.active { width: 100% }
+
+#cityCarousel{
+	position: relative;
+	margin-top: -0.1%;
+}
+
+#carouselCaption{
+	position: absolute;
+	text-align: center;
+	-webkit-transform: translate(0%, -800%); 
+	color: white;
+	width: 100%;
+	/*height: 100%;*/
+}
+
+.captionHeader{
+	font-family: Korolev-Heavy;
+	font-size: 3vw;
+	margin-top: -1%;	
+}
+
+.breadCrumbs{
+	font-family: WorkSans-Light;
+	font-size: 1vw;
+}
+
+.breadCrumbs > .breadCrumbsPage{
+	font-family: WorkSans-Medium;
+	font-size: 1vw;
+}
+
+.carouselImages{
+	width: 100%;
+}
+
+#aboutContent{
+	margin-bottom: 5%;
+}
+
+#aboutImage{
+	width: 100%;
+	margin-top: -5%;
+	margin-bottom: -1%;
+}
+
+#aboutHeader{
+	color: #2C98DA;
+	font-family: Korolev-Light;
+	font-size: 4vw;
+	width: 100%;
+	text-align: center;	
+	margin-top: 2%;
+}
+
+.aboutText{
+	color: #2C98DA;
+	font-family: WorkSans-Regular;
+	font-size: 1vw;
+	width:50%;
+}
+
+#livabilityDesc{
+	
+	height: 100%;
+	background-color:#6DA777;	
+
+}
+
+.livabilityImg{
+	height: 100%;
+	width: 100%;
+}
+
+.btn-seeCity{
+	margin: 0 auto;
+    text-align:center;
+    background-color: #12334B;
+    color:white;
+    font-family:WorkSans-Medium;
+    font-size: 1.2vw;
+    border-radius:0;
+    text-transform:uppercase;
+    width: 15%;
+    padding: 1%;
+    margin-top: 2%;
+    display: block;
+}
+
+#employmentGuide{
+	background-image: url("../res/migration_help/00 - For all pages/HelpCategory_Employment.jpg");
+	background-size: cover;
+}
+
+#housingGuide{
+	background-image: url("../res/migration_help/00 - For all pages/HelpCategory_Housing.jpg");
+	background-size: cover;
+}
+
+#governmentGuide{
+	background-image: url("../res/migration_help/00 - For all pages/HelpCategory_LocalGovt.jpg");
+	background-size: cover;
+}
+
+.guideIcon{
+	width: 5%;
+	position: absolute;
+	margin-left: 20%;
+}
+
+.guideHeader{
+	font-family: Korolev-Bold;
+	font-size: 3vw;
+	color:white;
+	margin-left: 27%;
+	margin-top: .5%;
+}
+
+.guideToggle{
+	width: 3%;
+	position: absolute;
+	margin-left: 75%;
+	margin-top: -4.3%;
+	cursor: pointer;
+}
+
+.guideDesc{
+	font-family: WorkSans-Regular;
+	font-size: 1vw;
+	color: black;
+	padding: 5%;
+	margin-left: 10%;
+	margin-bottom: -2%;
+}
+
+.content-tiles{
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 5%;
+}
+
+.content-tile{
+	padding: 0;
+	margin: 0 auto;
+}
+
+.image-tile{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.tile-text{
+	position: absolute;
+	margin-top: -40%;
+	margin-left: 10%;
+	color:white;
+	width: 60%;
+}
+
+.tile-text-name{
+	font-family: Korolev-Bold;
+	font-size: 1.5vw;
+}
+
+.tile-text-address{
+	font-family: WorkSans-Regular;
+	font-size: 1.25vw;
+}
+
+.tile-text-contactnum{
+	font-family: WorkSans-Regular;
+	font-size: 1vw;
+}
+
+.tile-text-sitelink{
+	font-family: WorkSans-Regular;
+	font-size: 1vw;
+	text-decoration: underline;
+}
+
+.footer{
+    background: white;
+    padding-top:4%;
+    padding-bottom:2%
+}

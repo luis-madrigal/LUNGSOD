@@ -1,0 +1,25 @@
+[Section 1]
+
+Migration Help
+
+While LUNGSOD was designed to convince you to consider alternatives to Metro Manila, we don’t expect you to blindly move to these places without some help. If you’re looking for some guidance to get started with a job or a home in a city of your choice, we’re here for you.
+
+
+[City about section]
+
+*see city page text files for the text, since it will just be the same
+
+
+[employment guide]
+
+Here’s a list of some of businesses, companies, and other entities that offer jobs in the city:
+
+
+[housing guide]
+
+Looking for a place to settle in? Here’s few available places for purchase or for rent in the city:
+
+
+[government services]
+
+Need anything else? Here’s a list of useful services the city’s local government has to offer for those looking to move in:
