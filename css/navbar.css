@@ -3,16 +3,16 @@
 	padding-right: 0;
 }
 .search-group{   
+	display: inline;
 	color: #7A7A7A;
 	width: 26vw;
 	float: right;
 	border-radius: 0px;
-	margin-top: 2%;
 }
 .search-group .input-group-addon{
 	background: #51BBC8 !important;
 	border:0px;
-
+	width:1% !important;
 }
 .search-group .form-control{
 	border-right:0; 
@@ -24,7 +24,6 @@
 .search-group button{
 	background: #51BBC8 !important;
 	color:white;
-	/*font-size:2vw;*/
 	height: 100%;
 	border: 0px;
 	padding:0px;
@@ -37,8 +36,9 @@
 	color: white;	
 	margin-bottom: 0;
 }
-.navbar-default .navbar-brand{
-	
+.nav-justified>li {
+	display: table-cell;
+	width:0;
 }
 .navbar-default .navbar-brand>img{
 	height: 100%;
@@ -46,24 +46,28 @@
 .navbar-default .navbar-nav {
 	/*display: flex;*/
 }
-.navbar-default .navbar-nav>li>a {
+.navbar-default .nav-pills>li>a {
+	display: inline-block;
+	line-height: 32px;
 	width:17.2vw;
-	text-align: center;
 	font-family: WorkSans-Light;
+	font-size:1vw;
 	text-align: center;
-	color: white;
+	border-radius:0;
+	color:white;
 }
-.navbar-default .navbar-nav>li>a:hover {
-	background-color: rgba(204, 255, 204,0.7)
+.navbar-default .nav-pills>li>a:hover {
+	background-color: rgba(50, 120, 114,0.7);
 }
-.navbar-default .navbar-nav>.active>a{
+.navbar-default .nav-pills>.active>a{
 	color: white;
 	background-color: rgba(50, 120, 114,0.9);
 }
-.navbar-default .navbar-nav>.active>a:focus, 
-.navbar-default .navbar-nav>.active>a:hover {
-	background-color: rgba(204, 255, 204,0.7)
+.navbar-default .nav-pills>.active>a:focus, 
+.navbar-default .nav-pills>.active>a:hover {
+	background-color: rgba(50, 120, 114,0.7);
 }
+
 .gradient{
 	border-width: 3px 3px 3px 0;
 	border-style: solid;
