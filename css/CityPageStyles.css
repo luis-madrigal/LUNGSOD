@@ -216,3 +216,76 @@
     margin-left: 15%;
     display: block;
 }
+
+#compareModal .modal-dialog{
+	width: 100%;
+	color:white;
+}
+
+#compareModal .modal-body{
+	padding: 0;
+}
+
+#compareModal .modal-content{
+	background-image: url("../res/compare_city/Gradient background.jpg");
+	background-size: cover;
+	box-shadow: 0 5px 15px rgba(0,0,0,0);
+	border-radius: 0;
+}
+
+#city1 .item img{
+	display: inline;
+	height: 60vh;
+	width: 100%;
+}
+
+#city2 .item img{
+	display: inline;
+	height: 60vh;
+	width: 100%;
+}
+
+.compareCity1Text{
+	margin-top: 5%;
+	margin-left: 5%;
+	text-align: left;
+}
+
+.compareCity2Text{
+	margin-top: 5%;
+	margin-right: 5%;
+	text-align: right;
+}
+
+.linkToCity{
+	font-family: WorkSans-Regular;
+	font-size: 1vw;
+}
+
+.cityName{
+	font-family: Korolev-Medium;
+	font-size: 2vw;
+}
+
+.cityDesc{
+	font-family: WorkSans-Regular;
+	font-size: 1.2vw;
+}
+
+.compareScoreCircle{
+    border-radius: 50%;
+    background-color: transparent;
+    border: .5vw solid #56DA65;
+    color: white;
+    font-size: 3.5vw;
+    font-family: Korolev-Heavy;
+    padding: 15%;
+    text-align: center;
+	display: block;
+	margin: 0 auto;
+	width: 65%;
+}
+
+.compareScore{
+	margin-top: 3.5%;
+}

@@ -18,6 +18,14 @@ $(document).ready(function(){
 	    interval: false
 	}); 
 
+	$("#city1").carousel({
+	    interval: false
+	}); 
+
+	$("#city2").carousel({
+	    interval: false
+	}); 
+
 	$(".wheelTag").mouseenter(function() {
 		if(this.toggled)
 			return;
@@ -61,6 +69,14 @@ $(document).ready(function(){
 		}
 		this.toggled = !this.toggled;
 	});
+
+	$("#compareModal").on("show.bs.modal", function() {
+		$("body").css("overflow-y", "hidden");
+	})
+
+	$("#compareModal").on("hide.bs.modal", function() {
+		$("body").css("overflow-y", "visible");
+	})
 });
 
 function initCarousel(){
