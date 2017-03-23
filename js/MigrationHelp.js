@@ -25,6 +25,15 @@ function initCityContent(){
 
 	$(".btn-seeCity").text("See " +CITIES[cityId].name+ " City");
 
+	$(".btn-seeCity").click(function() {
+		var dest = window.location.href.split("/");
+
+		dest[dest.length-1] = "CityPage.html?city=" + cityId;
+		dest = dest.join("/");
+
+		document.location.href = dest;
+	});
+
 	initCarousel($("#cityImages"));
 
 	$(".collapse-guide").on('shown.bs.collapse', function () {
