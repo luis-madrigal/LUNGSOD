@@ -146,6 +146,7 @@ function initWheel() {
 }
 
 function compare(otherCity) {
+	$(".scores").empty();
 	var scores = $(".scores");
 
 	for(var i in TAGS) {
