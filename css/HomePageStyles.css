@@ -330,22 +330,24 @@
 
 .city-tiles-text-group{
     position:absolute;
-    top:0;
-    left: 35px;
+    top: 2.5%;
+    left: 6%;
 }
 
 .city-tiles-text-group > h3{
     font-family:Korolev-Light;
-    font-size:1.55vw;
+    font-size: 1.8vw;
     color:white;
     text-transform:uppercase;
+    margin:0;
 }
 
 .city-tiles-text-group > h4{
     font-family:Korolev-Bold;
-    font-size:0.95vw;
+    font-size: 1vw;
     color:white;
     text-transform:uppercase;
+    margin:0;
 }
 
 .scoreCircle {
