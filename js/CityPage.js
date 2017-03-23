@@ -70,13 +70,17 @@ $(document).ready(function(){
 		this.toggled = !this.toggled;
 	});
 
+	$("#tempBtn").click(function() {
+		compare("SANTA_ROSA");
+	});
+
 	$("#compareModal").on("show.bs.modal", function() {
 		$("body").css("overflow-y", "hidden");
-	})
+	});
 
 	$("#compareModal").on("hide.bs.modal", function() {
 		$("body").css("overflow-y", "visible");
-	})
+	});
 });
 
 function initCarousel(){
@@ -138,5 +142,49 @@ function initWheel() {
 		wheel.append($div);
 
 		j++;
+	}
+}
+
+function compare(otherCity) {
+	var scores = $(".scores");
+
+	for(var i in TAGS) {
+		var score1 = CITIES[cityId].scores[TAGS[i].id];
+		var score2 = CITIES[otherCity].scores[TAGS[i].id];
+
+		var $row = $("<div>", {"class": "row"});
+		var $col1 = $("<div>", {"class": "col-lg-3"});
+		var $col2 = $("<div>", {"class": "col-lg-6"});
+		var $col3 = $("<div>", {"class": "col-lg-3"});
+
+		var $tagIcon = $("<img>", {"class": "scoreIcons img-responsive", "src": TAGS[i].res});
+		var $iconLabel = $("<span>", {"class": "iconLabel"});
+		$iconLabel.append(TAGS[i].name);
+
+		var $scoreVal1 = $("<span>", {"class": "tagScoreCircle score-1 right"});
+		$scoreVal1.append(score1);
+
+		var $scoreVal2 = $("<span>", {"class": "tagScoreCircle score-2 left"});
+		$scoreVal2.append(score2);
+
+		var $scoreLine1 = $("<div>", {"class": "scoreLine scoreLine-2 scoreLine-1", "style": "color: "+TAGS[i].color+";"});
+		var $scoreLine2 = $("<div>", {"class": "scoreLine scoreLine-2", "style": "color: "+TAGS[i].color+";"});
+
+		$scoreLine1.css("width", (score1*5)+"%");
+		$scoreLine2.css("width", (score2*5)+"%");
+
+		$col1.append($scoreVal1);
+
+		$col2.append($tagIcon);
+		$col2.append($scoreLine1);
+		$col2.append($scoreLine2);
+
+		$col3.append($scoreVal2);
+
+		$row.append($col1);
+		$row.append($col2);
+		$row.append($col3);
+
+		scores.append($row);
 	}
 }
