@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lungsod</title>
+
+	<script src="utils/lib/jquery.min.js"></script>
+	<script src="utils/lib/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+
+	<link rel = "stylesheet" href = "utils/lib/bootstrap-3.3.6-dist/css/bootstrap.min.css">
+	<link rel = "stylesheet" href = "css/navbar.css">
+	<link rel = "stylesheet" href = "css/global.css">
+	<link rel = "stylesheet" href = "css/LivabilityIndexStyles.css">
+
+	<link rel = "stylesheet" href = "res/fonts/fonts.css"></link>
+</head>
+<body>
+
+	<nav class="navbar navbar-default navbar-static-top">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="HomePage.html"><img class="img-responsive" src="res/logos/Logo_Header.png"></a>
+
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<form class="navbar-form navbar-right" role="search">
+					<div class="input-group search-group">
+						<input type="text" class="form-control" placeholder="Search for a city...">
+						<span class="input-group-addon">
+							<button type="submit">
+								<span class="glyphicon glyphicon-search"></span>
+							</button>
+						</span>
+					</div>
+				</form>
+				<ul class="nav nav-pills nav-justified">
+					<li class="nav-item active"><a href="BrowseCity.html">BROWSE CITIES<span class="sr-only">(current)</span></a></li>
+					<li class="nav-item"><a href="#">THE LIVABILITY INDEX</a></li>
+					<li class="nav-item"><a href="MigrationHelp.html">MIGRATION HELP</a></li>
+				</ul>
+
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+
+	<!-- MAIN CONTAINER -->
+	<div class="container-fluid">
+	
+		<div id="headerContainer" class="row">
+			<p id="pLungsod">LUNGSOD'S</p>
+			<p id="pLivability">LIVABILITY INDEX</p>
+			<!--<img id="headerPic" src="res\livability_index\Header_Pic.jpg"></img>-->
+			<img id="headerOutline" src="res\livability_index\Header_Skyline_1.png"/>
+		</div>
+		
+		<div id="explanationContainer"  class="row">
+			<div class="col-lg-5">
+			</div>
+			
+			<div class="col-lg-7">
+				<table>
+					<tr>
+						<td>
+							<img src="res/icons/Employment.png" class="img-responsive iconImg"/>
+							<p>Employment</p>
+						</td>
+						<td>
+							<img src="res/icons/Housing.png" class="img-responsive iconImg"/>
+						</td>
+						<td>
+							<img src="res/icons/Local Gov.png" class="img-responsive iconImg"/>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="res/icons/Education.png" class="img-responsive iconImg"/>
+						</td>
+						<td>
+							<img src="res/icons/Education.png" class="img-responsive iconImg"/>
+						</td>
+						<td>
+							<img src="res/icons/Education.png" class="img-responsive iconImg"/>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="res/icons/Education.png" class="img-responsive iconImg"/>
+						</td>
+						<td>
+							<img src="res/icons/Education.png" class="img-responsive iconImg"/>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		
+		<div id="definitionContainer"  class="row">
+			<img id="livabilityImg" src="res\livability_index\Section2_Graphic.jpg"/>
+			
+			<img id="livabilityOutline" src="res\livability_index\Section2_Skyline_2.png"/>
+			
+		</div>
+		
+		<div id="sumContainer"  class="row">
+		</div>
+		
+		<div id="livScoreContainer"  class="row">
+		</div>
+		
+		<div id="categoryContainer"  class="row">
+		</div>
+		
+		<div id="footerContainer"  class="row">
+		</div>
+	</div>
+</body>
+<script src="utils/lib/TweenMax.min.js"></script>
+<script src="js/components/City.js"></script>
+<script src="js/components/Content.js"></script>
+<script src="js/db.js"></script>
+</html>	
