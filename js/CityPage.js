@@ -14,6 +14,8 @@ $(document).ready(function(){
 	initCarousel();
 	initWheel();
 
+	$(".scoreCircle").css("border-color", "#56DA65");
+
 	$("#cityCarousel").carousel({
 	    interval: false
 	}); 
@@ -55,6 +57,7 @@ $(document).ready(function(){
 				}
 			}
 			$(this).css("background-image", "url('" +TAGS[$(this).data("id")].altRes.UNSELECTED+ "')");
+			$(".scoreCircle").css("border-color", "#56DA65");
 		} else {
 			for(var i = 0; i < children.length; i++) {
 				if(this != children[i]) {
@@ -66,6 +69,7 @@ $(document).ready(function(){
 			var span = $(this).find("span");
 			$(this).css("background-image", "url('" +TAGS[$(this).data("id")].altRes.UNSELECTED+ "')");
 			TweenMax.to(span, 0.2, {css: {"opacity": "1"}});
+			$(".scoreCircle").css("border-color", TAGS[$(this).data("id")].color);
 		}
 		this.toggled = !this.toggled;
 	});
