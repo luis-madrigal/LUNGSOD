@@ -49,7 +49,7 @@ td{
 	font-size: 1vw;
 	color: white;
 	margin-left: -42%;
-	margin-top: 1%;
+	margin-top: 1.5%;
 	width: 50%;
 }
 
@@ -83,13 +83,7 @@ td{
 
 #sortList{
 	margin-top: 34%;
-	margin-left: -80%;
-	width: 80%;
-	border: 1px solid black;
-	outline-color: black;
-	/*width: 190px !important;*/
-	/*padding-top:-30px !important;*/
-	color: black;
+	margin-left: -70%;
 }
 
 #topTiles{
@@ -178,4 +172,91 @@ td{
 .migrationhelp>h2,
 .migrationhelp>p{
 	color: white;
+}
+
+/*Retrieved from: http://bootsnipp.com/snippets/featured/multi-level-dropdown-menu-bs3*/
+.dropdown-submenu {
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0,0,0,0);
+	border-radius: 0;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0);
+	border-radius: 0;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+/*-----------------------------------------------------*/
+
+.dropdown {
+	/*width: 500vw;*/
+}
+
+.dropdown-label{
+	background-color: white;
+	color: black;
+	padding: 1%;
+	padding-left: 5%; 
+	border: 1px solid black;
+	outline-color: black;
+	width: 54.6%;
+	text-align: left;
+	box-shadow: 0 5px 15px rgba(0,0,0,0);
+	border-radius: 0;
+}
+
+.dropdown .caret{
+	/*margin-left: 24.5%;
+	margin-right: 1.5%;*/
+	float: right;
+	margin-right: 2%;
+	margin-top: 4%;
+}
+
+.dropdown-menu{
+	padding: none !important;
+	width: 54.6%;
+	box-shadow: 0 5px 15px rgba(0,0,0,0);
+	border-radius: 0;
+}
+
+.dropdown-menu .selected{
+	background-color: #CCCCCC;
 }

@@ -1,6 +1,12 @@
 var SORT_ENUMS = {
-	ALPHABETICAL: "alphabetical",
-	PROXIMITY: "proximity"
+	ALPHABETICAL: {val: "Alphabetical", fn: sortAlphabetical},
+	IG_LUZON: {val: "Island Group: Luzon", fn: sortAlphabetical},
+	IG_VISAYAS: {val: "Island Group: Visayas", fn: sortAlphabetical},
+	IG_MIND: {val: "Island Group: Mindanao", fn: sortAlphabetical},
+	LS_1: {val: "Livability Score: 5-7", fn: sortAlphabetical},
+	LS_2: {val: "Livability Score: 7-8", fn: sortAlphabetical},
+	LS_3: {val: "Livability Score: 8-10", fn: sortAlphabetical},
+	PROXIMITY: {val: "Proximity", fn: sortAlphabetical}
 };
 
 var ALL_CITY_TILES = CITY_TILES_TOP.concat(CITY_TILES_BOTTOM);
@@ -17,6 +23,7 @@ var tl = new TimelineMax();
 $(document).ready(function(){
 
 	initTiles();
+	emptyTiles(sortTiles.bind(this, SORT_ENUMS.ALPHABETICAL));
 
 	$(".filterItem").on("click", function() {
 		var filter = $(this).attr("name");
@@ -35,11 +42,16 @@ $(document).ready(function(){
 
 		emptyTiles(filterTiles);
 	});
+
+	$(".option").on("click", function() {
+		$(".selected").first().removeClass("selected");
+		$(this).addClass("selected");
+		$("#dLabel").text($(this).attr("value"));
+		$("#dLabel").append("<span class = 'caret'></span>");
+	})
 });
 
 function filterTiles() {
-	// emptyTiles();
-
 	filteredTiles = [];
 	for(var i = 0; i < ALL_CITY_TILES.length; i++) {
 		if(UTILS.isInArray(ALL_CITY_TILES[i].tags, activeFilters)) {
@@ -48,6 +60,27 @@ function filterTiles() {
 	}
 
 	changeTiles(filteredTiles, DIV_LISTS, 9);
+}
+
+function sortTiles(type) {
+	sortedTiles = ALL_CITY_TILES;
+	ALL_CITY_TILES = ALL_CITY_TILES.slice(0);
+
+	sortedTiles.sort(sortAlphabetical);
+	// for(var i = 0; i < ALL_CITY_TILES.length; i++) {
+
+	// }
+	changeTiles(sortedTiles, DIV_LISTS, 9);
+}
+
+function sortAlphabetical(a, b) {
+	var aName = a.city.name.toLowerCase();
+	var bName = b.city.name.toLowerCase(); 
+	return ((aName < bName) ? -1 : ((aName > bName) ? 1 : 0));
+}
+
+function filterByIG(ig) {
+	
 }
 
 function emptyTiles(callback) {
