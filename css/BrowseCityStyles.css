@@ -43,15 +43,42 @@ td{
 	color: white;
 }
 
+.livLabel{
+	position: absolute;
+	font-family: Korolev-Bold;
+	font-size: 1vw;
+	color: white;
+	margin-left: -42%;
+	margin-top: 1%;
+	width: 50%;
+}
+
+.scoreCircle {
+    border-radius: 50%;
+    width:15%;
+    height:22%;
+    background-color: transparent;
+    border: 0.3vw solid #56DA65;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.8vw;
+    font-family: Korolev-Heavy;
+    position: absolute;
+    margin-top: -64%;
+    margin-left: 83%;
+}
+
 .cityTags{
 	position: absolute;
-	-webkit-transform: translate(215%, -60%); 
-	width: 40%;
-	height: 40%;
+	width: 100%;
+	margin-top: -13%;
 }
 
 .cityTagIcon{
-	position: absolute;
+	transform: scale(-1, 1);
 }
 
 #sortList{

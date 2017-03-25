@@ -84,16 +84,19 @@ function changeTiles(tiles, lists, maxTiles) {
 		var $province = $("<span>", {"class": "cityProvince"});
 		$province.append("\n"+tiles[i].city.province.toUpperCase());
 
-		var $tagDiv = $("<div>", {"class": "cityTags"});
+		var $livLabel = $("<span>", {"class": "livLabel"});
+		$livLabel.append("LIVABILITY SCORE:");
 
-		var wp = 215;
+		var $livScore = $("<span>", {"class": "scoreCircle"});
+		$livScore.append(tiles[i].city.overallScore);
+
+		var $tagDiv = $("<div>", {"class": "cityTags"});
+		$tagDiv.css("transform", "scale(-1, 1)");
+
 		for(var j = 0; j < tiles[i].tags.length; j++) {
-			var $tag = $("<img>", {"style": "cityTagIcon", "src": tiles[i].tags[j].res});
-			$tag.attr("width", "33%");
-			// $tag.attr("height", "33%");
+			var $tag = $("<img>", {"src": tiles[i].tags[j].res, "class": "cityTagIcon"});
+			$tag.attr("width", "11.6%");
 			$tagDiv.append($tag);
-			$tagDiv.css("-webkit-transform", "translate(" +wp+ "%, -60%)");
-			wp -= 35;
 		}
 
 		if(i % 3 != 0) {
@@ -109,6 +112,8 @@ function changeTiles(tiles, lists, maxTiles) {
 		$tile.append($image);
 		$tile.append($city);
 		$tile.append($province);
+		$tile.append($livLabel);
+		$tile.append($livScore);
 		$tile.append($tagDiv);
 
 		$row.append($tile);

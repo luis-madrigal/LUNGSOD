@@ -8,7 +8,7 @@ var TAGS = {
 	EDUCATION: {
 		id: 0,
 		name: "Education",
-		res: "res/ICONS/Education.png",
+		res: "res/Resources_IconWheel/Icons_Hover/Icons_Hover-35.png",
 		altRes: {
 			UNSELECTED: "res/Resources_IconWheel/Icons_Unselected/Icon_Unselected-30.png",
 			SELECTED: "res/Resources_IconWheel/Icons_Selected/Icons_Selected-35.png",
@@ -19,7 +19,7 @@ var TAGS = {
 	EMPLOYMENT: {
 		id: 1,
 		name: "Employment",
-		res: "res/ICONS/Employment.png",
+		res: "res/Resources_IconWheel/Icons_Hover/Icons_Hover_Artboard 61 copy.png",
 		altRes: {
 			UNSELECTED: "res/Resources_IconWheel/Icons_Unselected/Icon_Unselected_Artboard 61.png",
 			SELECTED: "res/Resources_IconWheel/Icons_Selected/Icons_Selected_Artboard 61 copy.png",
@@ -30,7 +30,7 @@ var TAGS = {
 	HEALTH: {
 		id: 2,
 		name: "Health",
-		res: "res/ICONS/Health.png",
+		res: "res/Resources_IconWheel/Icons_Hover/Icons_Hover-36.png",
 		altRes: {
 			UNSELECTED: "res/Resources_IconWheel/Icons_Unselected/Icon_Unselected-29.png",
 			SELECTED: "res/Resources_IconWheel/Icons_Selected/Icons_Selected-36.png",
@@ -41,7 +41,7 @@ var TAGS = {
 	HOUSING: {
 		id: 3,
 		name: "Housing",
-		res: "res/ICONS/Housing.png",
+		res: "res/Resources_IconWheel/Icons_Hover/Icons_Hover-34.png",
 		altRes: {
 			UNSELECTED: "res/Resources_IconWheel/Icons_Unselected/Icon_Unselected-31.png",
 			SELECTED: "res/Resources_IconWheel/Icons_Selected/Icons_Selected-34.png",
@@ -52,7 +52,7 @@ var TAGS = {
 	INFRASTRUCTURE: {
 		id: 4,
 		name: "Infrastructure",
-		res: "res/ICONS/Infrastructure.png",
+		res: "res/Resources_IconWheel/Icons_Hover/Icons_Hover-39.png",
 		altRes: {
 			UNSELECTED: "res/Resources_IconWheel/Icons_Unselected/Icon_Unselected-27.png",
 			SELECTED: "res/Resources_IconWheel/Icons_Selected/Icons_Selected-39.png",
@@ -63,7 +63,7 @@ var TAGS = {
 	LEISURE: {
 		id: 5,
 		name: "Leisure",
-		res: "res/ICONS/Leisure.png",
+		res: "res/Resources_IconWheel/Icons_Hover/Icons_Hover-40.png",
 		altRes: {
 			UNSELECTED: "res/Resources_IconWheel/Icons_Unselected/Icon_Unselected-28.png",
 			SELECTED: "res/Resources_IconWheel/Icons_Selected/Icons_Selected-40.png",
@@ -74,7 +74,7 @@ var TAGS = {
 	LOCALGOV: {
 		id: 6,
 		name: "Local Gov",
-		res: "res/ICONS/Local Gov.png",
+		res: "res/Resources_IconWheel/Icons_Hover/Icons_Hover-37.png",
 		altRes: {
 			UNSELECTED: "res/Resources_IconWheel/Icons_Unselected/Icon_Unselected-25.png",
 			SELECTED: "res/Resources_IconWheel/Icons_Selected/Icons_Selected-37.png",
@@ -85,7 +85,7 @@ var TAGS = {
 	TRANSPORTATION: {
 		id: 7,
 		name: "Transportation",
-		res: "res/ICONS/Transportation.png",
+		res: "res/Resources_IconWheel/Icons_Hover/Icons_Hover-38.png",
 		altRes: {
 			UNSELECTED: "res/Resources_IconWheel/Icons_Unselected/Icon_Unselected-26.png",
 			SELECTED: "res/Resources_IconWheel/Icons_Selected/Icons_Selected-38.png",
@@ -117,12 +117,12 @@ var CITY_TILES_TOP = [
 	{
 		city: CITIES.SANTA_ROSA,
 		res: "res/City Tiles (15-15)/CityTile_SANTAROSA.jpg",
-		tags: [TAGS.HOUSING, TAGS.EMPLOYMENT]
+		tags: [TAGS.EMPLOYMENT, TAGS.HOUSING, TAGS.HEALTH, TAGS.INFRASTRUCTURE, TAGS.TRANSPORTATION, TAGS.LEISURE]
 	},
 	{
 		city: CITIES.BACOLOD,
 		res: "res/City Tiles (15-15)/CityTile_BACOLOD.jpg",
-		tags: [TAGS.INFRASTRUCTURE, TAGS.LOCALGOV]
+		tags: [TAGS.EMPLOYMENT, TAGS.HOUSING, TAGS.EDUCATION, TAGS.INFRASTRUCTURE, TAGS.TRANSPORTATION, TAGS.LOCALGOV, TAGS.LEISURE]
 	},
 	{
 		city: CITIES.CAGAYAN_DE_ORO,
@@ -132,22 +132,22 @@ var CITY_TILES_TOP = [
 	{
 		city: CITIES.ILIGAN,
 		res: "res/City Tiles (15-15)/CityTile_ILIGAN.jpg",
-		tags: [TAGS.INFRASTRUCTURE, TAGS.TRANSPORTATION, TAGS.EMPLOYMENT]
+		tags: [TAGS.EMPLOYMENT, TAGS.INFRASTRUCTURE, TAGS.TRANSPORTATION, TAGS.LOCALGOV, TAGS.LEISURE]
 	},
 	{
 		city: CITIES.ILOILO,
 		res: "res/City Tiles (15-15)/CityTile_ILOILO.jpg",
-		tags: [TAGS.TRANSPORTATION, TAGS.HOUSING]
+		tags: [TAGS.EDUCATION, TAGS.EMPLOYMENT, TAGS.HEALTH, TAGS.HOUSING, TAGS.INFRASTRUCTURE, TAGS.LEISURE, TAGS.LOCALGOV, TAGS.TRANSPORTATION]
 	},
 	{
 		city: CITIES.BUTUAN,
 		res: "res/City Tiles (15-15)/CityTile_BUTUAN.jpg",
-		tags: [TAGS.INFRASTRUCTURE, TAGS.HOUSING, TAGS.HEALTH]
+		tags: [TAGS.INFRASTRUCTURE, TAGS.TRANSPORTATION]
 	},
 	{
 		city: CITIES.TARLAC,
 		res: "res/City Tiles (15-15)/CityTile_TARLAC.jpg",
-		tags: [TAGS.HOUSING, TAGS.EMPLOYMENT]
+		tags: [TAGS.HOUSING]
 	},
 	{
 		city: CITIES.LEGAZPI,
@@ -157,7 +157,7 @@ var CITY_TILES_TOP = [
 	{
 		city: CITIES.DUMAGUETE,
 		res: "res/City Tiles (15-15)/CityTile_DUMAGUETE.jpg",
-		tags: [TAGS.EMPLOYMENT, TAGS.EDUCATION]
+		tags: [TAGS.EMPLOYMENT, TAGS.HOUSING, TAGS.HEALTH, TAGS.EDUCATION, TAGS.LOCALGOV]
 	}
 ];
 
@@ -165,22 +165,22 @@ var CITY_TILES_BOTTOM = [
 	{
 		city: CITIES.BATANGAS,
 		res: "res/City Tiles (15-15)/CityTile_Batangas.jpg",
-		tags: [TAGS.HOUSING, TAGS.EMPLOYMENT]
+		tags: [TAGS.INFRASTRUCTURE, TAGS.TRANSPORTATION]
 	},
 	{
 		city: CITIES.PUERTO_PRINCESA,
 		res: "res/City Tiles (15-15)/CityTile_PuertoPrincesa.jpg",
-		tags: [TAGS.INFRASTRUCTURE, TAGS.LOCALGOV]
+		tags: [TAGS.INFRASTRUCTURE, TAGS.TRANSPORTATION, TAGS.LOCALGOV, TAGS.LEISURE]
 	},
 	{
 		city: CITIES.OLONGAPO,
 		res: "res/City Tiles (15-15)/CityTile_Olongapo.jpg",
-		tags: [TAGS.INFRASTRUCTURE, TAGS.TRANSPORTATION, TAGS.EMPLOYMENT]
+		tags: [TAGS.EMPLOYMENT, TAGS.HEALTH, TAGS.INFRASTRUCTURE, TAGS.TRANSPORTATION, TAGS.LOCALGOV, TAGS.LEISURE]
 	},
 	{
 		city: CITIES.TACLOBAN,
 		res: "res/City Tiles (15-15)/CityTile_Tacloban.jpg",
-		tags: [TAGS.INFRASTRUCTURE, TAGS.TRANSPORTATION, TAGS.EMPLOYMENT]
+		tags: [TAGS.EMPLOYMENT, TAGS.HOUSING, TAGS.HEALTH, TAGS.EDUCATION, TAGS.LOCALGOV]
 	},
 	{
 		city: CITIES.ZAMBOANGA,
@@ -190,6 +190,6 @@ var CITY_TILES_BOTTOM = [
 	{
 		city: CITIES.GENERAL_SANTOS,
 		res: "res/City Tiles (15-15)/CityTile_GeneralSantos.jpg",
-		tags: [TAGS.INFRASTRUCTURE, TAGS.HOUSING, TAGS.HEALTH]
+		tags: [TAGS.HOUSING, TAGS.HEALTH, TAGS.INFRASTRUCTURE, TAGS.LEISURE]
 	}
 ];
