@@ -121,6 +121,7 @@ td{
 #clearFilter{
 	text-decoration:underline;
 	margin-top: 1%;
+	cursor: pointer;
 	/*margin-left: 250px;*/
 }
 

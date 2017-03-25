@@ -1,3 +1,9 @@
+var ISLAND_GROUPS = {
+	LUZON: "Luzon",
+	VISAYAS: "Visayas",
+	MINDANAO: "Mindanao"
+};
+
 var TAGS = {
 	EDUCATION: {
 		id: 0,
@@ -87,24 +93,24 @@ var TAGS = {
 		},
 		color: "#634481"
 	},
-}
+};
 
 var CITIES = {
-	SANTA_ROSA: new City("Santa Rosa", "Laguna", 9.3, "res/Resources by city/Santa Rosa", [9.5, 9.5, 9, 9, 9, 10, 8.5, 10]),
-	BACOLOD: new City("Bacolod", "Negros Occidental", 8.9, "res/Resources by city/Bacolod", [9, 9, 7, 9.5, 9, 9, 9, 10]),
-	CAGAYAN_DE_ORO: new City("Cagayan De Oro", "Misamis Oriental", 9.1, "res/Resources by city/Cagayan de Oro", [9.5, 9.5, 9, 9.5, 9, 9, 8.5, 9]),
-	ILIGAN: new City("Iligan", "Lanao Del Norte", 8.7, "res/Resources by city/Iligan", [8.5, 9, 7.5, 8.5, 9, 9, 9, 9]),
-	ILOILO: new City("Iloilo", "Cebu", 9.4, "res/Resources by city/Iloilo", [9.5, 9.5, 9, 9, 10, 9, 9.5, 10]),
-	BUTUAN: new City("Butuan", "Caraga", 8.4, "res/Resources by city/Butuan", [8.5, 8, 8, 8.5, 9, 8.5, 8, 9]),
-	TARLAC: new City("Tarlac", "Tarlac", 8.4, "res/Resources by city/Tarlac", [8, 8.5, 8, 9, 8.5, 8.5, 8, 8.5]),
-	LEGAZPI: new City("Legazpi", "Albay", 8.8, "res/Resources by city/Legazpi", [8, 8.5, 8.5, 9, 9, 10, 8.5, 9]),
-	DUMAGUETE: new City("Dumaguete", "Negros Oriental", 9, "res/Resources by city/Dumaguete", [9, 9.5, 9, 9.5, 8, 8.5, 9, 8.5]),
-	BATANGAS: new City("Batangas", "Batangas", 8.3, "res/Resources by city/Batangas", [8, 7.5, 7.5, 8.5, 9, 8, 8.5, 9]),
-	PUERTO_PRINCESA: new City("Puerto Princesa", "Palawan", 8, "res/Resources by city/Puerto Princesa", [6, 7, 7, 7.5, 9, 9, 9, 9]),
-	OLONGAPO: new City("Olongapo", "Zambales", 9.3, "res/Resources by city/Olongapo", [9, 9, 10, 8.5, 9.5, 9, 9.5, 10]),
-	TACLOBAN: new City("Tacloban", "Leyte", 8.6, "res/Resources by city/Tacloban", [9, 9, 9, 9, 7, 8.5, 9, 8]),
-	ZAMBOANGA: new City("Zamboanga", "Zamboanga", 8.9, "res/Resources by city/Zamboanga", [9, 8, 8.5, 8.5, 8.5, 9, 9, 9]),
-	GENSAN: new City("General Santos", "South Cotabato", 8.6, "res/Resources by city/General Santos", [8.5, 7, 9, 9.5, 9, 9, 8.5, 8.5])
+	SANTA_ROSA: new City("Santa Rosa", "Laguna", ISLAND_GROUPS.LUZON, 9.3, "res/Resources by city/Santa Rosa", [9.5, 9.5, 9, 9, 9, 10, 8.5, 10]),
+	BACOLOD: new City("Bacolod", "Negros Occidental", ISLAND_GROUPS.VISAYAS, 8.9, "res/Resources by city/Bacolod", [9, 9, 7, 9.5, 9, 9, 9, 10]),
+	CAGAYAN_DE_ORO: new City("Cagayan De Oro", "Misamis Oriental", ISLAND_GROUPS.MINDANAO, 9.1, "res/Resources by city/Cagayan de Oro", [9.5, 9.5, 9, 9.5, 9, 9, 8.5, 9]),
+	ILIGAN: new City("Iligan", "Lanao Del Norte", ISLAND_GROUPS.MINDANAO, 8.7, "res/Resources by city/Iligan", [8.5, 9, 7.5, 8.5, 9, 9, 9, 9]),
+	ILOILO: new City("Iloilo", "Cebu", ISLAND_GROUPS.VISAYAS, 9.4, "res/Resources by city/Iloilo", [9.5, 9.5, 9, 9, 10, 9, 9.5, 10]),
+	BUTUAN: new City("Butuan", "Caraga", ISLAND_GROUPS.MINDANAO, 8.4, "res/Resources by city/Butuan", [8.5, 8, 8, 8.5, 9, 8.5, 8, 9]),
+	TARLAC: new City("Tarlac", "Tarlac", ISLAND_GROUPS.LUZON, 8.4, "res/Resources by city/Tarlac", [8, 8.5, 8, 9, 8.5, 8.5, 8, 8.5]),
+	LEGAZPI: new City("Legazpi", "Albay", ISLAND_GROUPS.VISAYAS, 8.8, "res/Resources by city/Legazpi", [8, 8.5, 8.5, 9, 9, 10, 8.5, 9]),
+	DUMAGUETE: new City("Dumaguete", "Negros Oriental", ISLAND_GROUPS.VISAYAS, 9, "res/Resources by city/Dumaguete", [9, 9.5, 9, 9.5, 8, 8.5, 9, 8.5]),
+	BATANGAS: new City("Batangas", "Batangas", ISLAND_GROUPS.LUZON, 8.3, "res/Resources by city/Batangas", [8, 7.5, 7.5, 8.5, 9, 8, 8.5, 9]),
+	PUERTO_PRINCESA: new City("Puerto Princesa", ISLAND_GROUPS.LUZON, "Palawan", 8, "res/Resources by city/Puerto Princesa", [6, 7, 7, 7.5, 9, 9, 9, 9]),
+	OLONGAPO: new City("Olongapo", "Zambales", 9.3, ISLAND_GROUPS.LUZON, "res/Resources by city/Olongapo", [9, 9, 10, 8.5, 9.5, 9, 9.5, 10]),
+	TACLOBAN: new City("Tacloban", "Leyte", ISLAND_GROUPS.VISAYAS, 8.6, "res/Resources by city/Tacloban", [9, 9, 9, 9, 7, 8.5, 9, 8]),
+	ZAMBOANGA: new City("Zamboanga", "Zamboanga", ISLAND_GROUPS.MINDANAO, 8.9, "res/Resources by city/Zamboanga", [9, 8, 8.5, 8.5, 8.5, 9, 9, 9]),
+	GENERAL_SANTOS: new City("General Santos", "South Cotabato", ISLAND_GROUPS.MINDANAO, 8.6, "res/Resources by city/General Santos", [8.5, 7, 9, 9.5, 9, 9, 8.5, 8.5])
 }
 
 var CITY_TILES_TOP = [
@@ -182,7 +188,7 @@ var CITY_TILES_BOTTOM = [
 		tags: [TAGS.TRANSPORTATION, TAGS.HOUSING]
 	},
 	{
-		city: CITIES.GENSAN,
+		city: CITIES.GENERAL_SANTOS,
 		res: "res/City Tiles (15-15)/CityTile_GeneralSantos.jpg",
 		tags: [TAGS.INFRASTRUCTURE, TAGS.HOUSING, TAGS.HEALTH]
 	}

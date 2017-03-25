@@ -1,6 +1,7 @@
-var City = function(name, province, overallScore, mainres, scores) {
+var City = function(name, province, islandGroup, overallScore, mainres, scores) {
 	this.name = name;
 	this.province = province;
+	this.islandGroup = islandGroup;
 	this.overallScore = overallScore;
 	this.mainres = mainres;
 	this.scores = scores;
