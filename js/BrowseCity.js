@@ -1,11 +1,11 @@
 var SORT_ENUMS = {
 	ALPHABETICAL: {val: "Alphabetical", fn: sortAlphabetical},
-	IG_LUZON: {val: "Island Group: Luzon", fn: sortAlphabetical},
-	IG_VISAYAS: {val: "Island Group: Visayas", fn: sortAlphabetical},
-	IG_MIND: {val: "Island Group: Mindanao", fn: sortAlphabetical},
-	LS_1: {val: "Livability Score: 5-7", fn: sortAlphabetical},
-	LS_2: {val: "Livability Score: 7-8", fn: sortAlphabetical},
-	LS_3: {val: "Livability Score: 8-10", fn: sortAlphabetical},
+	IG_LUZON: {val: "Island Group: Luzon", fn: filterByIG, args: "Luzon"},
+	IG_VISAYAS: {val: "Island Group: Visayas", fn: filterByIG, args: "Visayas"},
+	IG_MIND: {val: "Island Group: Mindanao", fn: filterByIG, args: "Mindanao"},
+	LS_1: {val: "Livability Score: 5-7", fn: filterByScore, args: [5, 7]},
+	LS_2: {val: "Livability Score: 7-8", fn: filterByScore, args: [7, 8]},
+	LS_3: {val: "Livability Score: 8-10", fn: filterByScore, args: [8, 10]},
 	PROXIMITY: {val: "Proximity", fn: sortAlphabetical}
 };
 
@@ -13,34 +13,40 @@ var ALL_CITY_TILES = CITY_TILES_TOP.concat(CITY_TILES_BOTTOM);
 var DIV_LISTS = [
 	$("#topTilesList"),
 	$("#bottomTilesList")
-]
+];
 
 var activeFilters = [];
+var activeTagFilters = [];
 var cityTiles = [];
-var filteredTiles = [];
+var boardTiles = ALL_CITY_TILES;
 var tl = new TimelineMax();
 
 $(document).ready(function(){
 
 	initTiles();
-	emptyTiles(sortTiles.bind(this, SORT_ENUMS.ALPHABETICAL));
+	activeFilters[2] = SORT_ENUMS.ALPHABETICAL;
+	emptyTiles(computeFilters);
 
 	$(".filterItem").on("click", function() {
 		var filter = $(this).attr("name");
 
-		if(activeFilters.indexOf(TAGS[filter]) < 0)
-			activeFilters.push(TAGS[filter]);
+		if(activeTagFilters.indexOf(TAGS[filter]) < 0)
+			activeTagFilters.push(TAGS[filter]);
 		else
-			activeFilters.splice(activeFilters.indexOf(TAGS[filter]), 1);
+			activeTagFilters.splice(activeTagFilters.indexOf(TAGS[filter]), 1);
 
-		emptyTiles(filterTiles);
+		activeFilters[0] = filterTiles;
+
+		emptyTiles(computeFilters);
 	});
 
 	$("#clearFilter").on("click", function() {
-		activeFilters = [];
+		activeTagFilters = [];
 		$(".filterItem").removeAttr("checked");
 
-		emptyTiles(filterTiles);
+		activeFilters[0] = filterTiles;
+
+		emptyTiles(computeFilters);
 	});
 
 	$(".option").on("click", function() {
@@ -48,39 +54,74 @@ $(document).ready(function(){
 		$(this).addClass("selected");
 		$("#dLabel").text($(this).attr("value"));
 		$("#dLabel").append("<span class = 'caret'></span>");
-	})
+
+		var type =  SORT_ENUMS[$(this).data("id")];
+
+		activeFilters[1] = type;
+
+		emptyTiles(computeFilters);
+	});
 });
 
-function filterTiles() {
-	filteredTiles = [];
-	for(var i = 0; i < ALL_CITY_TILES.length; i++) {
-		if(UTILS.isInArray(ALL_CITY_TILES[i].tags, activeFilters)) {
-			filteredTiles.push(ALL_CITY_TILES[i]);
+function computeFilters() {
+	var computedTiles = ALL_CITY_TILES;
+
+	if(activeFilters[0]) {
+		computedTiles = activeFilters[0].call(this, ALL_CITY_TILES);
+	}
+	if(activeFilters[1]) {
+		computedTiles = activeFilters[1].fn.call(this, computedTiles, activeFilters[1].args);
+	}
+
+	changeTiles(computedTiles, DIV_LISTS, 9);
+}
+
+function filterTiles(tiles) {
+	var filteredTiles = [];
+	for(var i = 0; i < tiles.length; i++) {
+		if(UTILS.isInArray(tiles[i].tags, activeTagFilters)) {
+			filteredTiles.push(tiles[i]);
 		}
 	}
 
-	changeTiles(filteredTiles, DIV_LISTS, 9);
+	return filteredTiles;
 }
 
-function sortTiles(type) {
-	sortedTiles = ALL_CITY_TILES;
-	ALL_CITY_TILES = ALL_CITY_TILES.slice(0);
+function sortAlphabetical(tiles) {
+	console.log(tiles)
+	sortedTiles = tiles;
+	tiles = tiles.slice(0);
 
-	sortedTiles.sort(sortAlphabetical);
-	// for(var i = 0; i < ALL_CITY_TILES.length; i++) {
+	sortedTiles.sort(function sortAlphabetical(a, b) {
+		var aName = a.city.name.toLowerCase();
+		var bName = b.city.name.toLowerCase(); 
+		return ((aName < bName) ? -1 : ((aName > bName) ? 1 : 0));
+	});
 
-	// }
-	changeTiles(sortedTiles, DIV_LISTS, 9);
+	return sortedTiles;
 }
 
-function sortAlphabetical(a, b) {
-	var aName = a.city.name.toLowerCase();
-	var bName = b.city.name.toLowerCase(); 
-	return ((aName < bName) ? -1 : ((aName > bName) ? 1 : 0));
+function filterByIG(tiles, ig) {
+	sortedTiles = [];
+
+	for(var i = 0; i < tiles.length; i++) {
+		if(tiles[i].city.islandGroup == ig)
+			sortedTiles.push(tiles[i]);
+	}
+
+	return sortedTiles;
 }
 
-function filterByIG(ig) {
-	
+function filterByScore(tiles, range) {
+	sortedTiles = [];
+
+	for(var i = 0; i < tiles.length; i++) {
+		var score = tiles[i].city.overallScore;
+		if(score >= range[0] && score <= range[1])
+			sortedTiles.push(tiles[i]);
+	}
+
+	return sortedTiles;
 }
 
 function emptyTiles(callback) {
