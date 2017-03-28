@@ -395,7 +395,7 @@
 .footer{
     background: white;
     padding-top:4%;
-    padding-bottom:2%
+    padding-bottom: 2%;
 }
 
 .carousel-inner .active.left  { left: -33%;}

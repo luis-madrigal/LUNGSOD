@@ -227,7 +227,7 @@
 					<!-- Decription -->
 					<div class="col-md-7" style="padding-left: 0px;">
 						<div class="row A-cities-title-2">
-							Best in employment oppotunities
+							Best in employment opportunities
 						</div>
 						<div class="row A-cities-text-2">
 							A list of cities that have a great quality and availability<br />
@@ -435,45 +435,48 @@
 					<span class="glyphicon glyphicon-chevron-right"></span>
 				</a>
 			</div>
-			<!-- End of fifth part -->
-			<!-- Sixth part -->
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-6" style="padding:0;">
-						<img class="img-responsive center-block" id="picture_hero" src="res/images/LivabilityTile.jpg" />
-					</div>
-					<div class="col-md-6" style="padding:0;">
-						<img class="img-responsive center-block" id="picture_hero" src="res/images/MigrationTile.jpg" />
-					</div>
-				</div>      
+		</div>
+		<!-- End of fifth part -->
+		
+	</div>
+	<!-- Sixth part -->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-6" style="padding:0;">
+				<img class="img-responsive center-block" id="picture_hero" src="res/images/LivabilityTile.jpg" />
 			</div>
-			<!-- End of sixth part -->
-			<!-- Footer -->
-			<div class="footer">
-				<img class="img-responsive footer-logo" src="res/logos/Logo_Footer.png" />
+			<div class="col-md-6" style="padding:0;">
+				<img class="img-responsive center-block" id="picture_hero" src="res/images/MigrationTile.jpg" />
 			</div>
-		</body>
-		<script src="utils/lib/TweenMax.min.js"></script>
-		<script src="js/db.js"></script>
-		<script src="js/BrowseCity.js"></script>
-		<script>
-			$('#myCarousel').carousel({
-				interval: 10000
-			})
+		</div>      
+	</div>
+	<!-- End of sixth part -->
+	<!-- Footer -->
+	<div class="footer">
+		<img class="img-responsive footer-logo" src="res/logos/Logo_Footer.png" />
+	</div>
+</body>
+<script src="utils/lib/TweenMax.min.js"></script>
+<script src="js/db.js"></script>
+<script src="js/BrowseCity.js"></script>
+<script>
+	$('#myCarousel').carousel({
+		interval: 10000
+	})
 
-			$('.carousel .item').each(function(){
-				var next = $(this).next();
-				if (!next.length) {
-					next = $(this).siblings(':first');
-				}
-				next.children(':first-child').clone().appendTo($(this));
+	$('.carousel .item').each(function(){
+		var next = $(this).next();
+		if (!next.length) {
+			next = $(this).siblings(':first');
+		}
+		next.children(':first-child').clone().appendTo($(this));
 
-				if (next.next().length>0) {
-					next.next().children(':first-child').clone().appendTo($(this));
-				}
-				else {
-					$(this).siblings(':first').children(':first-child').clone().appendTo($(this));
-				}
-			});
-		</script>
-		</html>	
+		if (next.next().length>0) {
+			next.next().children(':first-child').clone().appendTo($(this));
+		}
+		else {
+			$(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+		}
+	});
+</script>
+</html>	
