@@ -111,6 +111,48 @@ var CITIES = {
 	TACLOBAN: new City("Tacloban", "Leyte", ISLAND_GROUPS.VISAYAS, 8.6, "res/Resources by city/Tacloban", [9, 9, 9, 9, 7, 8.5, 9, 8]),
 	ZAMBOANGA: new City("Zamboanga", "Zamboanga", ISLAND_GROUPS.MINDANAO, 8.9, "res/Resources by city/Zamboanga", [9, 8, 8.5, 8.5, 8.5, 9, 9, 9]),
 	GENERAL_SANTOS: new City("General Santos", "South Cotabato", ISLAND_GROUPS.MINDANAO, 8.6, "res/Resources by city/General Santos", [8.5, 7, 9, 9.5, 9, 9, 8.5, 8.5])
+};
+
+var DESCRIPTIONS = {
+	SANTA_ROSA: {
+		ABOUT_HEADER: "MAKATI OF THE SOUTH",
+		ABOUT_BODY: [
+			"Santa Rosa is located in the Laguna province of Luzon.",
+			"Its thriving economy and growing economic landscape have earned it the name \"Makati of the South\", making it yet another one of the most livable cities in the country.",
+			"Many companies have taken an interest in Santa Rosa due to the affordability of its land and real estate, providing the city with plenty of employment opportunities. Santa Rosa is also home to one of the most prominent schools in the country: De la Salle University."
+		],
+		MINI_DESC: "With the combination of work opportunities, proper city management, education, and more, Santa Rosa has become an all around ideal place to live, and will soon match the likes of Metro Manila."		
+	},
+	BACOLOD: {
+		ABOUT_HEADER: "THE CITY OF SMILES",
+		ABOUT_BODY: [
+			"Bacolod City is located in the Negros Occidental province of Visayas, known for being one of the most friendly cities in the country, as well as being one of the better places to live in the Philippines due to the clean and green environment and people.",
+			"Bacolod has also recently been declared a center of excellence by the Department of Science and Technology for having quality operations in the IT-BPO industry that is spurring the city's economy."
+		],
+		MINI_DESC: "The friendly city of Bacolod is quickly growing into one of the best places to live in the Philippines with its clean environment and thriving economy."		
+	},
+	CAGAYAN_DE_ORO: {
+		ABOUT_HEADER: "MAKATI OF THE SOUTH",
+		ABOUT_BODY: [
+			"Santa Rosa is located in the Laguna province of Luzon.",
+			"Its thriving economy and growing economic landscape have earned it the name \"Makati of the South\", making it yet another one of the most livable cities in the country.",
+			"Many companies have taken an interest in Santa Rosa due to the affordability of its land and real estate, providing the city with plenty of employment opportunities. Santa Rosa is also home to one of the most prominent schools in the country: De la Salle University."
+		],
+		MINI_DESC: "With the combination of work opportunities, proper city management, education, and more, Santa Rosa has become an all around ideal place to live, and will soon match the likes of Metro Manila."		
+	},
+};
+
+var CITY_PAGE_TILES = {
+	SANTA_ROSA: {
+		EMPLOYMENT: {
+			DESC: "If you're looking for a job in business or information technology, Santa Rosa is one of your better bets. The city has several economic zones and industrial parks filled with job opportunities. More and more companies are looking establish branches and offices in Santa Rosa due to its talent availability and space, just like the recent video game publisher, Ubisoft.",
+			TILES: [
+				 {caption: "Ubisoft Office opening", res: "/Pics_Employment/ubisoft opening.jpg"},
+				 {caption: "Greenfield Park, business district", res: "/Pics_Employment/greenfield.jpg"},
+				 {caption: "Convergys, IBM, & One Evotech office", res: "/Pics_Employment/convergys IBM one evotech office.jpg"},
+			]
+		}
+	}
 }
 
 var CITY_TILES_TOP = [

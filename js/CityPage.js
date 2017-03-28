@@ -102,7 +102,26 @@ $(document).ready(function(){
 	$("#compareModal").on("hide.bs.modal", function() {
 		$("body").css("overflow-y", "visible");
 	});
+
+	initAboutContent();
+
 });
+
+function initAboutContent() {
+	$("#aboutHeader").text(DESCRIPTIONS[cityId].ABOUT_HEADER);
+
+	var nLeft = Math.ceil(DESCRIPTIONS[cityId].ABOUT_BODY.length/2);
+	var align = "right";
+	console.log(nLeft)
+
+	for(var i = 0; i < DESCRIPTIONS[cityId].ABOUT_BODY.length; i++) {
+		if(align == "right" && nLeft <= i)
+			align = "left";
+
+		$(".aboutText."+align).append(DESCRIPTIONS[cityId].ABOUT_BODY[i]);
+		$(".aboutText."+align).append("<br><br>");
+	}
+}
 
 function initCarousel(){
 	var imgFolder = CITIES[cityId].mainres + "/Pics_Hero";
