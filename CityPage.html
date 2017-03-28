@@ -134,17 +134,18 @@
         </div>
 
         <!-- COLLAPSABLE CONTENT -->
-        <div id="content" class="row collapse">
-            <div class="col-lg-6">
-                <div class="wheelText row">
-                    <p id="catWheelHeader">LIVABILITY SCORE</p>
-                    <p id="catWheelText">
-                        Click on different livability categories<br>on the livability wheel to see why we gave<br>them the score they have.
-                        <br><br>
-                        You can also learn more about the math<br>behind our scoring system here.
-                    </p>
-                    <button type="button" class="btn btn-liveScore">The Livability Index</button>
+        <div id = "collapsableContent" class = "collapse row">
+            <div id="content" class="row">
+                <div class="col-lg-6">
+                    <p id = "contentHeader">Education in Legazpi City</p>
+                    <p id = "contentBody">Legazpi isn’t nicknamed the “City of Fun and Adventure” for nothing. There are the many festivals, malls, parks, and restaurants to enjoy, but the main attraction are the various adventures, tours, and scenic routes, you can indulge in around Mount Mayon.</p>
                 </div>
+                <div class="col-lg-5">
+                    <span class = "fullCircle">7</span>
+                </div>
+            </div>
+            <div id="contentTiles" class = "row">
+
             </div>
         </div>
 
@@ -152,7 +153,7 @@
         <div id="compareCity" class="row no-gutter">
             <div class="col-lg-12">
                 <p id="compareText">Compare me</p>
-                <a id = "tempBtn" data-toggle="modal" data-target="#compareModal">temp button</a><!-- TODO REMOVE -->
+                <a class = "btn btn-danger" id = "tempBtn" data-toggle="modal" data-target="#compareModal">temp button</a><!-- TODO REMOVE -->
                 <div class="input-group search-group" id="compareSearch">
                     <input type="text" class="form-control" placeholder="Search for a city...">
                     <span class="input-group-addon">

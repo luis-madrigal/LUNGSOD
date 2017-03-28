@@ -2,17 +2,17 @@
 
 THE CITY OF FUN AND ADVENTURE
 
-Legazpi was recognized as the most business-friendly city in Southern Luzon in 2007 by the Philippine Chamber of Commerce and Industry.
+Legazpi City is the capital of the Albay province in the Bicol Region, known as one of the centers for education, healthcare, commerce, transportation, and most popularly, its adventure tourism in and around Mount Mayon.
 
-In 2014, the city was ranked second among the top three livable cities in the Philippines in the Livable Cities Design Challenge organized by the National Competitiveness Council (NCC) and the Asia-Pacific Economic Cooperation.
+In the recent years, this beautiful tourist destination has slowly built itself up to become more.  In 2014, Legazpi was ranked second among the top three most livable cities in the country.
 
-In 2016, Legazpi was named overall third most competitive component city in the Philippines.
+---------
+CONDENSED DESCRIPTION (For Compare Cities Page)
 
-**THIS IS JUST PLACEHOLDER TEXT, NOT FINAL YET :)
+Legazpi City is not just a tourist destination these days. This beautiful city has progressed to be one of the most livable cities in Visayas.
 
-
-------
-[Unselected category wheel, default]
+---------
+[Unselected category wheel, default] -- applies to all city pages
 
 LIVABILITY SCORE
 
@@ -24,10 +24,100 @@ You can also learn more about the math behind our scoring system here:
 ------
 [Expanded recreation category section]
 
-Recreation in Legazpi City
+Employment in Legazpi City
+
+With the construction of several business districts, Legazpi City was recognized as one of the up and coming IT-BPO centers in the Philippines, adding a number of opportunities to the already plentiful job landscape of the city. A variety of other employment opportunities are present in the form of agriculture and adventure tourism around Mount Mayon.
+
+------
+[captions]
+
+Embarcadero IT Park
+Adventure Tourism at Mt. Mayon
+Bicol Regional Agro-Industrial Center
+
+===========
+
+Housing in Legazpi City
+
+Legazpi’s real estate landscape is quite diverse. The city has over 140 residential subdivisions and housing sites, as well as multiple places for rent. The city has also begun their planning and implementation of the construction of several condominium units, courtesy of Taft Property Ventures Development Corp.
+
+------
+[captions]
+
+Deca Homes
+Vista Land, Camella Legazpi
+Eco Homes Bayshores Condo
+
+===========
+
+Healthcare in Legazpi City
+
+Legazpi City has accessible healthcare, having about ten major medical centers and clinics, with a couple more under construction. With the presence of two first-class hospitals, Ago Genreal Hospital and Aquinas University Hospital, Legazpi City can provide its citizens with basic medical care and more.
+
+------
+[captions]
+
+Aquinas University Hospital
+Legazpi City Hospital
+Ago General Hospital
+
+===========
+
+Education in Legazpi City
 
 Legazpi isn’t nicknamed the “City of Fun and Adventure” for nothing. There are the many festivals, malls, parks, and restaurants to enjoy, but the main attraction are the various adventures, tours, and scenic routes, you can indulge in around Mount Mayon.
 
+------
+[captions]
+
+Bicol University
+Aquinas University of Legazpi
+St. Agnes Academy (K-12)
+
+===========
+
+Infrastructure in Legazpi City
+
+Like many provincial cities, Legazpi has managed to maintain many of its heritage buildings from colonial times. However, the city has also managed to keep up to date with the necessities: roads, transportation, utilities, and more. Legazpi City is especially commended for its waste management system and flood control.
+
+------
+[captions]
+
+St. Gregory the Great Cathedral
+Embarcadero Mall Complex
+Plaza Rizal
+
+===========
+
+Transportation in Legazpi City
+
+Legazpi City has the usual modes of transportation most Filipinos are accustomed to: tricycles, jeepneys, and taxicabs, all of which can get you anywhere in the city. Legazpi City also boasts an airport, a seaport, and most notably its award-winning integrated bus and PUV terminal: Legazpi Grand Central Terminal.
+
+------
+[captions]
+
+Legazpi Grand Central Terminal
+Legazpi Airport
+Port of Legazpi
+
+===========
+
+Local Government in Legazpi City
+
+The government of Legazpi City does well in maintaining and managing the city’s well-being by continuously making efforts to promote its economy through business partnerships and Mount Mayon’s tourism, sustainability through livelihood programs, and citizen well-being through planned additions to health clinics and better waste management systems.
+
+------
+[captions]
+
+City Hall
+Kabuhayan Livelihood Program, 2015
+Green Initiative: tree planting
+
+=========
+
+Recreation in Legazpi City
+
+Legazpi isn’t nicknamed the “City of Fun and Adventure” for nothing. While you can enjoy the usual recreational activities of a city, like parks, museums, malls, and festivals, the adventurous activities you can take part in at Mount Mayon is what makes Legazpi City unique.
 
 ------
 [captions]
