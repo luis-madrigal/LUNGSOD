@@ -62,7 +62,7 @@ var TAGS = {
 	},
 	LEISURE: {
 		id: 5,
-		name: "Leisure",
+		name: "Recreation",
 		res: "res/Resources_IconWheel/Icons_Hover/Icons_Hover-40.png",
 		altRes: {
 			UNSELECTED: "res/Resources_IconWheel/Icons_Unselected/Icon_Unselected-28.png",
