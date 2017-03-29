@@ -168,6 +168,13 @@ td{
 	font-family: WorkSans-SemiBold;
 }
 
+.post-content h4{
+	font-size: 1.2vw;
+	font-family: WorkSans-Medium;
+	line-height: 150%;
+}
+
+
 #livimg1:hover .livabilityImg{
 	opacity: 1;
 }
