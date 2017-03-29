@@ -1,5 +1,5 @@
 var cityId;
-var expanded = {val: false, city: null};
+var expanded = {val: false, tag: null};
 var collapsable = true;
 
 $(document).ready(function(){
@@ -49,7 +49,7 @@ $(document).ready(function(){
 	});
 
 	$(".wheelTag").click(function() {
-		if(expanded.val && $(this).data("id") != expanded.city) {
+		if(expanded.val && $(this).data("id") != expanded.tag) {
 			collapsable = false;
 			return;
 		}
@@ -67,7 +67,7 @@ $(document).ready(function(){
 			$(this).css("background-image", "url('" +TAGS[$(this).data("id")].altRes.UNSELECTED+ "')");
 			$(".scoreCircle").css("border-color", "#56DA65");
 			expanded.val = false;
-			expanded.city = null;
+			expanded.tag = null;
 		} else {
 			for(var i = 0; i < children.length; i++) {
 				if(this != children[i]) {
@@ -81,12 +81,13 @@ $(document).ready(function(){
 			TweenMax.to(span, 0.2, {css: {"opacity": "1"}});
 			$(".scoreCircle").css("border-color", TAGS[$(this).data("id")].color);
 			expanded.val = true;
-			expanded.city = $(this).data("id");
+			expanded.tag = $(this).data("id");
+			displayContent(expanded.tag);
 		}
 		this.toggled = !this.toggled;
 	});
 
-	$("#content").on('hide.bs.collapse', function (e) {
+	$("#collapsableContent").on('hide.bs.collapse', function (e) {
 		return collapsable;
 	}).on('show.bs.collapse', function (e) {
 		return collapsable;
@@ -122,6 +123,28 @@ $(document).ready(function(){
 		document.location.href = dest;
 	});
 });
+
+function displayContent(tagId) {
+	var cp = CITY_PAGE_TILES[cityId][tagId];
+	var tiles = cp.TILES;
+
+	$(".tile").each(function(index) {
+		$(this).find(".image-tile").attr("src", "res"+tiles[index].res);
+		$(this).find(".caption").html(tiles[index].caption);
+		$(this).find(".rectangle").css("background-color", TAGS[tagId].color);
+	});
+
+	var city = (CITIES[cityId].name.indexOf(" ") >= 0)? "":" City";
+	var fullName = CITIES[cityId].name+city;
+
+	$("#contentHeader").text(TAGS[tagId].name+" in "+fullName);
+	$("#contentBody").text(cp.DESC);
+
+	var circle = $("#content").find(".fullCircle");
+	circle.css("background-color", TAGS[tagId].color);
+	circle.css("border-color", TAGS[tagId].color);
+	circle.text(CITIES[cityId].getScore(TAGS[tagId].id));
+}
 
 function initCompareCity() {
 	initCarousel($("#city1").find(".carousel-inner"), cityId);

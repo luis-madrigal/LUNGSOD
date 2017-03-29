@@ -9,6 +9,6 @@ var City = function(name, province, islandGroup, overallScore, mainres, scores) 
 
 City.prototype = Object.create(null);
 
-City.prototype.display = function() {
-	
+City.prototype.getScore = function(tagId) {
+	return this.scores[tagId];
 }

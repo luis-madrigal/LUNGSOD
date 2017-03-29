@@ -401,7 +401,8 @@
     width:20%;
     height:19.4%;
     background-color: #FF6985;
-    border: .8vw solid #FF6985;
+    border: .8vw solid;
+    border-color: #FF6985;
     color: white;
     display: flex;
     justify-content: center;

@@ -310,7 +310,7 @@ var CITY_PAGE_TILES = {
 			TILES: [
 				 {caption: "", res: "/Resources by city/Butuan/Pics_Infrastructure/CityButuan_InfraTile01.jpg"},
 				 {caption: "", res: "/Resources by city/Butuan/Pics_Infrastructure/CityButuan_InfraTile02.jpg"},
-				 {caption: "", res: "/Resources by city/Butuan/Pics_Infrastructure/CityButuan_InfraTile0.jpg"},2			]
+				 {caption: "", res: "/Resources by city/Butuan/Pics_Infrastructure/CityButuan_InfraTile0.jpg"}
 			]
 		},
 		TRANSPORTATION: {
@@ -704,7 +704,7 @@ var CITY_PAGE_TILES = {
 		INFRASTRUCTURE: {
 			DESC: "Like many provincial cities, Legazpi has managed to maintain many of its heritage buildings from colonial times. However, the city has also managed to keep up to date with the necessities: roads, transportation, utilities, and more. Legazpi City is especially commended for its waste management system and flood control.",
 			TILES: [
-				 {caption: "St. Gregory the Great Cathedral, res: "/Resources by city/Legazpi/Pics_Infrastructure/CityLegazpi_InfraTile01.jpg"},
+				 {caption: "St. Gregory the Great Cathedral", res: "/Resources by city/Legazpi/Pics_Infrastructure/CityLegazpi_InfraTile01.jpg"},
 				 {caption: "Embarcadero Mall Complex", res: "/Resources by city/Legazpi/Pics_Infrastructure/CityLegazpi_InfraTile02.jpg"},
 				 {caption: "Plaza Rizal", res: "/Resources by city/Legazpi/Pics_Infrastructure/CityLegazpi_InfraTile03.jpg"},
 			]
