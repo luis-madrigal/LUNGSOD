@@ -13,7 +13,8 @@ $(document).ready(function(){
 
 	$(".scoreCircle").text(CITIES[cityId].overallScore);
 
-	initCarousel();
+	initCarousel($("#cityImages"), cityId);
+	initCarouselCaptions();
 	initWheel();
 
 	$(".scoreCircle").css("border-color", "#56DA65");
@@ -92,7 +93,7 @@ $(document).ready(function(){
 	});
 
 	$("#tempBtn").click(function() {
-		compare("SANTA_ROSA");
+		compare("BACOLOD");
 	});
 
 	$("#compareModal").on("show.bs.modal", function() {
@@ -104,8 +105,28 @@ $(document).ready(function(){
 	});
 
 	initAboutContent();
+	initCompareCity();
 
+	$("#city1Desc").find(".linkToCity").on("click", function() {
+		console.log("Asd")
+		$("#compareModal").modal("toggle");
+	});
+
+	$("#city2Desc").find(".linkToCity").on("click", function() {
+		var dataId = $(this).data("id");
+		var dest = window.location.href.split("/");
+
+		dest[dest.length-1] = "CityPage.html?city=" + dataId;
+		dest = dest.join("/");
+
+		document.location.href = dest;
+	});
 });
+
+function initCompareCity() {
+	initCarousel($("#city1").find(".carousel-inner"), cityId);
+	initDesc($("#city1Desc"), cityId);
+}
 
 function initAboutContent() {
 	$("#aboutHeader").text(DESCRIPTIONS[cityId].ABOUT_HEADER);
@@ -123,12 +144,10 @@ function initAboutContent() {
 	}
 }
 
-function initCarousel(){
-	var imgFolder = CITIES[cityId].mainres + "/Pics_Hero";
-	var dest = $("#cityImages");
+function initCarousel(dest, id){
+	dest.empty();
+	var imgFolder = CITIES[id].mainres + "/Pics_Hero";
 	var active = "active";
-	var noFiles = false
-	var i = 1;
 
 	for(var i = 0; i < 4; i++) {
 		var $div = $("<div>", {"class": "item "+active});
@@ -140,7 +159,9 @@ function initCarousel(){
 
 		active = "";
 	}
+}
 
+function initCarouselCaptions(){
 	var $captions = $("#carouselCaption");
 	var $captionHeader = $("<p>", {"class": "captionHeader"});
 	var $breadCrumbs = $("<p>", {"class": "breadCrumbs"});
@@ -152,7 +173,23 @@ function initCarousel(){
 
 	$captions.append($breadCrumbs);
 	$captions.append($captionHeader);
+}
 
+function initDesc(dest, id) {
+	var link = dest.find(".linkToCity");
+	var name = dest.find(".cityName");
+	var desc = dest.find(".cityDesc");
+	var score = dest.find(".compareScoreCircle");
+
+	var city = (CITIES[id].name.indexOf(" ") >= 0)? "":" CITY";
+	var fullName = CITIES[id].name.toUpperCase()+city;
+	var back = (id == cityId)? " BACK":"";
+
+	link.html("<-- GO"+back+" TO "+fullName);
+	link.attr("data-id", id);
+	name.html(fullName+", <span class = 'bold'>"+CITIES[id].province.toUpperCase()+"</span>");
+	desc.html(DESCRIPTIONS[id].MINI_DESC);
+	score.html(CITIES[id].overallScore);
 }
 
 function initWheel() {
@@ -186,6 +223,9 @@ function initWheel() {
 }
 
 function compare(otherCity) {
+	initCarousel($("#city2").find(".carousel-inner"), otherCity);
+	initDesc($("#city2Desc"), otherCity);
+
 	$(".scores").empty();
 	var scores = $(".scores");
 
@@ -214,6 +254,8 @@ function compare(otherCity) {
 		$scoreLine1.css("width", (score1*5)+"%");
 		$scoreLine2.css("width", (score2*5)+"%");
 
+		$scoreLine1.append("<div class = 'miniCircle' style = 'background: " +TAGS[i].color+ ";'></div>");
+		$scoreLine2.append("<div class = 'miniCircle' style = 'background: " +TAGS[i].color+ ";'></div>");
 		$col1.append($scoreVal1);
 
 		$col2.append($tagIcon);
