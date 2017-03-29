@@ -111,6 +111,16 @@ $(document).ready(function(){
 		console.log("Asd")
 		$("#compareModal").modal("toggle");
 	});
+
+	$("#city2Desc").find(".linkToCity").on("click", function() {
+		var dataId = $(this).data("id");
+		var dest = window.location.href.split("/");
+
+		dest[dest.length-1] = "CityPage.html?city=" + dataId;
+		dest = dest.join("/");
+
+		document.location.href = dest;
+	});
 });
 
 function initCompareCity() {
@@ -173,8 +183,10 @@ function initDesc(dest, id) {
 
 	var city = (CITIES[id].name.indexOf(" ") >= 0)? "":" CITY";
 	var fullName = CITIES[id].name.toUpperCase()+city;
+	var back = (id == cityId)? " BACK":"";
 
-	link.html("<-- GO BACK TO "+fullName);
+	link.html("<-- GO"+back+" TO "+fullName);
+	link.attr("data-id", id);
 	name.html(fullName+", <span class = 'bold'>"+CITIES[id].province.toUpperCase()+"</span>");
 	desc.html(DESCRIPTIONS[id].MINI_DESC);
 	score.html(CITIES[id].overallScore);
