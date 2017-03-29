@@ -1,4 +1,6 @@
 var cityId;
+var expanded = {val: false, city: null};
+var collapsable = true;
 
 $(document).ready(function(){
 	var args = window.location.href.split("?")[1];
@@ -29,7 +31,7 @@ $(document).ready(function(){
 	}); 
 
 	$(".wheelTag").mouseenter(function() {
-		if(this.toggled)
+		if(expanded.val)
 			return;
 		var span = $(this).find("span");
 		$(this).css("background-image", "url('" +TAGS[$(this).data("id")].altRes.HOVER+ "')");
@@ -37,7 +39,7 @@ $(document).ready(function(){
 	});
 
 	$(".wheelTag").mouseleave(function() {
-		if(this.toggled)
+		if(expanded.val)
 			return;
 
 		var span = $(this).find("span");
@@ -46,6 +48,11 @@ $(document).ready(function(){
 	});
 
 	$(".wheelTag").click(function() {
+		if(expanded.val && $(this).data("id") != expanded.city) {
+			collapsable = false;
+			return;
+		}
+		collapsable = true;
 		var children = $(this).parent().children();
 
 		if(this.toggled) {
@@ -58,6 +65,8 @@ $(document).ready(function(){
 			}
 			$(this).css("background-image", "url('" +TAGS[$(this).data("id")].altRes.UNSELECTED+ "')");
 			$(".scoreCircle").css("border-color", "#56DA65");
+			expanded.val = false;
+			expanded.city = null;
 		} else {
 			for(var i = 0; i < children.length; i++) {
 				if(this != children[i]) {
@@ -70,8 +79,16 @@ $(document).ready(function(){
 			$(this).css("background-image", "url('" +TAGS[$(this).data("id")].altRes.UNSELECTED+ "')");
 			TweenMax.to(span, 0.2, {css: {"opacity": "1"}});
 			$(".scoreCircle").css("border-color", TAGS[$(this).data("id")].color);
+			expanded.val = true;
+			expanded.city = $(this).data("id");
 		}
 		this.toggled = !this.toggled;
+	});
+
+	$("#content").on('hide.bs.collapse', function (e) {
+		return collapsable;
+	}).on('show.bs.collapse', function (e) {
+		return collapsable;
 	});
 
 	$("#tempBtn").click(function() {
@@ -85,7 +102,26 @@ $(document).ready(function(){
 	$("#compareModal").on("hide.bs.modal", function() {
 		$("body").css("overflow-y", "visible");
 	});
+
+	initAboutContent();
+
 });
+
+function initAboutContent() {
+	$("#aboutHeader").text(DESCRIPTIONS[cityId].ABOUT_HEADER);
+
+	var nLeft = Math.ceil(DESCRIPTIONS[cityId].ABOUT_BODY.length/2);
+	var align = "right";
+	console.log(nLeft)
+
+	for(var i = 0; i < DESCRIPTIONS[cityId].ABOUT_BODY.length; i++) {
+		if(align == "right" && nLeft <= i)
+			align = "left";
+
+		$(".aboutText."+align).append(DESCRIPTIONS[cityId].ABOUT_BODY[i]);
+		$(".aboutText."+align).append("<br><br>");
+	}
+}
 
 function initCarousel(){
 	var imgFolder = CITIES[cityId].mainres + "/Pics_Hero";
@@ -97,7 +133,7 @@ function initCarousel(){
 	for(var i = 0; i < 4; i++) {
 		var $div = $("<div>", {"class": "item "+active});
 		var imgPath = imgFolder + "/pics-" + i;
-		var $img = $("<img>", {"class": "img-responsive carouselImages", "src": imgFolder + "/pics-" + (i+1) + ".jpg"});
+		var $img = $("<img>", {"class": "img-responsive carouselImages", "src": imgFolder + "/PicHero0" + (i+1) + ".jpg"});
 
 		$div.append($img);
 		dest.append($div);
@@ -134,7 +170,7 @@ function initWheel() {
 	var j = 0;
 
 	for(var i in TAGS) {
-		var $div = $("<div>", {"class": "wheelTag", "data-toggle": "collapse", "data-target": "#content", "data-id": i});
+		var $div = $("<div>", {"class": "wheelTag", "data-toggle": "collapse", "data-target": "#collapsableContent", "data-id": i});
 		var $tagScore = $("<span>", {"class": "wheelTagScore"});
 
 		$div.css("background-image", "url('" +TAGS[i].altRes.UNSELECTED+ "')");

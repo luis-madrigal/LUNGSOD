@@ -24,7 +24,7 @@ var tl = new TimelineMax();
 $(document).ready(function(){
 
 	initTiles();
-	activeFilters[2] = SORT_ENUMS.ALPHABETICAL;
+	activeFilters[1] = SORT_ENUMS.ALPHABETICAL;
 	emptyTiles(computeFilters);
 
 	$(".filterItem").on("click", function() {

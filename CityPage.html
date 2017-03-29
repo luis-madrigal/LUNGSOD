@@ -87,24 +87,18 @@
         <!-- ABOUT TEXT -->
         <div id="aboutContent" class="row">
             <div class="col-lg-12">
-                <p id="aboutHeader">THE CITY OF FUN AND ADVENTURE</p>
+                <p id="aboutHeader"></p>
 
                 <div class="row">
                     <div class="col-lg-6">
                         <p class="aboutText right">
-                            Legazpi was recognized as the most business-friendly city in Southern Luzon in 2007 by the Philippine Chamber of Commerce and Industry.<br><br>
-                            In 2014, the city was ranked second among the top three livable cities in the Philippines in the Livable Cities
-
                         </p>
                     </div>
                     <div class="col-lg-6">
                         <p class="aboutText left">
-                            Design Challenge organized by the National Competitiveness Council (NCC) and the Asia-Pacific Economic Cooperation.
-                            <br><br>
-                            In 2016, Legazpi was named overall third most competitive component city in the Philippines.
                         </p>
                     </div>
-                    <img id="aboutImage" style="width: 100%;" src="res/images/MigrationHelp_Skyline.png">
+                    <img id="aboutImage" src="res/images/MigrationHelp_Skyline.png">
                 </div>
             </div>
         </div>
@@ -134,16 +128,42 @@
         </div>
 
         <!-- COLLAPSABLE CONTENT -->
-        <div id="content" class="row collapse">
-            <div class="col-lg-6">
-                <div class="wheelText row">
-                    <p id="catWheelHeader">LIVABILITY SCORE</p>
-                    <p id="catWheelText">
-                        Click on different livability categories<br>on the livability wheel to see why we gave<br>them the score they have.
-                        <br><br>
-                        You can also learn more about the math<br>behind our scoring system here.
-                    </p>
-                    <button type="button" class="btn btn-liveScore">The Livability Index</button>
+        <div id = "collapsableContent" class = "collapse row">
+            <div class = "container-fluid">
+                <div id="content" class="row">
+                    <div class="col-lg-7">
+                        <p id = "contentHeader">Employment in Santa Rosa</p>
+                        <p id = "contentBody">If you're looking for a job in business or information technology, Santa Rosa is one of your better bets. The city has several economic zones and industrial parks filled with job opportunities. More and more companies are looking establish branches and offices in Santa Rosa due to its talent availability and space, just like the recent video game publisher, Ubisoft.</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <span class = "fullCircle">7</span>
+                    </div>
+                </div>
+                <div id="contentTiles" class = "row">
+                    <div class="col-lg-12">
+                        <div class = "row tiles">
+                            <div class = "col-lg-4 tile">
+                                <img class = "img-responsive image-tile" src="res/Resources by City/Santa Rosa/Pics_Employment/CityStaRosa_EmploymentTile01.jpg">
+                                <img class = "img-responsive image-gradient" src="res/Gradient bg for samples-33.png">
+                                <span class = "caption">Ubisoft Office Opening</span>
+                                <div class="rectangle"></div>
+                            </div>
+
+                            <div class = "col-lg-4 tile">
+                                <img class = "img-responsive image-tile" src="res/Resources by City/Santa Rosa/Pics_Employment/CityStaRosa_EmploymentTile02.jpg">
+                                <img class = "img-responsive image-gradient" src="res/Gradient bg for samples-33.png">
+                                <span class = "caption">Ubisoft Office Opening</span>
+                                <div class="rectangle"></div>
+                            </div>
+
+                            <div class = "col-lg-4 tile">
+                                <img class = "img-responsive image-tile" src="res/Resources by City/Santa Rosa/Pics_Employment/CityStaRosa_EmploymentTile03.jpg">
+                                <img class = "img-responsive image-gradient" src="res/Gradient bg for samples-33.png">
+                                <span class = "caption">Ubisoft Office Opening</span>
+                                <div class="rectangle"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -152,7 +172,7 @@
         <div id="compareCity" class="row no-gutter">
             <div class="col-lg-12">
                 <p id="compareText">Compare me</p>
-                <a id = "tempBtn" data-toggle="modal" data-target="#compareModal">temp button</a><!-- TODO REMOVE -->
+                <a class = "btn btn-danger" id = "tempBtn" data-toggle="modal" data-target="#compareModal">temp button</a><!-- TODO REMOVE -->
                 <div class="input-group search-group" id="compareSearch">
                     <input type="text" class="form-control" placeholder="Search for a city...">
                     <span class="input-group-addon">
