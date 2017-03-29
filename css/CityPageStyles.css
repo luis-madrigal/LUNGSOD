@@ -272,13 +272,13 @@
 	width: 100%;
 }
 
-.compareCity1Text{
+#city1Desc .compareCityText{
 	margin-top: 5%;
 	margin-left: 5%;
 	text-align: left;
 }
 
-.compareCity2Text{
+#city2Desc .compareCityText{
 	margin-top: 5%;
 	margin-right: 5%;
 	text-align: right;
@@ -287,6 +287,11 @@
 .linkToCity{
 	font-family: WorkSans-Regular;
 	font-size: 1vw;
+	cursor:pointer;
+}
+
+.linkToCity:hover{
+	color: grey;
 }
 
 .cityName{
@@ -327,7 +332,8 @@
 	width: 20%;
 	display: block;
 	margin: 0 auto;
-	margin-top: -2%;
+	margin-top: 2%;
+	margin-bottom: 2%;
 }
 
 .iconLabel{
@@ -348,7 +354,7 @@
     padding:3.5%;
     font-family: Korolev-Heavy;
     text-align: center;
-    margin-top: 5%;
+    margin: 7%;
 }
 
 /*.score-1{
@@ -365,7 +371,7 @@
 	border-top:0.25vw dashed;
 	height:1px;
 	width:50%;
-	margin-top: -10%;
+	margin-top: -11%;
 }
 
 .scoreLine-1{
@@ -380,6 +386,14 @@
 	margin-left: 48%;
 	width: 50%;
 	/*transform: scale(.4, 1);*/
+}
+
+.miniCircle {
+	width: 1vw;
+	height: 1vw;
+	border-radius: 50%;
+	float:right;
+	margin-top: -.6vw;
 }
 
 .fullCircle{
