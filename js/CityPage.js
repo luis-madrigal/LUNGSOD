@@ -153,18 +153,42 @@ function initCompareCity() {
 
 function initAboutContent() {
 	$("#aboutHeader").text(DESCRIPTIONS[cityId].ABOUT_HEADER);
+	$("#aboutHeader").css("font-size", scaleFont(DESCRIPTIONS[cityId].ABOUT_HEADER)+"vw");
 
 	var nLeft = Math.ceil(DESCRIPTIONS[cityId].ABOUT_BODY.length/2);
 	var align = "right";
-	console.log(nLeft)
 
 	for(var i = 0; i < DESCRIPTIONS[cityId].ABOUT_BODY.length; i++) {
-		if(align == "right" && nLeft <= i)
-			align = "left";
+		// if(align == "right" && nLeft <= i)
+		// 	align = "left";
 
-		$(".aboutText."+align).append(DESCRIPTIONS[cityId].ABOUT_BODY[i]);
-		$(".aboutText."+align).append("<br><br>");
+		// $(".aboutText."+align).append(DESCRIPTIONS[cityId].ABOUT_BODY[i]);
+		// $(".aboutText."+align).append("<br><br>");
+
+		$(".aboutText").append(DESCRIPTIONS[cityId].ABOUT_BODY[i]);
+		$(".aboutText").append("<br><br>");
 	}
+}
+
+function scaleFont(str) {
+	// var minFont = 5;
+	// var lenThresh = 30;
+	var len = str.length;
+	var val = 15.326*(Math.pow(Math.E, -0.048*len));
+
+	if(val < 3.5)
+		val = 3.5;
+	// console.log(len)
+
+	// if(len >= lenThresh)
+	// 	return minFont;
+
+	// var diff = (lenThresh - len)/7;
+
+	// console.log(minFont + diff);
+	// return minFont + diff;
+	console.log(val)
+	return val;
 }
 
 function initCarousel(dest, id){

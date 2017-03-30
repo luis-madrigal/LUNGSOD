@@ -123,10 +123,9 @@ var DESCRIPTIONS = {
 		MINI_DESC: "The friendly city of Bacolod is quickly growing into one of the best places to live in the Philippines with its clean environment and thriving economy."		
 	},
 	BUTUAN: {
-		ABOUT_HEADER: "THE TIMBER CITY OF THE SOUTH / CARAGA'S ECONOMIC HUB / THE HOME OF THE BALANGAYS",
+		ABOUT_HEADER: "CARAGA'S ECONOMIC HUB",
 		ABOUT_BODY: [
-			"Butuan City is the regional center of the Caraga province in Mindanao, known as one of the oldest settlements in the country.",
-			"It continues to preserve its cultural heritage and plenty of this can be seen in the city’s architecture or practiced by the people.",
+			"Butuan City is the regional center of the Caraga province in Mindanao, known as one of the oldest settlements in the country. It continues to preserve its cultural heritage and plenty of this can be seen in the city’s architecture or practiced by the people.",
 			"However, the city is quickly growing into a cosmopolitan city with plenty of businesses setting up shop in Butuan, earning it the reputation of being Caraga's commercial, industrial, and administrative center."
 		],
 		MINI_DESC: "Butuan City is a city that finds a good balance between the traditions of the past, and the innovations of the future and modern technology."		
@@ -134,14 +133,13 @@ var DESCRIPTIONS = {
 	CAGAYAN_DE_ORO: {
 		ABOUT_HEADER: "THE HEART OF NORTHERN MINDANAO",
 		ABOUT_BODY: [
-			"Cagayan de Oro is the capital of the Misamis Oriental Province, known today as the regional center and business hub of the region due to the rise of business investors both local and foreign.",
-			"IT and BPO companies in parituclar, have taken an interest, further stimulating an already diverse and thriving economy.",
+			"Cagayan de Oro is the capital of the Misamis Oriental Province, known today as the regional center and business hub of the region due to the rise of business investors both local and foreign. IT and BPO companies in parituclar, have taken an interest, further stimulating an already diverse and thriving economy.",
 			"Besides its success in business, Cagayan de Oro also boasts quality in the real estate landscape, education, and its environment."
 		],
 		MINI_DESC: "Cagayan de Oro is also known as 'The Gate to the Land of Promise' due to the multitude and variety of opportunities it offers to the citizens living in Mindanao."		
 	},
 	DUMAGUETE: {
-		ABOUT_HEADER: "THE CITY OF GENTLE PEOPLE / THE UNIVERSITY TOWN OF THE VISAYAS",
+		ABOUT_HEADER: "THE UNIVERSITY TOWN OF THE VISAYAS",
 		ABOUT_BODY: [
 			"Dumaguete City is the capital of the Negros Oriental province. Dubbed, 'University Town', the outstanding feature about Dumaguete is its four universities where a majority of students around Visayas  and Mindanao come to enroll for college.",
 			"Dumaguete is also becoming one of the preferred places for BPO and IT companies to establish themselves. This has resulted in a number of business parks and a spurred economy promising a number of new jobs."
@@ -159,7 +157,7 @@ var DESCRIPTIONS = {
 		MINI_DESC: "General Santos City is a city in tune with nature: this city's growing economy thrives on the tuna in its oceans and the successful eco-tourism held in their beautiful landscapes."		
 	},
 	ILIGAN: {
-		ABOUT_HEADER: "THE INDUSTRIAL CENTER OF THE SOUTH / THE CITY OF MAJESTIC WATERFALLS",
+		ABOUT_HEADER: "THE INDUSTRIAL CENTER OF THE SOUTH",
 		ABOUT_BODY: [
 			"Iligan City is located in the province of Lanao del Norte, known for having many waterfalls that are popular among tourists.",
 			"The city is also the industrial center of the south due to its recent economic revival spurred by the reopening of the National Steel Corporation.",
@@ -193,7 +191,7 @@ var DESCRIPTIONS = {
 		MINI_DESC: "With the combination of work opportunities, proper city management, education, and more, Santa Rosa has become an all around ideal place to live, and will soon match the likes of Metro Manila."		
 	},
 	ZAMBOANGA: {
-		ABOUT_HEADER: "THE CITY OF FLOWERS / THE SARDINES CAPITAL OF THE PHILIPPINES",
+		ABOUT_HEADER: "THE SARDINES CAPITAL OF THE PHILIPPINES",
 		ABOUT_BODY: [
 			"Zamboanga City is the commercial and industrial center of the Zamboanga Peninsula Region in Mindanao, known for its rich Hispanic-rooted history.  ",
 			"Zamboanga is also known for its strong sardine industry, being the location of nine out of twelve sardine companies in the entire country.",

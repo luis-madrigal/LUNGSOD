@@ -52,13 +52,13 @@
 
 #aboutImage{
 	width: 100%;
-	margin-bottom: -1%;
+	margin-top: -1%;
 }
 
 #aboutHeader{
 	color: #2C98DA;
 	font-family: Korolev-Light;
-	font-size: 5vw;
+	/*font-size: 6.7vw;*/
 	width: 100%;
 	text-align: center;	
 	margin-top: 2%;
@@ -68,8 +68,12 @@
 	color: #2C98DA;
 	font-family: WorkSans-Regular;
 	font-size: 1vw;
-	width:47%;
-	margin-top: -2%;
+	/*width:100%;*/
+	margin-top: -1%;
+	column-count: 2;
+	column-gap: 3vw;
+	padding-right: 6%;
+	padding-left: 6%;
 }
 
 #categoryWheel{

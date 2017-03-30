@@ -7,13 +7,6 @@ var UTILS = (function() {
 		},
 		resetTimeline: function(tl) {
 			tl.clear();
-		},
-		swap: function(ele1, ele2) {
-			ele2.each(function () {
-			    if (!$(this).text().match(/^\s*$/)) {
-			        $(this).insertBefore($(this).prev(ele1));
-			    }
-			});
 		}
 	}
 })();
