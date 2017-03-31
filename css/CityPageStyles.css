@@ -33,13 +33,22 @@
 }
 
 .breadCrumbs{
-	font-family: WorkSans-Light;
-	font-size: 1vw;
+	font-family: WorkSans-Light !important;
+	font-size: 1vw !important;
+}
+
+.breadLinks{
+	color:white;
+	text-decoration: none;
+}
+
+.breadLinks:hover{
+	color:white;
+	text-decoration: underline;
 }
 
 .breadCrumbs > .breadCrumbsPage{
 	font-family: WorkSans-Medium;
-	font-size: 1vw;
 }
 
 .carouselImages{

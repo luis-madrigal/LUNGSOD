@@ -6,11 +6,13 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
     <script src="utils/lib/jquery.min.js"></script>
+    <script src="utils/lib/jquery-ui.js"></script>
     <script src="utils/lib/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" href="utils/lib/bootstrap-3.3.6-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/global.css">
+    <link rel = "stylesheet" href = "css/jquery_ui.css">
     <link rel="stylesheet" href="css/CityPageStyles.css">
 
     <link rel="stylesheet" href="res/fonts/fonts.css"></link>
@@ -34,7 +36,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <form class="navbar-form navbar-right" role="search">
                     <div class="input-group search-group">
-                        <input type="text" class="form-control" placeholder="Search for a city...">
+                        <input type="text" class="form-control tags" placeholder="Search for a city...">
                         <span class="input-group-addon">
                             <button type="submit">
                                 <span class="glyphicon glyphicon-search"></span>
@@ -43,7 +45,7 @@
                     </div>
                 </form>
                 <ul class="nav nav-pills nav-justified">
-                    <li class="nav-item active"><a href="BrowseCity.html">BROWSE CITIES<span class="sr-only">(current)</span></a></li>
+                    <li class="nav-item"><a href="BrowseCity.html">BROWSE CITIES<span class="sr-only">(current)</span></a></li>
                     <li class="nav-item"><a href="LivabilityIndex.html">THE LIVABILITY INDEX</a></li>
                     <li class="nav-item"><a href="MigrationHelp.html">MIGRATION HELP</a></li>
                 </ul>
@@ -180,7 +182,7 @@
             <div class="col-lg-12">
                 <p id="compareText">Compare me</p>
                 <a class = "btn btn-danger" id = "tempBtn" data-toggle="modal" data-target="#compareModal">temp button</a><!-- TODO REMOVE -->
-                <div class="input-group search-group" id="compareSearch">
+                <div class="input-group search-group tags" id="compareSearch">
                     <input type="text" class="form-control" placeholder="Search for a city...">
                     <span class="input-group-addon">
                         <button type="submit">
@@ -300,6 +302,7 @@
 </body>
 <script src="utils/lib/TweenMax.min.js"></script>
 <script src="utils/utils.js"></script>
+<script src="js/search.js"></script>
 <script src="js/components/City.js"></script>
 <script src="js/components/Content.js"></script>
 <script src="js/db.js"></script>
