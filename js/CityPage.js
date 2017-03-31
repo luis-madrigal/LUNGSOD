@@ -171,23 +171,12 @@ function initAboutContent() {
 }
 
 function scaleFont(str) {
-	// var minFont = 5;
-	// var lenThresh = 30;
 	var len = str.length;
-	var val = 15.326*(Math.pow(Math.E, -0.048*len));
+	var val = -0.0058*(Math.pow(len, 3)) + 0.4146*(Math.pow(len, 2)) - 9.9467*len + 85.187;
 
 	if(val < 3.5)
 		val = 3.5;
-	// console.log(len)
-
-	// if(len >= lenThresh)
-	// 	return minFont;
-
-	// var diff = (lenThresh - len)/7;
-
-	// console.log(minFont + diff);
-	// return minFont + diff;
-	console.log(val)
+	
 	return val;
 }
 
