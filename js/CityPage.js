@@ -204,7 +204,7 @@ function initCarouselCaptions(){
 	var city = (CITIES[cityId].name.indexOf(" ") >= 0)? "":" CITY";
 	var fullName = CITIES[cityId].name.toUpperCase()+city+ ", " +CITIES[cityId].province.toUpperCase();
 
-	$breadCrumbs.append("HOME > BROWSE CITIES > <span class = 'breadCrumbsPage'>" +fullName+ "</span>")
+	$breadCrumbs.append("HOME > BROWSE CITIES > <span class = 'breadCrumbsPage'>" +fullName+ "</span>");
 	$captionHeader.append(fullName);
 
 	$captions.append($breadCrumbs);
@@ -295,6 +295,7 @@ function compare(otherCity) {
 		$col1.append($scoreVal1);
 
 		$col2.append($tagIcon);
+		$col2.append($iconLabel);
 		$col2.append($scoreLine1);
 		$col2.append($scoreLine2);
 

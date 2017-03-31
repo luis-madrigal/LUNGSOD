@@ -168,7 +168,7 @@ function changeTiles(tiles, lists, maxTiles) {
 		$tagDiv.css("transform", "scale(-1, 1)");
 
 		for(var j = 0; j < tiles[i].tags.length; j++) {
-			var $tag = $("<img>", {"src": tiles[i].tags[j].res, "class": "cityTagIcon"});
+			var $tag = $("<img>", {"src": tiles[i].tags[j].resWithLabel, "class": "cityTagIcon"});
 			$tag.attr("width", "11.6%");
 			$tagDiv.append($tag);
 		}

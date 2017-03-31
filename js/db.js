@@ -8,7 +8,8 @@ var TAGS = {
 	EDUCATION: {
 		id: 0,
 		name: "Education",
-		res: "res/Resources_IconWheel/Icons_Hover/Icons_Hover-35.png",
+		res: "res/Icons/Education.png",
+		resWithLabel: "res/Resources_IconWheel/Icons_Hover/Icons_Hover-35.png",
 		altRes: {
 			UNSELECTED: "res/Resources_IconWheel/Icons_Unselected/Icon_Unselected-30.png",
 			SELECTED: "res/Resources_IconWheel/Icons_Selected/Icons_Selected-35.png",
@@ -19,7 +20,8 @@ var TAGS = {
 	EMPLOYMENT: {
 		id: 1,
 		name: "Employment",
-		res: "res/Resources_IconWheel/Icons_Hover/Icons_Hover_Artboard 61 copy.png",
+		res: "res/Icons/Employment.png",
+		resWithLabel: "res/Resources_IconWheel/Icons_Hover/Icons_Hover_Artboard 61 copy.png",
 		altRes: {
 			UNSELECTED: "res/Resources_IconWheel/Icons_Unselected/Icon_Unselected_Artboard 61.png",
 			SELECTED: "res/Resources_IconWheel/Icons_Selected/Icons_Selected_Artboard 61 copy.png",
@@ -30,7 +32,8 @@ var TAGS = {
 	HEALTH: {
 		id: 2,
 		name: "Health",
-		res: "res/Resources_IconWheel/Icons_Hover/Icons_Hover-36.png",
+		res: "res/Icons/Health.png",
+		resWithLabel: "res/Resources_IconWheel/Icons_Hover/Icons_Hover-36.png",
 		altRes: {
 			UNSELECTED: "res/Resources_IconWheel/Icons_Unselected/Icon_Unselected-29.png",
 			SELECTED: "res/Resources_IconWheel/Icons_Selected/Icons_Selected-36.png",
@@ -41,7 +44,8 @@ var TAGS = {
 	HOUSING: {
 		id: 3,
 		name: "Housing",
-		res: "res/Resources_IconWheel/Icons_Hover/Icons_Hover-34.png",
+		res: "res/Icons/Housing.png",
+		resWithLabel: "res/Resources_IconWheel/Icons_Hover/Icons_Hover-34.png",
 		altRes: {
 			UNSELECTED: "res/Resources_IconWheel/Icons_Unselected/Icon_Unselected-31.png",
 			SELECTED: "res/Resources_IconWheel/Icons_Selected/Icons_Selected-34.png",
@@ -52,7 +56,8 @@ var TAGS = {
 	INFRASTRUCTURE: {
 		id: 4,
 		name: "Infrastructure",
-		res: "res/Resources_IconWheel/Icons_Hover/Icons_Hover-39.png",
+		res: "res/Icons/Infrastructure.png",
+		resWithLabel: "res/Resources_IconWheel/Icons_Hover/Icons_Hover-39.png",
 		altRes: {
 			UNSELECTED: "res/Resources_IconWheel/Icons_Unselected/Icon_Unselected-27.png",
 			SELECTED: "res/Resources_IconWheel/Icons_Selected/Icons_Selected-39.png",
@@ -63,7 +68,8 @@ var TAGS = {
 	LEISURE: {
 		id: 5,
 		name: "Recreation",
-		res: "res/Resources_IconWheel/Icons_Hover/Icons_Hover-40.png",
+		res: "res/Icons/Leisure.png",
+		resWithLabel: "res/Resources_IconWheel/Icons_Hover/Icons_Hover-40.png",
 		altRes: {
 			UNSELECTED: "res/Resources_IconWheel/Icons_Unselected/Icon_Unselected-28.png",
 			SELECTED: "res/Resources_IconWheel/Icons_Selected/Icons_Selected-40.png",
@@ -74,7 +80,8 @@ var TAGS = {
 	LOCALGOV: {
 		id: 6,
 		name: "Local Gov",
-		res: "res/Resources_IconWheel/Icons_Hover/Icons_Hover-37.png",
+		res: "res/Icons/Local Gov.png",
+		resWithLabel: "res/Resources_IconWheel/Icons_Hover/Icons_Hover-37.png",
 		altRes: {
 			UNSELECTED: "res/Resources_IconWheel/Icons_Unselected/Icon_Unselected-25.png",
 			SELECTED: "res/Resources_IconWheel/Icons_Selected/Icons_Selected-37.png",
@@ -85,7 +92,8 @@ var TAGS = {
 	TRANSPORTATION: {
 		id: 7,
 		name: "Transportation",
-		res: "res/Resources_IconWheel/Icons_Hover/Icons_Hover-38.png",
+		res: "res/Icons/Transportation.png",
+		resWithLabel: "res/Resources_IconWheel/Icons_Hover/Icons_Hover-38.png",
 		altRes: {
 			UNSELECTED: "res/Resources_IconWheel/Icons_Unselected/Icon_Unselected-26.png",
 			SELECTED: "res/Resources_IconWheel/Icons_Selected/Icons_Selected-38.png",

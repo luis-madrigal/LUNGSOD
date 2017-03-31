@@ -240,6 +240,11 @@
     display: block;
 }
 
+.modal-backdrop
+{
+    opacity:0.9 !important;
+}
+
 .modal-dialog{
     overflow-y: initial !important
 }
@@ -249,7 +254,7 @@
 }
 
 #compareModal .modal-dialog{
-	width: 100% !important;
+	width: 80% !important;
 	color:white;
 }
 
@@ -300,12 +305,12 @@
 
 .cityName{
 	font-family: Korolev-Medium;
-	font-size: 2vw;
+	font-size: 1.8vw;
 }
 
 .cityDesc{
 	font-family: WorkSans-Regular;
-	font-size: 1.2vw;
+	font-size: 1vw;
 }
 
 .compareScoreCircle{
@@ -313,9 +318,9 @@
     background-color: transparent;
     border: .5vw solid #56DA65;
     color: white;
-    font-size: 3.5vw;
+    font-size: 4vw;
     font-family: Korolev-Heavy;
-    padding: 15%;
+    padding: 7%;
     text-align: center;
 	display: block;
 	margin: 0 auto;
@@ -337,7 +342,7 @@
 	display: block;
 	margin: 0 auto;
 	margin-top: 2%;
-	margin-bottom: 2%;
+	margin-bottom: 1%;
 }
 
 .iconLabel{
@@ -349,13 +354,13 @@
 }
 
 .tagScoreCircle{
-	width: 6vw;
-	border-radius: 100%;
+	width: 40%;
+	border-radius: 50%;
     background-color: transparent;
     border: .3vw solid #56DA65;
     color: white;
     font-size: 2.5vw;
-    padding:3.5%;
+    padding:8%;
     font-family: Korolev-Heavy;
     text-align: center;
     margin: 7%;
@@ -375,7 +380,7 @@
 	border-top:0.25vw dashed;
 	height:1px;
 	width:50%;
-	margin-top: -11%;
+	margin-top: -16%;
 }
 
 .scoreLine-1{
