@@ -287,8 +287,8 @@ function compare(otherCity) {
 		var $scoreLine1 = $("<div>", {"class": "scoreLine scoreLine-2 scoreLine-1", "style": "color: "+TAGS[i].color+";"});
 		var $scoreLine2 = $("<div>", {"class": "scoreLine scoreLine-2", "style": "color: "+TAGS[i].color+";"});
 
-		$scoreLine1.css("width", (score1*5)+"%");
-		$scoreLine2.css("width", (score2*5)+"%");
+		$scoreLine1.css("width", ((score1 - 5)*10)+"%");
+		$scoreLine2.css("width", ((score2 - 5)*10)+"%");
 
 		$scoreLine1.append("<div class = 'miniCircle' style = 'background: " +TAGS[i].color+ ";'></div>");
 		$scoreLine2.append("<div class = 'miniCircle' style = 'background: " +TAGS[i].color+ ";'></div>");
