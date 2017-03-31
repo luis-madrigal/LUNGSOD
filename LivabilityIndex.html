@@ -4,7 +4,7 @@
 	<title>Lungsod</title>
 
 	<script src="utils/lib/jquery.min.js"></script>
-	<script src="utils/lib/jquery-ui.js"></script>
+	<script src="utils/lib/jquery_ui.js"></script>
 	<script src="utils/lib/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
 
 	<link rel = "stylesheet" href = "utils/lib/bootstrap-3.3.6-dist/css/bootstrap.min.css">
@@ -226,14 +226,14 @@
 							<!--div class="wheelTags">
 							</div-->
 							<div class='circle-container'>
-								<a href='#' class='deg0'><img src="res/livability_index/Housing.png" class="img-responsive"/></a>
-								<a href='#' class='deg45'><img src="res/livability_index/Local Gov.png" class="img-responsive"/></a>
-								<a href='#' class='deg90'><img src="res/livability_index/Transportation.png" class="img-responsive"/></a>
-								<a href='#' class='deg135'><img src="res/livability_index/Education.png" class="img-responsive"/></a>
-								<a href='#' class='deg180'><img src="res/livability_index/Infrastructure.png" class="img-responsive"/></a>
-								<a href='#' class='deg225'><img src="res/livability_index/Health.png" class="img-responsive"/></a>
-								<a href='#' class='deg270'><img src="res/livability_index/Recreation.png" class="img-responsive"/></a>
-								<a href='#' class='deg315'><img src="res/livability_index/Employment.png" class="img-responsive"/></a>
+								<a  id='deg0'><img id='circle0' src="res/livability_index/Education.png" class="img-responsive"/></a>
+								<a  id='deg45'><img id='circle45' src="res/livability_index/Transportation.png" class="img-responsive"/></a>
+								<a  id='deg90'><img id='circle90' src="res/livability_index/Employment.png" class="img-responsive"/></a>
+								<a  id='deg135'><img id='circle135' src="res/livability_index/Infrastructure.png" class="img-responsive"/></a>
+								<a  id='deg180'><img id='circle180' src="res/livability_index/Health.png" class="img-responsive"/></a>
+								<a  id='deg225'><img id='circle225' src="res/livability_index/Local Gov.png" class="img-responsive"/></a>
+								<a  id='deg270'><img id='circle270' src="res/livability_index/Housing.png" class="img-responsive"/></a>
+								<a  id='deg315'><img id='circle315' src="res/livability_index/Recreation.png" class="img-responsive"/></a>
 							</div>
 						</div>
 						
@@ -257,35 +257,35 @@
 						
 					</div>
 					<img class="section6Outline" src="res/livability_index/Section6_Skyline_3.png"/>
-					<div class="row">
+					<div class="row" id="section6tilesContainer">
 						<p class="section6Text">
 							LUNGSOD uses the richest, most advanced cities in the country, such as Metro Manila, as its <b>metric.</b>
 						</p>
-						<div class="col-lg-4" id="section6Low">
+						<div class="col-lg-4 section6Tile" id="section6Low">
 							<div class="ratingHeader row">
-								<div class="col-lg-4"><span class="ratingTitle">LOW: </span></div>
-								<div class="col-lg-4"><span class="ratingScore">1-4</span></div>
-								<div class="col-lg-4"><img class="img-responsive ratingImg" src="res/livability_index/Section6_CircleLow.png"  height="15%" width="15%"/></div>
+								<div class="col-lg-3"><span class="ratingTitle">LOW: </span></div>
+								<div class="col-lg-3"><span class="ratingScore">1-4</span></div>
+								<div class="col-lg-6"><img class="img-responsive ratingImg" src="res/livability_index/Section6_CircleLow.png"  height="15%" width="15%"/></div>
 							</div>
 							<p class="ratingBody">
 								THE QUALITY, AVAILABILITY, AFFORDABILITY, AND VARIETY OF EACH LIVABILITY CATEGORY IS LACKING EVEN THE MINIMUM REQUIREMENT TO ADEQUATELY SUSTAIN THE NEEDS OF PEOPLE
 							</p>
 						</div>
-						<div class="col-lg-4" id="section6Med">
+						<div class="col-lg-4 section6Tile" id="section6Med">
 							<div class="ratingHeader row">
-								<div class="col-lg-4"><span class="ratingTitle">AVERAGE: </span></div>
-								<div class="col-lg-4"><span class="ratingScore">5-7</span></div>
-								<div class="col-lg-4"><img class="img-responsive ratingImg" src="res/livability_index/Section6_CircleAve.png" height="15%" width="15%"/></div>
+								<div class="col-lg-6"><span class="ratingTitle">AVERAGE: </span></div>
+								<div class="col-lg-3"><span class="ratingScore">5-7</span></div>
+								<div class="col-lg-3"><img class="img-responsive ratingImg" src="res/livability_index/Section6_CircleAve.png" height="35%" width="35%" style="margin-top: 20%; float: left;"/></div>
 							</div>
 							<p class="ratingBody">
 								THE QUALITY, AVAILABILITY, AFFORDABILITY, AND VARIETY OF EACH LIVABILITY CATEGORY IS ADEQUATE TO MEET THE NEEDS OF PEOPLE, BUT CANNOT FULLY COMPARE TO MORE ADVANCED CITIES LIKE METRO MANILA
 							</p>
 						</div>
-						<div class="col-lg-4" id="section6High">
+						<div class="col-lg-4 section6Tile" id="section6High">
 							<div class="ratingHeader row">
-								<div class="col-lg-4"><span class="ratingTitle">HIGH: </span></div>
-								<div class="col-lg-4"><span class="ratingScore">8-10</span></div>
-								<div class="col-lg-4"><img class="img-responsive ratingImg" src="res/livability_index/Section6_CircleHigh.png"  height="15%" width="15%"/></div>
+								<div class="col-lg-3"><span class="ratingTitle">HIGH: </span></div>
+								<div class="col-lg-3"><span class="ratingScore">8-10</span></div>
+								<div class="col-lg-6"><img class="img-responsive ratingImg" src="res/livability_index/Section6_CircleHigh.png"  height="15%" width="15%"/></div>
 							</div>
 							<p class="ratingBody">
 								THE QUALITY, AVAILABILITY, AFFORDABILITY, AND VARIETY OF EACH LIVABILITY CATEGORY CAN COMPETE OR BE EQUAL WITH THOSE IN CITIES LIKE METRO MANILA
@@ -295,13 +295,24 @@
 				</div>
 				
 				<div id="footerContainer"  class="row">
+					<div id="footerTileContainer"  class="row">
+						<div class="col-lg-6 footerTile">
+							<img class="img-responsive" src="res/livability_index/BrowseTile.jpg" height="100%" width="100%"/>
+						</div>
+						<div class="col-lg-6 footerTile">
+							<img class="img-responsive" src="res/livability_index/MigrationTile.jpg"  height="100%" width="100%"/>
+						</div>
+					</div>
+					<div id="footer"  class="row">
+						<img src="res/logos/Logo_Footer.png" class="img-responsive imgFooter" width="100%"/>
+					</div>
 				</div>
 		
 		</div>
 		
 		
 </body>
-<script src="js/search.js"></script>
+<script src="js/LivabilityIndex.js"></script>
 <script src="utils/lib/TweenMax.min.js"></script>
 <script src="js/components/City.js"></script>
 <script src="js/components/Content.js"></script>

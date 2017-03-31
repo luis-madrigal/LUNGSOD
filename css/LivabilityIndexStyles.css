@@ -51,33 +51,40 @@
 	color: white;
 	font-size: 1.2vw;
 	text-align: center;
+	font-family: WorkSans-Light;
 	
 }
 
 .section1Header{
-	font-size: 2vw;
+	font-size: 1.9vw;
+	font-family: WorkSans-Regular;
 }
 
 .section1Body{
 	font-size: 1.5vw;
 	margin-top: 5%;
+	font-family: WorkSans-Regular;
 }
 
 .section2Header{
 	font-size: 5vw;
+	font-family: Korolev-Heavy;
 }
 
 .section2Body{
 	font-size: 2.5vw;
 	padding-left:27%;
 	padding-right:27%;
+	font-family: WorkSans-Light;
 }
 
 .section2Special{
 	font-size: 3vw;
+	font-family: Korolev-Bold;
 }
 
 .section3Header{
+	font-family: Korolev-Light;
 	text-align: center;
 	font-size: 3vw;
 }
@@ -87,12 +94,14 @@
 	padding-left: 30%;
 	padding-right: 30%;
 	font-size: 1.2vw;
+	font-family: WorkSans-Regular;
 }
 
 .section3Special{
 	padding-left: 30%;
 	padding-top: 1.3%;
 	font-size: 1.5vw;
+	font-family: Korolev-Light;
 }
 
 .section3Img{
@@ -110,6 +119,7 @@
 	text-align: center;
 	padding-top: 1.3%;
 	font-size: 1.5vw;
+	font-family: WorkSans-Regular;
 	
 }
 
@@ -120,10 +130,12 @@
 
 .section4Header{
 	font-size: 2.5vw;
+	font-family: Korolev-Bold;
 }
 
 .section4Body{
 	font-size: 1.3vw;
+	font-family: WorkSans-Medium;
 }
 
 .section4ImgContainer{
@@ -157,10 +169,12 @@
 
 .section5Header{
 	font-size: 2.5vw;
+	font-family: Korolev-Bold;
 }
 
 .section5Body{
 	font-size: 1.3vw;
+	font-family: WorkSans-Medium;
 }
 
 .circle-container {
@@ -180,19 +194,20 @@
     margin: -2em;
 }
 .circle-container img { display: block; width: 100%; }
-.deg0 { transform: translate(14em); } /* 12em = half the width of the wrapper */
-.deg45 { transform: rotate(45deg) translate(14em) rotate(-45deg); }
-.deg90 { transform: rotate(90deg) translate(14em) rotate(-90deg); }
-.deg135 { transform: rotate(135deg) translate(14em) rotate(-135deg); }
-.deg180 { transform: translate(-14em); }
-.deg225 { transform: rotate(225deg) translate(14em) rotate(-225deg); }
-.deg270 { transform: rotate(270deg) translate(14em) rotate(-270deg); }
-.deg315 { transform: rotate(315deg) translate(14em) rotate(-315deg); }
+#deg0 { transform: translate(14em); } /* 12em = half the width of the wrapper */
+#deg45 { transform: rotate(45deg) translate(14em) rotate(-45deg); }
+#deg90 { transform: rotate(90deg) translate(14em) rotate(-90deg); }
+#deg135 { transform: rotate(135deg) translate(14em) rotate(-135deg); }
+#deg180 { transform: translate(-14em); }
+#deg225 { transform: rotate(225deg) translate(14em) rotate(-225deg); }
+#deg270 { transform: rotate(270deg) translate(14em) rotate(-270deg); }
+#deg315 { transform: rotate(315deg) translate(14em) rotate(-315deg); }
 
 .section5Text{
 	padding-top: 7%;
 	padding-left: 10%;
 	padding-right: 10%;
+	font-family: WorkSans-Light;
 }
 
 .section5TextHeader{
@@ -200,20 +215,23 @@
 }
 
 .section5TextBody{
-	font-size: 1.7vw;
+	font-size: 1.7vw;]
 }
 
 .section6TextContainer{
 	padding-left: 25%;
 	padding-right: 25%;
+	color: #2C91D3;
 }
 
 .section6Header{
 	font-size: 2.5vw;
+	font-family: Korolev-Bold;
 }
 
 .section6Body{
 	font-size: 1.4vw;
+	font-family: WorkSans-Medium;
 }
 
 .section6Text{
@@ -221,11 +239,87 @@
 	padding-left: 25%;
 	padding-right: 15%;
 	padding-top: 4%;
+	color: #2C91D3;
+	font-family: WorkSans-Regular;
 }
 
 .section6Outline{
 	margin-top: -3%;
 	width:100%;
+}
+
+.section6Tile{
+	color: white;
+	width: 32%;
+	padding-top: 4%;
+	padding-bottom: 2%;
+	
+	margin-left: 0.5%;
+	margin-right: 0.5%;
+}
+
+.ratingHeader{
+	font-size: 2.7vw;
+}
+
+.ratingTitle{
+	font-family: Korolev-Light;
+}
+
+.ratingImg{
+	margin-top: 7.5%;
+}
+
+.ratingBody{
+	font-size: 1.3vw;
+	font-family: WorkSans-Regular
+}
+
+.ratingScore{
+	font-family: Korolev-Heavy;
+}
+
+.footerTile{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+
+.imgFooter{
+	padding-top: 4%;
+}
+
+#footerTileContainer{
+	padding-left: 0%;
+	padding-right: 0%;
+}
+
+
+
+
+#section6tilesContainer{
+	padding-left: 3.5%;
+	padding-right: 3.5%;
+	
+}
+
+#section6Low{
+	background: url("../res/livability_index/Section6_TileLow.jpg")no-repeat;
+	background-size: cover;
+	height: 20vw;
+}
+
+#section6Med{
+	background: url("../res/livability_index/Section6_TileAve.jpg")no-repeat;
+	background-size: cover;
+	height: 20vw;
+	
+}
+
+#section6High{
+	background: url("../res/livability_index/Section6_TileHigh.jpg")no-repeat;
+	background-size: cover;
+	height: 20vw;
 }
 
 #tags{
@@ -234,15 +328,18 @@
 }
 
 #section3LivabilityText{
+	font-family: WorkSans-Light;
 	margin-top: 21%;	
 }
 
 #section3CategoryText{
 	margin-top: 18.8%;	
+	font-family: WorkSans-Light;
 }
 
 #section3RatingText{
 	margin-top: 9%;	
+	font-family: WorkSans-Light;
 }
 
 #section1{
@@ -256,6 +353,7 @@
 #section2{
 	padding-top: 15%;
 	text-align: center;
+	color: #2C91D3;
 
 }
 
@@ -285,7 +383,7 @@
 }
 
 #sumContainer{
-
+	color: #2C91D3;
 	margin-top: 20%;
 	padding-bottom: 5%;
 
@@ -297,7 +395,7 @@
 	background-repeat: no-repeat;
 	height: 100%;
 	padding-top: 6%;
-	padding-bottom: 6%;
+	padding-bottom: 4%;
 	color: white;
 }
 
@@ -316,6 +414,8 @@
 }
 
 #footerContainer{
+padding-bottom: 4%;
+padding-top: 4%;
 }
 
 #livabilityImg{
@@ -356,7 +456,7 @@
 	margin-top: -3%;
 	margin-left: 10%;
 	font-size: 3.7vw;
-	
+	font-family: Korolev-Light;
 }
 
 
