@@ -12,6 +12,7 @@ $(document).ready(function(){
 	$("#compareText").text("Compare "+CITIES[cityId].name+" City to:");
 
 	$(".scoreCircle").text(CITIES[cityId].overallScore);
+	displayLivIndex();
 
 	initCarousel($("#cityImages"), cityId);
 	initCarouselCaptions();
@@ -53,47 +54,12 @@ $(document).ready(function(){
 		if($(this).data("id") != expanded.tag) {
 			changedTag = true;
 		}
-		// if(expanded.val && $(this).data("id") != expanded.tag) {
-		// 	collapsable = false;
-		// 	return;
-		// }
-		// collapsable = true;
+
 		var children = $(this).parent().children();
 
 		if(this.toggled) {
-			// for(var i = 0; i < children.length; i++) {
-			// 	if(this != children[i]) {
-			// 		var span = $(children[i]).find("span");
-			// 		$(children[i]).css("background-image", "url('" +TAGS[$(children[i]).data("id")].altRes.UNSELECTED+ "')");
-			// 		TweenMax.to(span, 0.2, {css: {"opacity": "1"}});
-			// 	}
-			// }
-			// $(this).css("background-image", "url('" +TAGS[$(this).data("id")].altRes.UNSELECTED+ "')");
-			// $(".scoreCircle").css("border-color", "#2c95d6");
-			// expanded.val = false;
-			// expanded.tag = null;
-			console.log("hide Toggle")
 			hideTagContents(this);
 		} else {
-			// for(var i = 0; i < children.length; i++) {
-			// 	if(this != children[i]) {
-			// 		var span = $(children[i]).find("span");
-			// 		$(children[i]).css("background-image", "url('" +TAGS[$(children[i]).data("id")].altRes.SELECTED+ "')");
-			// 		TweenMax.to(span, 0.2, {css: {"opacity": "0"}});
-			// 	}
-			// }
-			// var span = $(this).find("span");
-			// $(this).css("background-image", "url('" +TAGS[$(this).data("id")].altRes.UNSELECTED+ "')");
-			// TweenMax.to(span, 0.2, {css: {"opacity": "1"}});
-			// $(".scoreCircle").css("border-color", TAGS[$(this).data("id")].color);
-			// expanded.val = true;
-			// expanded.tag = $(this).data("id");
-			// displayContent(expanded.tag);
-			// $("#collapsableContent").collapse("show");
-
-			// this.toggled = !this.toggled;
-			// $(".scoreCircle").click(hideTagContents.bind(null, this));
-			console.log("show Toggle")
 			showTagContents(this);
 			expanded.tag = $(this).data("id");
 
@@ -165,6 +131,8 @@ function showTagContents(tag) {
 	tag.toggled = !tag.toggled;
 	$(".scoreCircle").unbind("click");
 	$(".scoreCircle").bind("click", hideTagContents.bind(null, tag));
+
+	displayTagInfo($(tag).data("id"));
 }
 
 function hideTagContents(tag) {
@@ -185,6 +153,57 @@ function hideTagContents(tag) {
 
 	$("#collapsableContent").collapse("hide");
 	console.log("just hide")
+
+	displayLivIndex();
+}
+
+function displayTagInfo(id) {
+	$(".wheelText").empty();
+
+	var $rect = $("<div>", {"class": "tagRectangle"});
+	var $header = $("<p>", {"class": "catHeader"});
+	var $body = $("<p>", {"class": "catBody"});
+	var $lft = $("<p>", {"class": "lookForText"});
+	var $ul = $("<ul>", {"class": "rubricList"});
+	var $livIndexBtn = $("<a>", {"href": "LivabilityIndex.html", "type": "button", "class": "btn btn-liveScore"});
+
+	$header.append(TAGS[id].name.toUpperCase());
+	$body.append(TAGS[id].desc);
+	$lft.append("WHAT WE LOOK FOR");
+	$livIndexBtn.append("The Livability Index");
+
+	$rect.css("background-color", TAGS[id].color);
+	$lft.css("color", TAGS[id].color);
+
+	for(var i = 0; i < TAGS[id].rubrics.length; i++) {
+		var $li = $("<li>");
+		$li.append(TAGS[id].rubrics[i]);
+
+		$ul.append($li);
+	}
+
+	$(".wheelText").append($rect);
+	$(".wheelText").append($header);
+	$(".wheelText").append($body);
+	$(".wheelText").append($lft);
+	$(".wheelText").append($ul);
+	$(".wheelText").append($livIndexBtn);
+}
+
+function displayLivIndex() {
+	$(".wheelText").empty();
+
+	var $header = $("<p>", {"id": "catWheelHeader"});
+	var $body = $("<p>", {"id": "catWheelText"});
+	var $livIndexBtn = $("<a>", {"href": "LivabilityIndex.html", "type": "button", "class": "btn btn-liveScore"});
+
+	$header.append("LIVABILITY SCORE");
+	$body.append("Click on different livability categories<br>on the livability wheel to see why we gave<br>them the score they have. You can also learn more about the math behind our scoring system here.");
+	$livIndexBtn.append("The Livability Index");
+
+	$(".wheelText").append($header);
+	$(".wheelText").append($body);
+	$(".wheelText").append($livIndexBtn);
 }
 
 function displayContent(tagId) {

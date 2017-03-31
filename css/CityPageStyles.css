@@ -254,15 +254,18 @@
     background-color: #E3C25A;
     color:white;
     font-family:WorkSans-Medium;
-    font-size: 1.5vw;
+    font-size: 1.6vw;
     border-radius:0;
     text-transform:uppercase;
-    width: 50%;
+    /*width: 50%;
     padding: 1%;
     margin-top: 8%;
     margin-bottom: 5%;
-    margin-left: 15%;
+    margin-left: 15%;*/
+    margin: 10%;
+    /*margin-left: 4%;*/
     display: block;
+    width: 65%;
 }
 
 .modal-backdrop
@@ -477,4 +480,44 @@
     width: 20%;
     height: 1%;
     background-color: #2CA0E2;
+}
+
+.tagRectangle {
+    position: absolute;
+    top: 8%;
+    /*left: 17.5%;*/
+    z-index: 1;
+    width: 14%;
+    height: 1%;
+    background-color: #2CA0E2;
+}
+
+.catHeader {
+	font-family: WorkSans-Regular;
+	font-size: 3vw;
+	margin-top: -18%;
+}
+
+.catBody{
+	font-family: WorkSans-Light;
+	font-size: 1.4vw;
+	width: 85%;
+}
+
+.lookForText{
+	font-family: WorkSans-Light;
+	font-size: 1.4vw;
+	color: #2CA0E2;
+	padding-top: 2%;
+}
+
+.rubricList{
+	font-family: WorkSans-Light;
+	font-size: 1.1vw;
+	margin-left: -4%;
+	width: 90%;
+}
+
+.rubricList li{
+	padding-bottom: 3%;
 }
