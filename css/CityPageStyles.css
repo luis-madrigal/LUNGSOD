@@ -51,6 +51,22 @@
 	font-family: WorkSans-Medium;
 }
 
+.mainCircle{
+	position: absolute;
+	border-radius: 50%;
+    background-color: transparent;
+    border: .5vw solid #56DA65;
+    color: white;
+    font-size: 7vw;
+    font-family: Korolev-Heavy;
+    padding: 1%;
+    text-align: center;
+	display: block;
+	margin: 0 auto;
+	width: 14%;
+	left: 42%;
+}
+
 .carouselImages{
 	width: 100%;
 }

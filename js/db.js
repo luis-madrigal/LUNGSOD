@@ -291,7 +291,7 @@ var CITY_PAGE_TILES = {
 			TILES: [
 				 {caption: "Tricycle driver in Bacolod", res: "/Resources by city/Bacolod/Pics_Transpo/CityBacolod_Transpo01.jpg"},
 				 {caption: "Ceres Buslines Terminal", res: "/Resources by city/Bacolod/Pics_Transpo/CityBacolod_Transpo02.jpg"},
-				 {caption: "New Bacolod Silay International Airport", res: "/Resources by city/Bacolod/Pics_Transpo/CityBacolod_Transpo03"},
+				 {caption: "New Bacolod Silay International Airport", res: "/Resources by city/Bacolod/Pics_Transpo/CityBacolod_Transpo03.jpg"},
 			]
 		},
 		LOCALGOV: {
@@ -912,32 +912,32 @@ var CITY_TILES_TOP = [
 	{
 		city: CITIES.SANTA_ROSA,
 		res: "res/City Tiles (15-15)/CityTile_SANTAROSA.jpg",
-		tags: [TAGS.EMPLOYMENT, TAGS.HOUSING, TAGS.HEALTH, TAGS.INFRASTRUCTURE, TAGS.TRANSPORTATION, TAGS.LEISURE]
+		tags: [TAGS.EMPLOYMENT, TAGS.EDUCATION, TAGS.LOCALGOV]
 	},
 	{
 		city: CITIES.BACOLOD,
 		res: "res/City Tiles (15-15)/CityTile_BACOLOD.jpg",
-		tags: [TAGS.EMPLOYMENT, TAGS.HOUSING, TAGS.EDUCATION, TAGS.INFRASTRUCTURE, TAGS.TRANSPORTATION, TAGS.LOCALGOV, TAGS.LEISURE]
+		tags: [TAGS.EDUCATION, TAGS.INFRASTRUCTURE, TAGS.TRANSPORTATION]
 	},
 	{
 		city: CITIES.CAGAYAN_DE_ORO,
 		res: "res/City Tiles (15-15)/CityTile_CDO.jpg",
-		tags: [TAGS.INFRASTRUCTURE, TAGS.TRANSPORTATION, TAGS.EMPLOYMENT]
+		tags: [TAGS.EMPLOYMENT, TAGS.HOUSING, TAGS.EDUCATION]
 	},
 	{
 		city: CITIES.ILIGAN,
 		res: "res/City Tiles (15-15)/CityTile_ILIGAN.jpg",
-		tags: [TAGS.EMPLOYMENT, TAGS.INFRASTRUCTURE, TAGS.TRANSPORTATION, TAGS.LOCALGOV, TAGS.LEISURE]
+		tags: [TAGS.EDUCATION, TAGS.TRANSPORTATION, TAGS.LEISURE]
 	},
 	{
 		city: CITIES.ILOILO,
 		res: "res/City Tiles (15-15)/CityTile_ILOILO.jpg",
-		tags: [TAGS.EDUCATION, TAGS.EMPLOYMENT, TAGS.HEALTH, TAGS.HOUSING, TAGS.INFRASTRUCTURE, TAGS.LEISURE, TAGS.LOCALGOV, TAGS.TRANSPORTATION]
+		tags: [TAGS.HEALTH, TAGS.INFRASTRUCTURE, TAGS.LOCALGOV]
 	},
 	{
 		city: CITIES.BUTUAN,
 		res: "res/City Tiles (15-15)/CityTile_BUTUAN.jpg",
-		tags: [TAGS.INFRASTRUCTURE, TAGS.TRANSPORTATION]
+		tags: [TAGS.HOUSING, TAGS.TRANSPORTATION, TAGS.LEISURE]
 	}
 ];
 
@@ -945,31 +945,31 @@ var CITY_TILES_BOTTOM = [
 	{
 		city: CITIES.TARLAC,
 		res: "res/City Tiles (15-15)/CityTile_TARLAC.jpg",
-		tags: [TAGS.HOUSING]
+		tags: [TAGS.HOUSING, TAGS.INFRASTRUCTURE, TAGS.LEISURE]
 	},
 	{
 		city: CITIES.LEGAZPI,
 		res: "res/City Tiles (15-15)/CityTile_LEGAZPI.jpg",
-		tags: [TAGS.INFRASTRUCTURE, TAGS.TRANSPORTATION, TAGS.EMPLOYMENT]
+		tags: [TAGS.EMPLOYMENT, TAGS.HOUSING, TAGS.LEISURE]
 	},
 	{
 		city: CITIES.DUMAGUETE,
 		res: "res/City Tiles (15-15)/CityTile_DUMAGUETE.jpg",
-		tags: [TAGS.EMPLOYMENT, TAGS.HOUSING, TAGS.HEALTH, TAGS.EDUCATION, TAGS.LOCALGOV]
+		tags: [TAGS.EMPLOYMENT, TAGS.HOUSING, TAGS.EDUCATION]
 	},
 	{
 		city: CITIES.PUERTO_PRINCESA,
 		res: "res/City Tiles (15-15)/CityTile_PuertoPrincesa.jpg",
-		tags: [TAGS.INFRASTRUCTURE, TAGS.TRANSPORTATION, TAGS.LOCALGOV, TAGS.LEISURE]
+		tags: [TAGS.HOUSING, TAGS.INFRASTRUCTURE, TAGS.LEISURE]
 	},
 	{
 		city: CITIES.ZAMBOANGA,
 		res: "res/City Tiles (15-15)/CityTile_Zamboanga.jpg",
-		tags: [TAGS.TRANSPORTATION, TAGS.HOUSING]
+		tags: [TAGS.EMPLOYMENT, TAGS.INFRASTRUCTURE, TAGS.LEISURE]
 	},
 	{
 		city: CITIES.GENERAL_SANTOS,
 		res: "res/City Tiles (15-15)/CityTile_GeneralSantos.jpg",
-		tags: [TAGS.HOUSING, TAGS.HEALTH, TAGS.INFRASTRUCTURE, TAGS.LEISURE]
+		tags: [TAGS.HOUSING, TAGS.INFRASTRUCTURE, TAGS.TRANSPORTATION]
 	}
 ];

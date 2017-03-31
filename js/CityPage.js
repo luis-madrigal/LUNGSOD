@@ -262,16 +262,18 @@ function initCarousel(dest, id){
 
 function initCarouselCaptions(){
 	var $captions = $("#carouselCaption");
-	var $captionHeader = $("<p>", {"class": "captionHeader"});
-	var $breadCrumbs = $("<p>", {"class": "breadCrumbs"});
+	var $captionHeader = $(".captionHeader");
+	var $breadCrumbs = $(".breadCrumbs");
+	var $mainCircle = $(".mainCircle");
 	var city = (CITIES[cityId].name.indexOf(" ") >= 0)? "":" CITY";
 	var fullName = CITIES[cityId].name.toUpperCase()+city+ ", " +CITIES[cityId].province.toUpperCase();
 
-	$breadCrumbs.append("<a class = 'breadLinks' href = 'HomePage.html'>HOME</a> > <a class = 'breadLinks' href = 'BrowseCity.html'>BROWSE CITIES</a> > <span class = 'breadCrumbsPage'>" +fullName+ "</span>");
-	$captionHeader.append(fullName);
+	$breadCrumbs.html("<a class = 'breadLinks' href = 'HomePage.html'>HOME</a> > <a class = 'breadLinks' href = 'BrowseCity.html'>BROWSE CITIES</a> > <span class = 'breadCrumbsPage'>" +fullName+ "</span>");
+	$captionHeader.html(fullName);
+	$mainCircle.text(CITIES[cityId].overallScore);
 
-	$captions.append($breadCrumbs);
-	$captions.append($captionHeader);
+	// $captions.append($breadCrumbs);
+	// $captions.append($captionHeader);
 }
 
 function initDesc(dest, id) {
@@ -322,6 +324,7 @@ function initWheel() {
 }
 
 function compare(otherCity) {
+	$("#compareModal").modal();
 	initCarousel($("#city2").find(".carousel-inner"), otherCity);
 	initDesc($("#city2Desc"), otherCity);
 
