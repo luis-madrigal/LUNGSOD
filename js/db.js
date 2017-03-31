@@ -15,7 +15,11 @@ var TAGS = {
 			SELECTED: "res/Resources_IconWheel/Icons_Selected/Icons_Selected-35.png",
 			HOVER: "res/Resources_IconWheel/Icons_Hover/Icons_Hover-35.png"
 		},
-		color: "#45CBCB"
+		color: "#45CBCB",
+		desc: "In this category, we grade a city for its ability to provide affordable, quality education across all ages of its citizens.",
+		rubrics: ["AVAILABILITY - the number of available primary, secondary, and tertiary schools in the city.",
+					"QUALITY - good quality education that puts students in a position to better their lives through knowledge.",
+					"AFFORDABILITY - the cost of education is appropriate in relation to its quality, and is attainable by the majority."]
 	},
 	EMPLOYMENT: {
 		id: 1,
@@ -27,7 +31,11 @@ var TAGS = {
 			SELECTED: "res/Resources_IconWheel/Icons_Selected/Icons_Selected_Artboard 61 copy.png",
 			HOVER: "res/Resources_IconWheel/Icons_Hover/Icons_Hover_Artboard 61 copy.png"
 		},
-		color: "#73C86F"
+		color: "#73C86F",
+		desc: "In this category, we grade a city for its ability to provide a large number and variety of quality job opportunities for its citizens. This includes all types of work from blue, to white, to pink-collar work.",
+		rubrics: ["AVAILABILITY - the number of available job opportunities for local talent to apply to.",
+					"QUALITY - work that provides proper benefits, room for growth, and proper pay.",
+					"VARIETY - how different the types of work are in the city, from labor, social, office work, or more."]
 	},
 	HEALTH: {
 		id: 2,
@@ -39,7 +47,12 @@ var TAGS = {
 			SELECTED: "res/Resources_IconWheel/Icons_Selected/Icons_Selected-36.png",
 			HOVER: "res/Resources_IconWheel/Icons_Hover/Icons_Hover-36.png"
 		},
-		color: "#FF8146"
+		color: "#FF8146",
+		desc: "In this category, we grade a city for its ability to provide adequate healthcare through a variety of services. We also grade the quality and availability of facilities in hopsitals and clinics.",
+		rubrics: ["AVAILABILITY - the number of available hospitals, clinics, and other healthcare services.",
+					"QUALITY - the quality of healthcare services, staff, and equipment at hospitals or clinics.",
+					"ACCESSIBILITY - how accessible medical centers are in terms of location and accommodation of citizens.",
+					"AFFORDABILITY - the ratio of the quality of health service to its price and how many people can afford these."]
 	},
 	HOUSING: {
 		id: 3,
@@ -51,7 +64,11 @@ var TAGS = {
 			SELECTED: "res/Resources_IconWheel/Icons_Selected/Icons_Selected-34.png",
 			HOVER: "res/Resources_IconWheel/Icons_Hover/Icons_Hover-34.png"
 		},
-		color: "#F6C358"
+		color: "#F6C358",
+		desc: "In this category, we grade a city for its ability to provide affordable proper housing. This means that there is an adequate number of available homes that are also of good quality.",
+		rubrics: ["AVAILABILITY - there is an adequate amount of available property for rent or sale.",
+					"QUALITY - applies to the quality of the construction and amenities needed in a home.",
+					"AFFORDABILITY - the general price range of homes are affordable to the majority."]
 	},
 	INFRASTRUCTURE: {
 		id: 4,
@@ -63,7 +80,11 @@ var TAGS = {
 			SELECTED: "res/Resources_IconWheel/Icons_Selected/Icons_Selected-39.png",
 			HOVER: "res/Resources_IconWheel/Icons_Hover/Icons_Hover-39.png"
 		},
-		color: "#E95352"
+		color: "#E95352",
+		desc: "In this category, we grade a city for the availability and quality of necessary infrastructureóbuildings, roads, water, electricity, etc. As well as their maintenance and improvement. ",
+		rubrics: ["AVAILABILITY - the availability of the minimum required infrastructure to support life in the city.",
+					"QUALITY - the quality of infrastructure in terms of materials, structure, and processes.",
+					"MAINTENANCE - constancy and consistency of maintenance on city infrastructure."]
 	},
 	LEISURE: {
 		id: 5,
@@ -75,7 +96,11 @@ var TAGS = {
 			SELECTED: "res/Resources_IconWheel/Icons_Selected/Icons_Selected-40.png",
 			HOVER: "res/Resources_IconWheel/Icons_Hover/Icons_Hover-40.png"
 		},
-		color: "#FF6985"
+		color: "#FF6985",
+		desc: "In this category, we grade a city for how many facilities and areas of interest there are for people to go to for fun. These can be places like parks, tourist spots, hotels, and museums, or events like festivals. ",
+		rubrics: ["AVAILABILITY - the number of available points of interest.",
+					"QUALITY - mostly applies to facilities and amenities of a place.",
+					"VARIETY - how different the types of events and places for leisure are in the city."]
 	},
 	LOCALGOV: {
 		id: 6,
@@ -87,7 +112,11 @@ var TAGS = {
 			SELECTED: "res/Resources_IconWheel/Icons_Selected/Icons_Selected-37.png",
 			HOVER: "res/Resources_IconWheel/Icons_Hover/Icons_Hover-37.png"
 		},
-		color: "#324B65"
+		color: "#324B65",
+		desc: "In this category, we grade a city for the efforts of its local government to make the lives of its citizens better. This includes their planned initiatives and government programs offered to the public.",
+		rubrics: ["QUALITY - government services and programs are of good quality and benefit the people.",
+					"CONSISTENCY - government efforts are consistently implemented, renewed, and improved over time.",
+					"ACCESSIBILITY - government officials, offices, and programs and services are easily accessible."]
 	},
 	TRANSPORTATION: {
 		id: 7,
@@ -99,7 +128,11 @@ var TAGS = {
 			SELECTED: "res/Resources_IconWheel/Icons_Selected/Icons_Selected-38.png",
 			HOVER: "res/Resources_IconWheel/Icons_Hover/Icons_Hover-38.png"
 		},
-		color: "#634481"
+		color: "#634481",
+		desc: "In this category, we grade a city for the quality, accessibility, maintenace, and amount of various transportation methods as needed by its citizens.",
+		rubrics: ["AVAILIBILITY - the number of available transportation modes.",
+					"QUALITY - the efficiency of using transportation, and the quality of the vehicles themselves.",
+					"ACCESSIBILITY - how the convenient it is for citizens to access transportation, as well as the transportation modeís reach within the city."]
 	},
 };
 
