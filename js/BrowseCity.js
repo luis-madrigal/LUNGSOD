@@ -73,7 +73,7 @@ function computeFilters() {
 		computedTiles = activeFilters[1].fn.call(this, computedTiles, activeFilters[1].args);
 	}
 
-	changeTiles(computedTiles, DIV_LISTS, 9);
+	changeTiles(computedTiles, DIV_LISTS, 6);
 }
 
 function filterTiles(tiles) {
@@ -201,7 +201,7 @@ function changeTiles(tiles, lists, maxTiles) {
 function initTiles() {
 	// var tiles = CITY_TILES_TOP.concat(CITY_TILES_BOTTOM);
 
-	changeTiles(ALL_CITY_TILES, DIV_LISTS, 9);
+	changeTiles(ALL_CITY_TILES, DIV_LISTS, 6);
 
 	// ALL_CITY_TILES = cityTiles.slice(0);
 }

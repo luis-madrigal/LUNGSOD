@@ -938,7 +938,10 @@ var CITY_TILES_TOP = [
 		city: CITIES.BUTUAN,
 		res: "res/City Tiles (15-15)/CityTile_BUTUAN.jpg",
 		tags: [TAGS.INFRASTRUCTURE, TAGS.TRANSPORTATION]
-	},
+	}
+];
+
+var CITY_TILES_BOTTOM = [
 	{
 		city: CITIES.TARLAC,
 		res: "res/City Tiles (15-15)/CityTile_TARLAC.jpg",
@@ -953,29 +956,11 @@ var CITY_TILES_TOP = [
 		city: CITIES.DUMAGUETE,
 		res: "res/City Tiles (15-15)/CityTile_DUMAGUETE.jpg",
 		tags: [TAGS.EMPLOYMENT, TAGS.HOUSING, TAGS.HEALTH, TAGS.EDUCATION, TAGS.LOCALGOV]
-	}
-];
-
-var CITY_TILES_BOTTOM = [
-	{
-		city: CITIES.BATANGAS,
-		res: "res/City Tiles (15-15)/CityTile_Batangas.jpg",
-		tags: [TAGS.INFRASTRUCTURE, TAGS.TRANSPORTATION]
 	},
 	{
 		city: CITIES.PUERTO_PRINCESA,
 		res: "res/City Tiles (15-15)/CityTile_PuertoPrincesa.jpg",
 		tags: [TAGS.INFRASTRUCTURE, TAGS.TRANSPORTATION, TAGS.LOCALGOV, TAGS.LEISURE]
-	},
-	{
-		city: CITIES.OLONGAPO,
-		res: "res/City Tiles (15-15)/CityTile_Olongapo.jpg",
-		tags: [TAGS.EMPLOYMENT, TAGS.HEALTH, TAGS.INFRASTRUCTURE, TAGS.TRANSPORTATION, TAGS.LOCALGOV, TAGS.LEISURE]
-	},
-	{
-		city: CITIES.TACLOBAN,
-		res: "res/City Tiles (15-15)/CityTile_Tacloban.jpg",
-		tags: [TAGS.EMPLOYMENT, TAGS.HOUSING, TAGS.HEALTH, TAGS.EDUCATION, TAGS.LOCALGOV]
 	},
 	{
 		city: CITIES.ZAMBOANGA,
