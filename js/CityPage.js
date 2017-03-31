@@ -17,7 +17,7 @@ $(document).ready(function(){
 	initCarouselCaptions();
 	initWheel();
 
-	$(".scoreCircle").css("border-color", "#56DA65");
+	$(".scoreCircle").css("border-color", "#2c95d6");
 
 	$("#cityCarousel").carousel({
 	    interval: false
@@ -49,42 +49,62 @@ $(document).ready(function(){
 	});
 
 	$(".wheelTag").click(function() {
-		if(expanded.val && $(this).data("id") != expanded.tag) {
-			collapsable = false;
-			return;
+		var changedTag = false;
+		if($(this).data("id") != expanded.tag) {
+			changedTag = true;
 		}
-		collapsable = true;
+		// if(expanded.val && $(this).data("id") != expanded.tag) {
+		// 	collapsable = false;
+		// 	return;
+		// }
+		// collapsable = true;
 		var children = $(this).parent().children();
 
 		if(this.toggled) {
-			for(var i = 0; i < children.length; i++) {
-				if(this != children[i]) {
-					var span = $(children[i]).find("span");
-					$(children[i]).css("background-image", "url('" +TAGS[$(children[i]).data("id")].altRes.UNSELECTED+ "')");
-					TweenMax.to(span, 0.2, {css: {"opacity": "1"}});
-				}
-			}
-			$(this).css("background-image", "url('" +TAGS[$(this).data("id")].altRes.UNSELECTED+ "')");
-			$(".scoreCircle").css("border-color", "#56DA65");
-			expanded.val = false;
-			expanded.tag = null;
+			// for(var i = 0; i < children.length; i++) {
+			// 	if(this != children[i]) {
+			// 		var span = $(children[i]).find("span");
+			// 		$(children[i]).css("background-image", "url('" +TAGS[$(children[i]).data("id")].altRes.UNSELECTED+ "')");
+			// 		TweenMax.to(span, 0.2, {css: {"opacity": "1"}});
+			// 	}
+			// }
+			// $(this).css("background-image", "url('" +TAGS[$(this).data("id")].altRes.UNSELECTED+ "')");
+			// $(".scoreCircle").css("border-color", "#2c95d6");
+			// expanded.val = false;
+			// expanded.tag = null;
+			console.log("hide Toggle")
+			hideTagContents(this);
 		} else {
-			for(var i = 0; i < children.length; i++) {
-				if(this != children[i]) {
-					var span = $(children[i]).find("span");
-					$(children[i]).css("background-image", "url('" +TAGS[$(children[i]).data("id")].altRes.SELECTED+ "')");
-					TweenMax.to(span, 0.2, {css: {"opacity": "0"}});
+			// for(var i = 0; i < children.length; i++) {
+			// 	if(this != children[i]) {
+			// 		var span = $(children[i]).find("span");
+			// 		$(children[i]).css("background-image", "url('" +TAGS[$(children[i]).data("id")].altRes.SELECTED+ "')");
+			// 		TweenMax.to(span, 0.2, {css: {"opacity": "0"}});
+			// 	}
+			// }
+			// var span = $(this).find("span");
+			// $(this).css("background-image", "url('" +TAGS[$(this).data("id")].altRes.UNSELECTED+ "')");
+			// TweenMax.to(span, 0.2, {css: {"opacity": "1"}});
+			// $(".scoreCircle").css("border-color", TAGS[$(this).data("id")].color);
+			// expanded.val = true;
+			// expanded.tag = $(this).data("id");
+			// displayContent(expanded.tag);
+			// $("#collapsableContent").collapse("show");
+
+			// this.toggled = !this.toggled;
+			// $(".scoreCircle").click(hideTagContents.bind(null, this));
+			console.log("show Toggle")
+			showTagContents(this);
+			expanded.tag = $(this).data("id");
+
+			if(changedTag) {
+				for(var i = 0; i < children.length; i++) {
+					if(this != children[i]) {
+						children[i].toggled = false;						
+					}
 				}
 			}
-			var span = $(this).find("span");
-			$(this).css("background-image", "url('" +TAGS[$(this).data("id")].altRes.UNSELECTED+ "')");
-			TweenMax.to(span, 0.2, {css: {"opacity": "1"}});
-			$(".scoreCircle").css("border-color", TAGS[$(this).data("id")].color);
-			expanded.val = true;
-			expanded.tag = $(this).data("id");
-			displayContent(expanded.tag);
 		}
-		this.toggled = !this.toggled;
 	});
 
 	$("#collapsableContent").on('hide.bs.collapse', function (e) {
@@ -123,6 +143,49 @@ $(document).ready(function(){
 		document.location.href = dest;
 	});
 });
+
+function showTagContents(tag) {
+	var children = $(tag).parent().children();
+
+	for(var i = 0; i < children.length; i++) {
+		if(tag != children[i]) {
+			var span = $(children[i]).find("span");
+			$(children[i]).css("background-image", "url('" +TAGS[$(children[i]).data("id")].altRes.SELECTED+ "')");
+			TweenMax.to(span, 0.2, {css: {"opacity": "0"}});
+		}
+	}
+
+	var span = $(tag).find("span");
+	$(tag).css("background-image", "url('" +TAGS[$(tag).data("id")].altRes.UNSELECTED+ "')");
+	TweenMax.to(span, 0.2, {css: {"opacity": "1"}});
+	$(".scoreCircle").css("border-color", TAGS[$(tag).data("id")].color);
+	displayContent($(tag).data("id"));
+	$("#collapsableContent").collapse("show");
+
+	tag.toggled = !tag.toggled;
+	$(".scoreCircle").unbind("click");
+	$(".scoreCircle").bind("click", hideTagContents.bind(null, tag));
+}
+
+function hideTagContents(tag) {
+	var children = $(tag).parent().children();
+
+	for(var i = 0; i < children.length; i++) {
+		if(tag != children[i]) {
+			var span = $(children[i]).find("span");
+			$(children[i]).css("background-image", "url('" +TAGS[$(children[i]).data("id")].altRes.UNSELECTED+ "')");
+			TweenMax.to(span, 0.2, {css: {"opacity": "1"}});
+		}
+	}
+
+	$(tag).css("background-image", "url('" +TAGS[$(tag).data("id")].altRes.UNSELECTED+ "')");
+	$(".scoreCircle").css("border-color", "#2c95d6");
+
+	tag.toggled = !tag.toggled;
+
+	$("#collapsableContent").collapse("hide");
+	console.log("just hide")
+}
 
 function displayContent(tagId) {
 	var cp = CITY_PAGE_TILES[cityId][tagId];
@@ -204,7 +267,7 @@ function initCarouselCaptions(){
 	var city = (CITIES[cityId].name.indexOf(" ") >= 0)? "":" CITY";
 	var fullName = CITIES[cityId].name.toUpperCase()+city+ ", " +CITIES[cityId].province.toUpperCase();
 
-	$breadCrumbs.append("HOME > BROWSE CITIES > <span class = 'breadCrumbsPage'>" +fullName+ "</span>");
+	$breadCrumbs.append("<a class = 'breadLinks' href = 'HomePage.html'>HOME</a> > <a class = 'breadLinks' href = 'BrowseCity.html'>BROWSE CITIES</a> > <span class = 'breadCrumbsPage'>" +fullName+ "</span>");
 	$captionHeader.append(fullName);
 
 	$captions.append($breadCrumbs);
@@ -243,7 +306,7 @@ function initWheel() {
 	var j = 0;
 
 	for(var i in TAGS) {
-		var $div = $("<div>", {"class": "wheelTag", "data-toggle": "collapse", "data-target": "#collapsableContent", "data-id": i});
+		var $div = $("<div>", {"class": "wheelTag", "data-id": i});
 		var $tagScore = $("<span>", {"class": "wheelTagScore"});
 
 		$div.css("background-image", "url('" +TAGS[i].altRes.UNSELECTED+ "')");
