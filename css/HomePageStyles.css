@@ -86,13 +86,13 @@
 }
 
 #logo-group .subtext {
-    padding: 2%;
-    font-size: 1.5vw;
+    padding: 4%;
+    font-size: 1.35vw;
     width: 100%;
     color: white;
     text-align: center;
     display: block;
-    font-family: WorkSans-Light;
+    font-family: WorkSans-ExtraLight;
     margin-left: auto;
     margin-right: auto;
 }
@@ -126,6 +126,7 @@
 
 .search-group .form-control {
     font-size: 1.3vw;
+    font-family: WorkSans-Light;
     height: 100%;
     border-radius: 0px;
     border-right: 0;
@@ -167,6 +168,7 @@
     font-family: WorkSans-Light;
     font-size: 2.55vw;
     text-align: center;
+    line-height: 3.1vw;
 }
 
 .about-text-1 > b {
@@ -194,10 +196,10 @@
 .rectangle {
     position: absolute;
     top: 0;
-    left: 18%;
+    left: 17.5%;
     z-index: 1;
-    width: 17.5%;
-    height: 4%;
+    width: 15.5%;
+    height: 2.5%;
     background-color: #2CA0E2;
 }
 
@@ -230,7 +232,8 @@
 .category-icon-div > p {
     color: #2CA0E2;
     font-family: WorkSans-Regular;
-    font-size: 1vw;
+    font-size: .96vw;
+    text-transform: uppercase;
 }
 
 .category-icon {
@@ -268,17 +271,18 @@
 }
 
 .btn-begin{
+    position:relative;
     text-align:center;
     background-color: #E3c25A;
     color:white;
     font-family:WorkSans-Medium;
-    font-size: 1.8vw;
+    font-size: 1.5vw;
     border-radius:0;
     margin:0 auto;
     text-transform:uppercase;
-    width: 19.9%;
-    padding-top: 1.4%;
-    padding-bottom: 1.4%;
+    padding: 1%;
+    width: 16%;
+    z-index: 1;
 }
 .begin-skyline{
     position:absolute;
@@ -286,8 +290,8 @@
 }
 
 #A-cities{
-    background-color: #263848;
-    background-size: contain;
+    background-image: url("../res/compare_city/Gradient background.jpg");
+    background-size: cover;
     padding-top: 2.8%;
     padding-bottom: 2.5%;
 }
@@ -328,6 +332,15 @@
     position:relative;
 }
 
+.city-tiles img:hover{
+    -webkit-filter: brightness(150%);
+    transition: filter 1s;
+    -webkit-transition: filter 1s;
+    position: relative;
+    z-index: -1;
+
+}
+
 .city-tiles-text-group{
     position:absolute;
     top: 2.5%;
@@ -340,6 +353,7 @@
     color:white;
     text-transform:uppercase;
     margin:0;
+    padding-bottom: 3%;
 }
 
 .city-tiles-text-group > h4{
@@ -348,14 +362,15 @@
     color:white;
     text-transform:uppercase;
     margin:0;
+    letter-spacing: .08vw;
 }
 
 .scoreCircle {
     border-radius: 50%;
-    width:70px;
-    height:70px;
+    width: 4.6vw;
+    height: 4.6vw;
     background-color: transparent;
-    border: 5.33px solid #56DA65;
+    border: .35vw solid #56DA65;
     color: white;
     display: flex;
     justify-content: center;
@@ -369,7 +384,7 @@
 }
 
 .A-cities-description-group{
-    padding:0;
+    padding-top:2.5%;
 }
 
 .A-cities-icon{
@@ -385,7 +400,7 @@
 }
 
 .city-tiles-group{
-    margin-top:2%;
+    margin-top:1%;
     margin-bottom:2%;
     padding-left:2.5%;
     padding-right:2.5%;
