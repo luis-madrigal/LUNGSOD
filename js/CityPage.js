@@ -108,6 +108,15 @@ $(document).ready(function(){
 
 		document.location.href = dest;
 	});
+
+	$(".btn-migrate").on("click", function() {
+		var dest = window.location.href.split("/");
+
+		dest[dest.length-1] = "MigrationHelp.html?city=" + cityId;
+		dest = dest.join("/");
+
+		document.location.href = dest;
+	});
 });
 
 function showTagContents(tag) {

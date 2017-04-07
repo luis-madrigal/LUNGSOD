@@ -1,23 +1,24 @@
 var cityId;
 
 $(document).ready(function() {
-	// if(!window.location.href.includes("?")) {
-	// 	$("#cityContent").css("visibility", "hidden");
-	// 	return;
-	// }
+	if(!window.location.href.includes("?")) {
+		$("#cityContent").empty();
+		return;
+	}
 
-	// var args = window.location.href.split("?")[1];
-	// var city = args.split("=")[1];
-	// city = city.replace("#", "");
+	var args = window.location.href.split("?")[1];
+	var city = args.split("=")[1];
+	city = city.replace("#", "");
 
-	cityId = "LEGAZPI";
+	cityId = city;
 
 	$("#cityCarousel").carousel({
 	    interval: false
 	}); 
 
 	initCityContent();
-
+	initAboutContent();
+	initTiles();
 });
 
 function initCityContent(){
@@ -56,7 +57,7 @@ function initCarousel(dest){
 	for(var i = 0; i < 4; i++) {
 		var $div = $("<div>", {"class": "item "+active});
 		var imgPath = imgFolder + "/pics-" + i;
-		var $img = $("<img>", {"class": "img-responsive carouselImages", "src": imgFolder + "/pics-" + (i+1) + ".jpg"});
+		var $img = $("<img>", {"class": "img-responsive carouselImages", "src": imgFolder + "/PicHero0" + (i+1) + ".jpg"});
 
 		$div.append($img);
 		dest.append($div);
@@ -76,4 +77,59 @@ function initCarousel(dest){
 	$captions.append($breadCrumbs);
 	$captions.append($captionHeader);
 
+}
+
+function initAboutContent() {
+	$("#aboutHeader").text(DESCRIPTIONS[cityId].ABOUT_HEADER);
+	$("#aboutHeader").css("font-size", scaleFont(DESCRIPTIONS[cityId].ABOUT_HEADER)+"vw");
+
+	var nLeft = Math.ceil(DESCRIPTIONS[cityId].ABOUT_BODY.length/2);
+	var align = "right";
+
+	for(var i = 0; i < DESCRIPTIONS[cityId].ABOUT_BODY.length; i++) {
+		// if(align == "right" && nLeft <= i)
+		// 	align = "left";
+
+		// $(".aboutText."+align).append(DESCRIPTIONS[cityId].ABOUT_BODY[i]);
+		// $(".aboutText."+align).append("<br><br>");
+
+		$(".aboutText").append(DESCRIPTIONS[cityId].ABOUT_BODY[i]);
+		$(".aboutText").append("<br><br>");
+	}
+}
+
+function scaleFont(str) {
+	var len = str.length;
+	var val = -0.0058*(Math.pow(len, 3)) + 0.4146*(Math.pow(len, 2)) - 9.9467*len + 85.187;
+
+	if(val < 3.5)
+		val = 3.5;
+	
+	return val;
+}
+
+function initTiles() {
+	initTagDesc($("#egContent").find(".col-lg-12"), "EMPLOYMENT");
+	initTagDesc($("#hgContent").find(".col-lg-12"), "HOUSING");
+	initTagDesc($("#gsContent").find(".col-lg-12"), "LOCALGOV");
+}
+
+function initTagDesc(dest, tag) {
+	var $row = $("<div>", {"class": "row content-tiles"});
+	var dbTiles = MIGRATION_HELP_TILES[cityId][tag].TILES;
+
+	for(var i = 0; i < dbTiles.length; i++) {
+		var $col = $("<div>", {"class": "col-lg-4 content-tile"});
+		var $img = $("<img>", {"class": "img-responsive image-tile", "src": "res"+dbTiles[i].res});
+		var $rect = $("<div>", {"class": "rectangle"});
+
+		$rect.css("background-color", TAGS[tag].color);
+
+		$col.append($img);
+		$col.append($rect);
+
+		$row.append($col);
+	}
+
+	dest.append($row);
 }

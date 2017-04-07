@@ -973,3 +973,156 @@ var CITY_TILES_BOTTOM = [
 		tags: [TAGS.HOUSING, TAGS.INFRASTRUCTURE, TAGS.TRANSPORTATION]
 	}
 ];
+
+var MIGRATION_HELP_TILES = {
+	BACOLOD: {
+		EMPLOYMENT: {
+			TILES: [
+				 {caption: "PAG-IBIG Office, Bacolod", res: "/migration_help/Bacolod/Pics_Employment/employment1.jpg"},
+				 {caption: "Development Bank of the Philippines", res: "/migration_help/Bacolod/Pics_Employment/employment2.jpg"},
+				 {caption: "Penalosa Farm", res: "/migration_help/Bacolod/Pics_Employment/employment3.jpg"},
+			]
+		},
+		HOUSING: {
+			TILES: [
+				 {caption: "Akina Residences", res: "/migration_help/Bacolod/Pics_Housing/housing1.jpg"},
+				 {caption: "Camella Bacolod", res: "/migration_help/Bacolod/Pics_Housing/housing2.jpg"}
+			]
+		},
+		LOCALGOV: {
+			TILES: [
+				 {caption: "The Doctors' Hospital", res: "/migration_help/Santa Rosa/Pics_LocalGovt/lgu1.jpg"}
+			]
+		}
+	},
+	BUTUAN: {
+		EMPLOYMENT: {
+			TILES: [
+				 {caption: "PAG-IBIG Office, Bacolod", res: "/migration_help/Butuan/Pics_Employment/employment1.jpg"},
+				 {caption: "Development Bank of the Philippines", res: "/migration_help/Butuan/Pics_Employment/employment2.jpg"},
+				 {caption: "Penalosa Farm", res: "/migration_help/Butuan/Pics_Employment/employment3.jpg"},
+			]
+		},
+		HOUSING: {
+			TILES: [
+				 {caption: "Akina Residences", res: "/migration_help/Butuan/Pics_Housing/housing1.jpg"},
+				 {caption: "Camella Bacolod", res: "/migration_help/Butuan/Pics_Housing/housing2.jpg"}
+			]
+		},
+		LOCALGOV: {
+			TILES: [
+				 {caption: "The Doctors' Hospital", res: "/migration_help/Butuan/Pics_LocalGovt/lgu1.jpg"},
+				 {caption: "The Doctors' Hospital", res: "/migration_help/Butuan/Pics_LocalGovt/lgu2.jpg"},
+			]
+		}
+	},
+	CAGAYAN_DE_ORO: {
+		EMPLOYMENT: {
+			TILES: [
+				 {caption: "PAG-IBIG Office, Bacolod", res: "/migration_help/Cagayan de Oro/Pics_Employment/employment1.jpg"},
+				 {caption: "Development Bank of the Philippines", res: "/migration_help/Cagayan de Oro/Pics_Employment/employment2.jpg"},
+				 {caption: "Penalosa Farm", res: "/migration_help/Cagayan de Oro/Pics_Employment/employment3.jpg"},
+			]
+		},
+		HOUSING: {
+			TILES: [
+				 {caption: "Akina Residences", res: "/migration_help/Cagayan de Oro/Pics_Housing/housing1.jpg"},
+				 {caption: "Camella Bacolod", res: "/migration_help/Cagayan de Oro/Pics_Housing/housing2.jpg"},
+				 {caption: "Camella Bacolod", res: "/migration_help/Cagayan de Oro/Pics_Housing/housing3.jpg"}
+			]
+		},
+		LOCALGOV: {
+			TILES: [
+				 {caption: "The Doctors' Hospital", res: "/migration_help/Cagayan de Oro/Pics_LocalGovt/lgu1.jpg"}
+			]
+		}
+	},
+	ILIGAN: {
+		EMPLOYMENT: {
+			TILES: [
+				 {caption: "PAG-IBIG Office, Bacolod", res: "/migration_help/Iligan/Pics_Employment/employment1.jpg"},
+				 {caption: "Development Bank of the Philippines", res: "/migration_help/Iligan/Pics_Employment/employment2.jpg"},
+				 {caption: "Penalosa Farm", res: "/migration_help/Iligan/Pics_Employment/employment3.jpg"},
+			]
+		},
+		HOUSING: {
+			TILES: [
+				 {caption: "Akina Residences", res: "/migration_help/Iligan/Pics_Housing/housing1.jpg"},
+				 {caption: "Camella Bacolod", res: "/migration_help/Iligan/Pics_Housing/housing2.jpg"}
+			]
+		},
+		LOCALGOV: {
+			TILES: [
+				 {caption: "The Doctors' Hospital", res: "/migration_help/Iligan/Pics_LocalGovt/lgu1.jpg"},
+				 {caption: "The Doctors' Hospital", res: "/migration_help/Iligan/Pics_LocalGovt/lgu2.jpg"},
+				 {caption: "The Doctors' Hospital", res: "/migration_help/Iligan/Pics_LocalGovt/lgu3.jpg"}
+			]
+		}
+	},
+	ILOILO: {
+		EMPLOYMENT: {
+			TILES: [
+				 {caption: "PAG-IBIG Office, Bacolod", res: "/migration_help/Iloilo/Pics_Employment/employment1.jpg"},
+				 {caption: "Development Bank of the Philippines", res: "/migration_help/Iloilo/Pics_Employment/employment2.jpg"},
+				 {caption: "Penalosa Farm", res: "/migration_help/Iloilo/Pics_Employment/employment3.jpg"},
+			]
+		},
+		HOUSING: {
+			TILES: [
+				 {caption: "Akina Residences", res: "/migration_help/Iloilo/Pics_Housing/housing1.jpg"},
+				 {caption: "Camella Bacolod", res: "/migration_help/Iloilo/Pics_Housing/housing2.jpg"}
+			]
+		},
+		LOCALGOV: {
+			TILES: [
+				 {caption: "The Doctors' Hospital", res: "/migration_help/Iloilo/Pics_LocalGovt/lgu1.jpg"},
+				 {caption: "The Doctors' Hospital", res: "/migration_help/Iloilo/Pics_LocalGovt/lgu2.jpg"}
+			]
+		}
+	},
+	SANTA_ROSA: {
+		EMPLOYMENT: {
+			TILES: [
+				 {caption: "PAG-IBIG Office, Bacolod", res: "/migration_help/Santa Rosa/Pics_Employment/employment1.jpg"},
+				 {caption: "Development Bank of the Philippines", res: "/migration_help/Santa Rosa/Pics_Employment/employment2.jpg"},
+				 {caption: "Penalosa Farm", res: "/migration_help/Santa Rosa/Pics_Employment/employment3.jpg"},
+			]
+		},
+		HOUSING: {
+			TILES: [
+				 {caption: "Akina Residences", res: "/migration_help/Santa Rosa/Pics_Housing/housing1.jpg"},
+				 {caption: "Camella Bacolod", res: "/migration_help/Santa Rosa/Pics_Housing/housing2.jpg"},
+				 {caption: "Camella Bacolod", res: "/migration_help/Santa Rosa/Pics_Housing/housing3.jpg"}
+			]
+		},
+		LOCALGOV: {
+			TILES: [
+				 {caption: "The Doctors' Hospital", res: "/migration_help/Santa Rosa/Pics_LocalGovt/lgu1.jpg"},
+				 {caption: "The Doctors' Hospital", res: "/migration_help/Santa Rosa/Pics_LocalGovt/lgu2and3.jpg"},
+				 {caption: "The Doctors' Hospital", res: "/migration_help/Santa Rosa/Pics_LocalGovt/lgu2and3.jpg"}
+			]
+		}
+	},
+	ZAMBOANGA: {
+		EMPLOYMENT: {
+			TILES: [
+				 {caption: "PAG-IBIG Office, Bacolod", res: "/migration_help/Zamboanga/Pics_Employment/employment1.jpg"},
+				 {caption: "Development Bank of the Philippines", res: "/migration_help/Zamboanga/Pics_Employment/employment2.jpg"},
+				 {caption: "Penalosa Farm", res: "/migration_help/Zamboanga/Pics_Employment/employment3.jpg"},
+			]
+		},
+		HOUSING: {
+			TILES: [
+				 {caption: "Akina Residences", res: "/migration_help/Zamboanga/Pics_Housing/housing1.jpg"},
+				 {caption: "Camella Bacolod", res: "/migration_help/Zamboanga/Pics_Housing/housing2.jpg"}
+			]
+		},
+		LOCALGOV: {
+			TILES: [
+				 {caption: "The Doctors' Hospital", res: "/migration_help/Zamboanga/Pics_LocalGovt/lgu1.jpg"},
+				 {caption: "The Doctors' Hospital", res: "/migration_help/Zamboanga/Pics_LocalGovt/lgu2.jpg"},
+				 {caption: "The Doctors' Hospital", res: "/migration_help/Zamboanga/Pics_LocalGovt/lgu3.jpg"}
+			]
+		}
+	},
+}

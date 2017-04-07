@@ -99,7 +99,7 @@
 #aboutHeader{
 	color: #2C98DA;
 	font-family: Korolev-Light;
-	font-size: 4vw;
+	/*font-size: 6.7vw;*/
 	width: 100%;
 	text-align: center;	
 	margin-top: 2%;
@@ -109,7 +109,12 @@
 	color: #2C98DA;
 	font-family: WorkSans-Regular;
 	font-size: 1vw;
-	width:50%;
+	/*width:100%;*/
+	margin-top: -1%;
+	column-count: 2;
+	column-gap: 3vw;
+	padding-right: 6%;
+	padding-left: 6%;
 }
 
 #livabilityDesc{
@@ -189,7 +194,7 @@
 .content-tiles{
 	margin-left: 5%;
 	margin-right: 5%;
-	margin-bottom: 5%;
+	margin-bottom: 20%;
 }
 
 .content-tile{
@@ -199,12 +204,13 @@
 
 .image-tile{
 	width: 90%;
+	height: 35vh;
 	margin: 0 auto;
 }
 
 .tile-text{
 	position: absolute;
-	margin-top: -40%;
+	margin-top: 3%;
 	margin-left: 10%;
 	color:white;
 	width: 60%;
@@ -235,4 +241,12 @@
     background: white;
     padding-top:4%;
     padding-bottom:2%
+}
+
+.rectangle {
+	position: absolute;
+	left: 5%;
+	width: 90%;
+	height: 75%;
+	margin: 0 auto;
 }
