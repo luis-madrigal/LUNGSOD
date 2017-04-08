@@ -3,6 +3,8 @@
 <head>
 	<title>Lungsod</title>
 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
 	<script src="utils/lib/jquery.min.js"></script>
 	<script src="utils/lib/jquery-ui.js"></script>
 	<script src="utils/lib/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
@@ -14,9 +16,6 @@
 	<link rel = "stylesheet" href = "css/LivabilityIndexStyles.css">
 
 	<link rel = "stylesheet" href = "res/fonts/fonts.css"></link>
-	
-	
-	
 </head>
 <body>
 
@@ -46,8 +45,8 @@
 					</div>
 				</form>
 				<ul class="nav nav-pills nav-justified">
-					<li class="nav-item active"><a href="BrowseCity.html">BROWSE CITIES<span class="sr-only">(current)</span></a></li>
-					<li class="nav-item"><a href="#">THE LIVABILITY INDEX</a></li>
+					<li class="nav-item"><a href="BrowseCity.html">BROWSE CITIES<span class="sr-only">(current)</span></a></li>
+					<li class="nav-item active"><a href="LivabilityIndex.html">THE LIVABILITY INDEX</a></li>
 					<li class="nav-item"><a href="MigrationHelp.html">MIGRATION HELP</a></li>
 				</ul>
 
@@ -226,20 +225,27 @@
 							<!--div class="wheelTags">
 						</div-->
 						<div class='circle-container'>
-							<a  id='deg0'><img id='circle0' src="res/livability_index/Education.png" class="img-responsive"/></a>
-							<a  id='deg45'><img id='circle45' src="res/livability_index/Transportation.png" class="img-responsive"/></a>
-							<a  id='deg90'><img id='circle90' src="res/livability_index/Employment.png" class="img-responsive"/></a>
-							<a  id='deg135'><img id='circle135' src="res/livability_index/Infrastructure.png" class="img-responsive"/></a>
-							<a  id='deg180'><img id='circle180' src="res/livability_index/Health.png" class="img-responsive"/></a>
-							<a  id='deg225'><img id='circle225' src="res/livability_index/Local Gov.png" class="img-responsive"/></a>
-							<a  id='deg270'><img id='circle270' src="res/livability_index/Housing.png" class="img-responsive"/></a>
-							<a  id='deg315'><img id='circle315' src="res/livability_index/Recreation.png" class="img-responsive"/></a>
+							<!-- <a  id='deg0'><img id='circle0' src="res/Resources_IconWheel/Icons_Hover/Icons_Hover-35.png" class="img-responsive"/></a>
+							<a  id='deg45'><img id='circle45' src="res/Resources_IconWheel/Icons_Hover/Icons_Hover-38.png" class="img-responsive"/></a>
+							<a  id='deg90'><img id='circle90' src="res/Resources_IconWheel/Icons_Hover/Icons_Hover_Artboard 61 copy.png" class="img-responsive"/></a>
+							<a  id='deg135'><img id='circle135' src="res/Resources_IconWheel/Icons_Hover/Icons_Hover-39.png" class="img-responsive"/></a>
+							<a  id='deg180'><img id='circle180' src="res/Resources_IconWheel/Icons_Hover/Icons_Hover-36.png" class="img-responsive"/></a>
+							<a  id='deg225'><img id='circle225' src="res/Resources_IconWheel/Icons_Hover/Icons_Hover-37.png" class="img-responsive"/></a>
+							<a  id='deg270'><img id='circle270' src="res/Resources_IconWheel/Icons_Hover/Icons_Hover-34.png" class="img-responsive"/></a>
+							<a  id='deg315'><img id='circle315' src="res/Resources_IconWheel/Icons_Hover/Icons_Hover-40.png" class="img-responsive"/></a> -->
 						</div>
 					</div>
 
-					<div class="section5Text col-lg-6">
+					<!-- <div class="section5Text col-lg-6">
 						<p class="section5TextHeader">WHAT'S IN A CATEGORY</p>
 						<p class="section5TextBody">Click on one of the categories on the left to find out what LUNGSOD’s Livability Index grades within each category.</p>
+					</div> -->
+					<div class="col-lg-6">
+						<div class = "row wheelText">
+						<!-- <p class="section5TextHeader">WHAT'S IN A CATEGORY</p>
+						<p class="section5TextBody">Click on one of the categories on the left to find out what LUNGSOD’s Livability Index grades within each category.</p>
+					 -->
+						</div>
 					</div>
 				</div>
 
@@ -341,10 +347,10 @@
 		
 		
 	</body>
-	<script src="js/LivabilityIndex.js"></script>
 	<script src="utils/lib/TweenMax.min.js"></script>
 	<script src="js/components/City.js"></script>
 	<script src="js/components/Content.js"></script>
 	<script src="js/db.js"></script>
+	<script src="js/LivabilityIndex.js"></script>
 
 	</html>	

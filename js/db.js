@@ -104,7 +104,7 @@ var TAGS = {
 	},
 	LOCALGOV: {
 		id: 6,
-		name: "Local Gov",
+		name: "Local Government",
 		res: "res/Icons/Local Gov.png",
 		resWithLabel: "res/Resources_IconWheel/Icons_Hover/Icons_Hover-37.png",
 		altRes: {

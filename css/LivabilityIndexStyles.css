@@ -177,6 +177,14 @@
 	font-family: WorkSans-Medium;
 }
 
+.wheelText{
+	padding: 15%;
+	margin-top: 2%;
+	color: white;
+	width: 100%;
+	vertical-align: middle;
+}
+
 .circle-container {
     position: relative;
     width: 28em;
@@ -400,6 +408,8 @@
 }
 
 #categoryContainer{
+	background-image: url("../res/compare_city/Gradient background.jpg");
+	background-size: cover;
 	height: 100%;
 	background-color:#273848;
 	padding-top: 10%;
@@ -525,4 +535,46 @@ padding-top: 4%;
 	color: white;
 }
 
+.tagRectangle {
+    position: absolute;
+    top: 4%;
+    /*left: 17.5%;*/
+    z-index: 1;
+    width: 14%;
+    height: 1%;
+    background-color: #2CA0E2;
+}
 
+.catHeader {
+	font-family: WorkSans-Regular;
+	font-size: 3vw;
+	margin-top: -18%;
+}
+
+.catBody{
+	font-family: WorkSans-Light;
+	font-size: 1.4vw;
+	width: 85%;
+}
+
+.lookForText{
+	font-family: WorkSans-Light;
+	font-size: 1.4vw;
+	color: #2CA0E2;
+	padding-top: 2%;
+}
+
+.rubricList{
+	font-family: WorkSans-Light;
+	font-size: 1.1vw;
+	margin-left: -4%;
+	width: 90%;
+}
+
+.rubricList li{
+	padding-bottom: 3%;
+}
+
+.tagCircle{
+	cursor: pointer;
+}
