@@ -250,3 +250,69 @@
 	height: 75%;
 	margin: 0 auto;
 }
+
+.livabilityDesc{
+	
+	height: 100%;
+	padding: 0px;
+	background-color:#6DA777;	
+}
+
+.livabilityImg{
+
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	 transition: opacity 1s;
+    -webkit-transition: opacity 1s;
+}
+
+.post-content {
+	z-index: 2;
+	margin-left: 26%;
+    top:0;
+    left:0;
+    position: absolute;
+    color: white;
+    padding-top: 8%;
+}
+
+.post-content h3{
+	font-size: 1.8vw;
+	font-family: WorkSans-SemiBold;
+}
+
+.post-content h4{
+	font-size: 1.2vw;
+	font-family: WorkSans-Medium;
+	line-height: 150%;
+}
+
+
+#livimg1:hover .livabilityImg{
+	opacity: 1;
+}
+#livimg2:hover .livabilityImg{
+	opacity: 1;
+}
+
+
+
+.livabilityscores{
+	margin-left: 32%;
+	margin-right: 10%;
+	
+}
+.migrationhelp{
+	margin-right: 32%;
+	margin-left: 10%;
+
+}
+.livabilityscores>h2,
+.livabilityscores>p{
+	color: white;
+}
+.migrationhelp>h2,
+.migrationhelp>p{
+	color: white;
+}
