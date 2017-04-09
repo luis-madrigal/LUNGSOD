@@ -59,4 +59,25 @@ $(document).ready(function(){
 		}
 	});
 
+	$(".tagsMigrate").autocomplete({
+		source: names,
+		appendTo: $("#bs-example-navbar-collapse-1"),
+		select: function(event, ui){
+			var value = ui.item.label;
+			var dataId;
+			for(var i in CITIES){
+				if(value == CITIES[i].name){
+					dataId = i;
+					break;
+				}
+			}
+			
+			var dest = window.location.href.split("/");
+
+			dest[dest.length-1] = "MigrationHelp.html?city=" + dataId;
+			dest = dest.join("/");
+
+			document.location.href = dest;
+		}
+	});
 });
