@@ -9,7 +9,7 @@ var SORT_ENUMS = {
 	PROXIMITY: {val: "Proximity", fn: sortAlphabetical}
 };
 
-var ALL_CITY_TILES = CITY_TILES_TOP.concat(CITY_TILES_BOTTOM);
+var ALL_CITY_TILES = BROWSE_CITIES_TILES;
 var DIV_LISTS = [
 	$("#topTilesList"),
 	$("#bottomTilesList")

@@ -143,13 +143,13 @@ var CITIES = {
 	ILIGAN: new City("Iligan", "Lanao Del Norte", ISLAND_GROUPS.MINDANAO, 8.7, "res/Resources by city/Iligan", [8.5, 9, 7.5, 8.5, 9, 9, 9, 9]),
 	ILOILO: new City("Iloilo", "Cebu", ISLAND_GROUPS.VISAYAS, 9.4, "res/Resources by city/Iloilo", [9.5, 9.5, 9, 9, 10, 9, 9.5, 10]),
 	BUTUAN: new City("Butuan", "Caraga", ISLAND_GROUPS.MINDANAO, 8.4, "res/Resources by city/Butuan", [8.5, 8, 8, 8.5, 9, 8.5, 8, 9]),
-	TARLAC: new City("Tarlac", "Tarlac", ISLAND_GROUPS.LUZON, 8.4, "res/Resources by city/Tarlac", [8, 8.5, 8, 9, 8.5, 8.5, 8, 8.5]),
+	// TARLAC: new City("Tarlac", "Tarlac", ISLAND_GROUPS.LUZON, 8.4, "res/Resources by city/Tarlac", [8, 8.5, 8, 9, 8.5, 8.5, 8, 8.5]),
 	LEGAZPI: new City("Legazpi", "Albay", ISLAND_GROUPS.VISAYAS, 8.8, "res/Resources by city/Legazpi", [8, 8.5, 8.5, 9, 9, 10, 8.5, 9]),
 	DUMAGUETE: new City("Dumaguete", "Negros Oriental", ISLAND_GROUPS.VISAYAS, 9, "res/Resources by city/Dumaguete", [9, 9.5, 9, 9.5, 8, 8.5, 9, 8.5]),
-	BATANGAS: new City("Batangas", "Batangas", ISLAND_GROUPS.LUZON, 8.3, "res/Resources by city/Batangas", [8, 7.5, 7.5, 8.5, 9, 8, 8.5, 9]),
-	PUERTO_PRINCESA: new City("Puerto Princesa", "Palawan", ISLAND_GROUPS.LUZON, 8, "res/Resources by city/Puerto Princesa", [6, 7, 7, 7.5, 9, 9, 9, 9]),
-	OLONGAPO: new City("Olongapo", "Zambales", ISLAND_GROUPS.LUZON, 9.3, "res/Resources by city/Olongapo", [9, 9, 10, 8.5, 9.5, 9, 9.5, 10]),
-	TACLOBAN: new City("Tacloban", "Leyte", ISLAND_GROUPS.VISAYAS, 8.6, "res/Resources by city/Tacloban", [9, 9, 9, 9, 7, 8.5, 9, 8]),
+	// BATANGAS: new City("Batangas", "Batangas", ISLAND_GROUPS.LUZON, 8.3, "res/Resources by city/Batangas", [8, 7.5, 7.5, 8.5, 9, 8, 8.5, 9]),
+	// PUERTO_PRINCESA: new City("Puerto Princesa", "Palawan", ISLAND_GROUPS.LUZON, 8, "res/Resources by city/Puerto Princesa", [6, 7, 7, 7.5, 9, 9, 9, 9]),
+	// OLONGAPO: new City("Olongapo", "Zambales", ISLAND_GROUPS.LUZON, 9.3, "res/Resources by city/Olongapo", [9, 9, 10, 8.5, 9.5, 9, 9.5, 10]),
+	// TACLOBAN: new City("Tacloban", "Leyte", ISLAND_GROUPS.VISAYAS, 8.6, "res/Resources by city/Tacloban", [9, 9, 9, 9, 7, 8.5, 9, 8]),
 	ZAMBOANGA: new City("Zamboanga", "Zamboanga", ISLAND_GROUPS.MINDANAO, 8.9, "res/Resources by city/Zamboanga", [9, 8, 8.5, 8.5, 8.5, 9, 9, 9]),
 	GENERAL_SANTOS: new City("General Santos", "South Cotabato", ISLAND_GROUPS.MINDANAO, 8.6, "res/Resources by city/General Santos", [8.5, 7, 9, 9.5, 9, 9, 8.5, 8.5])
 };
@@ -908,7 +908,7 @@ var CITY_PAGE_TILES = {
 
 }
 
-var CITY_TILES_TOP = [
+var BROWSE_CITIES_TILES = [
 	{
 		city: CITIES.SANTA_ROSA,
 		res: "res/City Tiles (15-15)/CityTile_SANTAROSA.jpg",
@@ -938,14 +938,6 @@ var CITY_TILES_TOP = [
 		city: CITIES.BUTUAN,
 		res: "res/City Tiles (15-15)/CityTile_BUTUAN.jpg",
 		tags: [TAGS.HOUSING, TAGS.TRANSPORTATION, TAGS.LEISURE]
-	}
-];
-
-var CITY_TILES_BOTTOM = [
-	{
-		city: CITIES.TARLAC,
-		res: "res/City Tiles (15-15)/CityTile_TARLAC.jpg",
-		tags: [TAGS.HOUSING, TAGS.INFRASTRUCTURE, TAGS.LEISURE]
 	},
 	{
 		city: CITIES.LEGAZPI,
@@ -958,11 +950,6 @@ var CITY_TILES_BOTTOM = [
 		tags: [TAGS.EMPLOYMENT, TAGS.HOUSING, TAGS.EDUCATION]
 	},
 	{
-		city: CITIES.PUERTO_PRINCESA,
-		res: "res/City Tiles (15-15)/CityTile_PuertoPrincesa.jpg",
-		tags: [TAGS.HOUSING, TAGS.INFRASTRUCTURE, TAGS.LEISURE]
-	},
-	{
 		city: CITIES.ZAMBOANGA,
 		res: "res/City Tiles (15-15)/CityTile_Zamboanga.jpg",
 		tags: [TAGS.EMPLOYMENT, TAGS.INFRASTRUCTURE, TAGS.LEISURE]
@@ -972,7 +959,7 @@ var CITY_TILES_BOTTOM = [
 		res: "res/City Tiles (15-15)/CityTile_GeneralSantos.jpg",
 		tags: [TAGS.HOUSING, TAGS.INFRASTRUCTURE, TAGS.TRANSPORTATION]
 	}
-];
+]
 
 var MIGRATION_HELP_TILES = {
 	BACOLOD: {
