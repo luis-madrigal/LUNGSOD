@@ -92,7 +92,7 @@
     color: white;
     text-align: center;
     display: block;
-    font-family: WorkSans-ExtraLight;
+    font-family: WorkSans-Light;
     margin-left: auto;
     margin-right: auto;
 }
@@ -100,7 +100,7 @@
 #search-bar-group {
     position: absolute;
     top: 0;
-    margin-top: 43.5%;
+    margin-top: 40%;
 }
 
 .search-group {
@@ -212,7 +212,7 @@
 
 #category-text-2 {
     color: #2CA0E2;
-    font-size: 1.81vw;
+    font-size: 1.74vw;
     text-align: left;
     font-family: WorkSans-Regular;
 }
