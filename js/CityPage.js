@@ -370,7 +370,7 @@ function compare(otherCity) {
 
 		var $tagIcon = $("<img>", {"class": "scoreIcons img-responsive", "src": TAGS[i].res});
 		var $iconLabel = $("<span>", {"class": "iconLabel"});
-		$iconLabel.append(TAGS[i].name);
+		$iconLabel.append(TAGS[i].name.toUpperCase());
 
 		var $scoreVal1 = $("<span>", {"class": "tagScoreCircle score-1 right"});
 		$scoreVal1.append(score1);
