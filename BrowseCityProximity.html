@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lungsod</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<script src="utils/lib/jquery.min.js"></script>
+	<script src="utils/lib/jquery-ui.js"></script>
+	<script src="utils/lib/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+
+	<link rel = "stylesheet" href = "utils/lib/bootstrap-3.3.6-dist/css/bootstrap.min.css">
+	<link rel = "stylesheet" href = "css/navbar.css">
+	<link rel = "stylesheet" href = "css/global.css">
+	<link rel = "stylesheet" href = "css/jquery_ui.css">
+	<link rel = "stylesheet" href = "css/BrowseCityStyles.css">
+
+	<link rel = "stylesheet" href = "res/fonts/fonts.css"></link>
+</head>
+<body>
+
+	<nav class="navbar navbar-default navbar-static-top">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="HomePage.html"><img class="img-responsive" src="res/logos/Logo_Header.png"></a>
+
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<form class="navbar-form navbar-right" role="search">
+					<div class="input-group search-group">
+						<input type="text" class="form-control tags" placeholder="Search for a city...">
+						<span class="input-group-addon">
+							<button type="submit">
+								<span class="glyphicon glyphicon-search"></span>
+							</button>
+						</span>
+					</div>
+				</form>
+				<ul class="nav nav-pills nav-justified">
+					<li class="nav-item active"><a href="BrowseCity.html">BROWSE CITIES<span class="sr-only">(current)</span></a></li>
+					<li class="nav-item"><a href="LivabilityIndex.html">THE LIVABILITY INDEX</a></li>
+					<li class="nav-item"><a href="MigrationHelp.html">MIGRATION HELP</a></li>
+				</ul>
+
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+
+	<!-- MAIN CONTAINER -->
+	<div class="container-fluid">
+		<!--SELECT CITIES-->
+		<div id="selectCities" class="row">
+			<div class = "container-fluid">
+				<div id="selectCitiesText" class="row">
+					<p id="selectCitiesHead">
+						Selected Cities
+					</p>
+					<p id="selectCitiesBody">
+						Browse through the list of selected cities in Lungsod's database, or select your<br>chosen filters to find that perfect place. 
+					</p>
+					
+					<div class="col-lg-9" id = "selectCitiesFilters">
+						<p id="filterHead">
+							CATEGORY FILTERS:
+						</p>
+						<table id="filterCheckBoxes">
+							<tr>
+								<td>
+									<input class="filterItem" type="checkbox" name="HOUSING">  HOUSING</input>
+								</td>
+								<td>
+									<input class="filterItem" type="checkbox" name="HEALTH">   HEALTH</input>
+								</td>
+								<td>
+									<input class="filterItem" type="checkbox" name="TRANSPORTATION">   TRANSPORTATION</input>
+								</td>
+								<td>
+									<input class="filterItem" type="checkbox" name="LOCALGOV">   LOCAL GOVERNMENT</input>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="filterItem" type="checkbox" name="EMPLOYMENT">   EMPLOYMENT</input>
+								</td>
+								<td>
+									<input class="filterItem" type="checkbox" name="EDUCATION">   EDUCATION</input>
+								</td>
+								<td>
+									<input class="filterItem" type="checkbox" name="INFRASTRUCTURE">   INFRASTRUCTURE</input>
+								</td>
+								<td>
+									<input class="filterItem" type="checkbox" name="LEISURE">   LEISURE</input>
+								</td>
+							</tr>
+						</table>
+						<p id = "clearFilter">
+							CLEAR FILTERS
+						</p>
+					</div>
+					
+					<div class="col-lg-3">
+						<!-- <select id="sortList">
+							<option>Alphabetical</option>
+							<option>Proximity</option>
+							<option>Island Group</option>
+							<option>Livability Score</option>
+						</select>	 -->
+						<div id = "sortList" class="dropdown">
+							<button id="dLabel" role="button" data-toggle="dropdown" class="btn dropdown-label" data-target="#" href="/page.html">
+								Proximity <span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+								<li><a class = "option selected" href="#" value = "Alphabetical" data-id = "ALPHABETICAL">Alphabetical</a></li>
+								<li class="dropdown-submenu">
+									<a tabindex="-1" href="#">Island Group</a>
+									<ul class="dropdown-menu">
+										<li><a class = "option" tabindex="-1" href="#" value = "Island Group: Luzon" data-id = "IG_LUZON">Luzon</a></li>
+										<li><a class = "option" href="#" value = "Island Group: Visayas" data-id = "IG_VISAYAS">Visayas</a></li>
+										<li><a class = "option" href="#" value = "Island Group: Mindanao" data-id = "IG_MIND">Mindanao</a></li>
+									</ul>
+								</li>
+								<li class="dropdown-submenu">
+									<a tabindex="-1" href="#">Livability Score</a>
+									<ul class="dropdown-menu">
+										<li><a class = "option" tabindex="-1" href="#" value = "Livability Score: 5-7" data-id = "LS_1">5-7</a></li>
+										<li><a class = "option" href="#" value = "Livability Score: 7-8" data-id = "LS_2">7-8</a></li>
+										<li><a class = "option" href="#" value = "Livability Score: 8-10" data-id = "LS_3">8-10</a></li>
+									</ul>
+								</li>
+								<li><a class = "option" href="#" value = "Proximity" data-id = "PROXIMITY">Proximity</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--CITY TILES-->
+		<div class = "center">
+			<div id="topTiles" class="row no-gutter cityTiles">
+				<div class = "container-fluid" id = "topTilesList">
+			
+				</div>
+			</div>
+		</div>
+		<!--LIVABILITY DESCRIPTION-->
+		<div class="row no-gutter">
+			<a href="LivabilityIndex.html">
+				<div id="livimg1" class="col-lg-6 livabilityDesc" style="background-color: rgba(229,196,91,1);">
+					<div class="caption post-content">
+						<h3>LIVABILITY SCORES</h3>
+						<h4>
+							Learn more about LUNGSOD’s Livability<br/>
+							Index, the eight livability categories,<br/>
+							the factors we grade for each, and the<br/>
+							math behind all actual scores!
+						</h4>
+					</div>
+					<img class = "livabilityImg img-responsive" src="res/images/LivabilityTile.jpg">
+				</div>
+			</a>
+			<a href="MigrationHelp.html">
+				<div id="livimg2" class="col-lg-6 livabilityDesc" style="background-color: rgba(115,204,112,1);">
+					<div class="caption post-content">
+						<h3>MIGRATION HELP</h3>
+						<h4>
+							LUNGSOD not only offers you a choice<br/>
+							of livable cities, we also provide you<br/>
+							with some useful contacts to get you<br/>
+							started on your new life. 
+						</h4>
+					</div>
+					<img class = "livabilityImg img-responsive" src="res/images/MigrationTile.jpg">
+				</div>
+			</a>
+		</div>
+		<!--MORE CITY TILES-->
+		<div id="bottomTiles" class="row no-gutter cityTiles collapse in">
+			<div class = "container-fluid" id = "bottomTilesList">
+			</div>
+		</div>
+
+	</div>
+</body>
+<script src="utils/lib/TweenMax.min.js"></script>
+<script src="utils/lib/TimelineMax.min.js"></script>
+<script src="utils/utils.js"></script>
+<script src="js/search.js"></script>
+<script src="js/components/City.js"></script>
+<script src="js/components/Content.js"></script>
+<script src="js/db.js"></script>
+<script src="js/BrowseCityProximity.js"></script>
+</html>	
