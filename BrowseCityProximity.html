@@ -3,7 +3,7 @@
 <head>
 	<title>Lungsod</title>
 
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
 	<script src="utils/lib/jquery.min.js"></script>
 	<script src="utils/lib/jquery-ui.js"></script>
@@ -56,8 +56,15 @@
 
 	<!-- MAIN CONTAINER -->
 	<div class="container-fluid">
+		<div class="proximity-container ">
+			<div class="proxmityGroup">
+				<i class="tracker glyphicon glyphicon-map-marker"></i>
+				<div class="location" id="location" name="location">.</div>
+			</div>
+		</div>
 		<!--SELECT CITIES-->
 		<div id="selectCities" class="row">
+			
 			<div class = "container-fluid">
 				<div id="selectCitiesText" class="row">
 					<p id="selectCitiesHead">
@@ -107,15 +114,9 @@
 					</div>
 					
 					<div class="col-lg-3">
-						<!-- <select id="sortList">
-							<option>Alphabetical</option>
-							<option>Proximity</option>
-							<option>Island Group</option>
-							<option>Livability Score</option>
-						</select>	 -->
 						<div id = "sortList" class="dropdown">
 							<button id="dLabel" role="button" data-toggle="dropdown" class="btn dropdown-label" data-target="#" href="/page.html">
-								Proximity <span class="caret"></span>
+								Proximity<span class="caret"></span>
 							</button>
 							<ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
 								<li><a class = "option selected" href="#" value = "Alphabetical" data-id = "ALPHABETICAL">Alphabetical</a></li>
@@ -146,7 +147,7 @@
 		<div class = "center">
 			<div id="topTiles" class="row no-gutter cityTiles">
 				<div class = "container-fluid" id = "topTilesList">
-			
+
 				</div>
 			</div>
 		</div>

@@ -66,16 +66,14 @@
 			</div>
 			<div class="row">
 				<div class="col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3">
-					<div class="input-group search-group">
-						<input type="text" class="form-control tags" placeholder="Input your location...">
-						<span class="input-group-addon">
-							<a href="BrowseCityProximity.html">
-								<button>
+					<form class="input-group search-group" action="BrowseCityProximity.html" method="GET">
+							<input type="text" class="form-control tags" placeholder="Input your location..." name="location">
+							<span class="input-group-addon">
+								<button type="submit">
 									<span class="glyphicon glyphicon-search"></span>
 								</button>
-							</a>
-						</span>
-					</div>
+							</span>
+					</form>
 				</div>
 			</div>
 		</div>
@@ -185,16 +183,14 @@
 		</div>
 		<div class="row">
 			<div class="col-md-6 col-md-offset-3">
-				<div class="input-group search-group begin-search">
-					<input type="text" class="form-control tags" placeholder="Input your location...">
+				<form class="input-group search-group begin-search" action="BrowseCityProximity.html" method="GET">
+					<input type="text" class="form-control tags" placeholder="Input your location..." name="location">
 					<span class="input-group-addon">
-						<a href="BrowseCityProximity.html">
-							<button>
-								<span class="glyphicon glyphicon-search"></span>
-							</button>
-						</a>
+						<button type="submit">
+							<span class="glyphicon glyphicon-search"></span>
+						</button>
 					</span>
-				</div>
+				</form>
 			</div>
 		</div>
 		<div class="row">

@@ -11,8 +11,8 @@ var SORT_ENUMS = {
 
 var ALL_CITY_TILES = BROWSE_CITIES_TILES;
 var DIV_LISTS = [
-	$("#topTilesList"),
-	$("#bottomTilesList")
+$("#topTilesList"),
+$("#bottomTilesList")
 ];
 
 var activeFilters = [];
@@ -22,6 +22,13 @@ var boardTiles = ALL_CITY_TILES;
 var tl = new TimelineMax();
 
 $(document).ready(function(){
+
+	var uri = window.location.href;
+	var uri_dec = urldecode(uri);
+	var args = uri_dec.split("?")[1];
+	var city = args.split("=")[1];
+
+	$("#location").text(city);
 
 	initTiles();
 	activeFilters[1] = SORT_ENUMS.PROXIMITY;
@@ -43,9 +50,11 @@ $(document).ready(function(){
 	$("#clearFilter").on("click", function() {
 		activeTagFilters = [];
 		$(".filterItem").removeAttr("checked");
-
+		$(".proximity-container").hide();
 		activeFilters[0] = filterTiles;
-
+		activeFilters[1] = SORT_ENUMS.ALPHABETICAL;
+		$("#dLabel").text("Alphabetical");
+		$("#dLabel").append("<span class = 'caret'></span>");
 		emptyTiles(computeFilters);
 	});
 
@@ -62,6 +71,10 @@ $(document).ready(function(){
 		emptyTiles(computeFilters);
 	});
 });
+
+function urldecode (str) {
+  return decodeURIComponent(str.replace(/\+/g, ' '));
+}
 
 function computeFilters() {
 	var computedTiles = ALL_CITY_TILES;

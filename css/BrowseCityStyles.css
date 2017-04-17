@@ -1,6 +1,30 @@
 td{
 	padding: 1%;
 }
+.proximity-container{
+	position:absolute;
+	color: white;
+	top:0;
+	padding-top: 4.5%;
+}
+
+.proximityGroup{
+	position: absolute;
+	
+}
+
+.location{
+	font-family: WorkSans-Regular;
+	font-size: 0.94vw;
+	position: relative;
+	display: inline-block;
+}
+
+.proximityGroup .tracker{
+	font-size: 1.26vw;
+	float: left;
+	position: relative;
+}
 
 .cityTiles{
 	background-color:#273848;
