@@ -3,15 +3,16 @@ $(document).ready(function(){
 	var names = [];
 	
 	for(var i in CITIES)
-		names.push(CITIES[i].name);
-		
+		names.push(CITIES[i]);
+
+	// console.log($.ui.autocomplete)
 	
 	$(".tags").autocomplete({
 		source: names,
 		appendTo: $("#bs-example-navbar-collapse-1"),
 		select: function(event, ui){
 			console.log(ui)
-			var value = ui.item.label;
+			var value = ui.item.name;
 			var dataId;
 			for(var i in CITIES){
 				console.log(i);
@@ -37,7 +38,7 @@ $(document).ready(function(){
 		appendTo: $("#bs-example-navbar-collapse-1"),
 		select: function(event, ui){
 			console.log(ui)
-			var value = ui.item.label;
+			var value = ui.item.name;
 			var dataId;
 			for(var i in CITIES){
 				console.log(i);
@@ -63,7 +64,7 @@ $(document).ready(function(){
 		source: names,
 		appendTo: $("#bs-example-navbar-collapse-1"),
 		select: function(event, ui){
-			var value = ui.item.label;
+			var value = ui.item.name;
 			var dataId;
 			for(var i in CITIES){
 				if(value == CITIES[i].name){
@@ -80,4 +81,11 @@ $(document).ready(function(){
 			document.location.href = dest;
 		}
 	});
+
+	$.ui.autocomplete.prototype._renderItem = function(ul, item) {
+		return $( "<li></li>" )
+		  .data( "item.autocomplete", item )
+		  .append( "<div>" + item.name + "</div>" )
+		  .appendTo( ul );
+	}
 });
