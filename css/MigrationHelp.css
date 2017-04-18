@@ -212,7 +212,7 @@
 	margin-top: 3%;
 	margin-left: 10%;
 	color:white;
-	width: 60%;
+	width: 80%;
 }
 
 .tile-text-name{
@@ -228,11 +228,19 @@
 .tile-text-contactnum{
 	font-family: WorkSans-Regular;
 	font-size: 1vw;
+	line-height: 50%;
 }
 
 .tile-text-sitelink{
 	font-family: WorkSans-Regular;
 	font-size: 1vw;
+	color: white;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.tile-text-sitelink:hover{
+	color: grey;
 	text-decoration: underline;
 }
 

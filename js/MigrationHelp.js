@@ -146,11 +146,38 @@ function initTagDesc(dest, tag) {
 		var $col = $("<div>", {"class": "col-lg-4 content-tile"});
 		var $img = $("<img>", {"class": "img-responsive image-tile", "src": "res"+dbTiles[i].res});
 		var $rect = $("<div>", {"class": "rectangle"});
+		var $textDiv = $("<div>", {"class": "tile-text"});
+		var $header = $("<p>", {"class": "tile-text-name"});
+		var $body = $("<p>", {"class": "tile-text-address"});
+		var $contact = $("<p>", {"class": "tile-text-contactnum"});
+		var $link = $("<a>", {"class": "tile-text-sitelink"});
 
 		$rect.css("background-color", TAGS[tag].color);
 
+		$header.append(dbTiles[i].desc.header);
+		if(dbTiles[i].desc.body) {
+			for(var j = 0; j < dbTiles[i].desc.body.length; j++) {
+				$body.append(dbTiles[i].desc.body[j]);
+				$body.append("<br>");
+			}
+		}
+		$contact.append(dbTiles[i].desc.contact);
+		$link.append(dbTiles[i].desc.link);
+		if(dbTiles[i].desc.link) {
+			if(dbTiles[i].desc.link.substring(0, 4) != "http")
+				$link.attr("href", "http://"+dbTiles[i].desc.link);
+			else
+				$link.attr("href", dbTiles[i].desc.link);
+		}
+
+		$textDiv.append($header);
+		$textDiv.append($body);
+		$textDiv.append($contact);
+		$textDiv.append($link);
+
 		$col.append($img);
 		$col.append($rect);
+		$col.append($textDiv);
 
 		$row.append($col);
 	}

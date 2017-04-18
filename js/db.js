@@ -965,128 +965,189 @@ var MIGRATION_HELP_TILES = {
 	BACOLOD: {
 		EMPLOYMENT: {
 			TILES: [
-				 {caption: "PAG-IBIG Office, Bacolod", res: "/migration_help/Bacolod/Pics_Employment/employment1.jpg"},
-				 {caption: "Development Bank of the Philippines", res: "/migration_help/Bacolod/Pics_Employment/employment2.jpg"},
-				 {caption: "Penalosa Farm", res: "/migration_help/Bacolod/Pics_Employment/employment3.jpg"},
+				 {desc: {header: "BACOLODJOBS.NET", body: ["Like JobStreet, but just for Bacolod City and province."], link: "https://www.bacolodjobs.net/"}, res: "/migration_help/Bacolod/Pics_Employment/employment1.jpg"},
+				 {desc: {header: "LANDBASE HUMAN RESOURCES", body: ["RM 305/307 Dona Manuela Bldg. San Juan Sts. Bacolod City"], contact: "(034) 708 0346 / (+63)915 212 3984", link: "http://www.landbasebacolod.co.nr"}, res: "/migration_help/Bacolod/Pics_Employment/employment2.jpg"},
+				 {desc: {header: "BACOLOD PHILIPPINES PEF SELF-RELIANCE CENTER", body: ["TCJCLDS Chapel, Galo st., Bacolod City"], contact: "(+63)934 432 2708"}, res: "/migration_help/Bacolod/Pics_Employment/employment3.jpg"},
 			]
 		},
 		HOUSING: {
 			TILES: [
-				 {caption: "Akina Residences", res: "/migration_help/Bacolod/Pics_Housing/housing1.jpg"},
-				 {caption: "Camella Bacolod", res: "/migration_help/Bacolod/Pics_Housing/housing2.jpg"}
+				 {desc: {header: "BACOLOD AFFORDABLE HOMES", body: ["Suite #4, LD Centre, 7th-Lacson Streets, Bacolod City 6100"], contact: "(034) 468 0314", link: "http://www.bacolodhomes.net"}, res: "/migration_help/Bacolod/Pics_Housing/housing1.jpg"},
+				 {desc: {header: "BACOLOD CITY REAL ESTATE", body: ["(034) 476 8646"], contact: "(+63)947 337 1357", link: "http://www.bacolodcityrealestate.com/"}, res: "/migration_help/Bacolod/Pics_Housing/housing2.jpg"}
 			]
 		},
 		LOCALGOV: {
 			TILES: [
-				 {caption: "The Doctors' Hospital", res: "/migration_help/Santa Rosa/Pics_LocalGovt/lgu1.jpg"}
+				 {desc: {header: "PUBLIC EMPLOYMENT SERVICE OFFICE (PESO)", body: ["City Health Compound, BBB-Galo Sts., Bacolod City"], contact: "(034) 433-8449; (034) 708-9510 (FAX)"}, res: "/migration_help/Santa Rosa/Pics_LocalGovt/lgu1.jpg"}
 			]
 		}
 	},
 	BUTUAN: {
 		HOUSING: {
 			TILES: [
-				 {caption: "Akina Residences", res: "/migration_help/Butuan/Pics_Housing/housing1.jpg"},
-				 {caption: "Camella Bacolod", res: "/migration_help/Butuan/Pics_Housing/housing2.jpg"}
+				 {desc: {header: "BUTUAN PROPERTY", contact: "(+63)927 932 7676", link: "www.butuanproperty.com"}, res: "/migration_help/Butuan/Pics_Housing/housing1.jpg"},
+				 {desc: {header: "FILINVEST BUTUAN", body: ["Km. 3 Baan, Butuan City"], contact: "(+63)912 326 7766", link: "www.filinvest.com/projects/filinvest-homes-butuan/"}, res: "/migration_help/Butuan/Pics_Housing/housing2.jpg"}
 			]
 		},
 		LOCALGOV: {
 			TILES: [
-				 {caption: "The Doctors' Hospital", res: "/migration_help/Butuan/Pics_LocalGovt/lgu1.jpg"},
-				 {caption: "The Doctors' Hospital", res: "/migration_help/Butuan/Pics_LocalGovt/lgu2.jpg"},
+				 {desc: {header: "PUBLIC EMPLOYMENT SERVICE OFFICE (PESO)", body: ["City Hall Buidling, Jose Rosales Avenue, Doogan, Butuan City"], contact: "(085) 815 6102"}, res: "/migration_help/Butuan/Pics_LocalGovt/lgu1.jpg"},
+				 {desc: {header: "DOLE CARAGA", body: ["Jose Rosales Ave, Butuan City, Agusan Del Norte"], contact: "(085) 342 9606", link: "www.caraga.dole.gov.ph"}, res: "/migration_help/Butuan/Pics_LocalGovt/lgu2.jpg"},
 			]
 		}
 	},
 	CAGAYAN_DE_ORO: {
 		EMPLOYMENT: {
 			TILES: [
-				 {caption: "PAG-IBIG Office, Bacolod", res: "/migration_help/Cagayan de Oro/Pics_Employment/employment1.jpg"},
-				 {caption: "Development Bank of the Philippines", res: "/migration_help/Cagayan de Oro/Pics_Employment/employment2.jpg"}
+				 {desc: {header: "MyCDOJobs", link: "www.mycdojobs.com"}, res: "/migration_help/Cagayan de Oro/Pics_Employment/employment1.jpg"},
+				 {desc: {header: "Jobs for Every Juan", link: "http://jobsforeveryjuan.com/jobs-in-cagayan-de-oro-city/"}, res: "/migration_help/Cagayan de Oro/Pics_Employment/employment2.jpg"}
 			]
 		},
 		HOUSING: {
 			TILES: [
-				 {caption: "Akina Residences", res: "/migration_help/Cagayan de Oro/Pics_Housing/housing1.jpg"},
-				 {caption: "Camella Bacolod", res: "/migration_help/Cagayan de Oro/Pics_Housing/housing2.jpg"},
-				 {caption: "Camella Bacolod", res: "/migration_help/Cagayan de Oro/Pics_Housing/housing3.jpg"}
+				 {desc: {header: "PRIMAVERA RESIDENCES", body: ["1125 Trade Street Pueblo de Oro Business Park, Cagayan de Oro City"], contact: "(+63) 917 792 1080", link: "www.primaveraresidences.com"}, res: "/migration_help/Cagayan de Oro/Pics_Housing/housing1.jpg"},
+				 {desc: {header: "A BROWN COMPANY, INC.", body: ["Xavier Estates, Airport Road, Cagayan de Oro City"], contact: "(088) 858 8784", link: "www.abrown.ph"}, res: "/migration_help/Cagayan de Oro/Pics_Housing/housing2.jpg"},
+				 {desc: {header: "CDO REAL ESTATE", body: ["Blk 26 Lot 8, Bellevue Subd., Upper Carmen, Cagayan de Oro City"], contact: "(+63) 917 327 6589", link: "www.cdo-realestate.com"}, res: "/migration_help/Cagayan de Oro/Pics_Housing/housing3.jpg"}
 			]
 		},
 		LOCALGOV: {
 			TILES: [
-				 {caption: "The Doctors' Hospital", res: "/migration_help/Cagayan de Oro/Pics_LocalGovt/lgu1.jpg"}
+				 {desc: {header: "PUBLIC EMPLOYMENT SERVICE OFFICE (PESO)", body: ["The City Hall, 2F Administrative Building, Cagayan de Oro City"], contact: "(088) 309 4590"}, res: "/migration_help/Cagayan de Oro/Pics_LocalGovt/lgu1.jpg"}
+			]
+		}
+	},
+	DUMAGUETE: {
+		EMPLOYMENT: {
+			TILES: [
+				 {desc: {header: "DUMAGUETE JOB LISTINGS", body: ["Suite C, Aldecoa Drive Rd., Dumaguete City"], contact: "(+63) 935 424 8815", link: "www.dumjobs.com"}, res: "/migration_help/Dumaguete/Pics_Employment/employment1.jpg"},
+				 {desc: {header: "BUSINESS PARK AND IT PARK", body: ["Calindagan Rd., Dumaguete City"], contact: "(035) 422 5932 / (+63) 917 624 1479"}, res: "/migration_help/Dumaguete/Pics_Employment/employment2.jpg"}
+			]
+		},
+		HOUSING: {
+			TILES: [
+				 {desc: {header: "AZUMI RESIDENCES", body: ["2428 South National Road, Calindagan, Dumaguete City"], contact: "(035) 422 2730 / (035) 225 4052", link: "www.philsouth.com/housing-subdivision/azumi-residences"}, res: "/migration_help/Dumaguete/Pics_Housing/housing1.jpg"},
+				 {desc: {header: "MARPAS APARTMENTS", body: ["Tejero Road, West Balabag, Valencia"], contact: "(035) 522 0169 / (+63) 927 673 2272", link: "www.dumaguete-apartments.com/"}, res: "/migration_help/Dumaguete/Pics_Housing/housing2.jpg"},
+				 {desc: {header: "FILINVEST DUMAGUETE", body: ["Escano Beach, Flores Ave., Brgy. Piapi, Dumaguete City"], contact: "(+63) 917 877 0888", link: "filinvest.com/pr@jects/marina-town/"}, res: "/migration_help/Dumaguete/Pics_Housing/housing3.jpg"}
+			]
+		},
+		LOCALGOV: {
+			TILES: [
+				 {desc: {header: "PUBLIC EMPLOYMENT SERVICE OFFICE (PESO)", body: ["Peso Office, 2/ F Bldg. Il, Public Market Complex, Dumaguete City"], contact: "(035) 226 3530 / (035) 420 9114"}, res: "/migration_help/Dumaguete/Pics_LocalGovt/lgu1.jpg"}
+			]
+		}
+	},
+	GENERAL_SANTOS: {
+		EMPLOYMENT: {
+			TILES: [
+				 {desc: {header: "CITY FISH PORT COMPLEX", body: ["Brgy. Tambler, General Santos City"], contact: "(083) 304 9474"}, res: "/migration_help/General Santos/Pics_Employment/employment1.jpg"},
+				 {desc: {header: "GENSAN JOB LISTINGS", link: "www.gensanbestjobs.com/#s=l"}, res: "/migration_help/General Santos/Pics_Employment/employment2.jpg"}
+			]
+		},
+		HOUSING: {
+			TILES: [
+				 {desc: {header: "CAMELLA LESSANDRA HOMES", body: ["Conel Road, Barangay San Isidro, General Santos City"], contact: "(083) 531 5670 / (+63 917 797 5283", link: "www.camellalessandragensan.com"}, res: "/migration_help/General Santos/Pics_Housing/housing1.jpg"},
+				 {desc: {header: "BLOOMFIELDS RESIDENCES", body: ["Pan-Philippine Hwy, General Santos City"], contact: "(083) 301 7777"},  res: "/migration_help/General Santos/Pics_Housing/housing2.jpg"},
+				 {desc: {header: "TIERRA EUSEBIO HOMES", body: ["Salvani St., City Heights, General Santos City"], contact: "(+63) 949 415 2253"}, res: "/migration_help/General Santos/Pics_Housing/housing3.jpg"}
+			]
+		},
+		LOCALGOV: {
+			TILES: [
+				 {desc: {header: "PUBLIC EMPLOYMENT SERVICE OFFICE (PESO)", body: ["City Hall, General Santos City"], contact: "(083) 553 3479"}, res: "/migration_help/General Santos/Pics_LocalGovt/lgu1.jpg"},
+				 {desc: {header: "NATIONAL HOUSING AUTHORITY", body: ["Flaviano Building, 74 Tieza Street, General Santos City"], contact: "(085) 552 2608"}, res: "/migration_help/General Santos/Pics_LocalGovt/lgu2.jpg"}
 			]
 		}
 	},
 	ILIGAN: {
 		EMPLOYMENT: {
 			TILES: [
-				 {caption: "PAG-IBIG Office, Bacolod", res: "/migration_help/Iligan/Pics_Employment/employment1.jpg"},
-				 {caption: "Development Bank of the Philippines", res: "/migration_help/Iligan/Pics_Employment/employment2.jpg"},
+				 {desc: {header: "STARTING A BUSINESS", body: ["Iligan City Hall, Buhanginan Hills, Palao Iligan City"], contact: "(063) 224 2312 / (+63) 063 221 4326", link: "www.iligan.gov.ph/doing-business/"}, res: "/migration_help/Iligan/Pics_Employment/employment1.jpg"},
+				 {desc: {header: "ILIGAN JOBS", link: "www.iliganjobs.com"}, res: "/migration_help/Iligan/Pics_Employment/employment2.jpg"},
 			]
 		},
 		LOCALGOV: {
 			TILES: [
-				 {caption: "The Doctors' Hospital", res: "/migration_help/Iligan/Pics_LocalGovt/lgu1.jpg"},
-				 {caption: "The Doctors' Hospital", res: "/migration_help/Iligan/Pics_LocalGovt/lgu2.jpg"},
-				 {caption: "The Doctors' Hospital", res: "/migration_help/Iligan/Pics_LocalGovt/lgu3.jpg"}
+				 {desc: {header: "LIST OF ILIGAN GOVERNMENT SERVICES", body: ["Iligan City Hall, Buhanginan Hills, Palao Iligan City"], contact: "(063) 224 2312 / (+63) 063 221 4326", link: "www.iligan.gov.ph/services"}, res: "/migration_help/Iligan/Pics_LocalGovt/lgu1.jpg"},
+				 {desc: {header: "PUBLIC EMPLOYMENT SERVICE OFFICE (PESO)", body: ["Integrated Bus & Jeepney Terminal, Tambo Hinaplanon, Iligan City"], contact: "(063) 221 4347"}, res: "/migration_help/Iligan/Pics_LocalGovt/lgu2.jpg"},
+				 {desc: {header: "LIVELIHOOD ASSISTANCE", body: ["Iligan City Hall, Buhanginan Hills, Palao Iligan City"], contact: "(063) 224 2312 / (+63) 063 221 4326", link: "www.tinyurl.com/livelihoodassistance"}, res: "/migration_help/Iligan/Pics_LocalGovt/lgu3.jpg"}
 			]
 		}
 	},
 	ILOILO: {
 		EMPLOYMENT: {
 			TILES: [
-				 {caption: "PAG-IBIG Office, Bacolod", res: "/migration_help/Iloilo/Pics_Employment/employment1.jpg"},
-				 {caption: "Development Bank of the Philippines", res: "/migration_help/Iloilo/Pics_Employment/employment2.jpg"},
+				 {desc: {header: "THE ILOILO CITY BULLETIN BOARD SERVICE", link: "www.iloilobusiness.ga"}, res: "/migration_help/Iloilo/Pics_Employment/employment1.jpg"},
+				 {desc: {header: "ILOILO BUSINESS PARK", body: ["Richmonde Tower Enterprise Road, Iloilo Business Park, Mandurriao, Iloilo City"], contact: "(+63)915 564 5324"}, res: "/migration_help/Iloilo/Pics_Employment/employment2.jpg"},
 			]
 		},
 		HOUSING: {
 			TILES: [
-				 {caption: "Akina Residences", res: "/migration_help/Iloilo/Pics_Housing/housing1.jpg"},
-				 {caption: "Camella Bacolod", res: "/migration_help/Iloilo/Pics_Housing/housing2.jpg"}
+				 {desc: {header: "ERECRE GROUP REALTY", body: ["Door 5, Zerrudo Arcade, E. Lopez Street, Jaro, Iloilo City"], contact: "(+63)932 998 8862", link: "www.erecrerealestategroup.com"}, res: "/migration_help/Iloilo/Pics_Housing/housing1.jpg"},
+				 {desc: {header: "ILOILO REAL ESTATE", body: ["(033) 393 2309"], contact: "(+63)917 834 5929", link: "www.iloilocityrealestate.com"}, res: "/migration_help/Iloilo/Pics_Housing/housing2.jpg"}
 			]
 		},
 		LOCALGOV: {
 			TILES: [
-				 {caption: "The Doctors' Hospital", res: "/migration_help/Iloilo/Pics_LocalGovt/lgu1.jpg"},
-				 {caption: "The Doctors' Hospital", res: "/migration_help/Iloilo/Pics_LocalGovt/lgu2.jpg"}
+				 {desc: {header: "PUBLIC EMPLOYMENT SERVICE OFFICE (PESO)", body: ["Provincial Capitol, General Luna St., Iloilo City"], contact: "(033) 320 0110"}, res: "/migration_help/Iloilo/Pics_LocalGovt/lgu1.jpg"},
+				 {desc: {header: "PROGRAMS AND PROJECTS", body: ["Iloilo Provincial Government, Iloilo Provincial Capitol, Bonifacio Drive, Iloilo City"], link: "http://www.iloilo.gov.ph/node/268"}, res: "/migration_help/Iloilo/Pics_LocalGovt/lgu2.jpg"}
+			]
+		}
+	},
+	LEGAZPI: {
+		EMPLOYMENT: {
+			TILES: [
+				 {desc: {header: "LANDCO BUSINESS PARK", body: ["Legazpi Port District, Legazpi City"], contact: "(+63) 905 370 6776", link: "www.landco-ph.com.ph"}, res: "/migration_help/Legazpi/Pics_Employment/employment1.jpg"},
+				 {desc: {header: "TOURISM OPPORTUNITIES", body: ["DOT Bldg., Regional Offices Site, Rawis, Legazpi City"], contact: "(052) 482 0715 / (052) 481 5593", link: "www.tourism.gov.ph/pages/default.aspx"}, res: "/migration_help/Legazpi/Pics_Employment/employment2.jpg"},
+				 {desc: {header: "STARTING A BUSINESS", body: ["Old Albay District, Legazpi City"], contact: "(052) 820 3400", link: "www.legazpi.gov.ph/business"}, res: "/migration_help/Legazpi/Pics_Employment/employment2.jpg"}
+			]
+		},
+		HOUSING: {
+			TILES: [
+				 {desc: {header: "CAMELLA HOMES LEGAZPI", body: ["Barangay Puro, Legazpi City"], contact: "(052) 531 5670 / (+63) 917 797 5283", link: "www.camellahomeslegazpi.com "}, res: "/migration_help/Legazpi/Pics_Housing/housing1.jpg"},
+				 {desc: {header: "MYPROPERTY.PH", contact: "(+63) 995 534 1497", link: "www.myproperty.ph/properties-for-sale/houses/legazpicity-albay"}, res: "/migration_help/Legazpi/Pics_Housing/housing2.jpg"}
+			]
+		},
+		LOCALGOV: {
+			TILES: [
+				 {desc: {header: "PUBLIC EMPLOYMENT SERVICE OFFICE (PESO)", body: ["2F, Tourism Building, Astrodome Compound, Legazpi City"], contact: "(052) 820 6318"}, res: "/migration_help/Legazpi/Pics_LocalGovt/lgu1.jpg"}
 			]
 		}
 	},
 	SANTA_ROSA: {
 		EMPLOYMENT: {
 			TILES: [
-				 {caption: "PAG-IBIG Office, Bacolod", res: "/migration_help/Santa Rosa/Pics_Employment/employment1.jpg"},
-				 {caption: "Development Bank of the Philippines", res: "/migration_help/Santa Rosa/Pics_Employment/employment2.jpg"},
-				 {caption: "Penalosa Farm", res: "/migration_help/Santa Rosa/Pics_Employment/employment3.jpg"},
+				 {desc: {header: "SANTA ROSA IT PARK", body: ["San Jose, Santa Rosa"], contact: "(032) 841 5825"}, res: "/migration_help/Santa Rosa/Pics_Employment/employment1.jpg"},
+				 {desc: {header: "A DIRECTORY OF BUSINESSES", link: "http://tinyurl.com/santarosacompanies"}, res: "/migration_help/Santa Rosa/Pics_Employment/employment2.jpg"},
+				 {desc: {header: "UBISOFT PHILIPPINES", body: ["E005/E101 De La Salle University, Science & Technology Complex, Laguna Boulevard, LTI Spine Road Barangays Biñan and Malamig Biñan City, Laguna"], link: "www.ubisoft.com/en-us/studio/philippines.aspx"}, res: "/migration_help/Santa Rosa/Pics_Employment/employment3.jpg"},
 			]
 		},
 		HOUSING: {
 			TILES: [
-				 {caption: "Akina Residences", res: "/migration_help/Santa Rosa/Pics_Housing/housing1.jpg"},
-				 {caption: "Camella Bacolod", res: "/migration_help/Santa Rosa/Pics_Housing/housing2.jpg"},
-				 {caption: "Camella Bacolod", res: "/migration_help/Santa Rosa/Pics_Housing/housing3.jpg"}
+				 {desc: {header: "NUVALI EVOLIVING", body: ["Tagaytay Rd, Don Jose, Santa Rosa"], link: "www.nuvali.ph/live-and-grow"},  res: "/migration_help/Santa Rosa/Pics_Housing/housing1.jpg"},
+				 {desc: {header: "ARAYA PARK RESIDENCES", body: ["The Araya Park Residences, Barangay Tagapo, Santa Rosa"], contact:  "(+63) 917 872 8430 / (+63) 998 849 5570", link: "www.thearayapark.com"}, res: "/migration_help/Santa Rosa/Pics_Housing/housing2.jpg"},
+				 {desc: {header: "SOUTH FORBES", body: ["Tagaytay Growth Area, Silang, Santa Rosa"], contact: "(+632) 635-7777", link: "http://www.southforbes.com/"}, res: "/migration_help/Santa Rosa/Pics_Housing/housing3.jpg"}
 			]
 		},
 		LOCALGOV: {
 			TILES: [
-				 {caption: "The Doctors' Hospital", res: "/migration_help/Santa Rosa/Pics_LocalGovt/lgu1.jpg"},
-				 {caption: "The Doctors' Hospital", res: "/migration_help/Santa Rosa/Pics_LocalGovt/lgu2and3.jpg"},
-				 {caption: "The Doctors' Hospital", res: "/migration_help/Santa Rosa/Pics_LocalGovt/lgu2and3.jpg"}
+				 {desc: {header: "JOB MATCHING", body: ["J.P Rizal BLVD. Brgy. Malusak, Santa Rosa"], contact: "(049) 530 0015", link: "www.santarosacity.gov.ph"}, res: "/migration_help/Santa Rosa/Pics_LocalGovt/lgu1.jpg"},
+				 {desc: {header: "EMPLOYMENT AND INVESTMENT", body: ["Calle Barcelona, Santa Rosa"], contact: "(049) 519 4000"}, res: "/migration_help/Santa Rosa/Pics_LocalGovt/lgu2and3.jpg"},
+				 {desc: {header: "LIST OF GOVERNMENT SERVICES", body: ["Calle Barcelona, Santa Rosa"], contact: "(049) 519 4000", link: "http://santarosacity.gov.ph/live-in-santa-rosa/permits-and-clearances/#"}, res: "/migration_help/Santa Rosa/Pics_LocalGovt/lgu2and3.jpg"}
 			]
 		}
 	},
 	ZAMBOANGA: {
 		EMPLOYMENT: {
 			TILES: [
-				 {caption: "PAG-IBIG Office, Bacolod", res: "/migration_help/Zamboanga/Pics_Employment/employment1.jpg"},
-				 {caption: "Development Bank of the Philippines", res: "/migration_help/Zamboanga/Pics_Employment/employment2.jpg"},
-				 {caption: "Penalosa Farm", res: "/migration_help/Zamboanga/Pics_Employment/employment3.jpg"},
+				 {desc: {header: "MAJOR INDUSTRIES IN ZAMBOANGA CITY", link: "www.tinyurl.com/zamboangamajorindustries"}, res: "/migration_help/Zamboanga/Pics_Employment/employment1.jpg"},
+				 {desc: {header: "ZAMBOANGA FREEPORT AUTHORITY (ZFA)", body: ["Zamboanga City Special Economic Zone Authority, Zamboanga City"], contact: "(63) 992 2012", link: "www.zfa.gov.ph"}, res: "/migration_help/Zamboanga/Pics_Employment/employment2.jpg"},
+				 {desc: {header: "HIRED TARGET RECRUITMENT AGENCY", body: ["MCLL Highway, Putik, Zamboanga City"], contact: "(062) 926 0013"}, res: "/migration_help/Zamboanga/Pics_Employment/employment3.jpg"},
 			]
 		},
 		LOCALGOV: {
 			TILES: [
-				 {caption: "The Doctors' Hospital", res: "/migration_help/Zamboanga/Pics_LocalGovt/lgu1.jpg"},
-				 {caption: "The Doctors' Hospital", res: "/migration_help/Zamboanga/Pics_LocalGovt/lgu2.jpg"},
-				 {caption: "The Doctors' Hospital", res: "/migration_help/Zamboanga/Pics_LocalGovt/lgu3.jpg"}
+				 {desc: {header: "EMPLOYMENT & LIVELIHOOD SERVICES", body: ["Valderoza St., Zamboanga City"], contact: "(62) 991 0719 / (62) 991 3469", link: "www.tinyurl.com/employmentlivelihood"}, res: "/migration_help/Zamboanga/Pics_LocalGovt/lgu1.jpg"},
+				 {desc: {header: "SERVICES OFFERED", body: ["Valderoza St., Zamboanga City"], contact: "(62) 991 0719 / (62) 991 3469", link: "www.tinyurl.com/zamboanga-govt-services"}, res: "/migration_help/Zamboanga/Pics_LocalGovt/lgu2.jpg"},
+				 {desc: {header: "PUBLIC EMPLOYMENT SERVICE OFFICE (PESO)", body: ["Valderoza St., Zamboanga City"]}, contact: "(062) 991 0719", res: "/migration_help/Zamboanga/Pics_LocalGovt/lgu3.jpg"}
 			]
 		}
 	},
