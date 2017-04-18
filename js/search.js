@@ -31,6 +31,7 @@ $(document).ready(function(){
 			dest = dest.join("/");
 
 			document.location.href = dest;
+			return false;
 		}
 	});
 
@@ -62,6 +63,7 @@ $(document).ready(function(){
 
 			// document.location.href = dest;
 			compare(dataId)
+			return false;
 		}
 	});
 
@@ -89,6 +91,7 @@ $(document).ready(function(){
 			dest = dest.join("/");
 
 			document.location.href = dest;
+			return false;
 		}
 	});
 
