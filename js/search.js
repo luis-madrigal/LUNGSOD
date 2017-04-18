@@ -4,22 +4,23 @@ $(document).ready(function(){
 	
 	for(var i in CITIES)
 		names.push(CITIES[i]);
-
-	// console.log($.ui.autocomplete)
 	
 	$(".tags").autocomplete({
 		source: names,
 		appendTo: $("#bs-example-navbar-collapse-1"),
+		focus: function( event, ui ) {
+			$(this).val( ui.item.name );
+			return false;
+		},
 		select: function(event, ui){
-			console.log(ui)
 			var value = ui.item.name;
 			var dataId;
+
+			$(this).val( value );
+
 			for(var i in CITIES){
-				console.log(i);
 				if(value == CITIES[i].name){
-					console.log(value);
 					dataId = i;
-					console.log(dataId);
 					break;
 				}
 			}
@@ -36,6 +37,10 @@ $(document).ready(function(){
 	$(".tagsCompare").autocomplete({
 		source: names,
 		appendTo: $("#bs-example-navbar-collapse-1"),
+		focus: function( event, ui ) {
+			$(this).val( ui.item.name );
+			return false;
+		},
 		select: function(event, ui){
 			console.log(ui)
 			var value = ui.item.name;
@@ -63,7 +68,12 @@ $(document).ready(function(){
 	$(".tagsMigrate").autocomplete({
 		source: names,
 		appendTo: $("#bs-example-navbar-collapse-1"),
+		focus: function( event, ui ) {
+			$(this).val( ui.item.name );
+			return false;
+		},
 		select: function(event, ui){
+			$(this).val( ui.item.name );
 			var value = ui.item.name;
 			var dataId;
 			for(var i in CITIES){
