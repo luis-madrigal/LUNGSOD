@@ -983,13 +983,6 @@ var MIGRATION_HELP_TILES = {
 		}
 	},
 	BUTUAN: {
-		EMPLOYMENT: {
-			TILES: [
-				 {caption: "PAG-IBIG Office, Bacolod", res: "/migration_help/Butuan/Pics_Employment/employment1.jpg"},
-				 {caption: "Development Bank of the Philippines", res: "/migration_help/Butuan/Pics_Employment/employment2.jpg"},
-				 {caption: "Penalosa Farm", res: "/migration_help/Butuan/Pics_Employment/employment3.jpg"},
-			]
-		},
 		HOUSING: {
 			TILES: [
 				 {caption: "Akina Residences", res: "/migration_help/Butuan/Pics_Housing/housing1.jpg"},
@@ -1007,8 +1000,7 @@ var MIGRATION_HELP_TILES = {
 		EMPLOYMENT: {
 			TILES: [
 				 {caption: "PAG-IBIG Office, Bacolod", res: "/migration_help/Cagayan de Oro/Pics_Employment/employment1.jpg"},
-				 {caption: "Development Bank of the Philippines", res: "/migration_help/Cagayan de Oro/Pics_Employment/employment2.jpg"},
-				 {caption: "Penalosa Farm", res: "/migration_help/Cagayan de Oro/Pics_Employment/employment3.jpg"},
+				 {caption: "Development Bank of the Philippines", res: "/migration_help/Cagayan de Oro/Pics_Employment/employment2.jpg"}
 			]
 		},
 		HOUSING: {
@@ -1029,13 +1021,6 @@ var MIGRATION_HELP_TILES = {
 			TILES: [
 				 {caption: "PAG-IBIG Office, Bacolod", res: "/migration_help/Iligan/Pics_Employment/employment1.jpg"},
 				 {caption: "Development Bank of the Philippines", res: "/migration_help/Iligan/Pics_Employment/employment2.jpg"},
-				 {caption: "Penalosa Farm", res: "/migration_help/Iligan/Pics_Employment/employment3.jpg"},
-			]
-		},
-		HOUSING: {
-			TILES: [
-				 {caption: "Akina Residences", res: "/migration_help/Iligan/Pics_Housing/housing1.jpg"},
-				 {caption: "Camella Bacolod", res: "/migration_help/Iligan/Pics_Housing/housing2.jpg"}
 			]
 		},
 		LOCALGOV: {
@@ -1051,7 +1036,6 @@ var MIGRATION_HELP_TILES = {
 			TILES: [
 				 {caption: "PAG-IBIG Office, Bacolod", res: "/migration_help/Iloilo/Pics_Employment/employment1.jpg"},
 				 {caption: "Development Bank of the Philippines", res: "/migration_help/Iloilo/Pics_Employment/employment2.jpg"},
-				 {caption: "Penalosa Farm", res: "/migration_help/Iloilo/Pics_Employment/employment3.jpg"},
 			]
 		},
 		HOUSING: {
@@ -1096,12 +1080,6 @@ var MIGRATION_HELP_TILES = {
 				 {caption: "PAG-IBIG Office, Bacolod", res: "/migration_help/Zamboanga/Pics_Employment/employment1.jpg"},
 				 {caption: "Development Bank of the Philippines", res: "/migration_help/Zamboanga/Pics_Employment/employment2.jpg"},
 				 {caption: "Penalosa Farm", res: "/migration_help/Zamboanga/Pics_Employment/employment3.jpg"},
-			]
-		},
-		HOUSING: {
-			TILES: [
-				 {caption: "Akina Residences", res: "/migration_help/Zamboanga/Pics_Housing/housing1.jpg"},
-				 {caption: "Camella Bacolod", res: "/migration_help/Zamboanga/Pics_Housing/housing2.jpg"}
 			]
 		},
 		LOCALGOV: {

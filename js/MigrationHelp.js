@@ -127,12 +127,18 @@ function scaleFont(str) {
 }
 
 function initTiles() {
-	initTagDesc($("#egContent").find(".col-lg-12"), "EMPLOYMENT");
-	initTagDesc($("#hgContent").find(".col-lg-12"), "HOUSING");
-	initTagDesc($("#gsContent").find(".col-lg-12"), "LOCALGOV");
+	if(!initTagDesc($("#egContent").find(".col-lg-12"), "EMPLOYMENT"))
+		$("#employmentGuide").remove();
+	if(!initTagDesc($("#hgContent").find(".col-lg-12"), "HOUSING"))
+		$("#housingGuide").remove();
+	if(!initTagDesc($("#gsContent").find(".col-lg-12"), "LOCALGOV"))
+		$("#governmentGuide").remove();
 }
 
 function initTagDesc(dest, tag) {
+	if(MIGRATION_HELP_TILES[cityId][tag] == undefined)
+		return false;
+
 	var $row = $("<div>", {"class": "row content-tiles"});
 	var dbTiles = MIGRATION_HELP_TILES[cityId][tag].TILES;
 
@@ -150,4 +156,6 @@ function initTagDesc(dest, tag) {
 	}
 
 	dest.append($row);
+
+	return true;
 }
