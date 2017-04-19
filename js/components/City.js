@@ -6,7 +6,7 @@ var City = function(name, province, islandGroup, overallScore, mainres, scores) 
 	this.mainres = mainres;
 	this.scores = scores;
 	// this.label = name;
-	this.value = name +" "+ islandGroup +" "+province;
+	this.value = name.toUpperCase() +", "+ province +", "+islandGroup;
 }
 
 City.prototype = Object.create(null);
