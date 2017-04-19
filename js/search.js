@@ -4,6 +4,9 @@ $(document).ready(function(){
 	
 	for(var i in CITIES)
 		names.push(CITIES[i]);
+
+	var proximity = [];
+	proximity.push("QUEZON CITY, NCR, Luzon");
 	
 	$(".tags").autocomplete({
 		source: names,
@@ -83,6 +86,20 @@ $(document).ready(function(){
 			var dest = window.location.href.split("/");
 
 			dest[dest.length-1] = "MigrationHelp.html?city=" + dataId;
+			dest = dest.join("/");
+
+			document.location.href = dest;
+			return false;
+		}
+	});
+
+	$(".tagsProximity").autocomplete({
+		source: proximity,
+		appendTo: $("#bs-example-navbar-collapse-1"),
+		select: function(event, ui){
+			var dest = window.location.href.split("/");
+
+			dest[dest.length-1] = "BrowseCityProximity.html?city=" + ui.item.value;
 			dest = dest.join("/");
 
 			document.location.href = dest;
