@@ -7,8 +7,8 @@
 .scoreCircle{
     border-radius: 50%;
 	border-width:70%;
-    width:14vw;
-    height:14vw;
+    width:17vw;
+    height:17vw;
     background-color: transparent;
     border: 1vw solid ;
 	
@@ -139,28 +139,28 @@
 }
 
 .section4Text{
-	padding-left: 25%;
-	padding-right: 25%;
+	padding-left: 17%;
+	padding-right: 17%;
 }
 
 .section4Header{
-	font-size: 2.5vw;
+	font-size: 3vw;
 	font-family: Korolev-Bold;
 }
 
 .section4Body{
-	font-size: 1.3vw;
+	font-size: 1.5vw;
 	font-family: WorkSans-Medium;
 }
 
 .section4ImgContainer{
-	padding-top: 10%;
-	padding-left: 15%;
-	padding-right: 15%;
+	padding-top: 4.5%;
+	padding-left: 11.5%;
+	padding-right: 11.5%;
 }
 
 .section4ImgDiv{
-	padding-left: 7%;
+	padding-left: 5%;
 	padding-right: 7%;
 }
 
@@ -177,8 +177,8 @@
 }
 
 .section5TextContainer{
-	padding-left: 25%;
-	padding-right: 25%;
+	padding-left: 17%;
+	padding-right: 17%;
 	padding-bottom: 7%;
 }
 
@@ -188,7 +188,7 @@
 }
 
 .section5Body{
-	font-size: 1.3vw;
+	font-size: 1.5vw;
 	font-family: WorkSans-Medium;
 }
 
@@ -242,26 +242,29 @@
 }
 
 .section6TextContainer{
-	padding-left: 25%;
-	padding-right: 25%;
+	padding-left: 17%;
+/*	padding-right: 25%;*/
 	color: #2C91D3;
 }
 
 .section6Header{
-	font-size: 2.5vw;
+	font-size: 2.8vw;
 	font-family: Korolev-Bold;
 }
 
 .section6Body{
-	font-size: 1.4vw;
+	font-size: 1.54vw;
 	font-family: WorkSans-Medium;
+	padding-bottom: 1%;
 }
 
 .section6Text{
-	font-size: 2vw;
-	padding-left: 25%;
+	font-size: 2.5vw;
+	padding-left: 15%;
 	padding-right: 15%;
-	padding-top: 4%;
+	padding-top: 3%;
+	padding-bottom: 4%;
+	text-align: center;
 	color: #2C91D3;
 	font-family: WorkSans-Regular;
 }
@@ -424,8 +427,7 @@
 	background-image: url("../res/compare_city/Gradient background.jpg");
 	background-size: cover;
 	height: 100%;
-	background-color:#273848;
-	padding-top: 10%;
+	padding-top: 6%;
 	padding-bottom: 10%;
 	color: white;
 }
