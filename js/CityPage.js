@@ -232,8 +232,14 @@ function displayContent(tagId) {
 
 	// var city = (CITIES[cityId].name.indexOf(" ") >= 0)? "":" City";
 	var fullName = CITIES[cityId].name;
+	var tagName = TAGS[tagId].name;
+	if(tagName == "Health")
+		tagName = "Healthcare";
 
-	$("#contentHeader").text(TAGS[tagId].name+" in "+fullName);
+	if(fullName.length <= 9)
+		fullName = fullName.concat(" City")
+
+	$("#contentHeader").text(tagName+" in "+fullName);
 	$("#contentBody").html(cp.DESC);
 
 	var circle = $("#content").find(".fullCircle");

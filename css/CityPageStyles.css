@@ -450,17 +450,18 @@
 }
 
 .fullCircle{
-    border-radius: 50%;
+    border-radius: 100%;
     width:6vw;
     height:6vw;
     background-color: #FF6985;
-    border: .8vw solid;
+    border: 1vw solid;
     border-color: #FF6985;
     color: white;
     text-align: center;
     font-size: 3vw;
     font-family: Korolev-Heavy;
-    float:right;
+    position: absolute;
+    right: 40%;
 }
 
 .tiles{
