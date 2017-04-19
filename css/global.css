@@ -21,3 +21,8 @@ body {
 .bold{
 	font-weight: bold;
 }
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-state-active.ui-button:hover {
+	background-color: #F0F0F0 !important;
+	border:none !important;
+}
