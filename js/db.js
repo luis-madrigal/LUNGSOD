@@ -770,9 +770,9 @@ var CITY_PAGE_TILES = {
 			]
 		},
 	},
-	SANTA_ROSA: {
+SANTA_ROSA: {
 		EMPLOYMENT: {
-			DESC: "If you're looking for a job in business or information technology, Santa Rosa is one of your better bets. The city has several economic zones and industrial parks filled with job opportunities. More and more companies are looking establish branches and offices in Santa Rosa due to its talent availability and space, just like the recent video game publisher, Ubisoft.",
+			DESC: "If you're looking for a job in business or information technology, <br/>Santa Rosa is one of your better bets. The city has several <br/>economic zones and industrial parks filled with job <br/>opportunities. More and more companies are looking establish <br/>branches and offices in Santa Rosa due to its talent availability <br/>and space, just like the recent video game publisher, Ubisoft.",
 			TILES: [
 				 {caption: "Ubisoft Office opening", res: "/Resources by city/Santa Rosa/Pics_Employment/CityStaRosa_EmploymentTile01.jpg"},
 				 {caption: "Greenfield Park, business district", res: "/Resources by city/Santa Rosa/Pics_Employment/CityStaRosa_EmploymentTile02.jpg"},
@@ -780,7 +780,7 @@ var CITY_PAGE_TILES = {
 			]
 		},
 		HOUSING: {
-			DESC: "There are several beautiful homes in Santa Rosa's subdivisions and more are under development. Nuvali Residences in particular are a popular choice for its beautiful environment and its many amenities within the community such as sports centers, parks, restaurants, even businesses. ",
+			DESC: "There are several beautiful homes in Santa Rosa's subdivisions <br/>and more are under development. Nuvali Residences in <br/>particular are a popular choice for <br/>its beautiful environment and its many amenities within the community such as sports <br/>centers, parks, restaurants, even businesses. ",
 			TILES: [
 				 {caption: "Laguna Bel Air Residences", res: "/Resources by city/Santa Rosa/Pics_Housing/CityStaRosa_HousingTile01.jpg"},
 				 {caption: "Avida Parkway Homes, Nuvali", res: "/Resources by city/Santa Rosa/Pics_Housing/CityStaRosa_HousingTile02.jpg"},
@@ -788,7 +788,7 @@ var CITY_PAGE_TILES = {
 			]
 		},
 		HEALTH: {
-			DESC: "Santa Rosa has a number of hopsitals and medical facilities that cover a wide array of medical procedures to address its citizens health. Aside from general and emergency coverage, Santa Rosa's healthcare facilities include specialized medicine, such as dental.",
+			DESC: "Santa Rosa has a number of hopsitals and medical facilities that <br/>cover a wide array of medical procedures to address its citizens <br/>health. Aside from general and emergency coverage, Santa Rosa's <br/>healthcare facilities include specialized medicine, such as dental.",
 			TILES: [
 				 {caption: "Southern Luzon Hospital & Med Center", res: "/Resources by city/Santa Rosa/Pics_Health/CityStaRosa_HealthTile01.jpg"},
 				 {caption: "New Sinai MDI Hospital", res: "/Resources by city/Santa Rosa/Pics_Health/CityStaRosa_HealthTile02.jpg"},
@@ -796,7 +796,7 @@ var CITY_PAGE_TILES = {
 			]
 		},
 		EDUCATION: {
-			DESC: "Santa Rosa is known by companies around the country to be filled with talent from some of the best universities. Santa Rosa has the University of the East and the University of Santo Tomas, and De La Salle University is just in the next city, making the city not just a great place to study, but a great place for future work.",
+			DESC: "Santa Rosa is known by companies around the country to be <br/>filled with talent from some of the best universities. Santa Rosa <br/>has the University of the East and the University of Santo Tomas, <br/>and De La Salle University is just in the next city, making the city <br/>not just a great place to study, but a great place for future work.",
 			TILES: [
 				 {caption: "PUP, Laguna campus", res: "/Resources by city/Santa Rosa/Pics_Education/CityStaRosa_EducationTile01.jpg"},
 				 {caption: "University of the East, Eton City", res: "/Resources by city/Santa Rosa/Pics_Education/CityStaRosa_EducationTile02.jpg"},
@@ -804,7 +804,7 @@ var CITY_PAGE_TILES = {
 			]
 		},
 		INFRASTRUCTURE: {
-			DESC: "Santa Rosa is up to date on all its utilities and facilities used by its citizens. Santa Rosa is also currently working on planning and constructing Eton City, which in concept would be similar to how Bonifacio Global City fits within Taguig City, to be filled with residential, office space, commercial/retail, and parks to further stimulate the city's progress.",
+			DESC: "Santa Rosa is up to date on all its utilities and facilities used by <br/>its citizens. Santa Rosa is also currently working on planning and <br/>constructing Eton City, which in concept would be similar to how <br/>Bonifacio Global City fits within Taguig City, to be filled with <br/>residential, office space, commercial/retail, and parks to further <br/>stimulate the city's progress.",
 			TILES: [
 				 {caption: "Sta. Rosa arch", res: "/Resources by city/Santa Rosa/Pics_Infrastructure/CityStaRosa_InfraTile01.jpg"},
 				 {caption: "Sta. Rosa de Lima Parish and City Plaza", res: "/Resources by city/Santa Rosa/Pics_Infrastructure/CityStaRosa_InfraTile02.jpg"},
@@ -812,7 +812,7 @@ var CITY_PAGE_TILES = {
 			]
 		},
 		TRANSPORTATION: {
-			DESC: "Transportation in Santa Rosa is simple but organized. The city has all the usual modes of transportation like jeepneys, buses, tricycles, vans, and taxis. Santa Rosa doesn’t need any air or sea means of travel, leaving the city government to focus on maintaining the order and quality of its land transportation.",
+			DESC: "Transportation in Santa Rosa is simple but organized. The city <br/>has all the usual modes of transportation like jeepneys, buses, <br/>tricycles, vans, and taxis. Santa Rosa doesn’t need any air or sea <br/>means of travel, leaving the city government to focus on <br/>maintaining the order and quality of its land transportation.",
 			TILES: [
 				 {caption: "Tricycle", res: "/Resources by city/Santa Rosa/Pics_Transpo/CityStaRosa_TranspoTile01.jpg"},
 				 {caption: "Jeepney", res: "/Resources by city/Santa Rosa/Pics_Transpo/CityStaRosa_TranspoTile02.jpg"},
@@ -820,7 +820,7 @@ var CITY_PAGE_TILES = {
 			]
 		},
 		LOCALGOV: {
-			DESC: "The government of Santa Rosa has done well so far with developing the city into what it is today. The city government continues to strive for a brighter future for the city through the implementation and planning of several projects to improve infrastructure, job opportunity, recreation facilities, roads, education facilities, and disaster prevention and preparedness.",
+			DESC: "The government of Santa Rosa has done well so far with <br/>developing the city into what it is today. The city government <br/>continues to strive for a brighter future for the city through the <br/>implementation and planning of several projects to improve <br/>infrastructure, job opportunity, recreation facilities, roads, <br/>education facilities, and disaster prevention and preparedness.",
 			TILES: [
 				 {caption: "Sports Day for special needs children", res: "/Resources by city/Santa Rosa/Pics_LocalGovt/CityStaRosa_LGUTile01.jpg"},
 				 {caption: "Government supplies medical kits", res: "/Resources by city/Santa Rosa/Pics_LocalGovt/CityStaRosa_LGUTile02.jpg"},
@@ -828,7 +828,7 @@ var CITY_PAGE_TILES = {
 			]
 		},
 		LEISURE: {
-			DESC: "Santa Rosa has many of the recreation facilities and locations that big cities have, like a number of malls, hotels, restaurants, parks, plazas, and museums. Unique to the city are its many historical landmarks available for viewing if you feel like touring the city. Santa Rosa is also home to the frequently visited Enchanted Kingdom amusement park.",
+			DESC: "Santa Rosa has many of the recreation facilities and locations <br/>that big cities have, like a number of malls, hotels, restaurants, <br/>parks, plazas, and museums. Unique to the city are its many <br/>historical landmarks available for viewing if you feel like touring <br/>the city. Santa Rosa is also home to the frequently visited <br/>Enchanted Kingdom amusement park.",
 			TILES: [
 				 {caption: "Nuvali recreational facilities", res: "/Resources by city/Santa Rosa/Pics_Recreation/CityStaRosa_RecTile01.jpg"},
 				 {caption: "Enchanted Kingdom", res: "/Resources by city/Santa Rosa/Pics_Recreation/CityStaRosa_RecTile02.jpg"},
@@ -838,7 +838,7 @@ var CITY_PAGE_TILES = {
 	},
 	ZAMBOANGA: {
 		EMPLOYMENT: {
-			DESC: "Employment in Zamboanga mostly revolves around its sardine industry, with the city housing nine out of twelve of the country's sardine companies, and its seaweed industry. Though not widespread in the city, Zamboanga does still have some business, health, retail, and sales related opportunities, the majority of which are concentrated in the city’s ecozone.",
+			DESC: "Employment in Zamboanga mostly revolves around its sardine <br/>industry, with the city housing nine out of twelve of the country's <br/>sardine companies, and its seaweed industry. Though not <br/>widespread in the city, Zamboanga does still have some <br/>business, health, retail, and sales related opportunities, the <br/>majority of which are concentrated in the city’s ecozone.",
 			TILES: [
 				 {caption: "Sardine fishing", res: "/Resources by city/Zamboanga/Pics_Employment/CityZamboanga_EmploymentTile01.jpg"},
 				 {caption: "Bangko Sentral ng Pilipinas", res: "/Resources by city/Zamboanga/Pics_Employment/CityZamboanga_EmploymentTile02.jpg"},
@@ -846,7 +846,7 @@ var CITY_PAGE_TILES = {
 			]
 		},
 		HOUSING: {
-			DESC: "The residential market of Zamboanga city has many types of homes-lots, apartments for rent, socialized housing-that adequately meet the needs of a person or family. However, if you're looking for a city with a vast spectrum of options with luxury quality, Zamboanga still has a ways to go.",
+			DESC: "The residential market of Zamboanga city has many types of <br/>homes-lots, apartments for rent, socialized housing-that <br/>adequately meet the needs of a person or family. However, if <br/>you're looking for a city with a vast spectrum of options with <br/>luxury quality, Zamboanga still has a ways to go.",
 			TILES: [
 				 {caption: "Woodridge Residences", res: "/Resources by city/Zamboanga/Pics_Housing/CityZamboanga_HousingTile01.jpg"},
 				 {caption: "Socialized housing on stilts", res: "/Resources by city/Zamboanga/Pics_Housing/CityZamboanga_HousingTile02.jpg"},
@@ -854,7 +854,7 @@ var CITY_PAGE_TILES = {
 			]
 		},
 		HEALTH: {
-			DESC: "Zamboanga has a couple of high quality hospitals that are fully equipped to provide general, emergency, and specialized medical care, though the city would benefit from having more in number. The city has given a focus to improving its heathcare system to be more accessible throughout the city, and continues to do so.",
+			DESC: "Zamboanga has a couple of high quality hospitals that are fully <br/>equipped to provide general, emergency, and specialized medical <br/>care, though the city would benefit from having more in number. <br/>The city has given a focus to improving its heathcare system to <br/>be more accessible throughout the city, and continues to do so.",
 			TILES: [
 				 {caption: "Western Mindanao Medical Center", res: "/Resources by city/Zamboanga/Pics_Health/CityZamboanga_HealthTile01.jpg"},
 				 {caption: "Zamboanga City Medical Center", res: "/Resources by city/Zamboanga/Pics_Health/CityZamboanga_HealthTile02.jpg"},
@@ -862,7 +862,7 @@ var CITY_PAGE_TILES = {
 			]
 		},
 		EDUCATION: {
-			DESC: "Zamboanga’s schools mostly follow the American school system and use English as the main language for teaching. There are several quality schools in the city like Ateneo de Zamboanga and Unibersidad de Zamboanga. There are also a number of foreign schools with a variety of study programs.",
+			DESC: "Zamboanga’s schools mostly follow the American school system <br/>and use English as the main language for teaching. There are <br/>several quality schools in the city like Ateneo de Zamboanga and <br/>Unibersidad de Zamboanga. There are also a number of foreign <br/>schools with a variety of study programs.",
 			TILES: [
 				 {caption: "Unibersidad de Zamboanga", res: "/Resources by city/Zamboanga/Pics_Education/CityZamboanga_EducationTile01.jpg"},
 				 {caption: "Pilar College", res: "/Resources by city/Zamboanga/Pics_Education/CityZamboanga_EducationTile02.jpg"},
@@ -870,7 +870,7 @@ var CITY_PAGE_TILES = {
 			]
 		},
 		INFRASTRUCTURE: {
-			DESC: "Zamboanga has kept many of its heritage architecture. The city itself was designed long ago to accommodate horse carriages as the mode of transport. However, the city is slowly transforming into a modern cosmopolitan, with pockets of high quality architecture and facilities.",
+			DESC: "Zamboanga has kept many of its heritage architecture. The city <br/>itself was designed long ago to accommodate horse carriages as <br/>the mode of transport. However, the city is slowly transforming <br/>into a modern cosmopolitan, with pockets of high quality <br/>architecture and facilities.",
 			TILES: [
 				 {caption: "St. Gregory the Great Cathedral", res: "/Resources by city/Zamboanga/Pics_Infrastructure/CityZamboanga_InfraTile01.jpg"},
 				 {caption: "Embarcadero Mall Complex", res: "/Resources by city/Zamboanga/Pics_Infrastructure/CityZamboanga_InfraTile02.jpg"},
@@ -878,7 +878,7 @@ var CITY_PAGE_TILES = {
 			]
 		},
 		TRANSPORTATION: {
-			DESC: "Zamboanga uses the usual jeepney, tricycle, and bus for public transportation. The motorized tricycle however, is the primary method for transportation around the city, and non-motorized tricycles are still in use in some areas. An airport and about 19 seaports are also available for public and commercial use.",
+			DESC: "Zamboanga uses the usual jeepney, tricycle, and bus for public <br/>transportation. The motorized tricycle however, is the primary <br/>method for transportation around the city, and non-motorized <br/>tricycles are still in use in some areas. An airport and about 19 <br/>seaports are also available for public and commercial use.",
 			TILES: [
 				 {caption: "Legazpi Grand Central Terminal", res: "/Resources by city/Zamboanga/Pics_Transpo/CityZamboanga_TranspoTile01.jpg"},
 				 {caption: "Legazpi Airport", res: "/Resources by city/Zamboanga/Pics_Transpo/CityZamboanga_TranspoTile02.jpg"},
@@ -886,7 +886,7 @@ var CITY_PAGE_TILES = {
 			]
 		},
 		LOCALGOV: {
-			DESC: "The government of Zamboanga City focuses its efforts on improving infrastructure and citizen well-being. Recent projects have improved water supply, heatlhcare, and poverty reduction. Zamboanga’s government also prioritizes security and has one  of the largest guard bases in the country.",
+			DESC: "The government of Zamboanga City focuses its efforts on <br/>improving infrastructure and citizen well-being. Recent projects <br/>have improved water supply, heatlhcare, and poverty reduction. <br/>Zamboanga’s government also prioritizes security and has one  <br/>of the largest guard bases in the country.",
 			TILES: [
 				 {caption: "City Hall", res: "/Resources by city/Zamboanga/Pics_LocalGovt/CityZamboanga_LGUTile01.jpg"},
 				 {caption: "Kabuhayan Livelihood Program, 2015", res: "/Resources by city/Zamboanga/Pics_LocalGovt/CityZamboanga_LGUTile02.jpg"},
@@ -894,7 +894,7 @@ var CITY_PAGE_TILES = {
 			]
 		},
 		LEISURE: {
-			DESC: "Zamboanga is one of the cities in the country with a vast array of historical landmarks to explore. A must-see is the Fort of Pilar. Zamboanga also has its many scenic tourist spots for relaxation and leisurely walks. The city itself has invested in many sports-related activities usually held at the city convention center.",
+			DESC: "Zamboanga is one of the cities in the country with a vast array <br/>of historical landmarks to explore. A must-see is the Fort of Pilar. Zamboanga also has its many <br/>scenic tourist spots for relaxation and leisurely walks. The city <br/>itself has invested in many sports-related activities usually held <br/>at the city convention center.",
 			TILES: [
 				 {caption: "La Isla de la Santa Cruz beach", res: "/Resources by city/Zamboanga/Pics_Recreation/CityZamboanga_RecTile01.jpg"},
 				 {caption: "Jardin Maria Clara Llobregat", res: "/Resources by city/Zamboanga/Pics_Recreation/CityZamboanga_RecTile02.jpg"},
