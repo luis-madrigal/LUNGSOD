@@ -27,7 +27,8 @@ td{
 }
 
 .cityTiles{
-	background-color:#273848;
+	background-image: url("../res/compare_city/Gradient background.jpg");
+    background-size: cover;
 	padding: 2%;
 }
 

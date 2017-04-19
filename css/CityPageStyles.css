@@ -108,8 +108,8 @@
 }
 
 #categoryWheel{
-	background-color: #183449;
-	/*width: 100%;*/
+	background-image: url("../res/compare_city/Gradient background.jpg");
+    background-size: cover;
 	height: 100%;
 }
 
