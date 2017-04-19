@@ -16,10 +16,10 @@ var TAGS = {
 			HOVER: "res/Resources_IconWheel/Icons_Hover/Icons_Hover-35.png"
 		},
 		color: "#45CBCB",
-		desc: "In this category, we grade a city for its ability to provide affordable, quality education across all ages of its citizens.",
-		rubrics: ["AVAILABILITY - the number of available primary, secondary, and tertiary schools in the city.",
-					"QUALITY - good quality education that puts students in a position to better their lives through knowledge.",
-					"AFFORDABILITY - the cost of education is appropriate in relation to its quality, and is attainable by the majority."]
+		desc: "In this category, we grade a city for its<br>ability to provide affordable, quality<br>education across all ages of its citizens.",
+		rubrics: ["AVAILABILITY - the number of available primary,<br>secondary, and tertiary schools in the city.",
+					"QUALITY - good quality education that puts<br>students in a position to better their lives<br>through knowledge.",
+					"AFFORDABILITY - the cost of education is<br>appropriate in relation to its quality, and is<br>attainable by the majority."]
 	},
 	EMPLOYMENT: {
 		id: 1,
@@ -32,7 +32,7 @@ var TAGS = {
 			HOVER: "res/Resources_IconWheel/Icons_Hover/Icons_Hover_Artboard 61 copy.png"
 		},
 		color: "#73C86F",
-		desc: "In this category, we grade a city for its ability to provide a large number and variety of quality job opportunities for its citizens. This includes all types of work from blue, to white, to pink-collar work.",
+		desc: "In this category, we grade a city for its<br>ability to provide a large number and<br>variety of quality job opportunities for its<br>citizens. This includes all types of work<br>from blue, to white, to pink-collar work.",
 		rubrics: ["AVAILABILITY - the number of available job opportunities for local talent to apply to.",
 					"QUALITY - work that provides proper benefits, room for growth, and proper pay.",
 					"VARIETY - how different the types of work are in the city, from labor, social, office work, or more."]
@@ -48,11 +48,11 @@ var TAGS = {
 			HOVER: "res/Resources_IconWheel/Icons_Hover/Icons_Hover-36.png"
 		},
 		color: "#FF8146",
-		desc: "In this category, we grade a city for its ability to provide adequate healthcare through a variety of services. We also grade the quality and availability of facilities in hopsitals and clinics.",
-		rubrics: ["AVAILABILITY - the number of available hospitals, clinics, and other healthcare services.",
-					"QUALITY - the quality of healthcare services, staff, and equipment at hospitals or clinics.",
-					"ACCESSIBILITY - how accessible medical centers are in terms of location and accommodation of citizens.",
-					"AFFORDABILITY - the ratio of the quality of health service to its price and how many people can afford these."]
+		desc: "In this category, we grade a city for its<br>ability to provide adequate healthcare<br>through a variety of services. We also grade<br>the quality and availability of facilities in<br>hopsitals and clinics.",
+		rubrics: ["AVAILABILITY - the number of available<br>hospitals, clinics, and other healthcare services.",
+					"QUALITY - the quality of healthcare services,<br>staff, and equipment at hospitals or clinics.",
+					"ACCESSIBILITY - how accessible medical<br>centers are in terms of location and<br>accommodation of citizens.",
+					"AFFORDABILITY - the ratio of the quality of<br>health service to its price and how many<br>people can afford these."]
 	},
 	HOUSING: {
 		id: 3,
@@ -65,7 +65,7 @@ var TAGS = {
 			HOVER: "res/Resources_IconWheel/Icons_Hover/Icons_Hover-34.png"
 		},
 		color: "#F6C358",
-		desc: "In this category, we grade a city for its ability to provide affordable proper housing. This means that there is an adequate number of available homes that are also of good quality.",
+		desc: "In this category, we grade a city for its<br>ability to provide affordable proper housing.<br>This means that there is an adequate<br>number of available homes that are also of<br>good quality.",
 		rubrics: ["AVAILABILITY - there is an adequate amount of available property for rent or sale.",
 					"QUALITY - applies to the quality of the construction and amenities needed in a home.",
 					"AFFORDABILITY - the general price range of homes are affordable to the majority."]
@@ -81,10 +81,10 @@ var TAGS = {
 			HOVER: "res/Resources_IconWheel/Icons_Hover/Icons_Hover-39.png"
 		},
 		color: "#E95352",
-		desc: "In this category, we grade a city for the availability and quality of necessary infrastructureóbuildings, roads, water, electricity, etc. As well as their maintenance and improvement. ",
-		rubrics: ["AVAILABILITY - the availability of the minimum required infrastructure to support life in the city.",
-					"QUALITY - the quality of infrastructure in terms of materials, structure, and processes.",
-					"MAINTENANCE - constancy and consistency of maintenance on city infrastructure."]
+		desc: "In this category, we grade a city for the<br>availability and quality of necessary<br>infrastructure-buildings, roads, water,<br>electricity, etc. As well as their<br>maintenance and improvement.",
+		rubrics: ["AVAILABILITY - the availability of the minimum<br>required infrastructure to support life in the city.",
+					"QUALITY - the quality of infrastructure in terms<br>of materials, structure, and processes.",
+					"MAINTENANCE - constancy and consistency of<br>maintenance on city infrastructure."]
 	},
 	LEISURE: {
 		id: 5,
@@ -97,10 +97,10 @@ var TAGS = {
 			HOVER: "res/Resources_IconWheel/Icons_Hover/Icons_Hover-40.png"
 		},
 		color: "#FF6985",
-		desc: "In this category, we grade a city for how many facilities and areas of interest there are for people to go to for fun. These can be places like parks, tourist spots, hotels, and museums, or events like festivals. ",
-		rubrics: ["AVAILABILITY - the number of available points of interest.",
-					"QUALITY - mostly applies to facilities and amenities of a place.",
-					"VARIETY - how different the types of events and places for leisure are in the city."]
+		desc: "In this category, we grade a city for how<br>many facilities and areas of interest there<br>are for people to go to for fun. These can<br>be places like parks, tourist spots, hotels,<br>and museums, or events like festivals. ",
+		rubrics: ["AVAILABILITY - the number of available points<br>of interest.",
+					"QUALITY - mostly applies to facilities and<br>amenities of a place.",
+					"VARIETY - how different the types of events<br>and places for leisure are in the city."]
 	},
 	LOCALGOV: {
 		id: 6,
@@ -113,10 +113,10 @@ var TAGS = {
 			HOVER: "res/Resources_IconWheel/Icons_Hover/Icons_Hover-37.png"
 		},
 		color: "#324B65",
-		desc: "In this category, we grade a city for the efforts of its local government to make the lives of its citizens better. This includes their planned initiatives and government programs offered to the public.",
-		rubrics: ["QUALITY - government services and programs are of good quality and benefit the people.",
-					"CONSISTENCY - government efforts are consistently implemented, renewed, and improved over time.",
-					"ACCESSIBILITY - government officials, offices, and programs and services are easily accessible."]
+		desc: "In this category, we grade a city for the<br>efforts of its local government to make the<br>ives of its citizens better. This includes<br>their planned initiatives and government<br>programs offered to the public.",
+		rubrics: ["QUALITY - government services and programs<br>are of good quality and benefit the people.",
+					"CONSISTENCY - government efforts are<br>consistently implemented, renewed, and<br>improved over time.",
+					"ACCESSIBILITY - government officials, offices,<br>and programs and services are easily accessible."]
 	},
 	TRANSPORTATION: {
 		id: 7,
@@ -129,10 +129,10 @@ var TAGS = {
 			HOVER: "res/Resources_IconWheel/Icons_Hover/Icons_Hover-38.png"
 		},
 		color: "#634481",
-		desc: "In this category, we grade a city for the quality, accessibility, maintenace, and amount of various transportation methods as needed by its citizens.",
-		rubrics: ["AVAILIBILITY - the number of available transportation modes.",
-					"QUALITY - the efficiency of using transportation, and the quality of the vehicles themselves.",
-					"ACCESSIBILITY - how the convenient it is for citizens to access transportation, as well as the transportation modeís reach within the city."]
+		desc: "In this category, we grade a city for the<br>quality, accessibility, maintenace, and<br>amount of various transportation methods<br>as needed by its citizens.",
+		rubrics: ["AVAILIBILITY - the number of available<br>transportation modes.",
+					"QUALITY - the efficiency of using transportation,<br>and the quality of the vehicles themselves.",
+					"ACCESSIBILITY - how the convenient it is for<br>citizens to access transportation, as well as the<br>transportation modeís reach within the city."]
 	},
 };
 
@@ -158,85 +158,82 @@ var DESCRIPTIONS = {
 	BACOLOD: {
 		ABOUT_HEADER: "THE CITY OF SMILES",
 		ABOUT_BODY: [
-			"Bacolod City is located in the Negros Occidental province of Visayas, known for being one of the most friendly cities in the country, as well as being one of the better places to live in the Philippines due to the clean and green environment and people.",
-			"Bacolod has also recently been declared a center of excellence by the Department of Science and Technology for having quality operations in the IT-BPO industry that is spurring the city's economy."
+			"Bacolod City is located in the Negros<br>Occidental province of Visayas, known for<br>being one of the most friendly cities in the<br>country, as well as being one of the better<br>places to live in the Philippines due to the<br>clean and green environment and people.",
+			"Bacolod has also recently been declared a<br>center of excellence by the Department of<br>Science and Technology for having quality<br>operations in the IT-BPO industry that is<br>spurring the city's economy."
 		],
 		MINI_DESC: "The friendly city of Bacolod is quickly growing into one of the best places to live in the Philippines with its clean environment and thriving economy."		
 	},
 	BUTUAN: {
 		ABOUT_HEADER: "CARAGA'S ECONOMIC HUB",
 		ABOUT_BODY: [
-			"Butuan City is the regional center of the Caraga province in Mindanao, known as one of the oldest settlements in the country. It continues to preserve its cultural heritage and plenty of this can be seen in the city’s architecture or practiced by the people.",
-			"However, the city is quickly growing into a cosmopolitan city with plenty of businesses setting up shop in Butuan, earning it the reputation of being Caraga's commercial, industrial, and administrative center."
+			"Butuan City is the regional center of the<br>Caraga province in Mindanao, known as one<br>of the oldest settlements in the country.<br>It continues to preserve its cultural heritage<br>and plenty of this can be seen in the city’s<br>architecture or practiced by the people.",
+			"However, the city is quickly growing into a<br>cosmopolitan city with plenty of businesses<br>setting up shop in Butuan, earning it the<br>reputation of being Caraga's commercial,<br>industrial, and administrative center."
 		],
 		MINI_DESC: "Butuan City is a city that finds a good balance between the traditions of the past, and the innovations of the future and modern technology."		
 	},
 	CAGAYAN_DE_ORO: {
 		ABOUT_HEADER: "THE HEART OF NORTHERN MINDANAO",
 		ABOUT_BODY: [
-			"Cagayan de Oro is the capital of the Misamis Oriental Province, known today as the regional center and business hub of the region due to the rise of business investors both local and foreign. IT and BPO companies in parituclar, have taken an interest, further stimulating an already diverse and thriving economy.",
-			"Besides its success in business, Cagayan de Oro also boasts quality in the real estate landscape, education, and its environment."
+			"Cagayan de Oro is the capital of the Misamis<br>Oriental Province, known today as the<br>regional center and business hub of the<br>region due to the rise of business investors<br>both local and foreign. IT and BPO<br>companies in parituclar, have taken an<br><br>interest, further stimulating an already<br>diverse and thriving economy.",
+			"Besides its success in business, Cagayan de<br>Oro also boasts quality in the real estate<br>landscape, education, and its environment."
 		],
 		MINI_DESC: "Cagayan de Oro is also known as 'The Gate to the Land of Promise' due to the multitude and variety of opportunities it offers to the citizens living in Mindanao."		
 	},
 	DUMAGUETE: {
 		ABOUT_HEADER: "THE UNIVERSITY TOWN OF THE VISAYAS",
 		ABOUT_BODY: [
-			"Dumaguete City is the capital of the Negros Oriental province. Dubbed, 'University Town', the outstanding feature about Dumaguete is its four universities where a majority of students around Visayas  and Mindanao come to enroll for college.",
-			"Dumaguete is also becoming one of the preferred places for BPO and IT companies to establish themselves. This has resulted in a number of business parks and a spurred economy promising a number of new jobs."
+			"Dumaguete City is the capital of the Negros<br>Oriental province. Dubbed, \"University<br>Town\", the outstanding feature about<br>Dumaguete is its four universities where a<br>majority of students around Visayas and<br>Mindanao come to enroll for college.",
+			"Dumaguete is also becoming one of the<br>preferred places for BPO and IT companies<br>to establish themselves. This has resulted in<br>a number of business parks and a spurred<br>economy promising a number of new jobs."
 		],
 		MINI_DESC: "Dumaguete City was long known for its strength in education and for preserving its cultural heritage, but in recent years it is also becoming one of the ideal destinations for businesses to establish themselves."		
 	},
-
 	GENERAL_SANTOS: {
 		ABOUT_HEADER: "THE TUNA CAPITAL OF THE PHILIPPINES",
 		ABOUT_BODY: [
-			"Home of boxer Manny Pacquiao, General Santos City is the center for commerce and industry in the Socsargen region.",
-			"General Santos is a city in touch with the nature around it.",
-			"Locals and tourists alike can enjoy camping, hiking and other outdoor activities in the landscape around them. The city itself has a stable economy that revolves primarily around its tuna industry, earning itself the reputation of having the most delicious tuna in the country."
+			"Home of boxer Manny Pacquiao, General<br>Santos City is the center for commerce and<br>industry in the Socsargen region.",
+			"General Santos is a city in touch with the<br>nature around it. Locals and tourists alike<br><br>can enjoy camping, hiking and other outdoor<br>activities in the landscape around them.<br>The city itself has a stable economy that<br>revolves primarily around its tuna industry,<br>earning itself the reputation of having the<br>most delicious tuna in the country."
 		],
 		MINI_DESC: "General Santos City is a city in tune with nature: this city's growing economy thrives on the tuna in its oceans and the successful eco-tourism held in their beautiful landscapes."		
 	},
 	ILIGAN: {
 		ABOUT_HEADER: "THE INDUSTRIAL CENTER OF THE SOUTH",
 		ABOUT_BODY: [
-			"Iligan City is located in the province of Lanao del Norte, known for having many waterfalls that are popular among tourists.",
-			"The city is also the industrial center of the south due to its recent economic revival spurred by the reopening of the National Steel Corporation.",
-			"Along with its neighbor, Cagayan de Oro, Iligan is one of the fastest developing centers in Northern Mindanao."
+			"Iligan City is located in the province of<br>Lanao del Norte, known for having many<br>waterfalls that are popular among tourists.",
+			"The city is also the industrial center of the<br>south due to its recent economic revival<br><br>spurred by the reopening of the National<br>Steel Corporation.",
+			"Along with its neighbor, Cagayan de Oro,<br>Iligan is one of the fastest developing<br>centers in Northern Mindanao."
 		],
 		MINI_DESC: "Iligan City, praised for its majestic waterfalls, has also become one of the many up and coming cities with fast growing economies that make it one of the ideal places to live in Mindanao."		
 	},
 	ILOILO: {
 		ABOUT_HEADER: "THE QUEEN'S CITY OF THE SOUTH",
 		ABOUT_BODY: [
-			"Iloilo City is the capital city of the Iloilo province in Visayas, and is among the few cities in our country that has preserved its rich historical past and cultural heritage.",
-			"This history and its beautiful environments have made it one of the best tourist destinations in the country. However, Iloilo is also the hub for trade, commerce, finance, technology, education, and real estate in the Western Visayas region, making it a well rounded city that offers a high quality of life."
+			"Iloilo City is the capital city of the Iloilo<br>province in Visayas, and is among the few<br>cities in our country that has preserved its<br>rich historical past and cultural heritage.<br>This history and its beautiful environments<br>have made it one of the best tourist<br><br>destinations in the country. However, Iloilo<br>is also the hub for trade, commerce,<br>finance, technology, education, and real<br>estate in the Western Visayas region,<br>making it a well rounded city that offers a<br>high quality of life."
 		],
 		MINI_DESC: "Iloilo City is not only a beautiful tourist destination or historical site, but is today one of the strongest in terms of livability, offering high quality housing, education, and plenty of work."		
 	},
 	LEGAZPI: {
 		ABOUT_HEADER: "THE CITY OF FUN AND ADVENTURE",
 		ABOUT_BODY: [
-			"Legazpi City is the capital of the Albay province in the Bicol Region, known as one of the centers for education, healthcare, commerce, transportation, and most popularly, its adventure tourism in and around Mount Mayon.",
-			"In the recent years, this beautiful tourist destination has slowly built itself up to become more.  In 2014, Legazpi was ranked second among the top three most livable cities in the country."
+			"Legazpi City is the capital of the Albay<br>province in the Bicol Region, known as one<br>of the centers for education, healthcare,<br>commerce, transportation, and most<br>popularly, its adventure tourism in and<br>around Mount Mayon.",
+			"In the recent years, this beautiful tourist<br>destination has slowly built itself up to<br>become more.  In 2014, Legazpi was ranked<br>second among the top three most livable<br>cities in the country."
 		],
 		MINI_DESC: "Legazpi City is not just a tourist destination these days. This beautiful city has progressed to be one of the most livable cities in Visayas."		
 	},
 	SANTA_ROSA: {
 		ABOUT_HEADER: "MAKATI OF THE SOUTH",
 		ABOUT_BODY: [
-			"Santa Rosa is located in the Laguna province of Luzon.",
-			"Its thriving economy and growing economic landscape have earned it the name \"Makati of the South\", making it yet another one of the most livable cities in the country.",
-			"Many companies have taken an interest in Santa Rosa due to the affordability of its land and real estate, providing the city with plenty of employment opportunities. Santa Rosa is also home to one of the most prominent schools in the country: De la Salle University."
+			"Santa Rosa is located in the Laguna<br>province of Luzon.",
+			"Its thriving economy and growing economic<br>landscape have earned it the name \"Makati<br>of the South\", making it yet another one of<br>the most livable cities in the country.",
+			"Many companies have taken an interest in<br>Santa Rosa due to the affordability of its<br>land and real estate, providing the city with<br>plenty of employment opportunities. Santa<br>Rosa is also home to one of the most<br>prominent schools in the country: De la<br>Salle University."
 		],
 		MINI_DESC: "With the combination of work opportunities, proper city management, education, and more, Santa Rosa has become an all around ideal place to live, and will soon match the likes of Metro Manila."		
 	},
 	ZAMBOANGA: {
 		ABOUT_HEADER: "THE SARDINES CAPITAL OF THE PHILIPPINES",
 		ABOUT_BODY: [
-			"Zamboanga City is the commercial and industrial center of the Zamboanga Peninsula Region in Mindanao, known for its rich Hispanic-rooted history.  ",
-			"Zamboanga is also known for its strong sardine industry, being the location of nine out of twelve sardine companies in the entire country.",
-			"Zamboanga is also one of the centers for education and healthcare in the region, overall providing quality modern life to its citizens."
+			"Zamboanga City is the commercial and<br>industrial center of the Zamboanga<br>Peninsula Region in Mindanao, known for its<br>rich Hispanic-rooted history.",
+			"Zamboanga is also known for its strong<br>sardine industry, being the location of nine<br><br>out of twelve sardine companies in the<br>entire country.",
+			"Zamboanga is also one of the centers for<br>education and healthcare in the region,<br>overall providing quality modern life to<br>its citizens."
 		],
 		MINI_DESC: "Zamboanga is a city with a rich history rooted in Hispanic culture and a thriving economy largely based on its sardine industry. It is also however, one of the centers for education and healthcare in the region."		
 	},
@@ -247,7 +244,7 @@ var CITY_PAGE_TILES = {
 	
 	BACOLOD: {
 		EMPLOYMENT: {
-			DESC: "Bacolod City has long been known for its agriculture and sugar cane industry. In recent years however, several IT-BPO companies have established themselves in the city due to the potential work force and available space. Their presence has stimulated Bacolod’s economy, creating new jobs, earning it the title “Third fastest growing economy in the IT-BPO industry.",
+			DESC: "Bacolod City has long been known for its agriculture and sugar<br>cane industry. In recent years however, several IT-BPO<br>companies have established themselves in the city due to the<br>potential work force and available space. Their presence has<br>stimulated Bacolod’s economy, creating new jobs, earning it the<br>title “Third fastest growing economy in the IT-BPO industry.“",
 			TILES: [
 				 {caption: "PAG-IBIG Office, Bacolod", res: "/Resources by city/Bacolod/Pics_Employment/CityBacolod_EmploymentTile01.jpg"},
 				 {caption: "Development Bank of the Philippines", res: "/Resources by city/Bacolod/Pics_Employment/CityBacolod_EmploymentTile02.jpg"},

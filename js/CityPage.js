@@ -59,8 +59,10 @@ $(document).ready(function(){
 
 		if(this.toggled) {
 			hideTagContents(this);
+			expanded.val = false;
 		} else {
 			showTagContents(this);
+			expanded.val = true;
 			expanded.tag = $(this).data("id");
 
 			if(changedTag) {
@@ -177,6 +179,9 @@ function displayTagInfo(id) {
 	var $livIndexBtn = $("<a>", {"href": "LivabilityIndex.html", "type": "button", "class": "btn btn-liveScore"});
 
 	$header.append(TAGS[id].name.toUpperCase());
+	if(TAGS[id].name == "Health") {
+		$header.append("CARE");
+	}
 	$body.append(TAGS[id].desc);
 	$lft.append("WHAT WE LOOK FOR");
 	$livIndexBtn.append("The Livability Index");
@@ -207,7 +212,7 @@ function displayLivIndex() {
 	var $livIndexBtn = $("<a>", {"href": "LivabilityIndex.html", "type": "button", "class": "btn btn-liveScore"});
 
 	$header.append("LIVABILITY SCORE");
-	$body.append("Click on different livability categories<br>on the livability wheel to see why we gave<br>them the score they have. You can also learn more about the math behind our scoring system here.");
+	$body.append("Click on the different livability categories<br>on the livability wheel to see why we gave<br>them the score they have.<br><br>You can also learn more about the math<br> behind our scoring system here.");
 	$livIndexBtn.append("The Livability Index");
 
 	$(".wheelText").append($header);
@@ -225,11 +230,11 @@ function displayContent(tagId) {
 		$(this).find(".rectangle").css("background-color", TAGS[tagId].color);
 	});
 
-	var city = (CITIES[cityId].name.indexOf(" ") >= 0)? "":" City";
-	var fullName = CITIES[cityId].name+city;
+	// var city = (CITIES[cityId].name.indexOf(" ") >= 0)? "":" City";
+	var fullName = CITIES[cityId].name;
 
 	$("#contentHeader").text(TAGS[tagId].name+" in "+fullName);
-	$("#contentBody").text(cp.DESC);
+	$("#contentBody").html(cp.DESC);
 
 	var circle = $("#content").find(".fullCircle");
 	circle.css("background-color", TAGS[tagId].color);
@@ -243,7 +248,7 @@ function initCompareCity() {
 }
 
 function initAboutContent() {
-	$("#aboutHeader").text(DESCRIPTIONS[cityId].ABOUT_HEADER);
+	$("#aboutHeader").html(DESCRIPTIONS[cityId].ABOUT_HEADER);
 	$("#aboutHeader").css("font-size", scaleFont(DESCRIPTIONS[cityId].ABOUT_HEADER)+"vw");
 
 	var nLeft = Math.ceil(DESCRIPTIONS[cityId].ABOUT_BODY.length/2);
@@ -328,10 +333,10 @@ function initWheel() {
 		{x: 200, y: -478},
 		{x: 45, y: -300},
 		{x: 200, y: -136},
-		{x: 90, y: -425},
+		{x: 93, y: -420},
 		{x: 310, y: -170},
 		{x: 92, y: -170},
-		{x: 305, y: -425}
+		{x: 305, y: -420}
 	];
 	var j = 0;
 
