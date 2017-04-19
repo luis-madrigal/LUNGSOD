@@ -574,7 +574,7 @@ var CITY_PAGE_TILES = {
 	},
 	ILIGAN: {
 		EMPLOYMENT: {
-			DESC: "Iligan City is one of the fastest developing areas in Northern Mindanao, with its economy experiencing a revival due to the new employment opportunities brought in by the influx of investments and business establishments in the recent years. Other promising avenues for employment can be found in its heavy industries like the National Power Corporation and the Global Steelworks Infrastructures, Inc.",
+			DESC: "Iligan City is one of the fastest developing areas in Northern Mindanao,<br>with its economy experiencing a revival due to the new employment<br>opportunities brought in by the influx of investments and business<br>establishments in the recent years. Other promising avenues for<br>employment can be found in its heavy industries like the National<br>Power Corporation and the Global Steelworks Infrastructures, Inc.",
 			TILES: [
 				 {caption: "Mariwasa Ceramics Inc.", res: "/Resources by city/Iligan/Pics_Employment/CityIligan_EmploymentTile01.jpg"},
 				 {caption: "Steel Industry", res: "/Resources by city/Iligan/Pics_Employment/CityIligan_EmploymentTile02.jpg"},
@@ -582,7 +582,7 @@ var CITY_PAGE_TILES = {
 			]
 		},
 		HOUSING: {
-			DESC: "The cost of living in Iligan City is about 20% cheaper than Quezon City and the rest of Metro Manila. The residential market has some quality finds, and Iligan has offers from the cheap to the extravagant, though the number of available homes is not always capable of meeting the demand.",
+			DESC: "The cost of living in Iligan City is about 20% cheaper than<br>Quezon City and the rest of Metro Manila. The residential market<br>has some quality finds, and Iligan has offers from the cheap to<br>the extravagant, though the number of available homes is not<br>always capable of meeting the demand.",
 			TILES: [
 				 {caption: "Caprice Residences", res: "/Resources by city/Iligan/Pics_Housing/CityIligan_HousingTile01.jpg"},
 				 {caption: "Mitual Homes, Iligan", res: "/Resources by city/Iligan/Pics_Housing/CityIligan_HousingTile02.jpg"},
@@ -590,7 +590,7 @@ var CITY_PAGE_TILES = {
 			]
 		},
 		HEALTH: {
-			DESC: "Iligan City has several hospitals available to its citizens that are equipped with facilities that are enough to address the usual needs of people. However, most of these hospitals still have a ways to go in terms of quality facilities before they can match the medical care provided in the country’s richest cities.",
+			DESC: "Iligan City has several hospitals available to its citizens that are<br>equipped with facilities that are enough to address the usual<br>needs of people. However, most of these hospitals still have a<br>ways to go in terms of quality facilities before they can match<br>the medical care provided in the country’s richest cities.",
 			TILES: [
 				 {caption: "Adventist Medical Center – Iligan", res: "/Resources by city/Iligan/Pics_Health/CityIligan_HealthTile01.jpg"},
 				 {caption: "Mercy Community Hospital", res: "/Resources by city/Iligan/Pics_Health/CityIligan_HealthTile02.jpg"},
@@ -598,7 +598,7 @@ var CITY_PAGE_TILES = {
 			]
 		},
 		EDUCATION: {
-			DESC: "Iligan City has eight universities, and a total of 181 schools covering public, private, and vocational and technical schools. Though the coverage of courses offered in tertiary schools may be limited compared to those in other cities, the quality of those offered such as engineering, IT, and business, is considered excellent.",
+			DESC: "Iligan City has eight universities, and a total of 181 schools covering<br>public, private, and vocational and technical schools. Though the<br>coverage of courses offered in tertiary schools may be limited<br>compared to those in other cities, the quality of those offered<br>such as engineering, IT, and business, is considered excellent.",
 			TILES: [
 				 {caption: "La Salle Academy, High School", res: "/Resources by city/Iligan/Pics_Education/CityIligan_EducationTile01.jpg"},
 				 {caption: "Iligan Capitol College", res: "/Resources by city/Iligan/Pics_Education/CityIligan_EducationTile02.jpg"},
@@ -606,7 +606,7 @@ var CITY_PAGE_TILES = {
 			]
 		},
 		INFRASTRUCTURE: {
-			DESC: "Iligan City’s infrastructure is sufficient enough to properly address the needs of its citizens: adequate water supply, waste management, electricity, and many telecommunication services are available to the city.  However, the quality of these can be raised to a higher standard which is currently being addressed by Iligan’s city government.",
+			DESC: "Iligan City’s infrastructure is sufficient enough to properly<br>address the needs of its citizens: adequate water supply, waste<br>management, electricity, and many telecommunication services<br>are available to the city.  However, the quality of these can be<br>raised to a higher standard which is currently being addressed by<br>Iligan’s city government.",
 			TILES: [
 				 {caption: "St. Michael's Cathedral", res: "/Resources by city/Iligan/Pics_Infrastructure/CityIligan_InfraTile01.jpg"},
 				 {caption: "Don Gregorio T. Lluch Avenue", res: "/Resources by city/Iligan/Pics_Infrastructure/CityIligan_InfraTile02.jpg"},
@@ -614,7 +614,7 @@ var CITY_PAGE_TILES = {
 			]
 		},
 		TRANSPORTATION: {
-			DESC: "Iligan has all the necessary modes of transportation within the city such as taxicabs, tricycles, jeepneys and buses. Tartanillas or kalesas are also used to get around the city. Iligan also has two main bus terminals that cater to out of city transportation, as well as an airport and seaport of its own.",
+			DESC: "Iligan has all the necessary modes of transportation within the<br>city such as taxicabs, tricycles, jeepneys and buses. Tartanillas or<br>kalesas are also used to get around the city. Iligan also has two<br>main bus terminals that cater to out of city transportation, as<br>well as an airport and seaport of its own.",
 			TILES: [
 				 {caption: "Integrated Bus and Jeepney Terminal", res: "/Resources by city/Iligan/Pics_Transpo/CityIligan_TranspoTile01.jpg"},
 				 {caption: "Tartanillas", res: "/Resources by city/Iligan/Pics_Transpo/CityIligan_TranspoTile02.jpg"},
@@ -622,7 +622,7 @@ var CITY_PAGE_TILES = {
 			]
 		},
 		LOCALGOV: {
-			DESC: "The government of Iligan City continues to emphasize focus on improving city roadways to better farm to market transportation, and improvements to city wellfare through better waste management processes and expanding the water supply system beneath Iligan.",
+			DESC: "The government of Iligan City continues to emphasize focus on<br>improving city roadways to better farm to market transportation,<br>and improvements to city wellfare through better waste<br>management processes and expanding the water supply<br>system beneath Iligan.",
 			TILES: [
 				 {caption: "Road renovation", res: "/Resources by city/Iligan/Pics_LocalGovt/CityIligan_LGUTile01.jpg"},
 				 {caption: "HUGS Foundation outreach at schools", res: "/Resources by city/Iligan/Pics_LocalGovt/CityIligan_LGUTile02.jpg"},
@@ -630,7 +630,7 @@ var CITY_PAGE_TILES = {
 			]
 		},
 		LEISURE: {
-			DESC: "Iligan is also known as the 'City of Majestic Waterfalls' for having 24 beautiful waterfalls, most notably the Maria Cristina Falls. The city also has its cultural festivals every September. Iligan also enjoys the usual modern recreational activities like movies, malls, shopping, and restaurants.",
+			DESC: "Iligan is also known as the 'City of Majestic Waterfalls' for having<br>24 beautiful waterfalls, most notably the Maria Cristina Falls. The<br>city also has its cultural festivals every September. Iligan also<br>enjoys the usual modern recreational activities like movies,<br>malls, shopping, and restaurants.",
 			TILES: [
 				 {caption: "Maria Cristina Waterfalls", res: "/Resources by city/Iligan/Pics_Recreation/CityIligan_RecTile01.jpg"},
 				 {caption: "Sinulog Festival", res: "/Resources by city/Iligan/Pics_Recreation/CityIligan_RecTile02.jpg"},
@@ -640,7 +640,7 @@ var CITY_PAGE_TILES = {
 	},
 	ILOILO: {
 		EMPLOYMENT: {
-			DESC: "Being the hub for trade, commerce, finance, technology, medical tourism, hospitality, real estate, tourism, education, and industry in Western Visayas, Iloilo without a doubt has plenty of jobs to choose from. A number of BPOs, businesses, offices have also settled into the city, creating even more job opportunities.",
+			DESC: "Being the hub for trade, commerce, finance, technology, medical<br>tourism, hospitality, real estate, tourism, education, and industry<br>in Western Visayas, Iloilo without a doubt has plenty of jobs to<br>choose from. A number of BPOs, businesses, offices have also<br>settled into the city, creating even more job opportunities.",
 			TILES: [
 				 {caption: "Iloilo Business Park", res: "/Resources by city/Iloilo/Pics_Employment/CityIloilo_Employment01.jpg"},
 				 {caption: "Startek Office, Iloilo", res: "/Resources by city/Iloilo/Pics_Employment/CityIloilo_Employment02.jpg"},
@@ -648,7 +648,7 @@ var CITY_PAGE_TILES = {
 			]
 		},
 		HOUSING: {
-			DESC: "Housing in Iloilo is similar to what you’ll find in Metro Manila in terms of quality and affordability, although prices in Iloilo are a few thousand pesos cheaper on average. Iloilo offers plenty of various residential locations from the simple to the grand.",
+			DESC: "Housing in Iloilo is similar to what you’ll find in Metro Manila in<br>terms of quality and affordability, although prices in Iloilo are a<br>few thousand pesos cheaper on average. Iloilo offers plenty of<br>various residential locations from the simple to the grand.",
 			TILES: [
 				 {caption: "Lumina Homes, Socialized Housing", res: "/Resources by city/Iloilo/Pics_Housing/CityIloilo_Housing01.jpg"},
 				 {caption: "Camella Homes, Iloilo", res: "/Resources by city/Iloilo/Pics_Housing/CityIloilo_Housing02.jpg"},
@@ -656,7 +656,7 @@ var CITY_PAGE_TILES = {
 			]
 		},
 		HEALTH: {
-			DESC: "Iloilo city has high quality medical facilities and services that have made it known to provide excellent health and medical care to its citizens. There are a couple of first-class hospitals located within the city such as The Medical City Iloilo and QualiMed Hospital.",
+			DESC: "Iloilo city has high quality medical facilities and services that<br>have made it known to provide excellent health and medical<br>care to its citizens. There are a couple of first-class hospitals<br>located within the city such as The Medical City Iloilo and<br>QualiMed Hospital.",
 			TILES: [
 				 {caption: "Iloilo Mission Hospital", res: "/Resources by city/Iloilo/Pics_Health/CityIloilo_Health01.jpg"},
 				 {caption: "Savior Hospital, Iloilo", res: "/Resources by city/Iloilo/Pics_Health/CityIloilo_Health02.jpg"},
@@ -664,7 +664,7 @@ var CITY_PAGE_TILES = {
 			]
 		},
 		EDUCATION: {
-			DESC: "Iloilo City is known as the educational center of the Western Visayas region, having ten universities, 88 private schools, and 52 public schools.  The city is also known for its high literacy rate of approximately 95%, and its high talent availability among the city’s fresh graduates. ",
+			DESC: "Iloilo City is known as the educational center of the Western<br>Visayas region, having ten universities, 88 private schools, and 52<br>public schools.  The city is also known for its high literacy rate of<br>approximately 95%, and its high talent availability among the<br>city’s fresh graduates. ",
 			TILES: [
 				 {caption: "West Visayas State University", res: "/Resources by city/Iloilo/Pics_Education/CityIloilo_Education01.jpg"},
 				 {caption: "University of the Philippines, Visayas", res: "/Resources by city/Iloilo/Pics_Education/CityIloilo_Education02.jpg"},
@@ -672,7 +672,7 @@ var CITY_PAGE_TILES = {
 			]
 		},
 		INFRASTRUCTURE: {
-			DESC: "Iloilo has some of the strongest, high quality infrastructure in the Philippines. Most of the quality and variety of utilities like electricity, water, cellular networks, internet providers, are offered in Iloilo City. The city also has several luxury locations like business districts, concert halls, and sport complexes, constructed for the community to engage in work or recreation.",
+			DESC: "Iloilo has some of the strongest, high quality infrastructure in the<br>Philippines. Most of the quality and variety of utilities like<br>electricity, water, cellular networks, internet providers, are<br>offered in Iloilo City. The city also has several luxury locations like<br>business districts, concert halls, and sport complexes,<br>constructed for the community to engage in work or recreation.",
 			TILES: [
 				 {caption: "Iloilo Convention Center", res: "/Resources by city/Iloilo/Pics_Infrastructure/CityIloilo_Infra01.jpg"},
 				 {caption: "Iloilo Sports Complex", res: "/Resources by city/Iloilo/Pics_Infrastructure/CityIloilo_Infra02.jpg"},
@@ -680,7 +680,7 @@ var CITY_PAGE_TILES = {
 			]
 		},
 		TRANSPORTATION: {
-			DESC: "Iloilo has a wide range of transportation modes available to its citizens. It has the usual tricycles, jeepneys, taxis and buses. Unique to the city is the passad jeepney which has fixed routes only within the city. Iloilo also has international and domestic branches of airports and seaports.",
+			DESC: "Iloilo has a wide range of transportation modes available to its<br>citizens. It has the usual tricycles, jeepneys, taxis and buses.<br>Unique to the city is the passad jeepney which has fixed routes<br>only within the city. Iloilo also has international and domestic<br>branches of airports and seaports.",
 			TILES: [
 				 {caption: "Port of Iloilo", res: "/Resources by city/Iloilo/Pics_Transpo/CityIloilo_Transpo01.jpg"},
 				 {caption: "Passad Jeepney", res: "/Resources by city/Iloilo/Pics_Transpo/CityIloilo_Transpo02.jpg"},
@@ -688,7 +688,7 @@ var CITY_PAGE_TILES = {
 			]
 		},
 		LOCALGOV: {
-			DESC: "The government in Iloilo City has worked hard to raise the city's condition, especially its economy, often promoting businesses to invest in the city by providing incentives like free issuance of permits and licences. The local government also makes efforts to maintain the well-being of its people through programs and maintenance of city property and services.",
+			DESC: "The government in Iloilo City has worked hard to raise the city's<br>condition, especially its economy, often promoting businesses to<br>invest in the city by providing incentives like free issuance of<br>permits and licences. The local government also makes efforts<br>to maintain the well-being of its people through programs and<br>maintenance of city property and services.",
 			TILES: [
 				 {caption: "City Hall", res: "/Resources by city/Iloilo/Pics_LocalGovt/CityIloilo_LGU01.jpg"},
 				 {caption: "Providing farmers with equipment", res: "/Resources by city/Iloilo/Pics_LocalGovt/CityIloilo_LGU02.jpg"},
@@ -696,7 +696,7 @@ var CITY_PAGE_TILES = {
 			]
 		},
 		LEISURE: {
-			DESC: "The beautiful city of Iloilo has plenty of places you can enjoy. There are several parks and plazas with scenic views and places to shop. There are also the many tourist spots around the city that are just as enjoyable for locals. If you’re the intellectual type, there are lots of heritage destinations that offer tours.",
+			DESC: "The beautiful city of Iloilo has plenty of places you can enjoy.<br>There are several parks and plazas with scenic views and places<br>to shop. There are also the many tourist spots around the city<br>that are just as enjoyable for locals. If you’re the intellectual type,<br>there are lots of heritage destinations that offer tours.",
 			TILES: [
 				 {caption: "Waterworld Iloilo", res: "/Resources by city/Iloilo/Pics_Recreation/CityIloilo_Rec01.jpg"},
 				 {caption: "Plaza Libertad", res: "/Resources by city/Iloilo/Pics_Recreation/CityIloilo_Rec02.jpg"},
@@ -706,7 +706,7 @@ var CITY_PAGE_TILES = {
 	},
 	LEGAZPI: {
 		EMPLOYMENT: {
-			DESC: "With the construction of several business districts, Legazpi City was recognized as one of the up and coming IT-BPO centers in the Philippines, adding a number of opportunities to the already plentiful job landscape of the city. A variety of other employment opportunities are present in the form of agriculture and adventure tourism around Mount Mayon.",
+			DESC: "With the construction of several business districts, Legazpi City<br>was recognized as one of the up and coming IT-BPO centers in<br>the Philippines, adding a number of opportunities to the already<br>plentiful job landscape of the city. A variety of other employment<br>opportunities are present in the form of agriculture and<br>adventure tourism around Mount Mayon.",
 			TILES: [
 				 {caption: "Embarcadero IT Park", res: "/Resources by city/Legazpi/Pics_Employment/CityLegazpi_EmploymentTile01.jpg"},
 				 {caption: "Adventure Tourism at Mt. Mayon", res: "/Resources by city/Legazpi/Pics_Employment/CityLegazpi_EmploymentTile02.jpg"},
@@ -714,7 +714,7 @@ var CITY_PAGE_TILES = {
 			]
 		},
 		HOUSING: {
-			DESC: "Legazpi’s real estate landscape is quite diverse. The city has over 140 residential subdivisions and housing sites, as well as multiple places for rent. The city has also begun their planning and implementation of the construction of several condominium units, courtesy of Taft Property Ventures Development Corp.",
+			DESC: "Legazpi’s real estate landscape is quite diverse. The city has over<br>140 residential subdivisions and housing sites, as well as multiple<br>places for rent. The city has also begun their planning and<br>implementation of the construction of several condominium<br>units, courtesy of Taft Property Ventures Development Corp.",
 			TILES: [
 				 {caption: "Deca Homes", res: "/Resources by city/Legazpi/Pics_Housing/CityLegazpi_HousingTile01.jpg"},
 				 {caption: "Vista Land, Camella Legazpi", res: "/Resources by city/Legazpi/Pics_Housing/CityLegazpi_HousingTile02.jpg"},
@@ -722,7 +722,7 @@ var CITY_PAGE_TILES = {
 			]
 		},
 		HEALTH: {
-			DESC: "Legazpi City has accessible healthcare, having about ten major medical centers and clinics, with a couple more under construction. With the presence of two first-class hospitals, Ago Genreal Hospital and Aquinas University Hospital, Legazpi City can provide its citizens with basic medical care and more.",
+			DESC: "Legazpi City has accessible healthcare, having about ten major<br>medical centers and clinics, with a couple more under<br>construction. With the presence of two first-class hospitals, Ago<br>Genreal Hospital and Aquinas University Hospital, Legazpi City<br>can provide its citizens with basic medical care and more.",
 			TILES: [
 				 {caption: "Aquinas University Hospital", res: "/Resources by city/Legazpi/Pics_Health/CityLegazpi_HealthTile01.jpg"},
 				 {caption: "Legazpi City Hospital", res: "/Resources by city/Legazpi/Pics_Health/CityLegazpi_HealthTile02.jpg"},
@@ -730,7 +730,7 @@ var CITY_PAGE_TILES = {
 			]
 		},
 		EDUCATION: {
-			DESC: "Legazpi isn’t nicknamed the “City of Fun and Adventure” for nothing. There are the many festivals, malls, parks, and restaurants to enjoy, but the main attraction are the various adventures, tours, and scenic routes, you can indulge in around Mount Mayon.",
+			DESC: "Legazpi City is the center for education within the Bicol region<br>for having two quality universities: Bicol University and Aquinas<br>University of Legazpi. The city also has about sixty (60) primary<br>schools and thirty (30) secondary schools if you are looking for<br>stable education for your children from elementary to college.",
 			TILES: [
 				 {caption: "Bicol University", res: "/Resources by city/Legazpi/Pics_Education/CityLegazpi_EducationTile01.jpg"},
 				 {caption: "Aquinas University of Legazpi", res: "/Resources by city/Legazpi/Pics_Education/CityLegazpi_EducationTile02.jpg"},
@@ -738,7 +738,7 @@ var CITY_PAGE_TILES = {
 			]
 		},
 		INFRASTRUCTURE: {
-			DESC: "Like many provincial cities, Legazpi has managed to maintain many of its heritage buildings from colonial times. However, the city has also managed to keep up to date with the necessities: roads, transportation, utilities, and more. Legazpi City is especially commended for its waste management system and flood control.",
+			DESC: "Like many provincial cities, Legazpi has managed to maintain<br>many of its heritage buildings from colonial times. However, the<br>city has also managed to keep up to date with the necessities:<br>roads, transportation, utilities, and more. Legazpi City is<br>especially commended for its waste management system and flood control.",
 			TILES: [
 				 {caption: "St. Gregory the Great Cathedral", res: "/Resources by city/Legazpi/Pics_Infrastructure/CityLegazpi_InfraTile01.jpg"},
 				 {caption: "Embarcadero Mall Complex", res: "/Resources by city/Legazpi/Pics_Infrastructure/CityLegazpi_InfraTile02.jpg"},
@@ -746,7 +746,7 @@ var CITY_PAGE_TILES = {
 			]
 		},
 		TRANSPORTATION: {
-			DESC: "Legazpi City has the usual modes of transportation most Filipinos are accustomed to: tricycles, jeepneys, and taxicabs, all of which can get you anywhere in the city. Legazpi City also boasts an airport, a seaport, and most notably its award-winning integrated bus and PUV terminal: Legazpi Grand Central Terminal.",
+			DESC: "Legazpi City has the usual modes of transportation most<br>Filipinos are accustomed to: tricycles, jeepneys, and taxicabs, all<br>of which can get you anywhere in the city. Legazpi City also<br>boasts an airport, a seaport, and most notably its award-winning<br>integrated bus and PUV terminal: Legazpi Grand Central Terminal.",
 			TILES: [
 				 {caption: "Legazpi Grand Central Terminal", res: "/Resources by city/Legazpi/Pics_Transpo/CityLegazpi_TranspoTile01.jpg"},
 				 {caption: "Legazpi Airport", res: "/Resources by city/Legazpi/Pics_Transpo/CityLegazpi_TranspoTile02.jpg"},
@@ -754,7 +754,7 @@ var CITY_PAGE_TILES = {
 			]
 		},
 		LOCALGOV: {
-			DESC: "The government of Legazpi City does well in maintaining and managing the city’s well-being by continuously making efforts to promote its economy through business partnerships and Mount Mayon’s tourism, sustainability through livelihood programs, and citizen well-being through planned additions to health clinics and better waste management systems.",
+			DESC: "The government of Legazpi City does well in maintaining and<br>managing the city’s well-being by continuously making efforts to<br>promote its economy through business partnerships and Mount<br>Mayon’s tourism, sustainability through livelihood programs, and<br>citizen well-being through planned additions to health clinics<br>and better waste management systems.",
 			TILES: [
 				 {caption: "City Hall", res: "/Resources by city/Legazpi/Pics_LocalGovt/CityLegazpi_LGUTile01.jpg"},
 				 {caption: "Kabuhayan Livelihood Program, 2015", res: "/Resources by city/Legazpi/Pics_LocalGovt/CityLegazpi_LGUTile02.jpg"},
@@ -762,7 +762,7 @@ var CITY_PAGE_TILES = {
 			]
 		},
 		LEISURE: {
-			DESC: "Legazpi isn’t nicknamed the “City of Fun and Adventure” for nothing. While you can enjoy the usual recreational activities of a city, like parks, museums, malls, and festivals, the adventurous activities you can take part in at Mount Mayon is what makes Legazpi City unique.",
+			DESC: "Legazpi isn’t nicknamed the “City of Fun and Adventure” for<br>nothing. While you can enjoy the usual recreational activities of a<br>city, like parks, museums, malls, and festivals, the adventurous<br>activities you can take part in at Mount Mayon is what makes<br>Legazpi City unique.",
 			TILES: [
 				 {caption: "The Magayon Festival", res: "/Resources by city/Legazpi/Pics_Recreation/CityLegazpi_RecTile01.jpg"},
 				 {caption: "A fun ATV ride around Mt. Mayon", res: "/Resources by city/Legazpi/Pics_Recreation/CityLegazpi_RecTile02.jpg"},

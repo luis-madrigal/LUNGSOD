@@ -104,8 +104,8 @@ function displayDefault() {
 	var $header = $("<p>", {"class": "section5TextHeader"});
 	var $body = $("<p>", {"class": "section5TextBody"});
 
-	$header.append("WHAT'S IN A CATEGORY");
-	$body.append("Click on one of the categories on the left to find out what LUNGSOD’s Livability Index grades within each category.");
+	$header.append("WHAT'S IN A CATEGORY?");
+	$body.append("Click on one of the categories on<br> the left to find out what<br> LUNGSOD’s Livability Index grades<br> within each category.");
 
 	$(".wheelText").append($header);
 	$(".wheelText").append($body);
