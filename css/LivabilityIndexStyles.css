@@ -7,8 +7,8 @@
 .scoreCircle{
     border-radius: 50%;
 	border-width:70%;
-    width:17vw;
-    height:17vw;
+    width:14vw;
+    height:14vw;
     background-color: transparent;
     border: 1vw solid ;
 	
@@ -139,28 +139,28 @@
 }
 
 .section4Text{
-	padding-left: 17%;
-	padding-right: 17%;
+	padding-left: 25%;
+	padding-right: 25%;
 }
 
 .section4Header{
-	font-size: 3vw;
+	font-size: 2.5vw;
 	font-family: Korolev-Bold;
 }
 
 .section4Body{
-	font-size: 1.5vw;
+	font-size: 1.3vw;
 	font-family: WorkSans-Medium;
 }
 
 .section4ImgContainer{
-	padding-top: 4.5%;
-	padding-left: 11.5%;
-	padding-right: 11.5%;
+	padding-top: 10%;
+	padding-left: 15%;
+	padding-right: 15%;
 }
 
 .section4ImgDiv{
-	padding-left: 5%;
+	padding-left: 7%;
 	padding-right: 7%;
 }
 
@@ -177,8 +177,8 @@
 }
 
 .section5TextContainer{
-	padding-left: 17%;
-	padding-right: 17%;
+	padding-left: 25%;
+	padding-right: 25%;
 	padding-bottom: 7%;
 }
 
@@ -188,13 +188,13 @@
 }
 
 .section5Body{
-	font-size: 1.5vw;
+	font-size: 1.3vw;
 	font-family: WorkSans-Medium;
 }
 
 .wheelText{
 	padding: 15%;
-	margin-top: 2%;
+	margin-top: 7%;
 	color: white;
 	width: 100%;
 	vertical-align: middle;
@@ -202,8 +202,8 @@
 
 .circle-container {
     position: relative;
-    width: 28em;
-    height: 28em;
+    width: 30vw;
+    height: 30vw;
     padding: 8em;
     /*2.8em = 2em*1.4 (2em = half the width of a link with img, 1.4 = sqrt(2))*/
     
@@ -213,18 +213,18 @@
     display: block;
     position: absolute;
     top: 50%; left: 50%;
-    width: 8em; height: 8em;
+    width: 10vw; height: 12vw;
     margin: -2em;
 }
 .circle-container img { display: block; width: 100%; }
-#deg0 { transform: translate(14em); } /* 12em = half the width of the wrapper */
-#deg45 { transform: rotate(45deg) translate(14em) rotate(-45deg); }
-#deg90 { transform: rotate(90deg) translate(14em) rotate(-90deg); }
-#deg135 { transform: rotate(135deg) translate(14em) rotate(-135deg); }
-#deg180 { transform: translate(-14em); }
-#deg225 { transform: rotate(225deg) translate(14em) rotate(-225deg); }
-#deg270 { transform: rotate(270deg) translate(14em) rotate(-270deg); }
-#deg315 { transform: rotate(315deg) translate(14em) rotate(-315deg); }
+#deg0 { transform: translate(15vw); } /* 12em = half the width of the wrapper */
+#deg45 { transform: rotate(45deg) translate(15vw) rotate(-45deg); }
+#deg90 { transform: rotate(90deg) translate(15vw) rotate(-90deg); }
+#deg135 { transform: rotate(135deg) translate(15vw) rotate(-135deg); }
+#deg180 { transform: translate(-15vw); }
+#deg225 { transform: rotate(225deg) translate(15vw) rotate(-225deg); }
+#deg270 { transform: rotate(270deg) translate(15vw) rotate(-270deg); }
+#deg315 { transform: rotate(315deg) translate(15vw) rotate(-315deg); }
 
 .section5Text{
 	padding-top: 7%;
@@ -242,29 +242,26 @@
 }
 
 .section6TextContainer{
-	padding-left: 17%;
-/*	padding-right: 25%;*/
+	padding-left: 25%;
+	padding-right: 25%;
 	color: #2C91D3;
 }
 
 .section6Header{
-	font-size: 2.8vw;
+	font-size: 2.5vw;
 	font-family: Korolev-Bold;
 }
 
 .section6Body{
-	font-size: 1.54vw;
+	font-size: 1.4vw;
 	font-family: WorkSans-Medium;
-	padding-bottom: 1%;
 }
 
 .section6Text{
-	font-size: 2.5vw;
-	padding-left: 15%;
+	font-size: 2vw;
+	padding-left: 25%;
 	padding-right: 15%;
-	padding-top: 3%;
-	padding-bottom: 4%;
-	text-align: center;
+	padding-top: 4%;
 	color: #2C91D3;
 	font-family: WorkSans-Regular;
 }
@@ -427,7 +424,8 @@
 	background-image: url("../res/compare_city/Gradient background.jpg");
 	background-size: cover;
 	height: 100%;
-	padding-top: 6%;
+	background-color:#273848;
+	padding-top: 10%;
 	padding-bottom: 10%;
 	color: white;
 }

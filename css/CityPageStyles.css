@@ -114,6 +114,7 @@
 	background-image: url("../res/compare_city/Gradient background.jpg");
     background-size: cover;
 	height: 100%;
+	/*padding-bottom: 0;*/
 }
 
 .scoreCircle {
@@ -168,7 +169,6 @@
 }
 
 .wheelText{
-	padding: 15%;
 	margin-top: 8%;
 	color: white;
 	width: 100%;
@@ -189,6 +189,7 @@
 #collapsableContent{
 	background-image: url("../res/compare_city/Gradient background.jpg");
 	color:white;
+	padding: 0 !important;
 }
 
 #content{
@@ -279,6 +280,7 @@
     margin-bottom: 5%;
     margin-left: 15%;*/
     margin: 10%;
+    margin-top: 5%;
     /*margin-left: 4%;*/
     display: block;
     width: 65%;

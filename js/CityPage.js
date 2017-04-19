@@ -170,6 +170,10 @@ function hideTagContents(tag) {
 
 function displayTagInfo(id) {
 	$(".wheelText").empty();
+	$(".wheelText").css("padding", "0");
+	$(".wheelText").css("padding-top", "15%");
+	$(".wheelText").css("padding-left", "15%");
+	$(".wheelText").css("padding-right", "15%");
 
 	var $rect = $("<div>", {"class": "tagRectangle"});
 	var $header = $("<p>", {"class": "catHeader"});
@@ -185,6 +189,7 @@ function displayTagInfo(id) {
 	$body.append(TAGS[id].desc);
 	$lft.append("WHAT WE LOOK FOR");
 	$livIndexBtn.append("The Livability Index");
+	$livIndexBtn.css("margin-top", "5%");
 
 	$rect.css("background-color", TAGS[id].color);
 	$lft.css("color", TAGS[id].color);
@@ -206,6 +211,7 @@ function displayTagInfo(id) {
 
 function displayLivIndex() {
 	$(".wheelText").empty();
+	$(".wheelText").css("padding", "15%");
 
 	var $header = $("<p>", {"id": "catWheelHeader"});
 	var $body = $("<p>", {"id": "catWheelText"});
@@ -214,6 +220,7 @@ function displayLivIndex() {
 	$header.append("LIVABILITY SCORE");
 	$body.append("Click on the different livability categories<br>on the livability wheel to see why we gave<br>them the score they have.<br><br>You can also learn more about the math<br> behind our scoring system here.");
 	$livIndexBtn.append("The Livability Index");
+	$livIndexBtn.css("margin-top", "10%");
 
 	$(".wheelText").append($header);
 	$(".wheelText").append($body);
