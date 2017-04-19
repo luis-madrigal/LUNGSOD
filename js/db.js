@@ -315,65 +315,65 @@ var CITY_PAGE_TILES = {
 		EMPLOYMENT: {
 			DESC: "The rise of business establishments and financial institutions in the city have raised Butuan's economy to being one of the strongest in the country, earning it the reputation of being the commercial, industrial, and administrative center of the Caraga region. Besides these, Butuan also has plenty of employment opportunities in the agriculture, retail, and construction.",
 			TILES: [
-				 {caption: "", res: "/Resources by city/Butuan/Pics_Employment/CityButuan_EmploymentTile01.jpg"},
-				 {caption: "", res: "/Resources by city/Butuan/Pics_Employment/CityButuan_EmploymentTile02.jpg"},
-				 {caption: "", res: "/Resources by city/Butuan/Pics_Employment/CityButuan_EmploymentTile03.jpg"},
+				 {caption: "Development Bank of the Philippines", res: "/Resources by city/Butuan/Pics_Employment/CityButuan_EmploymentTile01.jpg"},
+				 {caption: "Retail business, Robinsons", res: "/Resources by city/Butuan/Pics_Employment/CityButuan_EmploymentTile02.jpg"},
+				 {caption: "Agriculture Industry", res: "/Resources by city/Butuan/Pics_Employment/CityButuan_EmploymentTile03.jpg"},
 			]
 		},
 		HOUSING: {
 			DESC: "Housing in Butuan is relatively cheap, with rent prices being half as cheap as those in Quezon City and similar cities. There is also a variety in the kinds of accommodations you can secure for yourself and your family. Butuan also has a useful resource for looking through real estate offers at: http://butuanproperty.com/",
 			TILES: [
-				 {caption: "", res: "/Resources by city/Butuan/Pics_Housing/CityButuan_HousingTile01.jpg"},
-				 {caption: "", res: "/Resources by city/Butuan/Pics_Housing/CityButuan_HousingTile02.jpg"},
-				 {caption: "", res: "/Resources by city/Butuan/Pics_Housing/CityButuan_HousingTile03.jpg"},
+				 {caption: "Golden Ribbon Apartments", res: "/Resources by city/Butuan/Pics_Housing/CityButuan_HousingTile01.jpg"},
+				 {caption: "Camella Homes, Butuan", res: "/Resources by city/Butuan/Pics_Housing/CityButuan_HousingTile02.jpg"},
+				 {caption: "West Highland Residential", res: "/Resources by city/Butuan/Pics_Housing/CityButuan_HousingTile03.jpg"},
 			]
 		},
 		HEALTH: {
 			DESC: "Butuan's healthcare is focused on addressing malnutrition in the city by maintaining quality nutrition activities, food assistance, nutrition education, and livelihiood assistance. In terms of quality medical care, Butuan still lacks staff and facilities to be able to match up to cities in Metro Manila.",
 			TILES: [
-				 {caption: "", res: "/Resources by city/Butuan/Pics_Health/CityButuan_HealthTile01.jpg"},
-				 {caption: "", res: "/Resources by city/Butuan/Pics_Health/CityButuan_HealthTile02.jpg"},
-				 {caption: "", res: "/Resources by city/Butuan/Pics_Health/CityButuan_HealthTile03.jpg"},
+				 {caption: "Butuan Medical Center", res: "/Resources by city/Butuan/Pics_Health/CityButuan_HealthTile01.jpg"},
+				 {caption: "Manuel J. Santos Hospital", res: "/Resources by city/Butuan/Pics_Health/CityButuan_HealthTile02.jpg"},
+				 {caption: "Butuan Doctors Hospital", res: "/Resources by city/Butuan/Pics_Health/CityButuan_HealthTile03.jpg"},
 			]
 		},
 		EDUCATION: {
 			DESC: "Butuan is known for its teachers. In schools like Butuan Central Elementary School, they are greatly experienced in specialization techniques and often participate in seminars and workshops to better their teaching skills. The city also has two universities: Father Saturnino Urios University and Caraga State University.",
 			TILES: [
-				 {caption: "", res: "/Resources by city/Butuan/Pics_Education/CityButuan_EducationTile01.jpg"},
-				 {caption: "", res: "/Resources by city/Butuan/Pics_Education/CityButuan_EducationTile02.jpg"},
-				 {caption: "", res: "/Resources by city/Butuan/Pics_Education/CityButuan_EducationTile03.jpg"},
+				 {caption: "Caraga State University", res: "/Resources by city/Butuan/Pics_Education/CityButuan_EducationTile01.jpg"},
+				 {caption: "Father Saturnino Urios University", res: "/Resources by city/Butuan/Pics_Education/CityButuan_EducationTile02.jpg"},
+				 {caption: "Butuan Central Elementary School", res: "/Resources by city/Butuan/Pics_Education/CityButuan_EducationTile03.jpg"},
 			]
 		},
 		INFRASTRUCTURE: {
 			DESC: "Butuan City has many of the utilities normally available to a highly urbanized city, though it may lack the number and variety of options that other cities do when it comes to luxuries like internet and cable TV. The city is currently undergoing several improvements to its infrastructure under the new mayor.",
 			TILES: [
-				 {caption: "", res: "/Resources by city/Butuan/Pics_Infrastructure/CityButuan_InfraTile01.jpg"},
-				 {caption: "", res: "/Resources by city/Butuan/Pics_Infrastructure/CityButuan_InfraTile02.jpg"},
-				 {caption: "", res: "/Resources by city/Butuan/Pics_Infrastructure/CityButuan_InfraTile0.jpg"}
+				 {caption: "Urios Gym", res: "/Resources by city/Butuan/Pics_Infrastructure/CityButuan_InfraTile01.jpg"},
+				 {caption: "Banza Church Ruins", res: "/Resources by city/Butuan/Pics_Infrastructure/CityButuan_InfraTile02.jpg"},
+				 {caption: "Ramon Magsaysay Bridge", res: "/Resources by city/Butuan/Pics_Infrastructure/CityButuan_InfraTile0.jpg"}
 			]
 		},
 		TRANSPORTATION: {
 			DESC: "Butuan has all the typical modes of transportation that a city needs for both public and private commuting. These are taxicabs, tricycles, buses, vans, and jeepneys. Unique to the city are its orange tricycles which can fit 6-7 passengers. Butuan also has its own seaport and airport as other modes of transportation.",
 			TILES: [
-				 {caption: "", res: "/Resources by city/Butuan/Pics_Transpo/CityButuan_TranspoTile01.jpg"},
-				 {caption: "", res: "/Resources by city/Butuan/Pics_Transpo/CityButuan_TranspoTile02.jpg"},
-				 {caption: "", res: "/Resources by city/Butuan/Pics_Transpo/CityButuan_TranspoTile03.jpg"},
+				 {caption: "New Integrated Van Terminal", res: "/Resources by city/Butuan/Pics_Transpo/CityButuan_TranspoTile01.jpg"},
+				 {caption: "Butuan orange tricycle", res: "/Resources by city/Butuan/Pics_Transpo/CityButuan_TranspoTile02.jpg"},
+				 {caption: "Butuan National Airport", res: "/Resources by city/Butuan/Pics_Transpo/CityButuan_TranspoTile03.jpg"},
 			]
 		},
 		LOCALGOV: {
 			DESC: "The government in Butuan City recently elected new officials in July of 2016, and the new mayor Ronnie Vicente Conde Lagnada is already planning ten new projects to improve the condition of the city. These projects are primarily focused on improving good governance, city cleanliness,  and city security.",
 			TILES: [
-				 {caption: "", res: "/Resources by city/Butuan/Pics_LocalGovt/CityButuan_LGUTile01.jpg"},
-				 {caption: "", res: "/Resources by city/Butuan/Pics_LocalGovt/CityButuan_LGUTile02.jpg"},
-				 {caption: "", res: "/Resources by city/Butuan/Pics_LocalGovt/CityButuan_LGUTile03.jpg"},
+				 {caption: "Government performance review", res: "/Resources by city/Butuan/Pics_LocalGovt/CityButuan_LGUTile01.jpg"},
+				 {caption: "Skills development training", res: "/Resources by city/Butuan/Pics_LocalGovt/CityButuan_LGUTile02.jpg"},
+				 {caption: "Tree planting in Butuan", res: "/Resources by city/Butuan/Pics_LocalGovt/CityButuan_LGUTile03.jpg"},
 			]
 		},
 		LEISURE: {
 			DESC: "Butuan City has all the usual recreational areas a city has: malls, restaurants, hotels, parks, and plazas. There are several heritage landmarks and museums within the city for those who are looking to experience culture and history. The city also holds six festivals throughout the year.",
 			TILES: [
-				 {caption: "", res: "/Resources by city/Butuan/Pics_Recreation/CityButuan_RecTile01.jpg"},
-				 {caption: "", res: "/Resources by city/Butuan/Pics_Recreation/CityButuan_RecTile02.jpg"},
-				 {caption: "", res: "/Resources by city/Butuan/Pics_Recreation/CityButuan_RecTile03.jpg"},
+				 {caption: "Bood Promontory Eco-Park", res: "/Resources by city/Butuan/Pics_Recreation/CityButuan_RecTile01.jpg"},
+				 {caption: "Balangay Festival", res: "/Resources by city/Butuan/Pics_Recreation/CityButuan_RecTile02.jpg"},
+				 {caption: "Butuan National Museum", res: "/Resources by city/Butuan/Pics_Recreation/CityButuan_RecTile03.jpg"},
 			]
 		},
 	},
