@@ -25,7 +25,7 @@
 #carouselCaption{
 	position: absolute;
 	text-align: center;
-	top: 5%;
+	top: 9%;
 	/*-webkit-transform: translate(0%, -800%); */
 	color: white;
 	width: 100%;
@@ -78,27 +78,30 @@
 }
 
 #aboutContent{
-	margin-bottom: 5%;
+	margin-bottom: 2.5%;
 }
 
 #aboutImage{
 	width: 100%;
 	margin-top: -1%;
+	/*padding-bottom: -5%;*/
 }
 
 #aboutHeader{
 	color: #2C98DA;
 	font-family: Korolev-Light;
 	/*font-size: 6.7vw;*/
+	letter-spacing: 0.1vw;
 	width: 100%;
 	text-align: center;	
 	margin-top: 2%;
+	padding-bottom: 0.5%;
 }
 
 .aboutText{
 	color: #2C98DA;
 	font-family: WorkSans-Regular;
-	font-size: 1vw;
+	font-size: 1.2vw;
 	/*width:100%;*/
 	margin-top: -1%;
 	column-count: 2;
@@ -173,7 +176,8 @@
 }
 
 #catWheelHeader{
-	font-size: 2.3vw;
+	font-size: 2.8vw;
+	letter-spacing: 0.1vw;
 	font-family: WorkSans-Light;
 }
 
@@ -183,7 +187,7 @@
 }
 
 #collapsableContent{
-	background-color: #183449;
+	background-image: url("../res/compare_city/Gradient background.jpg");
 	color:white;
 }
 
@@ -201,13 +205,13 @@
 
 #contentBody{
 	font-family: WorkSans-Light;
-	font-size: 1vw;
+	font-size: 1.3vw;
 	width: 70%;
 	padding-left: .8%;
 }
 
 #compareCity{
-	background-image: url("../res/CityPic-withOutline.jpg");
+	background-image: url("../res/Resources by city/CompareCitiesBG.jpg");
 	background-size: auto 100%;
 	background-repeat: no-repeat;
 }
@@ -216,17 +220,23 @@
 	height: 100%;
 	width: 100%;
 	color: white;
-	font-size: 3vw;
+	font-size: 3.5vw;
 	font-family: WorkSans-Regular;
 	text-align: center;
 	padding: 20%;
-	margin-top: -10%;
+	margin-top: -15%;
+	/*top: 0;*/
 }
 
 #compareSearch{
-	margin-top: -15%;
-	margin-right: 35%;
-	width: 30%;
+	margin-top: -17%;
+	margin-right: 28.5%;
+	width: 43.3%;
+}
+
+#whiteSkyline{
+	width: 100%;
+	margin-top: -20%;
 }
 
 #migrationText{
@@ -441,15 +451,12 @@
 
 .fullCircle{
     border-radius: 50%;
-    width:20%;
-    height:19.4%;
+    width:6vw;
+    height:6vw;
     background-color: #FF6985;
     border: .8vw solid;
     border-color: #FF6985;
     color: white;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     text-align: center;
     font-size: 3vw;
     font-family: Korolev-Heavy;
@@ -507,7 +514,7 @@
 .catBody{
 	font-family: WorkSans-Light;
 	font-size: 1.4vw;
-	width: 85%;
+	width: 100%;
 }
 
 .lookForText{
