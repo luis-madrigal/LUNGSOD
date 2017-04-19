@@ -114,9 +114,19 @@
 	padding-right: 8%;
 }
 
+#img2{
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+#img3{
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
 .section3ImgContainer{
-	padding-left: 20%;
-	padding-right: 20%;
+	padding-left: 10%;
+	padding-right: 10%;
 	padding-top: 5%;
 }
 
@@ -346,12 +356,12 @@
 }
 
 #section3CategoryText{
-	margin-top: 18.8%;	
+	margin-top: 13.4%;	
 	font-family: WorkSans-Light;
 }
 
 #section3RatingText{
-	margin-top: 9%;	
+	margin-top: 13.7%;	
 	font-family: WorkSans-Light;
 }
 
