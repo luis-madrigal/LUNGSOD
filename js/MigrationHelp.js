@@ -162,12 +162,22 @@ function initTagDesc(dest, tag) {
 			}
 		}
 		$contact.append(dbTiles[i].desc.contact);
-		$link.append(dbTiles[i].desc.link);
-		if(dbTiles[i].desc.link) {
-			if(dbTiles[i].desc.link.substring(0, 4) != "http")
-				$link.attr("href", "http://"+dbTiles[i].desc.link);
+
+		var link = null;
+		if(dbTiles[i].desc.link && dbTiles[i].desc.link.text) {
+			$link.append(dbTiles[i].desc.link.text);
+			$link.css("font-size", dbTiles[i].desc.link.customSize)
+			link = dbTiles[i].desc.link.text;
+		} else {
+			$link.append(dbTiles[i].desc.link);
+			link = dbTiles[i].desc.link;
+		}
+
+		if(link) {
+			if(link.substring(0, 4) != "http")
+				$link.attr("href", "http://"+link);
 			else
-				$link.attr("href", dbTiles[i].desc.link);
+				$link.attr("href", link);
 		}
 
 		$textDiv.append($header);

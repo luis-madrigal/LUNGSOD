@@ -218,26 +218,55 @@
 }
 
 #compareText{
-	height: 100%;
 	width: 100%;
 	color: white;
 	font-size: 3.5vw;
 	font-family: WorkSans-Regular;
 	text-align: center;
 	padding: 20%;
+	padding-bottom: 16%;
 	margin-top: -15%;
-	/*top: 0;*/
 }
 
-#compareSearch{
-	margin-top: -17%;
-	margin-right: 28.5%;
-	width: 43.3%;
+#compareSearch {
+    color: #7A7A7A;
+    margin: 0.5% auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 10%;
+    margin-top: -14%;
+	margin-right: 23.5%;
+	width: 53.3%;
+}
+
+#compareSearch .input-group-addon {
+    background: #51BBC8 !important;
+    border: 0px;
+    border-radius: 0px;
+    font-family: WorkSans-Light;
+}
+
+.input-group-addon {
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+}
+
+#compareSearch .form-control {
+    font-size: 1.3vw;
+    font-family: WorkSans-Light;
+    height: 100%;
+    border-radius: 0px;
+    border-right: 0;
+    box-shadow: 0 0 0;
+    border-right: 48px solid;
+    border-image: linear-gradient(to left, rgba(81, 187, 200,0.7), rgba(0, 0, 0, 0)) 1 100%;
 }
 
 #whiteSkyline{
 	width: 100%;
-	margin-top: -20%;
+	margin-top: -15%;
 }
 
 #migrationText{
