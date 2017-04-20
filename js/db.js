@@ -137,21 +137,21 @@ var TAGS = {
 };
 
 var CITIES = {
-	SANTA_ROSA: new City("Santa Rosa", "Laguna", ISLAND_GROUPS.LUZON, 9.4, "res/Resources by city/Santa Rosa", [9.5, 9.5, 9, 9, 9, 10, 9.5, 10]),
-	BACOLOD: new City("Bacolod", "Negros Occidental", ISLAND_GROUPS.VISAYAS, 8.7, "res/Resources by city/Bacolod", [9, 8, 7, 9, 9, 9, 9, 10]),
-	CAGAYAN_DE_ORO: new City("Cagayan De Oro", "Misamis Oriental", ISLAND_GROUPS.MINDANAO, 9.1, "res/Resources by city/Cagayan de Oro", [9.5, 9, 9, 9.5, 9, 9, 8.5, 9]),
-	ILIGAN: new City("Iligan", "Lanao Del Norte", ISLAND_GROUPS.MINDANAO, 8.4, "res/Resources by city/Iligan", [9, 8, 7.5, 8.5, 8.5, 8.5, 8, 9]),
-	ILOILO: new City("Iloilo", "Cebu", ISLAND_GROUPS.VISAYAS, 9.4, "res/Resources by city/Iloilo", [9.5, 9.5, 9, 9, 10, 9, 9.5, 10]),
-	BUTUAN: new City("Butuan", "Caraga", ISLAND_GROUPS.MINDANAO, 8.4, "res/Resources by city/Butuan", [8.5, 8, 8, 9, 8.5, 8.5, 8, 9]),
+	SANTA_ROSA: new City("Santa Rosa", "Laguna", ISLAND_GROUPS.LUZON, 9.4, "res/Resources by city/Santa Rosa", [9.5, 9.5, 9, 9, 9, 10, 9.5, 10], false),
+	BACOLOD: new City("Bacolod", "Negros Occidental", ISLAND_GROUPS.VISAYAS, 8.7, "res/Resources by city/Bacolod", [9, 8, 7, 9, 9, 9, 9, 10], true),
+	CAGAYAN_DE_ORO: new City("Cagayan De Oro", "Misamis Oriental", ISLAND_GROUPS.MINDANAO, 9.1, "res/Resources by city/Cagayan de Oro", [9.5, 9, 9, 9.5, 9, 9, 8.5, 9], false),
+	ILIGAN: new City("Iligan", "Lanao Del Norte", ISLAND_GROUPS.MINDANAO, 8.4, "res/Resources by city/Iligan", [9, 8, 7.5, 8.5, 8.5, 8.5, 8, 9], true),
+	ILOILO: new City("Iloilo", "Cebu", ISLAND_GROUPS.VISAYAS, 9.4, "res/Resources by city/Iloilo", [9.5, 9.5, 9, 9, 10, 9, 9.5, 10], true),
+	BUTUAN: new City("Butuan", "Caraga", ISLAND_GROUPS.MINDANAO, 8.4, "res/Resources by city/Butuan", [8.5, 8, 8, 9, 8.5, 8.5, 8, 9], true),
 	// TARLAC: new City("Tarlac", "Tarlac", ISLAND_GROUPS.LUZON, 8.4, "res/Resources by city/Tarlac", [8, 8.5, 8, 9, 8.5, 8.5, 8, 8.5]),
-	LEGAZPI: new City("Legazpi", "Albay", ISLAND_GROUPS.VISAYAS, 8.8, "res/Resources by city/Legazpi", [8, 8.5, 8.5, 9, 9, 10, 8.5, 9]),
-	DUMAGUETE: new City("Dumaguete", "Negros Oriental", ISLAND_GROUPS.VISAYAS, 8.8, "res/Resources by city/Dumaguete", [9, 9, 9, 9.5, 8, 8.5, 9, 8.5]),
+	LEGAZPI: new City("Legazpi", "Albay", ISLAND_GROUPS.LUZON, 8.8, "res/Resources by city/Legazpi", [8, 8.5, 8.5, 9, 9, 10, 8.5, 9], true),
+	DUMAGUETE: new City("Dumaguete", "Negros Oriental", ISLAND_GROUPS.VISAYAS, 8.8, "res/Resources by city/Dumaguete", [9, 9, 9, 9.5, 8, 8.5, 9, 8.5], true),
 	// BATANGAS: new City("Batangas", "Batangas", ISLAND_GROUPS.LUZON, 8.3, "res/Resources by city/Batangas", [8, 7.5, 7.5, 8.5, 9, 8, 8.5, 9]),
 	// PUERTO_PRINCESA: new City("Puerto Princesa", "Palawan", ISLAND_GROUPS.LUZON, 8, "res/Resources by city/Puerto Princesa", [6, 7, 7, 7.5, 9, 9, 9, 9]),
 	// OLONGAPO: new City("Olongapo", "Zambales", ISLAND_GROUPS.LUZON, 9.3, "res/Resources by city/Olongapo", [9, 9, 10, 8.5, 9.5, 9, 9.5, 10]),
 	// TACLOBAN: new City("Tacloban", "Leyte", ISLAND_GROUPS.VISAYAS, 8.6, "res/Resources by city/Tacloban", [9, 9, 9, 9, 7, 8.5, 9, 8]),
-	ZAMBOANGA: new City("Zamboanga", "Zamboanga", ISLAND_GROUPS.MINDANAO, 8.8, "res/Resources by city/Zamboanga", [8.5, 8.5, 8.5, 8.5, 9, 9, 9, 9]),
-	GENERAL_SANTOS: new City("General Santos", "South Cotabato", ISLAND_GROUPS.MINDANAO, 8.4, "res/Resources by city/General Santos", [8.5, 7, 8.5, 9, 9, 8, 8.5, 9])
+	ZAMBOANGA: new City("Zamboanga", "Zamboanga", ISLAND_GROUPS.MINDANAO, 8.8, "res/Resources by city/Zamboanga", [8.5, 8.5, 8.5, 8.5, 9, 9, 9, 9], true),
+	GENERAL_SANTOS: new City("General Santos", "South Cotabato", ISLAND_GROUPS.MINDANAO, 8.4, "res/Resources by city/General Santos", [8.5, 7, 8.5, 9, 9, 8, 8.5, 9], true)
 };
 
 var DESCRIPTIONS = {
@@ -1063,8 +1063,8 @@ var MIGRATION_HELP_TILES = {
 		},
 		LOCALGOV: {
 			TILES: [
-				 {desc: {header: "LIST OF ILIGAN GOVERNMENT SERVICES", body: ["Iligan City Hall, Buhanginan Hills, Palao Iligan City"], contact: "(063) 224 2312 / (+63) 063 221 4326", link: "www.iligan.gov.ph/services"}, res: "/migration_help/Iligan/Pics_LocalGovt/lgu1.jpg"},
-				 {desc: {header: "PUBLIC EMPLOYMENT SERVICE OFFICE (PESO)", body: ["Integrated Bus & Jeepney Terminal, Tambo Hinaplanon, Iligan City"], contact: "(063) 221 4347"}, res: "/migration_help/Iligan/Pics_LocalGovt/lgu2.jpg"},
+				 {desc: {header: "LIST OF ILIGAN<br>GOVERNMENT SERVICES", body: ["Iligan City Hall, Buhanginan Hills, Palao Iligan City"], contact: "(063) 224 2312 / (+63) 063 221 4326", link: "www.iligan.gov.ph/services"}, res: "/migration_help/Iligan/Pics_LocalGovt/lgu1.jpg"},
+				 {desc: {header: "PUBLIC EMPLOYMENT<br>SERVICE OFFICE (PESO)", body: ["Integrated Bus & Jeepney Terminal, Tambo Hinaplanon, Iligan City"], contact: "(063) 221 4347"}, res: "/migration_help/Iligan/Pics_LocalGovt/lgu2.jpg"},
 				 {desc: {header: "LIVELIHOOD ASSISTANCE", body: ["Iligan City Hall, Buhanginan Hills, Palao Iligan City"], contact: "(063) 224 2312 / (+63) 063 221 4326", link: "www.tinyurl.com/livelihoodassistance"}, res: "/migration_help/Iligan/Pics_LocalGovt/lgu3.jpg"}
 			]
 		}
@@ -1114,7 +1114,7 @@ var MIGRATION_HELP_TILES = {
 			TILES: [
 				 {desc: {header: "SANTA ROSA IT PARK", body: ["San Jose, Santa Rosa"], contact: "(032) 841 5825"}, res: "/migration_help/Santa Rosa/Pics_Employment/employment1.jpg"},
 				 {desc: {header: "A DIRECTORY OF BUSINESSES", link: "http://tinyurl.com/santarosacompanies"}, res: "/migration_help/Santa Rosa/Pics_Employment/employment2.jpg"},
-				 {desc: {header: "UBISOFT PHILIPPINES", body: ["E005/E101 De La Salle University, Science & Technology Complex, Laguna Boulevard, LTI Spine Road Barangays Biñan and Malamig Biñan City, Laguna"], link: "www.ubisoft.com/en-us/studio/philippines.aspx"}, res: "/migration_help/Santa Rosa/Pics_Employment/employment3.jpg"},
+				 {desc: {header: "UBISOFT PHILIPPINES", contact: "E005/E101 De La Salle University, Science & Technology Complex, Laguna Boulevard, LTI Spine Road Barangays Biñan and Malamig Biñan City, Laguna", link: {text: "www.ubisoft.com/en-us/studio/philippines.aspx", customSize: "0.9vw"}}, res: "/migration_help/Santa Rosa/Pics_Employment/employment3.jpg"},
 			]
 		},
 		HOUSING: {
@@ -1127,7 +1127,7 @@ var MIGRATION_HELP_TILES = {
 		LOCALGOV: {
 			TILES: [
 				 {desc: {header: "JOB MATCHING", body: ["J.P Rizal BLVD. Brgy. Malusak, Santa Rosa"], contact: "(049) 530 0015", link: "www.santarosacity.gov.ph"}, res: "/migration_help/Santa Rosa/Pics_LocalGovt/lgu1.jpg"},
-				 {desc: {header: "EMPLOYMENT AND INVESTMENT", body: ["Calle Barcelona, Santa Rosa"], contact: "(049) 519 4000"}, res: "/migration_help/Santa Rosa/Pics_LocalGovt/lgu2and3.jpg"},
+				 {desc: {header: "EMPLOYMENT AND INVESTMENT", body: ["Calle Barcelona, Santa Rosa"], contact: "(049) 519 4000", link: "www.santarosacity.gov.ph/invest-in-santa-rosa/investment-profile/"}, res: "/migration_help/Santa Rosa/Pics_LocalGovt/lgu2and3.jpg"},
 				 {desc: {header: "LIST OF GOVERNMENT SERVICES", body: ["Calle Barcelona, Santa Rosa"], contact: "(049) 519 4000", link: "http://santarosacity.gov.ph/live-in-santa-rosa/permits-and-clearances/#"}, res: "/migration_help/Santa Rosa/Pics_LocalGovt/lgu2and3.jpg"}
 			]
 		}
@@ -1135,9 +1135,9 @@ var MIGRATION_HELP_TILES = {
 	ZAMBOANGA: {
 		EMPLOYMENT: {
 			TILES: [
-				 {desc: {header: "MAJOR INDUSTRIES IN ZAMBOANGA CITY", link: "www.tinyurl.com/zamboangamajorindustries"}, res: "/migration_help/Zamboanga/Pics_Employment/employment1.jpg"},
-				 {desc: {header: "ZAMBOANGA FREEPORT AUTHORITY (ZFA)", body: ["Zamboanga City Special Economic Zone Authority, Zamboanga City"], contact: "(63) 992 2012", link: "www.zfa.gov.ph"}, res: "/migration_help/Zamboanga/Pics_Employment/employment2.jpg"},
-				 {desc: {header: "HIRED TARGET RECRUITMENT AGENCY", body: ["MCLL Highway, Putik, Zamboanga City"], contact: "(062) 926 0013"}, res: "/migration_help/Zamboanga/Pics_Employment/employment3.jpg"},
+				 {desc: {header: "MAJOR INDUSTRIES IN<br>ZAMBOANGA CITY", link: "www.tinyurl.com/zamboangamajorindustries"}, res: "/migration_help/Zamboanga/Pics_Employment/employment1.jpg"},
+				 {desc: {header: "ZAMBOANGA FREEPORT<br>AUTHORITY (ZFA)", body: ["Zamboanga City Special Economic Zone Authority, Zamboanga City"], contact: "(63) 992 2012", link: "www.zfa.gov.ph"}, res: "/migration_help/Zamboanga/Pics_Employment/employment2.jpg"},
+				 {desc: {header: "HIRED TARGET<br>RECRUITMENT AGENCY", body: ["MCLL Highway, Putik, Zamboanga City"], contact: "(062) 926 0013"}, res: "/migration_help/Zamboanga/Pics_Employment/employment3.jpg"},
 			]
 		},
 		LOCALGOV: {
