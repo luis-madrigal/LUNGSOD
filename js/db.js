@@ -141,7 +141,7 @@ var CITIES = {
 	BACOLOD: new City("Bacolod", "Negros Occidental", ISLAND_GROUPS.VISAYAS, 8.7, "res/Resources by city/Bacolod", [9, 8, 7, 9, 9, 9, 9, 10], true),
 	CAGAYAN_DE_ORO: new City("Cagayan De Oro", "Misamis Oriental", ISLAND_GROUPS.MINDANAO, 9.1, "res/Resources by city/Cagayan de Oro", [9.5, 9, 9, 9.5, 9, 9, 8.5, 9], false),
 	ILIGAN: new City("Iligan", "Lanao Del Norte", ISLAND_GROUPS.MINDANAO, 8.4, "res/Resources by city/Iligan", [9, 8, 7.5, 8.5, 8.5, 8.5, 8, 9], true),
-	ILOILO: new City("Iloilo", "Cebu", ISLAND_GROUPS.VISAYAS, 9.4, "res/Resources by city/Iloilo", [9.5, 9.5, 9, 9, 10, 9, 9.5, 10], true),
+	ILOILO: new City("Iloilo", "Iloilo", ISLAND_GROUPS.VISAYAS, 9.4, "res/Resources by city/Iloilo", [9.5, 9.5, 9, 9, 10, 9, 9.5, 10], true),
 	BUTUAN: new City("Butuan", "Caraga", ISLAND_GROUPS.MINDANAO, 8.4, "res/Resources by city/Butuan", [8.5, 8, 8, 9, 8.5, 8.5, 8, 9], true),
 	// TARLAC: new City("Tarlac", "Tarlac", ISLAND_GROUPS.LUZON, 8.4, "res/Resources by city/Tarlac", [8, 8.5, 8, 9, 8.5, 8.5, 8, 8.5]),
 	LEGAZPI: new City("Legazpi", "Albay", ISLAND_GROUPS.LUZON, 8.8, "res/Resources by city/Legazpi", [8, 8.5, 8.5, 9, 9, 10, 8.5, 9], true),
